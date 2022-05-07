@@ -1,0 +1,627 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verrannollisuus &#8212; Algebra, geometria ja trigonometria</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Mittakaavat" href="mittakaavat.html" />
+    <link rel="prev" title="Pallo" href="pallo.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Algebra, geometria ja trigonometria</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Algebra, geometria ja trigonometria
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Perusteita
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="potenssit.html">
+   Potenssilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="juuret.html">
+   Juurilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="polynomit.html">
+   Polynomit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Yhtälöt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot.html">
+   Yhtälöiden ratkaisu
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot1.html">
+   Ensimmäisen asteen yhtälöt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot2.html">
+   Toisen asteen yhtälöt
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigonometriaa.html">
+   Trigonometriaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suorakulmaiset.html">
+   Suorakulmaiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yleiset.html">
+   Yleiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigo_funktiot.html">
+   Yleiset trigonometriset funktiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasogeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyrat.html">
+   Ympyrä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="monikulmiot.html">
+   Monikulmiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Avaruusgeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lierio_kartio.html">
+   Lieriö ja kartio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pallo.html">
+   Pallo
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Verrannollisuus
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Verrannollisuus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mittakaavat.html">
+   Mittakaavat
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Matemaattisia malleja
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="malleja.html">
+   Matemaattisia malleja
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lineaarinen.html">
+   Lineaarinen malli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="toisenasteen.html">
+   Toisen asteen polynomimalli
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/verrannollisuus.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fverrannollisuus.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suoraan-verrannollisuus">
+   Suoraan verrannollisuus
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-kx">
+     Riippuvuus muotoa
+     <span class="math notranslate nohighlight">
+      \(y=kx\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-kx-n-n-1">
+     Riippuvuus muotoa
+     <span class="math notranslate nohighlight">
+      \(y=kx^n, n &gt; 1\)
+     </span>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kaantaen-verrannollisuus">
+   Kääntäen verrannollisuus
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-frac-k-x">
+     Riippuvuus muotoa
+     <span class="math notranslate nohighlight">
+      \(y=\frac{k}{x}\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-frac-k-x-n-n-1">
+     Riippuvuus muotoa
+     <span class="math notranslate nohighlight">
+      \(y=\frac{k}{x^n}, n &gt; 1\)
+     </span>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Verrannollisuus</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suoraan-verrannollisuus">
+   Suoraan verrannollisuus
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-kx">
+     Riippuvuus muotoa
+     <span class="math notranslate nohighlight">
+      \(y=kx\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-kx-n-n-1">
+     Riippuvuus muotoa
+     <span class="math notranslate nohighlight">
+      \(y=kx^n, n &gt; 1\)
+     </span>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kaantaen-verrannollisuus">
+   Kääntäen verrannollisuus
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-frac-k-x">
+     Riippuvuus muotoa
+     <span class="math notranslate nohighlight">
+      \(y=\frac{k}{x}\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-frac-k-x-n-n-1">
+     Riippuvuus muotoa
+     <span class="math notranslate nohighlight">
+      \(y=\frac{k}{x^n}, n &gt; 1\)
+     </span>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <!-- #region -->
+<div class="tex2jax_ignore mathjax_ignore section" id="verrannollisuus">
+<h1>Verrannollisuus<a class="headerlink" href="#verrannollisuus" title="Permalink to this headline">¶</a></h1>
+<p>Verrannollisuus on käsite, jonka avulla voidaan vastata esimerkiksi seuraavanlaisiin kysymyksiin:</p>
+<p>a) Kolme kiloa mangoja maksaa 6.90 €. Paljonko maksaa viisi kiloa samoja mangoja?</p>
+<p>b) Säiliön tyhjentäminen kestää 4 h ja 30 min, kun tyhjennyspumpun teho on 200 l/min. Kauanko tyhjentäminen kestää pumpulla, jonka teho on 120 l/min?</p>
+<p>Lisäksi verrannollisuutta tarvitaan mittakaavoissa (kartat, pienoismallit).</p>
+<p>Verrannossa on kaksi toisistaan riippuvaa asiaa. Niitä merkitään usein kirjaimilla <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span>. Muuttujat <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span> voivat riippua toisistaan kahdella eri tavalla:</p>
+<ul class="simple">
+<li><p>Kun <span class="math notranslate nohighlight">\(x\)</span> kasvaa, niin myös <span class="math notranslate nohighlight">\(y\)</span> kasvaa. Tällöin kyseessä on suoraan verrannollisuus. Esimerkiksi kilohinnalla ostettujen hedelmien kokonaishinta <span class="math notranslate nohighlight">\(y\)</span> varmasti kasvaa, jos ostettujen hedelmien määrä <span class="math notranslate nohighlight">\(x\)</span> kasvaa.</p></li>
+<li><p>Kun <span class="math notranslate nohighlight">\(x\)</span> kasvaa, niin <span class="math notranslate nohighlight">\(y\)</span> pienenee. Tällöin kyseessä on kääntäen verrannollisuus. Esimerkiksi jos säiliötä tyhjentävän pumpun teho <span class="math notranslate nohighlight">\(x\)</span> kasvaa, niin säiliön tyhjentämiseen kuluva aika <span class="math notranslate nohighlight">\(y\)</span> pienenee.</p></li>
+</ul>
+<p></p>
+<div class="section" id="suoraan-verrannollisuus">
+<h2>Suoraan verrannollisuus<a class="headerlink" href="#suoraan-verrannollisuus" title="Permalink to this headline">¶</a></h2>
+<p>Suoraan verrannollisten muuttujien <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span> välinen riippuvuus on muotoa <span class="math notranslate nohighlight">\(y=kx^n\)</span>, missä luku <span class="math notranslate nohighlight">\(k\)</span> on nimeltään verrannollisuuskerroin ja <span class="math notranslate nohighlight">\(n\)</span> on jokin positiivinen kokonaisluku. Kun <span class="math notranslate nohighlight">\(x\)</span> kasvaa, myös <span class="math notranslate nohighlight">\(y\)</span> kasvaa. Esimerkiksi jos riippuvuus on muotoa <span class="math notranslate nohighlight">\(y=3x\)</span>, niin verrannollisuuskerroin on <span class="math notranslate nohighlight">\(3\)</span>, ja arvot riippuvat toisistaan seuraavasti: <span class="math notranslate nohighlight">\(x=1 \rightarrow y=3, x=2 \rightarrow y=6, x=3 \rightarrow y=9, \ldots\)</span>.</p>
+<div class="section" id="riippuvuus-muotoa-y-kx">
+<h3>Riippuvuus muotoa <span class="math notranslate nohighlight">\(y=kx\)</span><a class="headerlink" href="#riippuvuus-muotoa-y-kx" title="Permalink to this headline">¶</a></h3>
+<p>Yksinkertaisimmassa tapauksessa muuttujen <span class="math notranslate nohighlight">\(x\)</span> eksponentti on 1. Tällöin yhtälö on muotoa <span class="math notranslate nohighlight">\(y=kx\)</span>.</p>
+<p>Verrannollisuuskerrointa <span class="math notranslate nohighlight">\(k\)</span> ei välttämättä suoraan tiedetä. Se voidaan kuitenkin ratkaista yhtälöstä <span class="math notranslate nohighlight">\(y=kx\)</span>, siis <span class="math notranslate nohighlight">\(k=\frac{y}{x}\)</span>.</p>
+<p>Ongelmien ratkaisussa hyödynnetään tietoa, että <span class="math notranslate nohighlight">\(k\)</span> on sama kaikille lukupareille <span class="math notranslate nohighlight">\((x,y)\)</span>. Niinpä jos tiedetään yksi lukupari <span class="math notranslate nohighlight">\((x_1,y_1)\)</span>, voidaan sen avulla selvittää ensin verrannollisuuskerroin <span class="math notranslate nohighlight">\(k\)</span> yhtälöstä <span class="math notranslate nohighlight">\(y_1=k x_1\)</span>. Sen jälkeen voidaan toisesta lukuparista ratkaista <span class="math notranslate nohighlight">\((x_2,y_2)\)</span> jompikumpi muuttujista <span class="math notranslate nohighlight">\(x_2\)</span> tai <span class="math notranslate nohighlight">\(y_2\)</span> hyödyntämällä yhtälöä <span class="math notranslate nohighlight">\(y_2=k x_2\)</span>.</p>
+<p>Samantyyppinen ongelma voidaan ratkaista myös yhtälönä. Merkitään jälleen kahteen eri tilanteeseen liittyviä suureita <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span> alaindekseillä <span class="math notranslate nohighlight">\((x_1,y_1)\)</span> ja <span class="math notranslate nohighlight">\((x_2,y_2)\)</span>. Koska verrannollisuuskerroin on <span class="math notranslate nohighlight">\(k=\frac{y}{x}\)</span> riippumatta <span class="math notranslate nohighlight">\(x\)</span>:n ja <span class="math notranslate nohighlight">\(y\)</span>:n arvoista, voidaan kirjoittaa <span class="math notranslate nohighlight">\(k=\frac{y_1}{x_1}\)</span> ja <span class="math notranslate nohighlight">\(k=\frac{y_2}{x_2}\)</span> ja edelleen <span class="math notranslate nohighlight">\(\frac{y_1}{x_1} = \frac{y_2}{x_2}\)</span>. Tähän yhtälöön voidaan sijoittaa tunnetut suureiden arvot ja ratkaista tuntematon.</p>
+<p><strong>Esim.</strong> Eräässä kerrostalossa 80 neliömetrin kokoinen asunto maksaa 160 000 €. Oletetaan, että asunnon hinta <span class="math notranslate nohighlight">\(y\)</span> on suoraan verrannollinen asunnon kokoon <span class="math notranslate nohighlight">\(x\)</span>. Kuinka paljon maksaisi 120 neliömetrin kokoinen asunto?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Koska asunnon hinta oletettavasti on sitä suurempi, mitä suurempi on asunnon koko, niin kyseessä ovat suoraan verrannolliset suureet. Tällöin asunnon hinta riippuu asunnon koosta yhtälön <span class="math notranslate nohighlight">\(y=kx\)</span> mukaisesti.</p>
+<p>Ongelma voidaan ratkaista kahdella tavalla:</p>
+<p>(1) Selvitetään verrannollisuuskerroin <span class="math notranslate nohighlight">\(k\)</span> tiedossa olevien suureiden avulla: <span class="math notranslate nohighlight">\(k=\frac{y}{x}=\frac{160000~€}{80~\text{m}^2}=2000~\text{€/m}^2\)</span>.</p>
+<p>Nyt voidaan laskea toisen asunnon hinta sijoittamalla asunnon pinta-ala yhtälöön <span class="math notranslate nohighlight">\(y=2000~\text{€/m}^2\cdot x\)</span>, siis
+<span class="math notranslate nohighlight">\(y=2000~\text{€/m}^2\cdot 120~\text{m}^2=240000~€\)</span>.</p>
+<p>(2) Merkitään tunnetun asunnon kokoa <span class="math notranslate nohighlight">\(x_1=80~\text{m}^2\)</span> ja hintaa <span class="math notranslate nohighlight">\(y_1=160000~€\)</span>. Toisen asunnon koko on <span class="math notranslate nohighlight">\(x_2=120~\text{m}^2\)</span> ja hinta tuntematon <span class="math notranslate nohighlight">\(y_2\)</span>. Ratkaistaan <span class="math notranslate nohighlight">\(y_2\)</span> yhtälöstä <span class="math notranslate nohighlight">\(\frac{y_1}{x_1} = \frac{y_2}{x_2}\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(\frac{y_1}{x_1} = \frac{y_2}{x_2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(y_2=\frac{x_2}{x_1} y_1\)</span></p>
+<p><span class="math notranslate nohighlight">\(y_2=\frac{120~\text{m}^2}{80~\text{m}^2}\cdot 160000~€\)</span></p>
+<p><span class="math notranslate nohighlight">\(y_2 = 240000~€\)</span>.</p>
+</div>
+</div>
+<div class="section" id="riippuvuus-muotoa-y-kx-n-n-1">
+<h3>Riippuvuus muotoa <span class="math notranslate nohighlight">\(y=kx^n, n &gt; 1\)</span><a class="headerlink" href="#riippuvuus-muotoa-y-kx-n-n-1" title="Permalink to this headline">¶</a></h3>
+<p>Vaikka muuttujan <span class="math notranslate nohighlight">\(x\)</span> eksponentti <span class="math notranslate nohighlight">\(n\)</span> olisi jokin lukua 1 suurempi luku, edelleen verrannollisuuskerroin <span class="math notranslate nohighlight">\(k\)</span> pysyy samana, ja ongelmien ratkaisu tapahtuu samalla periaatteella kuin edellä. Verrannollisuuskerroin voidaan laskea <span class="math notranslate nohighlight">\(k=\frac{y}{x^n}\)</span>. Vastaavasti voidaan ratkaista tuntematon muuttuja yhtälöstä <span class="math notranslate nohighlight">\(\frac{y_1}{x_1^n}=\frac{y_2}{x_2^n}\)</span>.</p>
+<p><strong>Esim.</strong> Auton jarrutusmatka pysähdykseen saakka riippuu olosuhteista, mutta on suoraan verrannollinen nopeuden toiseen potenssiin. Eräällä tiellä jarrutusmatkaksi nopeudesta 40 km/h todettiin 16 m. Kuinka pitkä on jarrutusmatka samalla tiellä, jos alkunopeus onkin 70 km/h?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Nopeus tunnetussa tilanteessa on <span class="math notranslate nohighlight">\(x_1=40\)</span> km/h ja jarrutusmatka <span class="math notranslate nohighlight">\(y_1=16\)</span> metriä. Toisessa tilanteessa nopeus on <span class="math notranslate nohighlight">\(x_2=70\)</span> km/h ja jarrutusmatka tuntematon <span class="math notranslate nohighlight">\(y_2\)</span>. Ratkaistaan <span class="math notranslate nohighlight">\(y_2\)</span> yhtälöstä <span class="math notranslate nohighlight">\(\frac{y_1}{x_1^2}=\frac{y_2}{x_2^2}\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(y_2=y_1 \frac{x_2^2}{x_1}^2= 16~\text{m}\cdot\frac{70^2}{40^2} = 49~\text{m}\)</span>.</p>
+<p>Huomaa, että nopeuden yksikkö km/h on jätetty pois, sillä se supistuu pois, kunhan vain kumpikin nopeus on ilmoitettu samassa yksikössä. Fysiikan tehtävissä nopeudet yleensä muutetaan muotoon m/s, jolloin voidaan käyttää monia muitakin laskukaavoja. Tässä tapauksessa kuitenkin riittää tarkastella nopeuksien suhdetta, ja se on sama riippumatta siitä, missä yksikössä nopeudet on ilmaistu.</p>
+</div>
+<p><strong>Esim.</strong> Auton jarrutusjäljet olivat 32 metriä pitkät. Samoissa olosuhteissa todettiin, että jarrutusmatka nopeudesta 60 km/h on 22 metriä. Mikä oli jarrutusjäljet jättäneen auton nopeus ennen jarrutusta?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Nyt nopeus tunnetussa tilanteessa on <span class="math notranslate nohighlight">\(x_1=60\)</span> km/h ja jarrutusmatka <span class="math notranslate nohighlight">\(y_1=22\)</span> metriä. Toisessa tilanteessa nopeus on <span class="math notranslate nohighlight">\(x_2\)</span> on tuntematon ja jarrutusmatka on <span class="math notranslate nohighlight">\(y_2=32\)</span> metriä. Ratkaistaan <span class="math notranslate nohighlight">\(x_2\)</span> yhtälöstä <span class="math notranslate nohighlight">\(\frac{y_1}{x_1^2}=\frac{y_2}{x_2^2}\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(x_2^2=x_1^2\frac{y_2}{y_1}\)</span></p>
+<p><span class="math notranslate nohighlight">\(x_2=\sqrt{x_1^2\frac{y_2}{y_1}}\)</span></p>
+<p><span class="math notranslate nohighlight">\(x_2=\sqrt{(60~\text{km/h})^2 \cdot \frac{32~\text{m}}{22~\text{m}}}\)</span></p>
+<p><span class="math notranslate nohighlight">\(x_2 \approx 72~\text{km/h}\)</span>.</p>
+</div>
+<p></p>
+</div>
+</div>
+<div class="section" id="kaantaen-verrannollisuus">
+<h2>Kääntäen verrannollisuus<a class="headerlink" href="#kaantaen-verrannollisuus" title="Permalink to this headline">¶</a></h2>
+<p>Kääntäen verrannollisten muuttujien suhdetta kuvaava yhtälö on <span class="math notranslate nohighlight">\(y=\frac{k}{x^n}\)</span>. Kun <span class="math notranslate nohighlight">\(x\)</span> kasvaa, niin <span class="math notranslate nohighlight">\(y\)</span> pienenee. Esimerkiksi jos riippuvuus on muotoa <span class="math notranslate nohighlight">\(y=\frac{120}{x}\)</span>, niin arvot riippuvat toisistaan seuraavasti: <span class="math notranslate nohighlight">\(x=1 \rightarrow y=120, x=2 \rightarrow y=60, x=3 \rightarrow y=40, \ldots\)</span>. Ongelmat ratkeavat samaan tapaan kuin suoraan verrannollisuudessa, eli kirjoittamalla yhtälö, joka yhdistää lukuparit <span class="math notranslate nohighlight">\((x_1,y_1)\)</span> ja <span class="math notranslate nohighlight">\((x_2,y_2)\)</span> verrannollisuuskertoimen <span class="math notranslate nohighlight">\(k\)</span> avulla.</p>
+<div class="section" id="riippuvuus-muotoa-y-frac-k-x">
+<h3>Riippuvuus muotoa <span class="math notranslate nohighlight">\(y=\frac{k}{x}\)</span><a class="headerlink" href="#riippuvuus-muotoa-y-frac-k-x" title="Permalink to this headline">¶</a></h3>
+<p>Yksinkertaisimmassa tapauksessa kääntäen verrannollisia suureita yhdistää yhtälö <span class="math notranslate nohighlight">\(y=\frac{k}{x}\)</span>. Tällöin verrannollisuuskertoimeksi saadaan <span class="math notranslate nohighlight">\(k=yx\)</span>. Lukupareille <span class="math notranslate nohighlight">\((x_1,y_1)\)</span> ja <span class="math notranslate nohighlight">\((x_2,y_2)\)</span> pätee siis yhtälö <span class="math notranslate nohighlight">\(x_1 y_1 = x_2 y_2\)</span>.</p>
+<p><strong>Esim.</strong> Neljä henkilöä tekee työn 6 tunnissa. Paljonko aikaa kuluu kolmelta henkilöltä saman työn tekemiseen?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Merkitään työntekijöiden määrää <span class="math notranslate nohighlight">\(x\)</span> ja työhön kuluvaa aikaa <span class="math notranslate nohighlight">\(y\)</span>. Kun työntekijöiden määrä kasvaa, niin työhön kuluva aika pienenee. Aika riippuu siis henkilömäärästä yhtälön <span class="math notranslate nohighlight">\(y=\frac{k}{x}\)</span> mukaisesti.</p>
+<p>Verrannollisuuskerroin on tässä tapauksessa <span class="math notranslate nohighlight">\(k=xy=4~\text{hlö}\cdot 6~\text{h}=24~\text{hlö}\cdot\text{h}\)</span>. Nyt voidaan sijoittaa verrannollisuuskertoimen arvo ja uusi henkilömäärä 3 yhtälöön <span class="math notranslate nohighlight">\(y=\frac{k}{x}\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(y=\frac{24 \text{hlö}\cdot\text{h}}{3~\text{hlö}}=8~\text{h}\)</span>.</p>
+<p>Toinen vaihtoehto on ratkaista yhtälö <span class="math notranslate nohighlight">\(x_1 y_1 = x_2 y_2\)</span>, missä tunnetut lukuarvot ovat <span class="math notranslate nohighlight">\(x_1=4\)</span>, <span class="math notranslate nohighlight">\(y_1=6\)</span> ja <span class="math notranslate nohighlight">\(x_2=3\)</span>. Tuntematon aika <span class="math notranslate nohighlight">\(y_2\)</span> on</p>
+<p><span class="math notranslate nohighlight">\(y_2=y_1\frac{x_1}{x_2}=6~\text{h}\frac{4~\text{hlö}}{3\text{hlö}}=8~\text{h}\)</span>.</p>
+</div>
+<p><strong>Esim.</strong> Uima-altaan täyttö pumppausnopeudella <span class="math notranslate nohighlight">\(x_1=120\)</span> l/min kestää <span class="math notranslate nohighlight">\(y_1=4\)</span> h. Kuinka kauan täyttäminen kestää pumpulla, jonka nopeus on <span class="math notranslate nohighlight">\(x_2=210\)</span> l/min?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Ratkaistaan tuntematon täyttöaika <span class="math notranslate nohighlight">\(y_2\)</span> yhtälöstä <span class="math notranslate nohighlight">\(y_1 x_1=y_2 x_2\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(y_2 x_2=y_1 x_1 \leftrightarrow  y_2= y_1 \frac{x_1}{x_2}\)</span></p>
+<p>Sijoitetaan luvut: <span class="math notranslate nohighlight">\(y_2 = 4~\text{h}\cdot \frac{120~\text{l/min}}{210~\text{l/min}}\approx 2.3~\text{h}=2~\text{h} ~18~\text{min}\)</span>.</p>
+<p>Lopuksi voidaan laskea verrannollisuuskerroin, joka kuvaa uima-altaassa olevaa vesimäärää:</p>
+<p><span class="math notranslate nohighlight">\(k=120~\text{l/min} \cdot 4~\text{h}=120 \text{l/min} \cdot 4\cdot 60~\text{min} \approx 29 000~\text{l}\)</span></p>
+<p>tai</p>
+<p><span class="math notranslate nohighlight">\(k=210~\text{l/min}\cdot 2~\text{h}~18~\text{min}=210~\text{l/min}\cdot 138~\text{min}\approx 29 000~\text{l}\)</span>.</p>
+</div>
+</div>
+<div class="section" id="riippuvuus-muotoa-y-frac-k-x-n-n-1">
+<h3>Riippuvuus muotoa <span class="math notranslate nohighlight">\(y=\frac{k}{x^n}, n &gt; 1\)</span><a class="headerlink" href="#riippuvuus-muotoa-y-frac-k-x-n-n-1" title="Permalink to this headline">¶</a></h3>
+<p>Jos kääntäen verrannollisia suureita yhdistää yhtälö <span class="math notranslate nohighlight">\(y=\frac{k}{x^n}, n&gt; 1\)</span>, niin verrannollisuuskertoimeksi saadaan <span class="math notranslate nohighlight">\(k=yx^n\)</span>. Lukupareille <span class="math notranslate nohighlight">\((x_1,y_1)\)</span> ja <span class="math notranslate nohighlight">\((x_2,y_2)\)</span> pätee siis yhtälö <span class="math notranslate nohighlight">\(x_1^n y_1 = x_2^n y_2\)</span>.</p>
+<p><strong>Esim.</strong> Lampun valaistusvoimakkuus, jota mitataan lukseina (lux), on kääntäen verrannollinen etäisyyden toiseen potenssiin. Jos valaistusvoimakkuus kahden metrin päässä lampusta on 90 lux, paljonko se on viiden metrin päässä lampusta?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Merkitään tunnettua valaistusvoimakkuutta <span class="math notranslate nohighlight">\(y_1=90~\text{lx}\)</span>, tunnettua etäisyyttä <span class="math notranslate nohighlight">\(x_2=2~\text{m}\)</span> ja toista etäisyyttä <span class="math notranslate nohighlight">\(x_2=5~\text{m}\)</span>. Ratkaistaan tuntematon valaistusvoimakkuus <span class="math notranslate nohighlight">\(y_2\)</span> yhtälöstä <span class="math notranslate nohighlight">\(x_1^2 y_1 = x_2^2 y_2\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(x_1^2 y_1 = x_2^2 y_2 \leftrightarrow y_2 = y_2 \frac{x_1^2}{x_2}^2 = 90~\text{lux}\cdot \frac{\left(2~\text{m}\right)^2}{\left(5~\text{m}\right)^2} = 14.4~\text{lx}\)</span>.</p>
+</div>
+<p><strong>Esim.</strong> Auringon säteilyn intensiteetti jollakin planeetilla on kääntäen verrannollinen planeetan etäisyyden toiseen potenssiin. Maan etäisyys auringosta on 1 AU (astronomical unit). Intensiteetti maapallolla on noin <span class="math notranslate nohighlight">\(1400~\text{W/m}^2\)</span>. Millä etäisyydellä intensiteetti olisi kaksinkertainen maapallolle kohdistuvaan intensiteettiin verrattuna?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Merkitään maapallon etäisyyttä auringosta <span class="math notranslate nohighlight">\(x_1=1~\text{AU}\)</span> ja intensiteettiä <span class="math notranslate nohighlight">\(y_1=1400~\text{W/m}^2\)</span>. Tehtävässä annettu intensiteetti on <span class="math notranslate nohighlight">\(y_2=2\cdot 1400~\text{W/m}^2\)</span>. Ratkaistaan tuntematon etäisyys <span class="math notranslate nohighlight">\(x_2\)</span> yhtälöstä <span class="math notranslate nohighlight">\(x_1^2 y_1 = x_2^2 y_2\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(x_1^2 y_1 = x_2^2 y_2\)</span></p>
+<p><span class="math notranslate nohighlight">\(x_2^2 = x_1^2 \cdot \frac{y_1}{y_2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(x_2 = \sqrt{x_1^2\cdot \frac{y_1}{y_2}}\)</span></p>
+<p><span class="math notranslate nohighlight">\(x_2 = \sqrt{(1~\text{AU})^2\cdot \frac{1400~\text{W/m}^2}{2\cdot 1400~\text{W/m}^2}}\)</span></p>
+<p>Huomaa, että intensiteetin arvo yksiköineen supistuu pois yhtälöstä! Tehtävässä voitaisiin siis pelkästään kysyä, millä etäisyydellä intensiteetti kaksinkertaistuu, ilman tietoa siitä paljonko se maapallolla on. Vastaukseksi saadaan</p>
+<p><span class="math notranslate nohighlight">\(x_2 = \sqrt{(1~\text{AU})^2\cdot \frac{1}{2}} \approx 0.71~\text{AU}\)</span>.</p>
+<p>Etäisyys vastaa suunnilleen Venuksen sijaintia.</p>
+</div>
+<!-- #endregion -->
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="pallo.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Pallo</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="mittakaavat.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Mittakaavat</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

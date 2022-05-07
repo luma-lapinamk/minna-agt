@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suorakulmaiset kolmiot &#8212; Algebra, geometria ja trigonometria</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Yleiset kolmiot" href="yleiset.html" />
+    <link rel="prev" title="Trigonometriaa" href="trigonometriaa.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Algebra, geometria ja trigonometria</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Algebra, geometria ja trigonometria
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Perusteita
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="potenssit.html">
+   Potenssilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="juuret.html">
+   Juurilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="polynomit.html">
+   Polynomit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Yhtälöt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot.html">
+   Yhtälöiden ratkaisu
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot1.html">
+   Ensimmäisen asteen yhtälöt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot2.html">
+   Toisen asteen yhtälöt
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometriaa
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigonometriaa.html">
+   Trigonometriaa
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Suorakulmaiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yleiset.html">
+   Yleiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigo_funktiot.html">
+   Yleiset trigonometriset funktiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasogeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyrat.html">
+   Ympyrä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="monikulmiot.html">
+   Monikulmiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Avaruusgeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lierio_kartio.html">
+   Lieriö ja kartio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pallo.html">
+   Pallo
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Verrannollisuus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="verrannollisuus.html">
+   Verrannollisuus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mittakaavat.html">
+   Mittakaavat
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Matemaattisia malleja
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="malleja.html">
+   Matemaattisia malleja
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lineaarinen.html">
+   Lineaarinen malli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="toisenasteen.html">
+   Toisen asteen polynomimalli
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/suorakulmaiset.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsuorakulmaiset.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pythagoraan-lause">
+   Pythagoraan lause
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suorakulmaisen-kolmion-trigonometriset-funktiot">
+   Suorakulmaisen kolmion trigonometriset funktiot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suorakulmainen-koordinaatisto">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Suorakulmaiset kolmiot</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pythagoraan-lause">
+   Pythagoraan lause
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suorakulmaisen-kolmion-trigonometriset-funktiot">
+   Suorakulmaisen kolmion trigonometriset funktiot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suorakulmainen-koordinaatisto">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="suorakulmaiset-kolmiot">
+<h1>Suorakulmaiset kolmiot<a class="headerlink" href="#suorakulmaiset-kolmiot" title="Permalink to this headline">¶</a></h1>
+<p>Kolmiot liittyvät hyvin monenlaisiin geometrisiin ongelmiin. Kolmiossa on kolme toisiinsa yhdistyvää sivua, joiden välille muodostuvat kolmion kolme kulmaa. Kolmion korkeusjana on kärjestä kohtisuoraan vastakkaiselle sivulle tai sen jatkeelle piirretty jana. Vastakkaista sivua sanotaan kannaksi. Kolmion sivujen väliset kulmat voivat olla kaikki teräviä, tai yksi kulmista voi olla tylppä. Erityistapaus on suorakulmainen kulmio, jonka kulmista yksi on suora ja muut teräviä. Kolmion kulmien summa on aina 180 astetta.</p>
+<p>Minkä tahansa kolmion pinta-ala <span class="math notranslate nohighlight">\(A\)</span> lasketaan kaavalla <span class="math notranslate nohighlight">\(A=\frac{ah}{2}\)</span>, missä <span class="math notranslate nohighlight">\(a\)</span> on kannan pituus ja <span class="math notranslate nohighlight">\(h\)</span> korkeusjanan pituus (riippumatta siitä, onko korkeusjana kannalla vai kannan jatkeella).</p>
+<p><img alt="Kolmion kanta ja korkeus" src="_images/kanta_korkeus.png" /></p>
+<p>Suorakulmaiset kolmiot ovat erityistapaus kolmioista. Suoran kulman viereisten sivujen nimi on kateetti. Suorakulmaisen kolmion kanta ja korkeusjana ovat samat kuin kolmion kateetit, joten pinta-ala on kateettien tulo jaettuna kahdella. Suoran kulman vastainen sivun nimi on hypotenuusa. Se on suorakulmaisen kolmion pisin sivu. Suorakulmaisille kolmioille on olemassa omia laskusääntöjä, joita ei voida soveltaa muihin kolmioihin.</p>
+<p><img alt="Suorakulmaisen kolmion osat" src="_images/skkolmio.jpg" /></p>
+<div class="section" id="pythagoraan-lause">
+<h2>Pythagoraan lause<a class="headerlink" href="#pythagoraan-lause" title="Permalink to this headline">¶</a></h2>
+<p>Suorakulmaiselle kolmiolle pätee Pythagoraan lause: hypotenuusan pituuden neliö on kateettien pituuksien neliöiden summa. Jos kateettien pituudet ovat <span class="math notranslate nohighlight">\(a\)</span> ja <span class="math notranslate nohighlight">\(b\)</span> ja hypotenuusan pituus on <span class="math notranslate nohighlight">\(c\)</span>, niin Pythagoraan lause voidaan kirjoittaa muodossa <span class="math notranslate nohighlight">\(c^2=a^2+b^2\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Pythagoraan lauseen perustelu</p>
+<p>Pythagoraan lauseelle on olemassa useita perusteluja. Tässä eräs niistä:</p>
+<p><img alt="Pythagoraan lauseen perustelu" src="_images/pythagoras_perustelu.png" /></p>
+<p>Kuvassa olevan neliön sivun pituus on <span class="math notranslate nohighlight">\(a+b\)</span>. Jaetaan neliö palasiin kahdella eri tavalla. Vasemmanpuoleisessa kuvassa muodostetaan neliön nurkkiin suorakulmaisia kolmioita: kummassakin nurkassa on kaksi suorakulmaista kolmiota, joiden kateetit ovat <span class="math notranslate nohighlight">\(a\)</span> ja <span class="math notranslate nohighlight">\(b\)</span>. Merkitään hypotenuusaa kirjaimella <span class="math notranslate nohighlight">\(c\)</span>. Keskelle jäävän pienemmän valkoisen neliön pinta-ala on sivujen pituuksien tulo, siis <span class="math notranslate nohighlight">\(c\cdot c=c^2\)</span>.</p>
+<p>Siirretään sitten kolmiot jokainen omaan nurkkaansa. Näidenkin neliöiden kateetit ovat <span class="math notranslate nohighlight">\(a\)</span> ja <span class="math notranslate nohighlight">\(b\)</span>. Valkoisen pienemmän neliön pinta-ala on nyt <span class="math notranslate nohighlight">\(a^2\)</span> ja isomman neliön pinta-ala on <span class="math notranslate nohighlight">\(b^2\)</span>.  Valkoiseksi alueesta jää nyt yhteensä <span class="math notranslate nohighlight">\(a^2+b^2\)</span>.</p>
+<p>Lopuksi verrataan kuvia: kummassakin tapauksessa kolmiot ovat aivan yhtä suuret, joten kolmiot vievät yhtä paljon tilaa riippumatta siitä kummalla tavalla ne on ison neliön sisälle aseteltu. Valkoiseksi jäävä alue on tällöin kummassakin kuvassa yhtä suuri. Voidaan kirjoittaa: <span class="math notranslate nohighlight">\(a^2+b^2=c^2\)</span>.</p>
+</div>
+<p><strong>Esim.</strong> Laske suorakulmaisen kolmion hypotenuusan pituus, kun kateettien pituudet ovat 5 cm ja 3 cm.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Sijoitetaan kateettien pituudet ja tuntematon hypotenuusan pituus Pythagoraan lauseeseen ja ratkaistaan yhtälö:</p>
+<p><span class="math notranslate nohighlight">\(c^2=5^2+3^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(c^2=25+9\)</span></p>
+<p><span class="math notranslate nohighlight">\(c=\sqrt{34}\)</span></p>
+</div>
+<p><strong>Esim.</strong> Laske suorakulmaisen kolmion toisen kateetin pituus, kun hypotenuusan pituus on 10 cm ja toisen kateetin pituus on 2 cm.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Sijoitetaan tunnetut arvot Pythagoraan lauseeseen. Ei ole väliä, merkitäänkö tuntematonta kateettia <span class="math notranslate nohighlight">\(a\)</span> vai <span class="math notranslate nohighlight">\(b\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(10^2=2^2+b^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(-b^2=-10^2+2^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(b^2=10^2-2^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(b^2=100-4\)</span></p>
+<p><span class="math notranslate nohighlight">\(b=\sqrt{96}\)</span></p>
+</div>
+<p><strong>Esim.</strong> Suorakulmaisen kolmion kaksi sivua ovat pituudeltaan 6 m ja 8 m. Laske kolmannen sivun pituus.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Tässä tapauksessa ei tiedetä, ovatko annetut sivut kolmion kateetit vai onko toinen niistä hypotenuusta. Ratkaistaan tehtävä kumpikin vaihtoehto huomioiden.</p>
+<p>(1) Oletetaan, että annetut sivut ovat kateetteja. Tällöin hypotenuusan pituus on <span class="math notranslate nohighlight">\(c=\sqrt{6^2+8^2}=\sqrt{100}=10\)</span>.</p>
+<p>(2) Oletetaan, että annetuista sivuista pitempi on hypotenuusa (lyhyempi sivu ei voi olla hypotenuusa, koska hypotenuusa on suorakulmaisen kolmion pisin sivu). Tällöin on ratkaistava yhtälö</p>
+<p><span class="math notranslate nohighlight">\(8^2 = 6^2 + b^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(b^2 = 8^2 - 6^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(b^2 = 28\)</span></p>
+<p><span class="math notranslate nohighlight">\(b=\sqrt{28}\)</span></p>
+</div>
+<p><strong>Esim.</strong> Kolmion sivut ovat pituudeltaan 4, 5 ja 7. Onko kyseinen kolmio suorakulmainen?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Tarkistetaan, pitääkö Pythagoraan lause paikkansa näillä arvoilla. Kateettien neliöiden summa on <span class="math notranslate nohighlight">\(4^2 + 5^2 = 16+25 = 41\)</span>. Hypotenuusan neliö on <span class="math notranslate nohighlight">\(7^2 = 49\)</span>. Luvut eivät ole yhtä suuret, joten kolmio ei ole suorakulmainen.</p>
+</div>
+<p><strong>Esim.</strong> Millä luvun <span class="math notranslate nohighlight">\(a &gt; 2 \)</span> arvolla kolmio, jonka sivut ovat <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(2x\)</span> ja <span class="math notranslate nohighlight">\(ax\)</span>, olisi suorakulmainen?</p>
+<p><strong>Esim.</strong> Suorakulmaisen kolmion hypotenuusa on 3 kertaa niin pitkä kuin toinen kateetti. Selvitä toisen kateetin pituus.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Merkitään kateettia vaikkapa kirjaimella <span class="math notranslate nohighlight">\(a\)</span>. Tällöin hypotenuusa on <span class="math notranslate nohighlight">\(3a\)</span>. Ratkaistaan toisen kateetin pituus <span class="math notranslate nohighlight">\(b\)</span> Pythagoraan lauseesta:</p>
+<p><span class="math notranslate nohighlight">\((3a)^2 = a^2 + b^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(9a^2 = a^2 + b^2 \)</span></p>
+<p><span class="math notranslate nohighlight">\(b^2 = 8a^2 \)</span></p>
+<p><span class="math notranslate nohighlight">\(b = \sqrt{8a^2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(b= \sqrt{8} a\)</span></p>
+<p>Kummankaan kateetin lukuarvoa ei siis tehtävänannon perusteella tiedetä, mutta saatiin selville, että toinen kateetti on <span class="math notranslate nohighlight">\(\sqrt{8}\)</span> kertaa niin pitkä kuin toinen. On olemassa äärettömän monta kolmiota, jotka täyttävät annetut ehdot. Jos yksi kateetti on 1 metrin pituinen, niin toinen on <span class="math notranslate nohighlight">\(1\cdot \sqrt{8} \approx 2.83\)</span> m ja hypotenuusa 3 m.</p>
+</div>
+</div>
+<div class="section" id="suorakulmaisen-kolmion-trigonometriset-funktiot">
+<h2>Suorakulmaisen kolmion trigonometriset funktiot<a class="headerlink" href="#suorakulmaisen-kolmion-trigonometriset-funktiot" title="Permalink to this headline">¶</a></h2>
+<p>Suorakulmaisen kolmion teräville kulmille on määritelty kolme ns. trigonometrista funktiota:</p>
+<ul class="simple">
+<li><p>Kulman sini (sin) on kulman vastaisen kateetin pituuden suhde hypotenuusan pituuteen</p></li>
+<li><p>Kulman kosini (cos) on kulman viereisen kateetin pituuden suhde hypotenuusan pituuteen</p></li>
+<li><p>Kulman tangentti (tan) on kulman vastaisen kateetin pituuden suhde viereisen kateetin pituuteen</p></li>
+</ul>
+<p><img alt="Suorakulmaisen kolmion trigonometriset funktiot" src="_images/sktrigo.jpg" /></p>
+<p>Kuvan merkinnöillä voidaan kirjoittaa:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sin{\alpha}=\frac{a}{c}, \sin{\beta}=\frac{b}{c}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\cos{\alpha}=\frac{b}{c}, \cos{\beta}=\frac{a}{c}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tan{\alpha}=\frac{a}{b}, \tan{\beta}=\frac{b}{a}\)</span></p></li>
+</ul>
+<p>Sinin ja kosinin arvot ovat suorakulmaisissa kolmioissa lukujen 0 ja 1 välissä. Tangentit voivat saada muitakin positiivisia arvoja. Kun tiedetään kulman sinin, kosinin tai tangentin arvo, saadaan kulman suuruus ratkaistua laskimen arkusfunktioiden avulla. Laskimessa arkusfunktioita voidaan merkitä eri tavoin: arcsin/arccos/arctan, asin/acos/atan, sin<sup>-1</sup>/cos<sup>-1</sup>/tan<sup>-1</sup>. <a class="reference external" href="https://wolframalpha.com">WolfamAlpha</a> ymmärtää komennot “arcsin” ja “asin” (sekä vastaavat kosinille ja tangentille).</p>
+<p><strong>Esim.</strong> Ratkaistaan kulma <span class="math notranslate nohighlight">\(\alpha\)</span>, kun <span class="math notranslate nohighlight">\(\sin{\alpha}=0.562\)</span>. Tällöin <span class="math notranslate nohighlight">\(\alpha=\arcsin{⁡0.562}=34.2^{\circ}\)</span>.</p>
+<p><strong>HUOM!</strong> Jos tiedetään kulman sinin arvo <span class="math notranslate nohighlight">\(x\)</span> ja ratkaistaan kulma <span class="math notranslate nohighlight">\(\alpha\)</span>, on ratkaisu tarkistettava, sillä arkussinifunktion ominaisuuksista johtuen kulmalle on kaksi vaihtoehtoa: <span class="math notranslate nohighlight">\(\alpha=\arcsin{x}\)</span> ja <span class="math notranslate nohighlight">\(\alpha = 180^{\circ}-\arcsin{x}\)</span>.</p>
+<p><strong>Esim.</strong> Kulman sini on 0.9. Laskimella saadaan kulman suuruudeksi <span class="math notranslate nohighlight">\(\arcsin⁡{0.9}=64.16^{\circ}\)</span>. Toinen kulma, jonka sini on 0.9, on <span class="math notranslate nohighlight">\(180^{\circ}-\arcsin{⁡0.9}=180^{\circ}-64.16^{\circ}=115.84^{\circ}\)</span>.</p>
+<p><strong>Esim.</strong> Ratkaise oheisen kolmion tuntemattomat osat, kun tiedetään, että <span class="math notranslate nohighlight">\(c=12.3\)</span> m ja <span class="math notranslate nohighlight">\(\alpha=38.0^{\circ}\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Sivut <span class="math notranslate nohighlight">\(a\)</span> ja <span class="math notranslate nohighlight">\(b\)</span> saadaan selville kulman <span class="math notranslate nohighlight">\(\alpha\)</span> trigonometristen funktioiden avulla:</p>
+<p><span class="math notranslate nohighlight">\(\sin{\alpha}=\frac{a}{c}\)</span></p>
+<p><span class="math notranslate nohighlight">\(a=c\sin{\alpha}\)</span></p>
+<p><span class="math notranslate nohighlight">\(a=12.3~\text{m}\cdot \sin{⁡38.0^{\circ}}\)</span></p>
+<p><span class="math notranslate nohighlight">\(a=7.57~\text{m}\)</span></p>
+<p>ja</p>
+<p><span class="math notranslate nohighlight">\(\cos{\alpha} = \frac{b}{c}\)</span></p>
+<p><span class="math notranslate nohighlight">\(b=c\cdot \cos⁡{\alpha}\)</span></p>
+<p><span class="math notranslate nohighlight">\(c=12.3~\text{m}\cdot \cos{⁡38.0^{\circ}}\)</span></p>
+<p><span class="math notranslate nohighlight">\(c=9.69~\text{m}\)</span></p>
+<p>Toinen tuntematon kulma saadaan selville sen tiedon perusteella, että kolmion kulmien summa on 180 astetta:</p>
+<p><span class="math notranslate nohighlight">\(\beta=180^{\circ}-90^{\circ}-38.0^{\circ}=52.0^{\circ}\)</span>.</p>
+<p>Sama ratkaisu saataisiin myös trigonometrisia funktioita hyödyntämällä.</p>
+</div>
+<p><strong>Esim.</strong> Ratkaise suorakulmaisen kolmion tuntemattomat osat, kun tiedetään, että kateettien pituudet ovat <span class="math notranslate nohighlight">\(a=3.54~\text{m}\)</span> ja <span class="math notranslate nohighlight">\(b=4.36~\text{m}\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Tuntemattomia osia ovat hypotenuusa sekä terävien kulmien suuruudet. Pythagoraan lauseen avulla saadaan hypotenuusan pituus:</p>
+<p><span class="math notranslate nohighlight">\(c^2=a^2+b^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(c=\sqrt{a^2+b^2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(c=\sqrt{(3.54~\text{m})^2+(4.36~\text{m})^2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(c=\sqrt{31.5412~\text{m}^2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(c\approx 5.62~\text{m}\)</span>.</p>
+<p>Kulmien selvittämiseen hyödynnetään arkustangenttia sekä tietoa, että terävien kulmien summa on <span class="math notranslate nohighlight">\(90^{\circ}\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(\tan{\alpha}=\frac{a}{b}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\tan{\alpha}=\frac{3.54~\text{m}}{4.36~\text{m}}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\alpha=\arctan⁡\left(\frac{3.54}{4.36}\right)\approx 39.1^{\circ}\)</span></p>
+<p><span class="math notranslate nohighlight">\(β=90^{\circ}-39.1^{\circ} = 50.9^{\circ}\)</span>.</p>
+</div>
+<p><strong>Esim.</strong> Suorakulmaisen kolmion kateetit ovat <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(4x\)</span>. Selvitä kolmion kulmien suuruudet.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Lyhyempää sivua vastapäätä olevan kulman <span class="math notranslate nohighlight">\(\alpha\)</span> tangentti on <span class="math notranslate nohighlight">\(\tan{\alpha} = \frac{x}{4x}\)</span>. Kulma saadaan laskemalla <span class="math notranslate nohighlight">\(\alpha = \arctan{\frac{x}{4x}}= \arctan{\frac{1}{4}} \approx 14.04^{\circ}\)</span>. Kolmas kulma <span class="math notranslate nohighlight">\(\beta\)</span> on <span class="math notranslate nohighlight">\(180^{\circ}-90^{\circ}-14.04^{\circ} = 75.96^{\circ}\)</span>. Sama tulos saataisiin myös tämän kulman tangentin avulla: <span class="math notranslate nohighlight">\(\beta = \arctan{\frac{4x}{x}}= \arctan{4} \approx 75.96^{\circ}\)</span>.</p>
+</div>
+</div>
+<div class="section" id="suorakulmainen-koordinaatisto">
+<h2>Suorakulmainen koordinaatisto<a class="headerlink" href="#suorakulmainen-koordinaatisto" title="Permalink to this headline">¶</a></h2>
+<p>Eräs suorakulmaisten kolmioiden sovellus on kaksiulotteinen suorakulmainen koordinaatisto. Se koostuu kahdesta lukusuorasta: ”x-akseli” ja ”y-akseli”. Lukusuoran kasvavaa suuntaa merkitään nuolella. Pisteen paikka <span class="math notranslate nohighlight">\(A\)</span> ilmoitetaan muodossa <span class="math notranslate nohighlight">\(A=(x,y)\)</span>. Pisteellä <span class="math notranslate nohighlight">\((0,0)\)</span> on erityisnimitys origo.</p>
+<p><img alt="Kaksiulotteinen suorakulmainen koordinaatisto" src="_images/skkoord.jpg" /></p>
+<p><strong>Esim.</strong> Kuvassa <span class="math notranslate nohighlight">\(A=(4,6)\)</span>, <span class="math notranslate nohighlight">\(B=(10,-2)\)</span>, <span class="math notranslate nohighlight">\(C=(-4,-2)\)</span> ja <span class="math notranslate nohighlight">\(D=(-4,8)\)</span>.
+ 
+Pisteiden etäisyys origosta saadaan Pythagoraan lauseella, kun täydennetään kuvio suorakulmaiseksi kolmioksi. Pythagoraan lauseeseen voi sijoittaa myös negatiivisia koordinaattien arvoja.</p>
+<p><strong>Esim.</strong> Mitkä ovat edellisen kuvan pisteiden <span class="math notranslate nohighlight">\(A\)</span> ja <span class="math notranslate nohighlight">\(D\)</span> etäisyydet origosta?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Pisteen <span class="math notranslate nohighlight">\(A\)</span> etäisyys saadaan ratkaisemalla yhtälö:</p>
+<p><span class="math notranslate nohighlight">\(r^2=4^2+6^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(r=\sqrt{4^2+6^2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(r\approx 7.2\)</span></p>
+<p>Pisteen <span class="math notranslate nohighlight">\(D\)</span> etäisyys on vastaavasti <span class="math notranslate nohighlight">\(\sqrt{(-4)^2+8^2} = \sqrt{16+64} = \sqrt{80} \approx 8.94\)</span>.</p>
+</div>
+<p>Kahden pisteen välisen etäisyyden laskemiseksi tarvitaan pisteiden x-koordinaattien erotus <span class="math notranslate nohighlight">\(\Delta x\)</span> ja y-koordinaattien erotus <span class="math notranslate nohighlight">\(\Delta y\)</span>. Sen jälkeen sovelletaan näille etäisyyksille Pythagoraan lausetta. Koordinaattien erotukset saadaan vähentämällä ensimmäisen pisteen koordinaatit jälkimmäisistä. Erotuksen voi myös päätellä: kuinka monta askelta x-suunnassa täytyy siirtyä, jotta päästään ensimmäisen pisteet x-koordinaatista jälkimmäisen pisteen x-koordinaattiin? Entä kuinka monta askelta tarvitaan y-suunnassa?</p>
+<p><strong>Esim.</strong> Laske pisteiden <span class="math notranslate nohighlight">\(A=(4,6)\)</span> ja <span class="math notranslate nohighlight">\(D=(-4,8)\)</span> etäisyys.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Aluksi lasketaan x-koordinaattien ero: <span class="math notranslate nohighlight">\(\Delta x = -4-4=-8\)</span>, ja y-koordinaattien ero: <span class="math notranslate nohighlight">\(\Delta y = 8-6=2\)</span>. Sama tulos saadaan päättelemällä: pisteestä <span class="math notranslate nohighlight">\((4,6)\)</span> pitää siirtyä vaakasuunnassa 8 yksikköä taaksepäin ja 2 yksikköä ylöspäin, jotta päästään pisteeseen <span class="math notranslate nohighlight">\((-4,8)\)</span>. Pisteiden välinen etäisyys on siis <span class="math notranslate nohighlight">\(\sqrt{(-8)^2+2^2}=\sqrt{68}\approx 8.24\)</span>.</p>
+</div>
+<p>Pisteiden välinen suuntakulma saadaan täydentämällä koordinaatistoon suorakulmainen kolmio ja hyödyntämällä trigonometrisiä funktioita. Matematiikassa käytäntö on, että suuntakulma mitataan positiivisesta x-akselista vastapäivään. Esimerkiksi suunnistuksessa kulma voidaan määritellä eri tavalla.</p>
+<p><strong>Esim.</strong> Pisteestä <span class="math notranslate nohighlight">\(A=(10,0)\)</span> liikutaan pisteeseen <span class="math notranslate nohighlight">\(B=(25,8)\)</span>. Miten pitkä matka siirryttiin ja mihin suuntaan?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Siirtymän suuruus on <span class="math notranslate nohighlight">\(\sqrt{(25-10)^2+(8-0)^2} = \sqrt{15^2+8^2} = \sqrt{289} = 17\)</span>.</p>
+<p>Suuntakulmalle <span class="math notranslate nohighlight">\(\alpha\)</span> pätee <span class="math notranslate nohighlight">\(\tan{\alpha}=\frac{\Delta y}{\Delta x}\)</span>, josta saadaan ratkaistua <span class="math notranslate nohighlight">\(\alpha=\arctan{\frac{8-0}{25-10}}=\arctan{\frac{8}{15}} \approx 28.1^{\circ}\)</span>.</p>
+</div>
+<p><strong>Esim.</strong> Pisteestä <span class="math notranslate nohighlight">\(A=(2,8)\)</span> liikutaan 50 yksikköä 10 asteen suuntakulmassa. Mihin pisteeseen <span class="math notranslate nohighlight">\(B\)</span> päädytään?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p><img alt="Siirtymä pisteestä A pisteeseen B" src="_images/astabhen.jpg" /></p>
+<p>Kuvaan täydennetylle suorakulmaiselle kolmiolle pätee: <span class="math notranslate nohighlight">\(\cos{⁡10^{\circ}}=\frac{\Delta x}{50}\)</span>, <span class="math notranslate nohighlight">\(\sin{⁡10^{\circ}}=\frac{\Delta y}{50}\)</span>. Siis <span class="math notranslate nohighlight">\(\Delta x=50\cdot \cos{⁡10^{\circ}}=49.2^{\circ}\)</span> ja <span class="math notranslate nohighlight">\(\Delta y=50\cdot \sin{⁡10^{\circ}}=8.7^{\circ}\)</span>.</p>
+<p>Pisteen <span class="math notranslate nohighlight">\(B\)</span> koordinaatit saadaan lisäämällä x- ja y-suuntainen siirtymä pisteen <span class="math notranslate nohighlight">\(A\)</span> koordinaatteihin: <span class="math notranslate nohighlight">\(B=(2+49.2, 8+8.7)=(51.2,16.7)\)</span>.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="trigonometriaa.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Trigonometriaa</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="yleiset.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Yleiset kolmiot</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
