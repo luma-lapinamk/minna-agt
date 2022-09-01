@@ -35,11 +35,13 @@ Yleisesti pätevät seuraavat laskusäännöt:
 - $\sin{(-\alpha)}=-\sin{⁡(-\alpha)}$
 - $\cos⁡{\alpha}=cos⁡{(-\alpha)}$
 - $\cos⁡{(180^{\circ}-\alpha)}=-\cos⁡{\alpha}$
+- $\sin{2\alpha} = 2 \sin{\alpha}\cos{\alpha}$
 - ja monia muita vastaavia.
 
-Ensimmäinen kaava on suoraan johdettavissa Pythagoraan lauseesta. Muut voidaan perustella piirtämällä kulmia yksikköympyrään. Perustellaan esimerkiksi säännöt $\sin{(-\alpha)}=-\sin{⁡(-\alpha)}$ ja $\cos⁡{\alpha}=cos⁡{(-\alpha)}$:
+Ensimmäinen kaava on suoraan johdettavissa Pythagoraan lauseesta. Muut voidaan perustella piirtämällä kulmia yksikköympyrään. Perustellaan esimerkiksi säännöt $\sin{(-\alpha)}=-\sin{⁡(-\alpha)}$ ja $\cos⁡{\alpha}=\cos⁡{(-\alpha)}$:
 
 ![Laskusäännön perustelu](trigo_saannot.png "Laskusäännön perustelu")
+
  
 Kun yksikköympyrässä kierretään jostakin kulmasta $\alpha$ eteenpäin $n$ kertaa täysi kierros, sinin ja kosinin arvo on sama kuin alkuperäisessä kulmassa. Täysi kierros voidaan ilmaista 360 asteena, mutta yleisemmin se ilmaistaan radiaaneina muodossa $2\pi$. Siis 
 
