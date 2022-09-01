@@ -1,0 +1,40 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts: 
+  - caption: Perusteita
+    chapters:
+    - file: potenssit
+    - file: juuret
+    - file: polynomit
+  - caption: Yhtälöt
+    chapters:
+    - file: yhtalot
+    - file: yhtalot1
+    - file: yhtalot2
+  - caption: Trigonometriaa
+    chapters:
+    - file: trigonometriaa
+    - file: suorakulmaiset
+    - file: yleiset
+    - file: trigo_funktiot
+  - caption: Tasogeometriaa
+    chapters:
+    - file: ympyrat
+    - file: monikulmiot
+  - caption: Avaruusgeometriaa
+    chapters:
+    - file: lierio_kartio
+    - file: pallo
+  - caption: Verrannollisuus
+    chapters:
+    - file: verrannollisuus
+    - file: mittakaavat
+  - caption: Matemaattisia malleja
+    chapters:
+    - file: malleja
+    - file: lineaarinen
+    - file: toisenasteen
+    - file: sinifunktio

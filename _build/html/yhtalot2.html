@@ -1,0 +1,641 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Toisen asteen yhtälöt &#8212; Algebra, geometria, trigonometria</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Trigonometriaa" href="trigonometriaa.html" />
+    <link rel="prev" title="Ensimmäisen asteen yhtälöt" href="yhtalot1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Algebra, geometria, trigonometria</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Algebra, geometria ja trigonometria
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Perusteita
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="potenssit.html">
+   Potenssilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="juuret.html">
+   Juurilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="polynomit.html">
+   Polynomit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Yhtälöt
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot.html">
+   Yhtälöiden ratkaisu
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot1.html">
+   Ensimmäisen asteen yhtälöt
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toisen asteen yhtälöt
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigonometriaa.html">
+   Trigonometriaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suorakulmaiset.html">
+   Suorakulmaiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yleiset.html">
+   Yleiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigo_funktiot.html">
+   Yleiset trigonometriset funktiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasogeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyrat.html">
+   Ympyrä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="monikulmiot.html">
+   Monikulmiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Avaruusgeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lierio_kartio.html">
+   Lieriö ja kartio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pallo.html">
+   Pallo
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Verrannollisuus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="verrannollisuus.html">
+   Verrannollisuus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mittakaavat.html">
+   Mittakaavat
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Matemaattisia malleja
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="malleja.html">
+   Matemaattisia malleja
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lineaarinen.html">
+   Lineaarinen malli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="toisenasteen.html">
+   Toisen asteen polynomimalli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinifunktio.html">
+   Sinifunktio
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/luma-lapinamk/minna-agt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/yhtalot2.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#diskriminantti-ja-ratkaisujen-maara">
+   Diskriminantti ja ratkaisujen määrä
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#erikoistapauksia">
+   Erikoistapauksia
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sovelluksia">
+   Sovelluksia
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Toisen asteen yhtälöt</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#diskriminantti-ja-ratkaisujen-maara">
+   Diskriminantti ja ratkaisujen määrä
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#erikoistapauksia">
+   Erikoistapauksia
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sovelluksia">
+   Sovelluksia
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="toisen-asteen-yhtalot">
+<h1>Toisen asteen yhtälöt<a class="headerlink" href="#toisen-asteen-yhtalot" title="Permalink to this headline">#</a></h1>
+<p>Yhtälö, joka saadaan muokattua muotoon <span class="math notranslate nohighlight">\(ax^2+bx+c=0\)</span>, on toisen asteen yhtälö. Yhtälö ei suoraan ratkea samoilla menetelmillä kuin ensimmäisen asteen yhtälö, mutta yhtälölle on mahdollista johtaa ratkaisukaava:</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisukaavan perustelu</p>
+<p>Aloitetaan kaavan johtaminen toisen asteen yhtälön perusmuodosta <span class="math notranslate nohighlight">\(ax^2+bx+c=0\)</span>. Jaetaan molemmat puolet luvulla <span class="math notranslate nohighlight">\(a\)</span>. (Näin voi tehdä, sillä oletetaan, että
+a≠0). Oikealle puolelle jää nolla, sillä nolla jaettuna millä tahansa (nollasta poikkeavalla) luvulla on edelleen nolla.</p>
+<p><span class="math notranslate nohighlight">\(x^2+\frac{b}{a}x+\frac{c}{a}=0\)</span></p>
+<p>Vähennetään molemmilta puolilta <span class="math notranslate nohighlight">\(\frac{c}{a}\)</span>, jotta saadaan vasemmalle puolelle vain sellaisia termejä, joissa on mukana tuntematon <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(x^2+\frac{b}{a}x=-\frac{c}{a}\)</span></p>
+<p>Seuraavaksi pyritään saamaan vasen puoli muotoon <span class="math notranslate nohighlight">\((x+m)^2\)</span>, missä <span class="math notranslate nohighlight">\(m\)</span> on jokin luvuista <span class="math notranslate nohighlight">\(a\)</span> ja <span class="math notranslate nohighlight">\(b\)</span> muodostuva kerroin. Toimenpiteen tarkoitus on, että lopulta voitaisiin ottaa yhtälöstä puolittain neliöjuuri, jonka jälkeen vasemmalle jää vain <span class="math notranslate nohighlight">\(x+m\)</span>.</p>
+<p>Binomikaavoista muistetaan, että lauseke <span class="math notranslate nohighlight">\((x+m)^2\)</span> voidaan purkaa muotoon <span class="math notranslate nohighlight">\(x^2+2mx+m^2\)</span>. Kun verrataan tätä lausekkeeseen <span class="math notranslate nohighlight">\(x^2+\frac{b}{a}x\)</span>, todetaan, että <span class="math notranslate nohighlight">\(2m=\frac{b}{a}\)</span>, eli toisin sanoen <span class="math notranslate nohighlight">\(m=\frac{b}{2a}\)</span>. Yhtälön molemmille puolille pitää vielä lisätä <span class="math notranslate nohighlight">\(m^2\)</span> eli <span class="math notranslate nohighlight">\(\left(\frac{b}{2a}\right)^2\)</span>, joka sievenee muotoon <span class="math notranslate nohighlight">\(\frac{b^2}{4a^2}\)</span>.</p>
+<p>Nyt yhtälö on siis muotoa</p>
+<p><span class="math notranslate nohighlight">\(x^2+\frac{b}{a}x+\frac{b^2}{4a^2}  = - \frac{c}{a}+\frac{b^2}{4a^2}\)</span></p>
+<p>ja vasen puoli voidaan kirjoittaa lyhyemmin:</p>
+<p><span class="math notranslate nohighlight">\(\left(x+\frac{b}{2a}\right)^2=-\frac{c}{a}+\frac{b^2}{4a^2}\)</span></p>
+<p>Jos tämä on vaikea uskoa, avaa yhtälön vasen puoli binomikaavan avulla. Oikealla puolella voidaan vielä vaihtaa järjestystä:</p>
+<p><span class="math notranslate nohighlight">\(\left(x+\frac{b}{2a}\right)^2=\frac{b^2}{4a^2}-\frac{c}{a}\)</span></p>
+<p>Yhtälön ratkaisu jatkuu helposti ottamalla neliöjuuri molemmista puolista. Neliöjuuri kelpaa sekä plus- että miinusmerkkisenä (käänteisesti: kun luku korotetaan potenssiin kaksi, luvun etumerkillä ei ole väliä, koska lopputulos on kuitenkin aina positiivinen).</p>
+<p><span class="math notranslate nohighlight">\(x+\frac{b}{2a}=\pm\sqrt{\frac{b^2}{4a^2}-\frac{c}{a}}\)</span></p>
+<p>Ratkaistaan yhtälöstä <span class="math notranslate nohighlight">\(x\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(x=\pm\sqrt{\frac{b^2}{4a^2}-\frac{c}{a}}-\frac{b}{2a}\)</span></p>
+<p>Sievennetään neliöjuuren sisällä oleva lauseke laventamalla termi <span class="math notranslate nohighlight">\(-\frac{c}{a}\)</span> luvulla <span class="math notranslate nohighlight">\(4a\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(x=\pm\sqrt{\frac{b^2}{4a^2}-\frac{4ac}{4a^2}}-\frac{b}{2a}\)</span></p>
+<p>Neliöjuuren sisällä olevat termit voi yhdistää, sillä nyt niissä on sama nimittäjä:</p>
+<p><span class="math notranslate nohighlight">\(x=\pm\sqrt{\frac{b^2-4ac}{4a^2}}-\frac{b}{2a}\)</span></p>
+<p>Neliöjuuren sisällä oleva jakolasku voidaan esittää kahden neliöjuuren jakolaskuna:</p>
+<p><span class="math notranslate nohighlight">\(x=\pm\frac{\sqrt{b^2-4ac}}{\sqrt{4a^2}}-\frac{b}{2a}\)</span></p>
+<p>Alempi neliöjuuri häviää sieventämällä:</p>
+<p><span class="math notranslate nohighlight">\(x=\pm\frac{\sqrt{b^2-4ac}}{2a}-\frac{b}{2a}\)</span></p>
+<p>Koska oikean puolen termeissä on sama nimittäjä <span class="math notranslate nohighlight">\(2a\)</span>, ne voidaan yhdistää. Samalla voidaan kirjoittaa oikean puolen termit eri järjestyksessä:</p>
+<p><span class="math notranslate nohighlight">\(x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}\)</span></p>
+</div>
+<p><strong>Esim.</strong> Ratkaise yhtälö <span class="math notranslate nohighlight">\(2x^2-8x+6=0\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Yhtälöstä saadaan ratkaisukaavaan kertoimet <span class="math notranslate nohighlight">\(a=2\)</span>, <span class="math notranslate nohighlight">\(b=-8\)</span>, <span class="math notranslate nohighlight">\(c=6\)</span>. Sijoitetaan ne kaavaan:</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{-(-8)\pm\sqrt{(-8)^2-4\cdot 2 \cdot 6}}{2\cdot 2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(x=\frac{8\pm\sqrt{64-48}}{4}\)</span></p>
+<p><span class="math notranslate nohighlight">\(x=\frac{8\pm\sqrt{16}}{4}\)</span></p>
+<p><span class="math notranslate nohighlight">\(x=\frac{8\pm 4}{4}\)</span></p>
+<p>Saadaan kaksi ratkaisua:</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{8+4}{4}=\frac{12}{4}=3\)</span> ja <span class="math notranslate nohighlight">\(x=\frac{8-4}{4}=\frac{4}{4}=1\)</span>.</p>
+</div>
+<p><strong>Esim.</strong> Ratkaise yhtälö <span class="math notranslate nohighlight">\(\frac{4}{x}+x=8-2x\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Yhtälö täytyy ensin muokata perusmuotoon, jotta saadaan poimittua ratkaisukaavaan kertoimet <span class="math notranslate nohighlight">\(a,b\)</span> ja <span class="math notranslate nohighlight">\(c\)</span>. Aloitetaan kertomalla yhtälön molemmat puolet luvulla <span class="math notranslate nohighlight">\(x\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(4+x^2=8x-2x^2\)</span></p>
+<p>Lisätään molemmille puolille <span class="math notranslate nohighlight">\(2x^2\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(4+3x^2=8x\)</span></p>
+<p>Vähennetään molemmilta puolilta <span class="math notranslate nohighlight">\(8x\)</span> ja järjestellään termejä:</p>
+<p><span class="math notranslate nohighlight">\(3x^2-8x+4=0\)</span></p>
+<p>Nyt kertoimet ovat <span class="math notranslate nohighlight">\(a=3\)</span>, <span class="math notranslate nohighlight">\(b=-8\)</span> ja <span class="math notranslate nohighlight">\(c=4\)</span>. Ratkaisuksi saadaan</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{-(-8)\pm\sqrt{(-8)^2-4\cdot 3 \cdot 4}}{2\cdot 3} = \frac{8\pm\sqrt{64-48}}{6}= \frac{8\pm 4}{6}\)</span>.</p>
+<p>Ratkaisut ovat <span class="math notranslate nohighlight">\(x=\frac{8+4}{6}=\frac{12}{6}=2\)</span> ja <span class="math notranslate nohighlight">\(x=\frac{8-4}{6}=\frac{4}{6}=\frac{2}{3}\)</span>.</p>
+</div>
+<section id="diskriminantti-ja-ratkaisujen-maara">
+<h2>Diskriminantti ja ratkaisujen määrä<a class="headerlink" href="#diskriminantti-ja-ratkaisujen-maara" title="Permalink to this headline">#</a></h2>
+<p>Tarkastellaan tarkemmin ratkaisukaavassa neliöjuuren sisällä olevaa lauseketta <span class="math notranslate nohighlight">\(b^2-4ac\)</span>. Tätä sanotaan yhtälön diskriminantiksi ja merkitään kirjaimella <span class="math notranslate nohighlight">\(D\)</span>. Diskriminantin arvosta nähdään, onko yhtälöllä 0, 1 vai 2 ratkaisua.</p>
+<ul class="simple">
+<li><p>Jos <span class="math notranslate nohighlight">\(D &lt; 0\)</span>, niin neliöjuurta <span class="math notranslate nohighlight">\(\sqrt{D}\)</span> ei ole määritelty. Tällöin yhtälöllä ei ole yhtään ratkaisua.</p></li>
+<li><p>Jos <span class="math notranslate nohighlight">\(D = 0\)</span>, niin neliöjuuren arvo on <span class="math notranslate nohighlight">\(\sqrt{D}=0\)</span> ja ratkaisukaava pelkistyy muotoon <span class="math notranslate nohighlight">\(x=-\frac{b}{2a}\)</span>. Yhtälölle löytyy siis tasan yksi ratkaisu.</p></li>
+<li><p>Jos <span class="math notranslate nohighlight">\(D &gt; 0\)</span>, niin neliöjuuresta saadaan jokin luku <span class="math notranslate nohighlight">\(\sqrt{D}\)</span> sijoitettavaksi ratkaisukaavaan. Yhtälölle on olemassa kaksi ratkaisua.</p></li>
+</ul>
+<p><strong>Esim.</strong> Millä luvun <span class="math notranslate nohighlight">\(b\)</span> arvolla yhtälöllä <span class="math notranslate nohighlight">\(3x^2+bx-2=0\)</span> on tasan yksi ratkaisu?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Kirjoitetaan yhtälölle diskriminantti <span class="math notranslate nohighlight">\(D=b^2-4\cdot 3\cdot 2\)</span>, joka sievenee muotoon <span class="math notranslate nohighlight">\(D=b^2-24\)</span>. Ratkaisuja on tasan yksi silloin, kun <span class="math notranslate nohighlight">\(D=0\)</span>. On siis ratkaistava <span class="math notranslate nohighlight">\(b\)</span> yhtälöstä <span class="math notranslate nohighlight">\(b^2-24=0\)</span>. Ratkaisuksi saadaan <span class="math notranslate nohighlight">\(b=\sqrt{24}\)</span>. Myös <span class="math notranslate nohighlight">\(b=-\sqrt{24}\)</span> toteuttaa saman yhtälön.</p>
+</div>
+<p><strong>Esim.</strong> Mikä pitäisi olla luvun <span class="math notranslate nohighlight">\(c\)</span>, jotta yhtälö <span class="math notranslate nohighlight">\(2x^2-x+c=0\)</span> olisi mahdollista ratkaista?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Diskriminantti on nyt <span class="math notranslate nohighlight">\(D=(-1)^2-4\cdot 2\cdot c\)</span> eli <span class="math notranslate nohighlight">\(D=1-8c\)</span>. Ratkaisuja on olemassa, jos <span class="math notranslate nohighlight">\(1-8c \geq 0\)</span>. Tästä saadaan ehto <span class="math notranslate nohighlight">\(c \leq \frac{1}{8}\)</span>.</p>
+</div>
+</section>
+<section id="erikoistapauksia">
+<h2>Erikoistapauksia<a class="headerlink" href="#erikoistapauksia" title="Permalink to this headline">#</a></h2>
+<p>Jos <span class="math notranslate nohighlight">\(b=0\)</span>, niin yhtälö pelkistyy muotoon <span class="math notranslate nohighlight">\(ax^2+c=0\)</span>. Tällöin yhtälöstä saadaan ratkaistua (vähentämällä molemmilta puolilta luku <span class="math notranslate nohighlight">\(c\)</span>, jakamalla molemmat puolet luvulla <span class="math notranslate nohighlight">\(a\)</span> ja ottamalla molemmista puolista neliöjuuri) <span class="math notranslate nohighlight">\(x=\pm \sqrt{\frac{-c}{a}}\)</span>. Ratkaisuja on olemassa vain, jos <span class="math notranslate nohighlight">\(\frac{-c}{a}\geq 0\)</span>, sillä muuten neliöjuurta ei voi laskea.</p>
+<p><strong>Esim.</strong> Ratkaise yhtälö <span class="math notranslate nohighlight">\(2x^2-18=0\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Ratkaisut ovat <span class="math notranslate nohighlight">\(x=\pm \sqrt{\frac{-(-18)}{2}}= \pm \sqrt{\frac{18}{2}} = \pm \sqrt{9}\)</span>. Ratkaisut ovat siis <span class="math notranslate nohighlight">\(x=3\)</span> ja <span class="math notranslate nohighlight">\(x=-3\)</span>.</p>
+</div>
+<p>Jos <span class="math notranslate nohighlight">\(c=0\)</span>, niin yhtälö pelkistyy muotoon <span class="math notranslate nohighlight">\(ax^2+bx=0\)</span>. Tällöin yhtälön vasemmalla puolella voidaan erottaa <span class="math notranslate nohighlight">\(x\)</span> yhteiseksi tekijäksi, ja yhtälö muuttuu muotoon <span class="math notranslate nohighlight">\(x(ax+b)=0\)</span>. Yhtälö voidaan ratkaista käyttämällä ns. tulon nollasääntöä: jos tulo on nolla, niin väistämättä vähintään yksi sen tekijöistä on nolla. Saadaan siis vaihtoehdot <span class="math notranslate nohighlight">\(x=0\)</span> tai <span class="math notranslate nohighlight">\(ax+b=0\)</span>, josta <span class="math notranslate nohighlight">\(x\)</span> ratkaistaan ensimmäisen asteen yhtälön ratkaisukeinoin.</p>
+<p><strong>Esim.</strong> Ratkaise yhtälö <span class="math notranslate nohighlight">\(x^2+6x=0\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Yhtälön vasemman puolen termien yhteinen tekijä on <span class="math notranslate nohighlight">\(x\)</span>, joten yhtälö muuttuu muotoon <span class="math notranslate nohighlight">\(x(x+6)=0\)</span>. Tästä saadaan tulon nollasäännön perusteella vaihtoehdot <span class="math notranslate nohighlight">\(x=0\)</span> ja <span class="math notranslate nohighlight">\(x+6=0\)</span>. Jälkimmäisestä yhtälöstä ratkeaa <span class="math notranslate nohighlight">\(x=-6\)</span>. Yhtälön <span class="math notranslate nohighlight">\(x^2+6x=0\)</span> ratkaisut ovat siis <span class="math notranslate nohighlight">\(x=0\)</span> ja <span class="math notranslate nohighlight">\(x=-6\)</span>.</p>
+</div>
+</section>
+<section id="sovelluksia">
+<h2>Sovelluksia<a class="headerlink" href="#sovelluksia" title="Permalink to this headline">#</a></h2>
+<p>Toisen asteen yhtälöön päädytään monissa geometrian ongelmissa. Sovellustehtävissä yhtälöt voi hyvin ratkaista esimerkiksi <a class="reference external" href="https://www.wolframalpha.com/">WolframAlphan</a> solve-toiminnolla. Oleellista on, että on osannut tehtävänannon perusteella muodostaa ratkaistavan yhtälön tai yhtälöparin.</p>
+<p>Yksinkertainen esimerkki geometrisesta käsitteestä, josta päädytään toisen asteen yhtälöön, on suorakulmio. Jos suorakulmainen sivujen pituudet ovat <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span>, niin sivujen pituuksia ja suorakulmion pinta-alaa <span class="math notranslate nohighlight">\(A\)</span> yhdistää yhtälö <span class="math notranslate nohighlight">\(A=xy\)</span>. Tällöin jos tiedetään toinen sivuista ja pinta-ala, voidaan toinen sivu esittää pinta-alan ja tunnetun sivun avulla. Vastaavasti jos tunnetaan suorakulmion toinen sivu ja ympärysmitta <span class="math notranslate nohighlight">\(2x+2y\)</span>, voidaan tuntematon sivu esittää tunnetun sivun ja ympärysmitan avulla.</p>
+<p><strong>Esim.</strong> Tontin koko on 600 neliömetriä. Tonttia ympäröi aita, jonka pituus on yhteensä 100 metriä (siis yksi pitkä sivu <span class="math notranslate nohighlight">\(y\)</span> ja yksi lyhyt sivu <span class="math notranslate nohighlight">\(x\)</span> ovat yhteensä 50 metriä). Mitkä ovat tontin sivujen pituudet?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Pinta-alan perusteella tiedetään, että <span class="math notranslate nohighlight">\(600=xy\)</span>. Aidan pituuden perusteella taas tiedetään, että <span class="math notranslate nohighlight">\(x+y=50\)</span>. Jälkimmäisestä yhtälöstä voidaan ratkaista <span class="math notranslate nohighlight">\(y=50-x\)</span>. Sijoittamalla tämä pinta-alan perusteella muodostettuun yhtälöön saadaan <span class="math notranslate nohighlight">\(600=x(50-x)\)</span>. Tästä saadaan sievennettyä toisen asteen yhtälö <span class="math notranslate nohighlight">\(600=50x-x^2\)</span> eli <span class="math notranslate nohighlight">\(x^2-50x+600=0\)</span>.</p>
+<p>WolframAlphalla saadaan ratkaisut <span class="math notranslate nohighlight">\(x=30, x=20\)</span>. Vastaavasti tällöin <span class="math notranslate nohighlight">\(y=50-30=20\)</span> tai <span class="math notranslate nohighlight">\(y=50-20=30\)</span>.</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="yhtalot1.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Ensimmäisen asteen yhtälöt</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="trigonometriaa.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Trigonometriaa</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

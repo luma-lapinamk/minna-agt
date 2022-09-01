@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Ympyrä &#8212; Algebra, geometria, trigonometria</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Monikulmiot" href="monikulmiot.html" />
+    <link rel="prev" title="Yleiset trigonometriset funktiot" href="trigo_funktiot.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Algebra, geometria, trigonometria</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Algebra, geometria ja trigonometria
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Perusteita
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="potenssit.html">
+   Potenssilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="juuret.html">
+   Juurilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="polynomit.html">
+   Polynomit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Yhtälöt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot.html">
+   Yhtälöiden ratkaisu
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot1.html">
+   Ensimmäisen asteen yhtälöt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot2.html">
+   Toisen asteen yhtälöt
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigonometriaa.html">
+   Trigonometriaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suorakulmaiset.html">
+   Suorakulmaiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yleiset.html">
+   Yleiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigo_funktiot.html">
+   Yleiset trigonometriset funktiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasogeometriaa
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Ympyrä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="monikulmiot.html">
+   Monikulmiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Avaruusgeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lierio_kartio.html">
+   Lieriö ja kartio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pallo.html">
+   Pallo
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Verrannollisuus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="verrannollisuus.html">
+   Verrannollisuus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mittakaavat.html">
+   Mittakaavat
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Matemaattisia malleja
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="malleja.html">
+   Matemaattisia malleja
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lineaarinen.html">
+   Lineaarinen malli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="toisenasteen.html">
+   Toisen asteen polynomimalli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinifunktio.html">
+   Sinifunktio
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/luma-lapinamk/minna-agt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/ympyrat.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#peruskasitteet">
+   Peruskäsitteet
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pituus-ja-leveyspiirit">
+   Pituus- ja leveyspiirit
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Ympyrä</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#peruskasitteet">
+   Peruskäsitteet
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pituus-ja-leveyspiirit">
+   Pituus- ja leveyspiirit
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="ympyra">
+<h1>Ympyrä<a class="headerlink" href="#ympyra" title="Permalink to this headline">#</a></h1>
+<p>Ympyrä kuuluu tasogeometrian perusasioihin. Tarkastellaan aluksi ympyrään liittyviä käsitteitä ja laskukaavoja. Sen jälkeen sovelletaan näitä tietoja maapallon pituus- ja leveyspiireihin liittyvissä laskuissa.</p>
+<section id="peruskasitteet">
+<h2>Peruskäsitteet<a class="headerlink" href="#peruskasitteet" title="Permalink to this headline">#</a></h2>
+<p>Ympyrän kehä on niiden samassa tasossa olevien pisteiden joukko, joiden etäisyys määrätystä tason pisteestä (ympyrän keskipisteestä) on yhtä suuri. Ympyrä on kehän rajoittama tason osa. Keskipisteen ja kehällä olevan pisteen välinen jana on säde. Säteen pituus on kuvassa merkitty kirjaimella <span class="math notranslate nohighlight">\(r\)</span> (radius). Kahden kehällä olevan pisteen välinen jana on jänne, ja keskipisteen kautta kulkeva jänne on halkaisija. Halkaisijaa merkitään kuvassa kirjaimella <span class="math notranslate nohighlight">\(d\)</span> (diameter) ja sen pituus on <span class="math notranslate nohighlight">\(d=2r\)</span>. Jänne jakaa ympyrän kahteen segmenttiin.</p>
+<p><img alt="Ympyrä" src="_images/ympyra.png" /></p>
+<p>Ympyrän kehän pituus <span class="math notranslate nohighlight">\(p\)</span> (perimeter) on <span class="math notranslate nohighlight">\(p=2\pi r\)</span> ja ympyrän pinta-ala on <span class="math notranslate nohighlight">\(A=\pi r^2\)</span> tai halkaisijan avulla kirjoitettuna <span class="math notranslate nohighlight">\(A=\frac{\pi d^2}{4}\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Perustelut</p>
+<p>Ympyrän kehän ja halkaisijan suhde <span class="math notranslate nohighlight">\(\pi=\frac{p}{2r}\)</span> on tunnettu tuhansia vuosia, joten emme kyseenalaista tai perustele sitä tässä. Ympyrän pinta-alan kaavan voi perustella esimerkiksi seuraavalla tavalla:</p>
+<p><img alt="Ympyrä jaettuna suikaleisiin" src="_images/ympyra_tikkataulu.png" /></p>
+<ul class="simple">
+<li><p>jaetaan ympyrä tikkataulun tapaan kapeiksi suikaleiksi</p></li>
+<li><p>leikataan ympyrä auki säteen suuntaisesti</p></li>
+<li><p>levitetään suikaleet auki vierekkäin, jolloin ne muodostavat karkeasti suorakulmaisen kolmion</p></li>
+<li><p>suikaleiden leveys on yhteensä <span class="math notranslate nohighlight">\(r\)</span>, ja pisimmän suikaleen pituus on sama kuin ympyrän kehän pituus eli <span class="math notranslate nohighlight">\(2\pi r\)</span></p></li>
+<li><p>jos ympyrä jaettaisiin äärettömään moneen, äärettömän kapeaan suikaleeseen, ne muodostaisivat auki levitettynä suorakulmaisen kolmion (merkitty kuvaan punaisella), jonka kateettien pituudet ovat <span class="math notranslate nohighlight">\(r\)</span> ja <span class="math notranslate nohighlight">\(2\pi r\)</span></p></li>
+<li><p>suorakulmaisen kolmion pinta-ala on <span class="math notranslate nohighlight">\(A=\frac{1}{2}\cdot \text{kanta}\cdot \text{korkeus}\)</span>, joten kuvan tapauksessa <span class="math notranslate nohighlight">\(A=\frac{1}{2} r\cdot 2\pi r = \pi r^2\)</span>.</p></li>
+</ul>
+</div>
+<p>Kaksi sädettä jakaa ympyrän kahteen sektoriin. Säteiden väliin jää kaksi keskuskulmaa: <span class="math notranslate nohighlight">\(\alpha\)</span> ja <span class="math notranslate nohighlight">\(360^{\circ}-\alpha\)</span>. Keskuskulmaa <span class="math notranslate nohighlight">\(\alpha\)</span> vastaavan kaaren pituus <span class="math notranslate nohighlight">\(p_{\alpha}\)</span> on keskuskulmaa vastaava osa koko ympyrän kehästä: <span class="math notranslate nohighlight">\(p_{\alpha}=\frac{\alpha}{360}\cdot 2\pi r\)</span>.</p>
+<p>Vastaavasti sektorin pinta-ala <span class="math notranslate nohighlight">\(A_{\text{sek}}\)</span> on keskuskulmaa <span class="math notranslate nohighlight">\(\alpha\)</span> vastaava osuus koko ympyrän alasta: <span class="math notranslate nohighlight">\(A_{\text{sek}}=\frac{\alpha}{360}\cdot \pi r^2\)</span>.</p>
+<p><img alt="Segmentti" src="_images/segmentti.png" /></p>
+<p>Segmentin pinta-ala <span class="math notranslate nohighlight">\(A_{\text{seg}}\)</span> saadaan, kun sektorin pinta-alasta vähennetään sen kolmion ala, joka muodostuu kahden säteen ja jänteen väliin. Laskusääntö pätee silloin, kun sektorin keskuskulma on alle 180 astetta. Kolmion pinta-ala on kahden sivun pituuden tulo, jaettuna kahdella ja kerrottuna sivujen välisen kulman sinillä. Siis segmentin alaksi saadaan</p>
+<p><span class="math notranslate nohighlight">\(A_{\text{seg}}=\frac{\alpha}{360}\cdot \pi r^2 -\frac{1}{2}r^2 \sin{\alpha}\)</span>.</p>
+<p>Ympyrän kehällä olevasta pisteestä lähtevien kahden jänteen välinen kulma on nimeltään kehäkulma <span class="math notranslate nohighlight">\(\beta\)</span> (kuvassa alla vasemmalla). Kehäkulman suuruus on puolet vastaavasta keskuskulmasta <span class="math notranslate nohighlight">\(\alpha\)</span>, siis <span class="math notranslate nohighlight">\(\beta=\frac{\alpha}{2}\)</span>.</p>
+<p>Kun ympyrän ulkopuolelta olevasta pisteestä piirretään ympyrälle tangentit (eli ympyrää yhdessä pisteessä sivuavat suorat), tangenttien väliin jää tangenttikulma <span class="math notranslate nohighlight">\(\beta\)</span>. Tangenttikulman ja sitä vastaavan keskuskulman summa on <span class="math notranslate nohighlight">\(\alpha+\beta=180^{\circ}\)</span>.</p>
+<p><img alt="Ympyrään liittyviä kulmia" src="_images/ympyra_kulmat.png" /></p>
+<p>Eräs käyttökelpoinen laskusääntö ympyrälle on sekanttilause. Sen mukaan minkä tahansa (ympyrän sisä- tai ulkopuolella olevan) pisteen <span class="math notranslate nohighlight">\(P\)</span> kautta kehän pisteiden <span class="math notranslate nohighlight">\(A\)</span> ja <span class="math notranslate nohighlight">\(B\)</span> sekä kehän pisteiden <span class="math notranslate nohighlight">\(C\)</span> ja <span class="math notranslate nohighlight">\(D\)</span> väliin piirretyille jänteille pätee <span class="math notranslate nohighlight">\(PA\cdot PB=PC\cdot PD\)</span></p>
+<p><img alt="Sekanttilause" src="_images/sekanttilause.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Sekanttilauseen perustelu</p>
+<p><img alt="Sekanttilauseen perustelu" src="_images/sekanttilause_perustelu.png" /></p>
+<p>Kuvan kulmat <span class="math notranslate nohighlight">\(\alpha\)</span> ovat yhtä suuret, koska ne ovat ristikulmat. Kuvan kulmat <span class="math notranslate nohighlight">\(\beta\)</span> ovat yhtä suuret, koska ne ovat samaa kaarta (kehän väli CB) vastaavat kehäkulmat. Kolmioiden APC ja DPB viimeistenkin kulmien on oltava yhtä suuret, koska kolmion kulmien summa on aina <span class="math notranslate nohighlight">\(180^{\circ}\)</span> ja kolmioissa on jo kaksi yhtä suurta kulmaa.</p>
+<p>Kun kahdessa kolmiossa on yhtä suuret kulmat, kolmiot ovat yhdenmuotoisia ja tällöin niiden sivujen pituuksien suhteet ovat samat:</p>
+<p><span class="math notranslate nohighlight">\(\frac{PA}{PC}=\frac{PD}{PB}\)</span>.</p>
+<p>Yhtälö voidaan esittää muodossa <span class="math notranslate nohighlight">\(PA\cdot PB = PC \cdot PD\)</span>.</p>
+</div>
+<p><strong>Esim.</strong> Kuinka suuri on kuvan ympyrän halkaisija <span class="math notranslate nohighlight">\(CD\)</span>, kun tiedetään, että <span class="math notranslate nohighlight">\(PC=6\)</span> ja <span class="math notranslate nohighlight">\(PA=PB=2\)</span>?</p>
+<p><img alt="Sekanttilause, esimerkki" src="_images/sekanttilause_esim.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Sekanttilauseen perusteella <span class="math notranslate nohighlight">\(PA\cdot PB=PC\cdot PD\)</span>, josta saadaan <span class="math notranslate nohighlight">\(PD=\frac{PA\cdot PB}{PC}=\frac{2\cdot 2}{6}=\frac{4}{6}=\frac{2}{3}\)</span>. Halkaisija on siis <span class="math notranslate nohighlight">\(CD=PC+PD=6+\frac{2}{3}=\frac{18}{3}+\frac{2}{3}=\frac{20}{3}\)</span>.</p>
+</div>
+</section>
+<section id="pituus-ja-leveyspiirit">
+<h2>Pituus- ja leveyspiirit<a class="headerlink" href="#pituus-ja-leveyspiirit" title="Permalink to this headline">#</a></h2>
+<p>Maapallon pituuspiirit (longitude) tai pituusasteet määritellään kulmina <span class="math notranslate nohighlight">\(\lambda\)</span> sovitun ns. nollameridiaanin suhteen. Nollameridiaanin sijainniksi on vuonna 1884 valittu Greenwichin kuninkaallisen tähtitornin kautta kulkeva pituuspiiri. Pituuspiirit ovat napojen kautta kulkevia isoympyröitä, eli pisimpiä mahdollisia pallon pinnalla kulkevia ratoja.</p>
+<p>Leveyspiirit (latitude) tai leveysasteet määritellään kulmina <span class="math notranslate nohighlight">\(\phi\)</span> päiväntasaajalta pohjoiseen tai etelään. Leveyspiirit ovat päiväntasaajan suuntaisia pikkuympyröitä. Päiväntasaajaa lukuunottamatta ne ovat siis lyhyempiä kuin pituuspiirit.</p>
+<p><img alt="Pituus- ja leveyspiirit" src="_images/pituus_leveys.png" /></p>
+<p>Seuraavat laskuesimerkit pätevät sillä oletuksella, että maapallo olisi todella pallon muotoinen. Oikeasti näin ei ole. Maapallon pyöriminen akselinsa ympäri muokkaa hieman maapallon muotoa siten, että maapallo on aavistuksen litistynyt. Leveyspiireihin liittyy myös ajallista vaihtelua. Pohjoisen napapiirin leveysasteet ovat tällä hetkellä noin <span class="math notranslate nohighlight">\(66^{\circ}~33'~39''\)</span>. Napapiiri määräytyy maapallon pyörimisakselin kaltevuuden perusteella, ja se puolestaan vaihtelee säännöllisin väliajoin maan, auringon ja kuun välisten vuorovaikutusten mukaan.</p>
+<p>Lyhin reitti maapallolla pisteestä toiseen on kahden pisteen välistä isoympyrää pitkin. Laskuihin sopiva likiarvo isoympyrän pituudelle, eli maapallon ympärysmitalle, on 40 000 km. Maapallon säteelle käytetään yleensä arvoa 6370-6380 km. Laskemalla säteen avulla ympärysmitta kaavalla <span class="math notranslate nohighlight">\(p=2 \pi r\)</span> saataisiin hieman eri arvo.</p>
+<p><strong>Esim.</strong> Helsinki ja Ateena sijaitsevat likimain samalla pituuspiirillä. Helsingin leveyspiiri on 60° pohjoista leveyttä ja Ateenan 38° pohjoista leveyttä. Mikä on kaupunkien etäisyys?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p><img alt="Helsinki - Ateena" src="_images/hki_ateena.png" /></p>
+<p>Kaupunkien leveyspiirien välinen kulma on <span class="math notranslate nohighlight">\(\alpha=60^{\circ}-38^{\circ}=22^{\circ}\)</span>. Kaupunkien välinen etäisyys on kulmaa vastaava osuus isoympyrän kehän pituudesta <span class="math notranslate nohighlight">\(p\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(\frac{22^{\circ}}{360^{\circ}}\cdot 40000~\text{km} = 2440~\text{km}\)</span>.</p>
+</div>
+<p>Leveyspiiriä pitkin kuljettaessa matkan pituus riippuu sekä pisteiden pituuspiirien välisestä kulmasta että leveyspiirin sijainnista. Eri leveyspiirithän ovat eri mittaisia. On siis ensin laskettava maapallon ympärysmitta annetun leveyspiirin kohdalla.</p>
+<p><strong>Esim.</strong> Helsinki ja Oslo sijaitsevat likimain leveyspiirillä 60°. Oslo sijaitsee pituuspiirillä 10.4° ja Helsinki pituuspiirillä 25.0°. Mikä on kaupunkien etäisyys?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p><img alt="Helsinki - Oslo" src="_images/hki_oslo.png" /></p>
+<p>Lasketaan ensin 60° leveyspiiriä vastaavan pikkuympyrän säde <span class="math notranslate nohighlight">\(r\)</span>. Vasempaan kuvaan täydennetylle suorakulmaiselle kolmiolle pätee <span class="math notranslate nohighlight">\(\sin{30^{\circ}}=\frac{r}{R}\)</span>, missä <span class="math notranslate nohighlight">\(R=6370~\text{km}\)</span> on maapallon säde. Yhtälöstä saadaan</p>
+<p><span class="math notranslate nohighlight">\(r=R \sin{30^{\circ}}= 6370~\text{km} \cdot \sin{30^{\circ}}=3185~\text{km}\)</span>.</p>
+<p>Kaupunkien välinen etäisyys <span class="math notranslate nohighlight">\(s\)</span> on nyt pituuspiirien välistä kulmaa <span class="math notranslate nohighlight">\(\alpha\)</span> vastaava osuus pikkuympyrän kehän pituudesta:</p>
+<p><span class="math notranslate nohighlight">\(\alpha=25.0^{\circ}-10.4^{\circ}=14.6^{\circ}\)</span>,</p>
+<p><span class="math notranslate nohighlight">\(s=\frac{\alpha}{360^{\circ}}\cdot 2\pi r=\frac{14.6^{\circ}}{360^{\circ}}\cdot 2\pi \cdot 3185~\text{km}=812~\text{km}\)</span>.</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="trigo_funktiot.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Yleiset trigonometriset funktiot</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="monikulmiot.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Monikulmiot</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
