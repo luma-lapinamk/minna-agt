@@ -33,6 +33,4 @@ Vaihesiirto $\phi$ ei suoraan tarkoita sitä, kuinka paljon funktion kuvaaja on 
 
 Lauseke on siis $f(t)=2\sin{(\frac{\pi}{3} t-\frac{\pi}{6})}+1$. Ratkaisun voi vielä tarkistaa piirtämällä yhtälöstä kuvaajan esimerkiksi [GeoGebralla](https://www.geogebra.org/).
 
-
-
 :::

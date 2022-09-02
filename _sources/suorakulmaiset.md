@@ -96,10 +96,10 @@ Tarkistetaan, pitääkö Pythagoraan lause paikkansa näillä arvoilla. Kateetti
 
 **Esim.** Millä luvun $a > 2 $ arvolla kolmio, jonka sivut ovat $x$, $2x$ ja $ax$, olisi suorakulmainen?
 
-:::{admonition}
+:::{admonition} Ratkaisu
 :class: tip, dropdown
 
-Kirjoitetaan Pythagoraan lause ja ratkaistaan yhtälöstä kerroin $a$. Huomaa, että nyt kirjain $a$ ei tarkoita kateettia, vaan kerrointa kolmion sivun pituudessa. Koska tehtävässä on kerrottu, että $a > 2$, niin sivu $ax$ on pitempi kuin kumpikaan muista annetuista sivuista, ja siten kolmion hypotenuusta. Kirjoitetaan Pythagoraan lause ja ratkaistaan $a$:
+Kirjoitetaan Pythagoraan lause ja ratkaistaan yhtälöstä kerroin $a$. Huomaa, että nyt kirjain $a$ ei tarkoita kateettia, vaan kerrointa kolmion sivun pituudessa. Koska tehtävässä on kerrottu, että $a > 2$, niin sivu $ax$ on pitempi kuin kumpikaan muista annetuista sivuista, ja siten kolmion hypotenuusa. Kirjoitetaan Pythagoraan lause ja ratkaistaan $a$:
 
 $(ax)^2 = x^2 + (2x)^2$
 

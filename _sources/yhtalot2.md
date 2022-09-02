@@ -2,7 +2,7 @@
 
 Yhtälö, joka saadaan muokattua muotoon $ax^2+bx+c=0$, on toisen asteen yhtälö. Yhtälö ei suoraan ratkea samoilla menetelmillä kuin ensimmäisen asteen yhtälö, mutta yhtälölle on mahdollista johtaa ratkaisukaava:
 
-$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$.
+$\Large{x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}}$.
 
 :::{admonition} Ratkaisukaavan perustelu
 :class: tip, dropdown
