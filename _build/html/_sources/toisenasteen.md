@@ -1,11 +1,57 @@
-<!-- #region -->
+---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+  
+---
+
 # Toisen asteen polynomimalli
 
 Toisen asteen polynomimalli on muotoa $y=ax^2+bx+c$. Tällaisen mallin kuvaama asia ei kasva tai pienene tasaisesti, vaan kasvu- tai pienenemisnopeus vaihtelee. Lisäksi mallilla on jokin minimi- tai maksimikohta. Tällaiset matemaattiset mallit liittyvätkin usein tapauksiin, joissa halutaan löytää yhtälön kuvaamalle ilmiölle mahdollisimman pieni tai suuri arvo.
 
 ## Funktion muoto ja ääriarvot
 
-Funktion kuvaaja on ylöspäin aukeava paraabeli (”kuoppa”), jos $a>0$, ja alaspäin aukeava paraabeli (”mäki”), jos $a<0$. Ylöspäin aukeavalle paraabelille voidaan löytää pienin mahdollinen arvo (”kuopan pohja”), ja alaspäin aukeavalle paraabelille voidaan löytää suurin mahdollinen arvo (”mäen huippu”).
+Funktion kuvaaja on ylöspäin aukeava paraabeli (”kuoppa”), jos $a>0$, ja alaspäin aukeava paraabeli (”mäki”), jos $a<0$. Ylöspäin aukeavalle paraabelille voidaan löytää pienin mahdollinen arvo (”kuopan pohja”), ja alaspäin aukeavalle paraabelille voidaan löytää suurin mahdollinen arvo (”mäen huippu”). Seuraavassa interaktiivisessa kuvaajassa voit kokeilla, miten funktion kuvaajan muoto muuttuu, kun vakioita $a$, $b$ ja $c$ muutetaan.
+
+```{code-cell} ipython3
+:tags: [hide-input, hide-output, thebe-init]
+
+# Toisen asteen polynomifunktio
+
+import matplotlib.pyplot as plt
+import numpy as np
+import ipywidgets as widgets
+
+def polynomin_piirto():
+    interactive_plot = widgets.interactive(paraabeli, a=widgets.FloatSlider(value=1, min=-5, max=5, step=1, description = "a"),
+                                           b=widgets.FloatSlider(value=1, min=-5, max=5, step=1, description = "b"), 
+                                           c=widgets.FloatSlider(value=0, min=-5, max=5, step=1, description = "c"))                        
+    return interactive_plot
+
+
+def paraabeli(a,b,c):
+    x = np.linspace(-10, 10, 100)
+    kayra = a*x**2+b*x+c
+    plt.plot(x, kayra, color="red")
+    plt.xlabel("Toisen asteen polynomifunktio")
+    plt.show()
+
+```
+
+Osoita hiirellä raketin kuvaa ja valitse "Live Code". Sen jälkeen paina run!
+
+```{code-cell} ipython3
+
+interaktiivinen_graafi = polynomin_piirto()
+interaktiivinen_graafi
+
+```
 
 Minimi- tai maksimikohdan x-koordinaatti voidaan laskea yhtälöstä 
 
@@ -81,7 +127,3 @@ Tuotto $y$ saadaan, kun vähennetään kulut tuloista: $y=50 000 x-100x^2-2 500 
 Tämän funktion maksimikohta saadaan yhtälöstä $2ax+b=0$ eli $-2⋅100\cdot x+55 000=0$, josta ratkeaa $x=\frac{-55 000}{-200}=275$.
 Hinnan pitäisi siis olla 275 €. Tällöin tuotto on $y=-100\cdot 275^2+55 000\cdot275-2 500 000=5 062 500$.
 :::
-
-
-
-<!-- #endregion -->

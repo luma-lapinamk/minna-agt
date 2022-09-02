@@ -182,26 +182,26 @@ Sievennä lauseke $\left(\frac{6x}{3y}\right)^2$
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-$\left(\frac{6x}{3y}\right)^2=\frac{(6x)^2}{(3y)^2} =\frac{6^2 x^2}{(3^2 y^2)}=\frac{36x^2}{9y^2} =4 \frac{x^2}{y^2}$
+$\Large{\left(\frac{6x}{3y}\right)^2=\frac{(6x)^2}{(3y)^2} =\frac{6^2 x^2}{3^2 y^2}=\frac{36x^2}{9y^2} =4 \frac{x^2}{y^2}}$
 
 :::
 
-Sievennä lauseke $\left(\frac{x^4 y^{-5}}{n^4 k^2}\right)^3 \cdot \frac{n^3 k^5}{(xy)^2}$
+Sievennä lauseke $\Large{\left(\frac{x^4 y^{-5}}{n^4 k^2}\right)^3 \cdot \frac{n^3 k^5}{(xy)^2}}$
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-$\frac{x^{12} y^{-15}}{n^{12}k^6} \cdot \frac{n^3 k^5}{x^2 y^2} = \frac{x^{12}}{x^2}\frac{y^{-15}}{y^2}\frac{n^3}{n^{12}}\frac{k^5}{k^6} = x^{10} y^{-17} n^{-9} k^{-1} = \frac{x^{10}}{y^{17}n^9 k}$
+$\Large{\frac{x^{12} y^{-15}}{n^{12}k^6} \cdot \frac{n^3 k^5}{x^2 y^2} = \frac{x^{12}}{x^2}\frac{y^{-15}}{y^2}\frac{n^3}{n^{12}}\frac{k^5}{k^6} = x^{10} y^{-17} n^{-9} k^{-1} = \frac{x^{10}}{y^{17}n^9 k}}$
 
 
 :::
 
-Sievennä lauseke $\frac{x^5 z}{z^6 x^3}$
+Sievennä lauseke $\Large{\frac{x^5 z}{z^6 x^3}}$
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-$\frac{x^5 z}{z^6 x^3}=\frac{x^5}{x^3} \frac{z}{z^6} = x^{5-3} z^{1-6} =x^2 z^{-5} = \frac{x^2}{z^5}$
+$\Large{\frac{x^5 z}{z^6 x^3}=\frac{x^5}{x^3} \frac{z}{z^6} = x^{5-3} z^{1-6} =x^2 z^{-5} = \frac{x^2}{z^5}}$
 
 :::
 

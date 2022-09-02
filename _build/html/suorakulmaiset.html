@@ -520,6 +520,15 @@ title="Print to PDF"
 <p>Tarkistetaan, pitääkö Pythagoraan lause paikkansa näillä arvoilla. Kateettien neliöiden summa on <span class="math notranslate nohighlight">\(4^2 + 5^2 = 16+25 = 41\)</span>. Hypotenuusan neliö on <span class="math notranslate nohighlight">\(7^2 = 49\)</span>. Luvut eivät ole yhtä suuret, joten kolmio ei ole suorakulmainen.</p>
 </div>
 <p><strong>Esim.</strong> Millä luvun <span class="math notranslate nohighlight">\(a &gt; 2 \)</span> arvolla kolmio, jonka sivut ovat <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(2x\)</span> ja <span class="math notranslate nohighlight">\(ax\)</span>, olisi suorakulmainen?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Kirjoitetaan Pythagoraan lause ja ratkaistaan yhtälöstä kerroin <span class="math notranslate nohighlight">\(a\)</span>. Huomaa, että nyt kirjain <span class="math notranslate nohighlight">\(a\)</span> ei tarkoita kateettia, vaan kerrointa kolmion sivun pituudessa. Koska tehtävässä on kerrottu, että <span class="math notranslate nohighlight">\(a &gt; 2\)</span>, niin sivu <span class="math notranslate nohighlight">\(ax\)</span> on pitempi kuin kumpikaan muista annetuista sivuista, ja siten kolmion hypotenuusa. Kirjoitetaan Pythagoraan lause ja ratkaistaan <span class="math notranslate nohighlight">\(a\)</span>:</p>
+<p><span class="math notranslate nohighlight">\((ax)^2 = x^2 + (2x)^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(a^2 x^2 = x^2 + 4x^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(a^2 x^2 = 5x^2 \)</span></p>
+<p><span class="math notranslate nohighlight">\(a^2 = 5\)</span></p>
+<p><span class="math notranslate nohighlight">\(a= \sqrt{5}\)</span></p>
+</div>
 <p><strong>Esim.</strong> Suorakulmaisen kolmion hypotenuusa on 3 kertaa niin pitkä kuin toinen kateetti. Selvitä toisen kateetin pituus.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
@@ -632,7 +641,7 @@ Pisteiden etäisyys origosta saadaan Pythagoraan lauseella, kun täydennetään 
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
+            repo: "luma-lapinamk/minna-agt",
             ref: "master",
         },
         codeMirrorConfig: {
