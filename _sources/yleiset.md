@@ -95,7 +95,7 @@ $\frac{\sin{\alpha}}{a}=\frac{\sin{\beta}}{b}=\frac{\sin{\gamma}}{c}$.
 
 Sinilause voidaan esittää myös muodossa
 
-\frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}=\frac{c}{\sin{\gamma}}$.
+$\frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}=\frac{c}{\sin{\gamma}}$.
 
 Käytännössä sinilauseesta käytetään vain osaa kerrallaan. Jos tunnetaan kaksi sivua ja toisen vastainen kulma, voidaan ratkaista toisenkin sivun vastainen kulma. Vastaavasti jos tunnetaan kaksi kulmaa ja toista vastapäätä olevan sivun pituus, voidaan toisenkin sivun pituus selvittää. Kolmaskin kulma tietysti selviää, kun muistetaan, että kolmiot kulmat ovat yhteensä 180 astetta.
 
@@ -177,7 +177,7 @@ Oikeanpuoleisesta kolmiosta saadaan vastaavasti
 
 $(c-b \cos{\alpha})^2 + h^2 = a^2$, josta saadaan binomikaavan avulla
 
-c^2 -2bc \cos{\alpha} + b^2 \cos^2{\alpha} + h^2 = a^2$
+$c^2 -2bc \cos{\alpha} + b^2 \cos^2{\alpha} + h^2 = a^2$
 
 ja edelleen
 
