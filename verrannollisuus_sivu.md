@@ -1,5 +1,5 @@
 <!-- #region -->
-# Verrannollisuus
+# Suoraan ja kääntäen verrannollisuus
 
 Verrannollisuus on käsite, jonka avulla voidaan vastata esimerkiksi seuraavanlaisiin kysymyksiin:
 

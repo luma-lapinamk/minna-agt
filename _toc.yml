@@ -30,7 +30,7 @@ parts:
     - file: pallo
   - caption: Verrannollisuus
     chapters:
-    - file: verrannollisuus
+    - file: verrannollisuus_sivu
     - file: mittakaavat
   - caption: Matemaattisia malleja
     chapters:
