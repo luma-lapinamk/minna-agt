@@ -50,11 +50,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Ensimmäisen asteen yhtälöt" href="yhtalot1.html" />
+    <link rel="next" title="Esimerkkejä yhtälöistä" href="yhtalot1.html" />
     <link rel="prev" title="Polynomit" href="polynomit.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -150,7 +152,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="yhtalot1.html">
-   Ensimmäisen asteen yhtälöt
+   Esimerkkejä yhtälöistä
   </a>
  </li>
  <li class="toctree-l1">
@@ -227,8 +229,8 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="verrannollisuus.html">
-   Verrannollisuus
+  <a class="reference internal" href="verrannollisuus_sivu.html">
+   Suoraan ja kääntäen verrannollisuus
   </a>
  </li>
  <li class="toctree-l1">
@@ -459,11 +461,15 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="yhtaloiden-ratkaisu">
 <h1>Yhtälöiden ratkaisu<a class="headerlink" href="#yhtaloiden-ratkaisu" title="Permalink to this headline">#</a></h1>
-<p>Lähes kaikissa matematiikan ongelmissa päädytään yhtälöiden ratkaisuun. Yhtälön muodostaminen vaatii taitoa muuttaa sanallisessa muodossa esitettyjä ongelmia lausekkeiksi. Lausekkeita puolestaan muokataan potenssilukujen, juurien ja polynomien laskusäännöillä. Lausekkeista muodostuu yhtälö, jossa esiintyy jotakin tuntematonta suuretta symboloiva kirjain.</p>
-<p>Matemaattisesti yhtälön voi määritellä seuraavasti: Yhtälössä on yhtäsuuruusmerkin eri puolilla kaksi lauseketta, joiden arvo on yhtä suuri. Yhtälöissä on vähintään yksi kirjain, jota vastaavaa lukuarvoa ei aluksi tunneta, esimerkiksi <span class="math notranslate nohighlight">\(x\)</span>. Yhtälön ratkaiseminen tarkoittaa sitä, että etsitään tälle kirjaimelle sellainen lukuarvo, että yhtälön vasen ja oikea puoli ovat yhtä suuret. Mahdollisia muita kirjaimia pidetään tunnettuina, vaikkei niille olisi kerrottu mitään lukuarvoa.</p>
-<p><strong>Esim.</strong> Yhtälöitä ovat esimerkiksi <span class="math notranslate nohighlight">\(13x+70=200\)</span> ja <span class="math notranslate nohighlight">\(V=\pi r^2 h\)</span>.</p>
+<p>Lähes kaikissa matematiikan ongelmissa päädytään yhtälöiden ratkaisuun. Yhtälön muodostaminen vaatii taitoa muuttaa sanallisessa muodossa esitettyjä systeemejä lausekkeiksi. Lausekkeita puolestaan muokataan potenssilukujen, juurien ja polynomien laskusäännöillä. Lausekkeista muodostuu yhtälö, jossa esiintyy jotakin tuntematonta suuretta symboloiva kirjain.</p>
+<p>Matemaattisesti yhtälön voi määritellä seuraavasti: Yhtälössä on yhtäsuuruusmerkin eri puolilla kaksi lauseketta, joiden arvo on yhtä suuri.  Yhtälöissä on vähintään yksi kirjain, jota vastaavaa lukuarvoa ei aluksi tunneta, esimerkiksi <span class="math notranslate nohighlight">\(x\)</span>. Yhtälön ratkaiseminen tarkoittaa sitä, että etsitään tälle kirjaimelle sellainen lukuarvo, että yhtälön vasen ja oikea puoli ovat yhtä suuret. Mahdollisia muita kirjaimia pidetään tunnettuina, vaikkei niille olisi kerrottu mitään lukuarvoa.</p>
+<p>Tässä luvussa käsitellään yhtälönratkaisun yleisiä periaatteita. Esimerkkejä erityyppisistä yhtälöistä on seuraavassa luvussa.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Yhtälöitä ovat esimerkiksi <span class="math notranslate nohighlight">\(13x+70=200\)</span> ja <span class="math notranslate nohighlight">\(V=\pi r^2 h\)</span>.</p>
 <p>Ensimmäinen yhtälö sopii vaikkapa seuraavanlaiseen ongelmaan: jos tuntipalkka on 13 euroa ja lisäksi äkillisesti ilmoitetusta työvuorosta saa 70 euron hälytysrahan, niin kuinka monen tunnin työvuorolla tienaisi 200 euroa?</p>
 <p>Toinen yhtälö taas voisi kuvata tynnyrin tilavuutta <span class="math notranslate nohighlight">\(V\)</span>, kun tynnyrin pohjan säde on <span class="math notranslate nohighlight">\(r\)</span> ja tynnyrin korkeus on <span class="math notranslate nohighlight">\(h\)</span>. Mikä tahansa kirjaimista voidaan määritellä tuntemattomaksi. Jos pohjan säde on 30 cm ja tynnyriin pitäisi mahtua 600 litraa vettä, kuinka korkea tynnyrin pitäisi olla? Entä kuinka paljon vettä täytyy valuttaa hanasta, jos kyseessä onkin lasten uima-allas, jonka korkeus on 40 cm ja pohjan säde 2 metriä?</p>
+<p>Tässä vaiheessa näitä yhtälöitä ei vielä tarvitse osata ratkaista. Voit kuitenkin katsoa ratkaisut alta.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Ensimmäisen yhtälön ratkaisu:</p>
@@ -480,21 +486,54 @@ title="Print to PDF"
 <p>Ylläoleva ratkaisu on yhtälön tarkka ratkaisu. Vastaukselle saa likiarvon desimaalilukuna laskimella. Tulokseksi tulee <span class="math notranslate nohighlight">\(h \approx 2.12\)</span> m. <a class="reference external" href="https://wolframalpha.com">WolframAlpha</a> -laskimeen lasku kirjoitettaisiin muodossa: 0.6/(pi*0.3^2)</p>
 <p>Jos tuntemattomana onkin <span class="math notranslate nohighlight">\(V\)</span>, saman yhtälön ratkaisu on suoraviivainen kertolasku: vettä tarvitaan <span class="math notranslate nohighlight">\(V= \pi\cdot 2^2 \cdot 0.4 =5.03\)</span> kuutiometriä eli yli 5000 litraa.</p>
 </div>
+</div>
 <section id="yhtalon-ratkaisun-periaate">
 <h2>Yhtälön ratkaisun periaate<a class="headerlink" href="#yhtalon-ratkaisun-periaate" title="Permalink to this headline">#</a></h2>
-<p>Yhtälön ratkaisu perustuu siihen, että tuntematon kirjain pyritään saamaan sopivilla toimenpiteillä yksin jommallekummalle puolelle yhtäsuuruusmerkkiä. Nämä toimenpiteet pitää aina tehdä yhtä aikaa yhtälön kummallekin puolille. Esimerkkejä näistä toimenpiteistä ovat</p>
+<p>Yhtälön ratkaisu perustuu siihen, että tuntematon kirjain pyritään saamaan sopivilla toimenpiteillä yksin jommallekummalle puolelle yhtäsuuruusmerkkiä. Nämä toimenpiteet pitää aina tehdä yhtä aikaa yhtälön kummallekin puolille. Moni yhtälö ratkeaa pelkästään seuraavilla menetelmillä:</p>
 <ul class="simple">
 <li><p>luvun lisääminen,</p></li>
 <li><p>luvun vähentäminen,</p></li>
 <li><p>luvulla kertominen,</p></li>
 <li><p>luvulla jakaminen.</p></li>
 </ul>
-<p>Monimutkaisemmille yhtälöille voidaan tarvita näiden lisäksi myös potenssiinkorotusta tai juuren ottamista, logaritmia, trigonometrisia funktioita tai niiden käänteisfunktiota jne.</p>
-<p>Jos siis yhtälön toisen lausekkeen arvoa muutetaan jollakin yllämainituista toimenpiteistä, on myös toisen lausekkeen arvoa samalla muutettava samalla tavalla.</p>
-<p>Yhtälön lausekkeita saa kuitenkin sieventää tai olla sieventämättä erikseen. Yhtälön vasemman ja oikean puolen saa aina vaihtaa keskenään.</p>
-<p>Yhtälön ratkaisu kirjoitetaan siten, että yhtälö säilyy koko ajan muodossa ”vasen puoli = oikea puoli”. Jokaisen välivaiheen jälkeen tulee rivinvaihto tai ns. ekvivalenssinuoli ”⇔”. Lopulta yhtälö muuttuu muotoon ”x=ratkaisu”. Yhtälön ratkaisua ei kannata aloittaa kirjoittamalla heti ensimmäisen rivin alkuun “x= … “, sillä silloinhan ei vielä tiedä, mitä toiselle puolelle tulee!</p>
+<p>Mistä tietää, mikä toimenpide pitää valita? Melkein kaikki yhtälöt voi ratkaista monella eri tavalla, soveltaen edellisiä menetelmiä eri järjestyksissä. Ratkaisun välivaiheiden määrä ja ulkonäkö voi vaihdella. Tärkeintä on, että jos yhtälön toisen lausekkeen arvoa muutetaan jollakin yllämainituista toimenpiteistä, on myös toisen lausekkeen arvoa samalla muutettava samalla tavalla.</p>
+<p>Yhtälön lausekkeita saa kuitenkin sieventää tai olla sieventämättä erikseen. Lisäksi yhtälön vasemman ja oikean puolen saa missä tahansa vaiheessa yhtälön ratkaisua vaihtaa keskenään.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaistaan yhtälö <span class="math notranslate nohighlight">\(2x+3=5x-9\)</span> vaiheittain.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Siivotaan ylimääräinen termi vasemmalta:</p>
+<ul class="simple">
+<li><p>Huomataan, että vasemmalla puolella on ylimääräisenä luku <span class="math notranslate nohighlight">\(3\)</span>.</p></li>
+<li><p>Poistetaan se sieltä vähennyslaskulla.</p></li>
+<li><p>Sama lasku pitää tehdä myös yhtälön oikealle puolelle, jotta yhtälön molemmat puolet säilyvät yhtä suurina.</p></li>
+<li><p>Yhtälö muuttuu muotoon <span class="math notranslate nohighlight">\(2x+3-3=5x-9-3\)</span>.</p></li>
+<li><p>Sievennetään kumpikin lauseke: <span class="math notranslate nohighlight">\(2x=5x-12\)</span>.</p></li>
+</ul>
+<p>Siivotaan ylimääräinen termi oikealta:</p>
+<ul class="simple">
+<li><p>Tavoitteena on, että tuntematonta <span class="math notranslate nohighlight">\(x\)</span> olisi vain yhtälön vasemmalla puolella.</p></li>
+<li><p>Poistetaan siis oikealta termi <span class="math notranslate nohighlight">\(5x\)</span> vähennyslaskulla.</p></li>
+<li><p>Tehdään sama toimenpide vasemmalle: yhtälöksi muuttuu muotoon <span class="math notranslate nohighlight">\(2x-5x=5x-12-5x\)</span>.</p></li>
+<li><p>Sievennetään lausekkeet: <span class="math notranslate nohighlight">\(-3x=-12\)</span>.</p></li>
+</ul>
+<p>Siivotaan ylimääräinen kerroin vasemmalta:</p>
+<ul class="simple">
+<li><p>Nyt tuntematon <span class="math notranslate nohighlight">\(x\)</span> on vain vasemmalla, mutta sen edestä pitäisi saada pois kerroin <span class="math notranslate nohighlight">\(-3\)</span>.</p></li>
+<li><p>Kerroin poistuu jakolaskulla.</p></li>
+<li><p>Jaetaan yhtälön molemmat puolet luvulla <span class="math notranslate nohighlight">\(-3\)</span> seuraavasti: <span class="math notranslate nohighlight">\(\frac{-3}{-3}x=\frac{-12}{-3}\)</span></p></li>
+<li><p>Sievennetään yhtälö muotoon <span class="math notranslate nohighlight">\(x=4\)</span>. Yhtälö on nyt ratkaistu!</p></li>
+</ul>
+</div>
+</div>
+<p>Monimutkaisemmille yhtälöille voidaan tarvita näiden lisäksi myös potenssiinkorotusta tai juuren ottamista, logaritmia, trigonometrisia funktioita tai niiden käänteisfunktiota jne. Näitä menetelmiä otetaan tässä materiaalissa käyttöön esimerkiksi kolmioihin liittyvissä luvuissa.</p>
+<p>Yhtälön ratkaisu kirjoitetaan siten, että yhtälö säilyy koko ajan muodossa “vasen puoli = oikea puoli”. Jokaisen välivaiheen jälkeen tulee rivinvaihto tai ns. ekvivalenssinuoli <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span>.</p>
+<p>Lopulta, usean välivaiheen jälkeen, yhtälö muuttuu muotoon “x=ratkaisu”. Yhtälön ratkaisua ei kannata aloittaa kirjoittamalla heti ensimmäisen rivin alkuun “x= … “, sillä silloinhan ei vielä tiedä, mitä toiselle puolelle tulee!</p>
 <p>Yhtälön ratkaisun voi tarkistaa sijoittamalla saamansa ratkaisun alkuperäiseen yhtälöön. Tällöin vasemman ja oikean puolen pitäisi olla samat.</p>
-<p><strong>Esim.</strong> Seuraavassa on esitetty erään yhtälön ratkaisu välivaiheineen. Mitä eri välivaiheissa on tehty?</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Seuraavassa on esitetty erään yhtälön ratkaisu välivaiheineen. Mitä eri välivaiheissa on tehty?</p>
 <p><span class="math notranslate nohighlight">\(\frac{1}{3} x + 2 = 8x -4\)</span></p>
 <p><span class="math notranslate nohighlight">\(x + 6 = 24x -12\)</span></p>
 <p><span class="math notranslate nohighlight">\(-23x + 6 = -12\)</span></p>
@@ -512,7 +551,10 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(\frac{-23x}{-23} = \frac{-18}{-23}\)</span>.</p>
 <p>Tämä vielä sievenee muotoon <span class="math notranslate nohighlight">\(x=\frac{18}{23}\)</span>.</p>
 </div>
-<p><strong>Esim.</strong> Ratkaise yhtälö <span class="math notranslate nohighlight">\(2x+7=x-4x\)</span>.</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise yhtälö <span class="math notranslate nohighlight">\(2x+7=x-4x\)</span>.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Yhtälön voi ratkaista monella eri tavalla, tässä yksi esimerkki. Aloitetaan sieventämällä yhtälön oikea puoli:</p>
@@ -536,22 +578,6 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(\frac{21}{5} = \frac{21}{5}\)</span></p>
 <p>Yhtälön vasemmasta ja oikeasta puolesta tuli samat, joten yhtälö on ratkaistu oikein.</p>
 </div>
-<p><strong>Esim.</strong> Ratkaise yhtälö <span class="math notranslate nohighlight">\(\frac{3}{x}=4x\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Ratkaisu</p>
-<p>Nimittäjässä olevan muuttujan <span class="math notranslate nohighlight">\(x\)</span> saa pois nimittäjästä kertomalla yhtälön molemmat puolet luvulla <span class="math notranslate nohighlight">\(x\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(x\cdot \frac{3}{x}=x\cdot 4x\)</span></p>
-<p>Sievennetään molemmat puolet:</p>
-<p><span class="math notranslate nohighlight">\(3=4x^2\)</span></p>
-<p>Vaihdetaan yhtälön puolet toisin päin:</p>
-<p><span class="math notranslate nohighlight">\(4x^2=3\)</span></p>
-<p>Jaetaan molemmat puolet luvulla <span class="math notranslate nohighlight">\(4\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(x^2 = \frac{3}{4}\)</span></p>
-<p>Potenssiinkorotuksesta pääsee eroon ottamalla neliöjuuren, jälleen toimenpide tehdään yhtälön molemmille puolille:</p>
-<p><span class="math notranslate nohighlight">\(\sqrt{x^2} = \sqrt{\frac{3}{4}}\)</span></p>
-<p><span class="math notranslate nohighlight">\(x=\sqrt{\frac{3}{4}}\)</span>.</p>
-<p>Juurten laskusääntöjen mukaisesti vastauksen voi vielä sieventää muotoon <span class="math notranslate nohighlight">\(x=\frac{\sqrt{3}}{2}\)</span>.</p>
-<p>Myös ratkaisu <span class="math notranslate nohighlight">\(x=-\frac{\sqrt{3}}{2}\)</span> toteuttaa alkuperäisen yhtälön.</p>
 </div>
 </section>
 <section id="yhtalon-ratkaisu-tietokoneella">
@@ -606,7 +632,7 @@ title="Print to PDF"
     <a class='right-next' id="next-link" href="yhtalot1.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Ensimmäisen asteen yhtälöt</p>
+        <p class="prev-next-title">Esimerkkejä yhtälöistä</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -50,6 +50,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -150,7 +152,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="yhtalot1.html">
-   Ensimmäisen asteen yhtälöt
+   Esimerkkejä yhtälöistä
   </a>
  </li>
  <li class="toctree-l1">
@@ -227,8 +229,8 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="verrannollisuus.html">
-   Verrannollisuus
+  <a class="reference internal" href="verrannollisuus_sivu.html">
+   Suoraan ja kääntäen verrannollisuus
   </a>
  </li>
  <li class="toctree-l1">
@@ -469,17 +471,23 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="potenssilausekkeet">
 <h1>Potenssilausekkeet<a class="headerlink" href="#potenssilausekkeet" title="Permalink to this headline">#</a></h1>
-<p>Potenssilausekkeiden käsittelyä tarvitaan erilaisten laskusääntöjen johtamisessa ja monimutkaisten yhtälöiden ratkaisemisessa. Monet laskinohjelmat osaavat käsitellä näitäkin lausekkeita, mutta on helpompaa pysyä mukana laajempien ongelmien ratkaisuissa, kun ymmärtää, miten lausekkeet voivat muuttua eri näköisiksi. Potenssilausekkeet ovat tärkeitä myös silloin, kun matemaattisia ongelmia halutaan esittää yleisissä tapauksissa, siis ilman, että jokaista lukuarvoa tarvitsee määritellä laskemista varten.</p>
-<p><strong>Pohdittavaksi</strong> Neliön sivun pituus on <span class="math notranslate nohighlight">\(3\)</span> metriä. Kuinka moninkertaiseksi neliön pinta-ala muuttuu, jos neliön sivu kaksinkertaistuu? Ongelma on helppo, sillä neliön pinta-alan pystyy laskemaan sekä alkuperäisellä että uudella sivun pituudella. Entä, jos haluaisimmekin esittää ratkaisun yleisessä tapauksessa eli siten, että neliön sivun pituus voi olla mikä tahansa luku <span class="math notranslate nohighlight">\(x\)</span>?</p>
+<p>Potenssilausekkeiden käsittelyä tarvitaan erilaisten laskusääntöjen johtamisessa ja monimutkaisten yhtälöiden ratkaisemisessa. Monet laskinohjelmat osaavat käsitellä näitäkin lausekkeita, mutta on helpompaa pysyä mukana laajempien ongelmien ratkaisuissa, kun ymmärtää, miten lausekkeet voivat muuttua eri näköisiksi. Potenssilausekkeet ovat käytännöllisiä myös silloin, kun matemaattisia ongelmia halutaan esittää yleisissä tapauksissa, siis ilman, että jokaista lukuarvoa tarvitsee määritellä laskemista varten.</p>
+<div class="admonition-pohdittavaksi admonition">
+<p class="admonition-title">Pohdittavaksi</p>
+<p>Neliön sivun pituus on <span class="math notranslate nohighlight">\(3\)</span> metriä. Kuinka moninkertaiseksi neliön pinta-ala muuttuu, jos neliön sivu kaksinkertaistuu? Ongelma on helppo, sillä neliön pinta-alan pystyy laskemaan sekä alkuperäisellä että uudella sivun pituudella. Entä, jos haluaisimmekin esittää ratkaisun yleisessä tapauksessa eli siten, että neliön sivun pituus voi olla mikä tahansa luku <span class="math notranslate nohighlight">\(x\)</span>?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Neliön alkuperäinen pinta-ala <span class="math notranslate nohighlight">\(A_1\)</span> on sivun pituuden <span class="math notranslate nohighlight">\(x\)</span> toinen potenssi, siis <span class="math notranslate nohighlight">\(A_1=x^2\)</span>. Uuden sivun pituus on <span class="math notranslate nohighlight">\(2x\)</span>. Tällöin uusi pinta-ala on <span class="math notranslate nohighlight">\(A_2=(2x)^2=4x^2 = 4 A_1\)</span>. Ala siis nelinkertaistuu.</p>
 </div>
-<p><strong>Pohdittavaksi</strong> Tuulivoimalan tuottama sähköteho on fysiikan lakien mukaisesti verrannollinen tuulen nopeuden kolmanteen potenssiin. Millä tavalla sähköteho muuttuu, jos tuulen nopeus pienenee 10 prosenttia? Tällaiseenkin kysymykseen voi potenssilukujen laskusääntöjen avulla vastata, vaikka alkuperäisestä sähkötehosta tai tuulen nopeudesta ei olisi mitään tietoa.</p>
+</div>
+<div class="admonition-pohdittavaksi admonition">
+<p class="admonition-title">Pohdittavaksi</p>
+<p>Tuulivoimalan tuottama sähköteho on fysiikan lakien mukaisesti verrannollinen tuulen nopeuden kolmanteen potenssiin. Millä tavalla sähköteho muuttuu, jos tuulen nopeus pienenee 10 prosenttia? Tällaiseenkin kysymykseen voi potenssilukujen laskusääntöjen avulla vastata, vaikka alkuperäisestä sähkötehosta tai tuulen nopeudesta ei olisi mitään tietoa.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Merkitään alkuperäistä tehoa <span class="math notranslate nohighlight">\(P_1\)</span> ja tuulen nopeutta <span class="math notranslate nohighlight">\(v\)</span>. Matemaattisesti “teho on verrannollinen tuulen nopeuden kolmanteen potenssiin” voidaan kirjoittaa <span class="math notranslate nohighlight">\(P_1=kv^3\)</span>, missä <span class="math notranslate nohighlight">\(k\)</span> on verrannollisuuskerroin. Kerroin <span class="math notranslate nohighlight">\(k\)</span> riippuu tuulivoimalan hyötysuhteesta, siivekkeen pituudesta ym. ominaisuuksista, eikä tässä tarvitse tietää sen lukuarvoa.</p>
 <p>Uusi tuulen nopeus on 90 % alkuperäisestä eli <span class="math notranslate nohighlight">\(0.9 v\)</span>. Tällöin uudeksi tehoksi tulee <span class="math notranslate nohighlight">\(P_2=k\cdot(0.9 v)^3 = k\cdot 0.9^3 v^3 = 0.729 kv^3 = 0.729 P_1\)</span>. Teho siis pienenee noin 100 % - 73 % = 27 % riippumatta siitä, mikä alkuperäinen teho tai tuulen nopeus oli.</p>
+</div>
 </div>
 <section id="maaritelma">
 <h2>Määritelmä<a class="headerlink" href="#maaritelma" title="Permalink to this headline">#</a></h2>
@@ -547,7 +555,7 @@ osoittajan eksponentista:</strong> <span class="math notranslate nohighlight">\(
 <p class="admonition-title">Perustelu</p>
 <p>Merkintä <span class="math notranslate nohighlight">\((a^m)^n\)</span> tarkoittaa tuloa, jossa lukua <span class="math notranslate nohighlight">\(a^m\)</span> kerrotaan itsellään <span class="math notranslate nohighlight">\(n\)</span> kertaa: <span class="math notranslate nohighlight">\(a^m\cdot a^m \cdot \ldots \cdot a^m\)</span>. Jokaisessa tulontekijässä <span class="math notranslate nohighlight">\(a^m\)</span> on kertolaskussa <span class="math notranslate nohighlight">\(m\)</span> kpl lukuja <span class="math notranslate nohighlight">\(a\)</span>. Niinpä lukua <span class="math notranslate nohighlight">\(a\)</span> kerrotaan itsellään kaikkiaan <span class="math notranslate nohighlight">\(m\cdot n\)</span> kertaa. Potenssiluvun määritelmän mukaan tämä voidaan lyhyemmin ilmaista <span class="math notranslate nohighlight">\(a^{mn}\)</span>.</p>
 </div>
-<p><strong>Esim.</strong> <span class="math notranslate nohighlight">\((x^3)^{-2}=x^{3\cdot(-2}=x^{-6}=\frac{1}{x^6}\)</span></p>
+<p><strong>Esim.</strong> <span class="math notranslate nohighlight">\((x^3)^{-2}=x^{3\cdot(-2)}=x^{-6}=\frac{1}{x^6}\)</span></p>
 <p><strong>Esim.</strong> <span class="math notranslate nohighlight">\((10^3)^2=10^{3\cdot 2}=10^6\)</span></p>
 <p><strong>Esim.</strong> <span class="math notranslate nohighlight">\((10^{-3})^{-4}=10^{-3\cdot(-4)}=10^{12}\)</span></p>
 <div class="tip dropdown admonition">
@@ -567,20 +575,29 @@ osoittajan eksponentista:</strong> <span class="math notranslate nohighlight">\(
 </section>
 <section id="esimerkkeja-laskusaantojen-yhdistelysta">
 <h2>Esimerkkejä laskusääntöjen yhdistelystä<a class="headerlink" href="#esimerkkeja-laskusaantojen-yhdistelysta" title="Permalink to this headline">#</a></h2>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
 <p>Sievennä lauseke <span class="math notranslate nohighlight">\(\left(\frac{6x}{3y}\right)^2\)</span></p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p><span class="math notranslate nohighlight">\(\Large{\left(\frac{6x}{3y}\right)^2=\frac{(6x)^2}{(3y)^2} =\frac{6^2 x^2}{3^2 y^2}=\frac{36x^2}{9y^2} =4 \frac{x^2}{y^2}}\)</span></p>
 </div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
 <p>Sievennä lauseke <span class="math notranslate nohighlight">\(\Large{\left(\frac{x^4 y^{-5}}{n^4 k^2}\right)^3 \cdot \frac{n^3 k^5}{(xy)^2}}\)</span></p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p><span class="math notranslate nohighlight">\(\Large{\frac{x^{12} y^{-15}}{n^{12}k^6} \cdot \frac{n^3 k^5}{x^2 y^2} = \frac{x^{12}}{x^2}\frac{y^{-15}}{y^2}\frac{n^3}{n^{12}}\frac{k^5}{k^6} = x^{10} y^{-17} n^{-9} k^{-1} = \frac{x^{10}}{y^{17}n^9 k}}\)</span></p>
 </div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
 <p>Sievennä lauseke <span class="math notranslate nohighlight">\(\Large{\frac{x^5 z}{z^6 x^3}}\)</span></p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p><span class="math notranslate nohighlight">\(\Large{\frac{x^5 z}{z^6 x^3}=\frac{x^5}{x^3} \frac{z}{z^6} = x^{5-3} z^{1-6} =x^2 z^{-5} = \frac{x^2}{z^5}}\)</span></p>
+</div>
 </div>
 </section>
 </section>

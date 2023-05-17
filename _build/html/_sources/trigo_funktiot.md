@@ -24,7 +24,7 @@ a) Koska sini on positiivinen, kulman toisen kyljen on oltava I tai II neljänne
 
 b) Yksi vastaus saadaan laskemalla $\alpha=\arcsin{0.5}=30^{\circ}$.
 
-Toinen vastaus saadaan päättelemällä kuvan avulla: $\beta=180^{\circ}-\alpha=180^{\circ}-30^{\circ}=50^{\circ}$.
+Toinen vastaus saadaan päättelemällä kuvan avulla: $\beta=180^{\circ}-\alpha=180^{\circ}-30^{\circ}=150^{\circ}$.
  
 :::
  

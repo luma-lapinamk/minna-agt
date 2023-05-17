@@ -50,12 +50,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Trigonometriaa" href="trigonometriaa.html" />
-    <link rel="prev" title="Ensimmäisen asteen yhtälöt" href="yhtalot1.html" />
+    <link rel="prev" title="Esimerkkejä yhtälöistä" href="yhtalot1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -150,7 +152,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="yhtalot1.html">
-   Ensimmäisen asteen yhtälöt
+   Esimerkkejä yhtälöistä
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -227,8 +229,8 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="verrannollisuus.html">
-   Verrannollisuus
+  <a class="reference internal" href="verrannollisuus_sivu.html">
+   Suoraan ja kääntäen verrannollisuus
   </a>
  </li>
  <li class="toctree-l1">
@@ -470,11 +472,10 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="toisen-asteen-yhtalot">
 <h1>Toisen asteen yhtälöt<a class="headerlink" href="#toisen-asteen-yhtalot" title="Permalink to this headline">#</a></h1>
 <p>Yhtälö, joka saadaan muokattua muotoon <span class="math notranslate nohighlight">\(ax^2+bx+c=0\)</span>, on toisen asteen yhtälö. Yhtälö ei suoraan ratkea samoilla menetelmillä kuin ensimmäisen asteen yhtälö, mutta yhtälölle on mahdollista johtaa ratkaisukaava:</p>
-<p><span class="math notranslate nohighlight">\(\Large{x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}}\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\Large{x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}}\)</span></p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisukaavan perustelu</p>
-<p>Aloitetaan kaavan johtaminen toisen asteen yhtälön perusmuodosta <span class="math notranslate nohighlight">\(ax^2+bx+c=0\)</span>. Jaetaan molemmat puolet luvulla <span class="math notranslate nohighlight">\(a\)</span>. (Näin voi tehdä, sillä oletetaan, että
-a≠0). Oikealle puolelle jää nolla, sillä nolla jaettuna millä tahansa (nollasta poikkeavalla) luvulla on edelleen nolla.</p>
+<p>Aloitetaan kaavan johtaminen toisen asteen yhtälön perusmuodosta <span class="math notranslate nohighlight">\(ax^2+bx+c=0\)</span>. Jaetaan molemmat puolet luvulla <span class="math notranslate nohighlight">\(a\)</span>. Näin voi tehdä, sillä oletetaan, että <span class="math notranslate nohighlight">\(a\neq 0\)</span>. Oikealle puolelle jää nolla, sillä nolla jaettuna millä tahansa (nollasta poikkeavalla) luvulla on edelleen nolla.</p>
 <p><span class="math notranslate nohighlight">\(x^2+\frac{b}{a}x+\frac{c}{a}=0\)</span></p>
 <p>Vähennetään molemmilta puolilta <span class="math notranslate nohighlight">\(\frac{c}{a}\)</span>, jotta saadaan vasemmalle puolelle vain sellaisia termejä, joissa on mukana tuntematon <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <p><span class="math notranslate nohighlight">\(x^2+\frac{b}{a}x=-\frac{c}{a}\)</span></p>
@@ -501,7 +502,9 @@ a≠0). Oikealle puolelle jää nolla, sillä nolla jaettuna millä tahansa (nol
 <p>Koska oikean puolen termeissä on sama nimittäjä <span class="math notranslate nohighlight">\(2a\)</span>, ne voidaan yhdistää. Samalla voidaan kirjoittaa oikean puolen termit eri järjestyksessä:</p>
 <p><span class="math notranslate nohighlight">\(x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}\)</span></p>
 </div>
-<p><strong>Esim.</strong> Ratkaise yhtälö <span class="math notranslate nohighlight">\(2x^2-8x+6=0\)</span>.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise yhtälö <span class="math notranslate nohighlight">\(2x^2-8x+6=0\)</span>.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Yhtälöstä saadaan ratkaisukaavaan kertoimet <span class="math notranslate nohighlight">\(a=2\)</span>, <span class="math notranslate nohighlight">\(b=-8\)</span>, <span class="math notranslate nohighlight">\(c=6\)</span>. Sijoitetaan ne kaavaan:</p>
@@ -512,7 +515,10 @@ a≠0). Oikealle puolelle jää nolla, sillä nolla jaettuna millä tahansa (nol
 <p>Saadaan kaksi ratkaisua:</p>
 <p><span class="math notranslate nohighlight">\(x=\frac{8+4}{4}=\frac{12}{4}=3\)</span> ja <span class="math notranslate nohighlight">\(x=\frac{8-4}{4}=\frac{4}{4}=1\)</span>.</p>
 </div>
-<p><strong>Esim.</strong> Ratkaise yhtälö <span class="math notranslate nohighlight">\(\frac{4}{x}+x=8-2x\)</span>.</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise yhtälö <span class="math notranslate nohighlight">\(\frac{4}{x}+x=8-2x\)</span>.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Yhtälö täytyy ensin muokata perusmuotoon, jotta saadaan poimittua ratkaisukaavaan kertoimet <span class="math notranslate nohighlight">\(a,b\)</span> ja <span class="math notranslate nohighlight">\(c\)</span>. Aloitetaan kertomalla yhtälön molemmat puolet luvulla <span class="math notranslate nohighlight">\(x\)</span>:</p>
@@ -525,49 +531,88 @@ a≠0). Oikealle puolelle jää nolla, sillä nolla jaettuna millä tahansa (nol
 <p><span class="math notranslate nohighlight">\(x=\frac{-(-8)\pm\sqrt{(-8)^2-4\cdot 3 \cdot 4}}{2\cdot 3} = \frac{8\pm\sqrt{64-48}}{6}= \frac{8\pm 4}{6}\)</span>.</p>
 <p>Ratkaisut ovat <span class="math notranslate nohighlight">\(x=\frac{8+4}{6}=\frac{12}{6}=2\)</span> ja <span class="math notranslate nohighlight">\(x=\frac{8-4}{6}=\frac{4}{6}=\frac{2}{3}\)</span>.</p>
 </div>
+</div>
 <section id="diskriminantti-ja-ratkaisujen-maara">
 <h2>Diskriminantti ja ratkaisujen määrä<a class="headerlink" href="#diskriminantti-ja-ratkaisujen-maara" title="Permalink to this headline">#</a></h2>
-<p>Tarkastellaan tarkemmin ratkaisukaavassa neliöjuuren sisällä olevaa lauseketta <span class="math notranslate nohighlight">\(b^2-4ac\)</span>. Tätä sanotaan yhtälön diskriminantiksi ja merkitään kirjaimella <span class="math notranslate nohighlight">\(D\)</span>. Diskriminantin arvosta nähdään, onko yhtälöllä 0, 1 vai 2 ratkaisua.</p>
+<p>Toisen asteen yhtälöitä ratkaistessaan saattaa päätyä hämmentävään tilanteeseen, jossa ratkaisua ei löydykään tai niitä löytyy kaksi. Näin voi tapahtua esimerkiksi fysiikan ongelmissa. Esimerkiksi jos heitetään lumipallo korkeassa kaaressa kohti matalaa rakennusta, voidaan laskea, milloin tai missä kohtaa lumipallo osuu rakennuksen katolle. Lumipallon sijaintia kuvataan toisen asteen yhtälöllä. Jokainen, joka on joskus heittänyt lumipallon, tietää että aina pallo ei osu sinne minne olisi tarkoitus. Tämä vastaa tilannetta, jossa yhtälölle ei löydy ratkaisua. Toisaalta tarkka heittäjä saa pallon hipaisemaan sekä katon etu- että takareunaa, jolloin yhtälölle on kaksikin ratkaisua.</p>
+<p>Joskus käytännön sovelluksissa itse yhtälön ratkaisu ei ole tärkein asia. Kun suunnitellaan jotakin laitetta, rakennusta tai muuta systeemiä, hyvä lähtökohta on miettiä, onko kyseisen systeemin avulla edes mahdollista saavuttaa haluttua asiaa. Toisin sanoen - onko olemassa ratkaisuja sille yhtälölle, jolla systeemin toimintaa mallinnetaan. Jos ei ole, niin mitä parametrejä systeemissä pitäisi muuttaa? Pitäisikö lumipallo heittää kauempaa, lähempää, suuremmassa vai pienemmässä kulmassa?</p>
+<p>Mahdollisten ratkaisujen lukumäärää tarkastellaan diskriminantti-käsitteen avulla. Diskriminantti <span class="math notranslate nohighlight">\(D\)</span> tarkoittaa toisen asteen yhtälön ratkaisukaavassa neliöjuuren sisällä olevaa lauseketta <span class="math notranslate nohighlight">\(b^2-4ac\)</span>. Diskriminantin arvosta nähdään, onko yhtälöllä 0, 1 vai 2 ratkaisua seuraavien sääntöjen mukaan</p>
 <ul class="simple">
 <li><p>Jos <span class="math notranslate nohighlight">\(D &lt; 0\)</span>, niin neliöjuurta <span class="math notranslate nohighlight">\(\sqrt{D}\)</span> ei ole määritelty. Tällöin yhtälöllä ei ole yhtään ratkaisua.</p></li>
 <li><p>Jos <span class="math notranslate nohighlight">\(D = 0\)</span>, niin neliöjuuren arvo on <span class="math notranslate nohighlight">\(\sqrt{D}=0\)</span> ja ratkaisukaava pelkistyy muotoon <span class="math notranslate nohighlight">\(x=-\frac{b}{2a}\)</span>. Yhtälölle löytyy siis tasan yksi ratkaisu.</p></li>
 <li><p>Jos <span class="math notranslate nohighlight">\(D &gt; 0\)</span>, niin neliöjuuresta saadaan jokin luku <span class="math notranslate nohighlight">\(\sqrt{D}\)</span> sijoitettavaksi ratkaisukaavaan. Yhtälölle on olemassa kaksi ratkaisua.</p></li>
 </ul>
-<p><strong>Esim.</strong> Millä luvun <span class="math notranslate nohighlight">\(b\)</span> arvolla yhtälöllä <span class="math notranslate nohighlight">\(3x^2+bx-2=0\)</span> on tasan yksi ratkaisu?</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Millä luvun <span class="math notranslate nohighlight">\(b\)</span> arvolla tai arvoilla yhtälöllä <span class="math notranslate nohighlight">\(5x^2+bx+80=0\)</span> on tasan yksi ratkaisu?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
-<p>Kirjoitetaan yhtälölle diskriminantti <span class="math notranslate nohighlight">\(D=b^2-4\cdot 3\cdot 2\)</span>, joka sievenee muotoon <span class="math notranslate nohighlight">\(D=b^2-24\)</span>. Ratkaisuja on tasan yksi silloin, kun <span class="math notranslate nohighlight">\(D=0\)</span>. On siis ratkaistava <span class="math notranslate nohighlight">\(b\)</span> yhtälöstä <span class="math notranslate nohighlight">\(b^2-24=0\)</span>. Ratkaisuksi saadaan <span class="math notranslate nohighlight">\(b=\sqrt{24}\)</span>. Myös <span class="math notranslate nohighlight">\(b=-\sqrt{24}\)</span> toteuttaa saman yhtälön.</p>
+<p>Kirjoitetaan yhtälölle diskriminantti <span class="math notranslate nohighlight">\(D=b^2-4\cdot 5\cdot 80\)</span>, joka sievenee muotoon <span class="math notranslate nohighlight">\(D=b^2-1600\)</span>. Ratkaisuja on tasan yksi silloin, kun <span class="math notranslate nohighlight">\(D=0\)</span>. On siis ratkaistava <span class="math notranslate nohighlight">\(b\)</span> yhtälöstä <span class="math notranslate nohighlight">\(b^2-1600=0\)</span>. Ratkaisuksi saadaan <span class="math notranslate nohighlight">\(b=40\)</span>. Myös <span class="math notranslate nohighlight">\(b=-40\)</span> toteuttaa saman yhtälön.</p>
+<p>On tärkeää huomata, että annettua yhtälöä ei ole vielä ratkaistu. Tarkastellaan erikseen tilanteita <span class="math notranslate nohighlight">\(b=40\)</span> ja <span class="math notranslate nohighlight">\(b=-40\)</span>.</p>
+<p>Toisen asteen yhtälön ratkaisukaavalla saadaan ensimmäisessä tapauksessa</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{-40\pm 0}{2\cdot 5}=-4\)</span></p>
+<p>ja toisessa tapauksessa</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{-(-40)\pm 0}{2\cdot 5}=4\)</span></p>
 </div>
-<p><strong>Esim.</strong> Mikä pitäisi olla luvun <span class="math notranslate nohighlight">\(c\)</span>, jotta yhtälö <span class="math notranslate nohighlight">\(2x^2-x+c=0\)</span> olisi mahdollista ratkaista?</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Mikä pitäisi olla luvun <span class="math notranslate nohighlight">\(c\)</span>, jotta yhtälö <span class="math notranslate nohighlight">\(2x^2-x+c=0\)</span> olisi mahdollista ratkaista?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Diskriminantti on nyt <span class="math notranslate nohighlight">\(D=(-1)^2-4\cdot 2\cdot c\)</span> eli <span class="math notranslate nohighlight">\(D=1-8c\)</span>. Ratkaisuja on olemassa, jos <span class="math notranslate nohighlight">\(1-8c \geq 0\)</span>. Tästä saadaan ehto <span class="math notranslate nohighlight">\(c \leq \frac{1}{8}\)</span>.</p>
+<p>Yhtälön ratkaisut riippuvat nyt valitusta luvun <span class="math notranslate nohighlight">\(c\)</span> arvosta. Esimerkiksi jos valitaan <span class="math notranslate nohighlight">\(c=0\)</span>, niin ratkaisut ovat</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{-(-1)\pm\sqrt{(-1)^2-4\cdot 2 \cdot 0}}{2\cdot 2}=\frac{1\pm 1}{4}\)</span> eli <span class="math notranslate nohighlight">\(x=\frac{1}{2}\)</span> tai <span class="math notranslate nohighlight">\(x=0\)</span>.</p>
+</div>
 </div>
 </section>
 <section id="erikoistapauksia">
 <h2>Erikoistapauksia<a class="headerlink" href="#erikoistapauksia" title="Permalink to this headline">#</a></h2>
-<p>Jos <span class="math notranslate nohighlight">\(b=0\)</span>, niin yhtälö pelkistyy muotoon <span class="math notranslate nohighlight">\(ax^2+c=0\)</span>. Tällöin yhtälöstä saadaan ratkaistua (vähentämällä molemmilta puolilta luku <span class="math notranslate nohighlight">\(c\)</span>, jakamalla molemmat puolet luvulla <span class="math notranslate nohighlight">\(a\)</span> ja ottamalla molemmista puolista neliöjuuri) <span class="math notranslate nohighlight">\(x=\pm \sqrt{\frac{-c}{a}}\)</span>. Ratkaisuja on olemassa vain, jos <span class="math notranslate nohighlight">\(\frac{-c}{a}\geq 0\)</span>, sillä muuten neliöjuurta ei voi laskea.</p>
-<p><strong>Esim.</strong> Ratkaise yhtälö <span class="math notranslate nohighlight">\(2x^2-18=0\)</span>.</p>
+<p>Jos <span class="math notranslate nohighlight">\(b=0\)</span>, niin yhtälö pelkistyy muotoon <span class="math notranslate nohighlight">\(ax^2+c=0\)</span>. Tällöin yhtälöstä saadaan ratkaistua <span class="math notranslate nohighlight">\(x=\pm \sqrt{\frac{-c}{a}}\)</span>. Kaavaa ei kannata opetella ulkoa, sillä se muodostuu vähentämällä molemmilta puolilta luku <span class="math notranslate nohighlight">\(c\)</span>, jakamalla molemmat puolet luvulla <span class="math notranslate nohighlight">\(a\)</span> ja ottamalla molemmista puolista neliöjuuri. Ratkaisuja on olemassa vain, jos <span class="math notranslate nohighlight">\(\frac{-c}{a}\geq 0\)</span>, sillä muuten neliöjuurta ei voi laskea.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise yhtälö <span class="math notranslate nohighlight">\(2x^2-18=0\)</span>.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
-<p>Ratkaisut ovat <span class="math notranslate nohighlight">\(x=\pm \sqrt{\frac{-(-18)}{2}}= \pm \sqrt{\frac{18}{2}} = \pm \sqrt{9}\)</span>. Ratkaisut ovat siis <span class="math notranslate nohighlight">\(x=3\)</span> ja <span class="math notranslate nohighlight">\(x=-3\)</span>.</p>
+<p>Lisätään aluksi yhtälön molemmille puolille luku <span class="math notranslate nohighlight">\(18\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(2x^2=18\)</span></p>
+<p>Jaetaan yhtälön molemmat puolet luvulla <span class="math notranslate nohighlight">\(2\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(x^2=9\)</span></p>
+<p>Otetaan yhtälön molemmista puolista neliöjuuri, huomioiden sekä positiivinen että negatiivinen vaihtoehto</p>
+<p><span class="math notranslate nohighlight">\(x=\pm \sqrt{9}\)</span>.</p>
+<p>Ratkaisut ovat siis <span class="math notranslate nohighlight">\(x=3\)</span> ja <span class="math notranslate nohighlight">\(x=-3\)</span>.</p>
+<p>Suoraan ratkaisukaavalla ratkaisu olisi</p>
+<p><span class="math notranslate nohighlight">\(x=\pm \sqrt{\frac{-(-18)}{2}}= \pm \sqrt{\frac{18}{2}} = \pm \sqrt{9}\)</span>.</p>
+</div>
 </div>
 <p>Jos <span class="math notranslate nohighlight">\(c=0\)</span>, niin yhtälö pelkistyy muotoon <span class="math notranslate nohighlight">\(ax^2+bx=0\)</span>. Tällöin yhtälön vasemmalla puolella voidaan erottaa <span class="math notranslate nohighlight">\(x\)</span> yhteiseksi tekijäksi, ja yhtälö muuttuu muotoon <span class="math notranslate nohighlight">\(x(ax+b)=0\)</span>. Yhtälö voidaan ratkaista käyttämällä ns. tulon nollasääntöä: jos tulo on nolla, niin väistämättä vähintään yksi sen tekijöistä on nolla. Saadaan siis vaihtoehdot <span class="math notranslate nohighlight">\(x=0\)</span> tai <span class="math notranslate nohighlight">\(ax+b=0\)</span>, josta <span class="math notranslate nohighlight">\(x\)</span> ratkaistaan ensimmäisen asteen yhtälön ratkaisukeinoin.</p>
-<p><strong>Esim.</strong> Ratkaise yhtälö <span class="math notranslate nohighlight">\(x^2+6x=0\)</span>.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise yhtälö <span class="math notranslate nohighlight">\(x^2+6x=0\)</span>.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Yhtälön vasemman puolen termien yhteinen tekijä on <span class="math notranslate nohighlight">\(x\)</span>, joten yhtälö muuttuu muotoon <span class="math notranslate nohighlight">\(x(x+6)=0\)</span>. Tästä saadaan tulon nollasäännön perusteella vaihtoehdot <span class="math notranslate nohighlight">\(x=0\)</span> ja <span class="math notranslate nohighlight">\(x+6=0\)</span>. Jälkimmäisestä yhtälöstä ratkeaa <span class="math notranslate nohighlight">\(x=-6\)</span>. Yhtälön <span class="math notranslate nohighlight">\(x^2+6x=0\)</span> ratkaisut ovat siis <span class="math notranslate nohighlight">\(x=0\)</span> ja <span class="math notranslate nohighlight">\(x=-6\)</span>.</p>
 </div>
+</div>
 </section>
 <section id="sovelluksia">
 <h2>Sovelluksia<a class="headerlink" href="#sovelluksia" title="Permalink to this headline">#</a></h2>
-<p>Toisen asteen yhtälöön päädytään monissa geometrian ongelmissa. Sovellustehtävissä yhtälöt voi hyvin ratkaista esimerkiksi <a class="reference external" href="https://www.wolframalpha.com/">WolframAlphan</a> solve-toiminnolla. Oleellista on, että on osannut tehtävänannon perusteella muodostaa ratkaistavan yhtälön tai yhtälöparin.</p>
-<p>Yksinkertainen esimerkki geometrisesta käsitteestä, josta päädytään toisen asteen yhtälöön, on suorakulmio. Jos suorakulmainen sivujen pituudet ovat <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span>, niin sivujen pituuksia ja suorakulmion pinta-alaa <span class="math notranslate nohighlight">\(A\)</span> yhdistää yhtälö <span class="math notranslate nohighlight">\(A=xy\)</span>. Tällöin jos tiedetään toinen sivuista ja pinta-ala, voidaan toinen sivu esittää pinta-alan ja tunnetun sivun avulla. Vastaavasti jos tunnetaan suorakulmion toinen sivu ja ympärysmitta <span class="math notranslate nohighlight">\(2x+2y\)</span>, voidaan tuntematon sivu esittää tunnetun sivun ja ympärysmitan avulla.</p>
-<p><strong>Esim.</strong> Tontin koko on 600 neliömetriä. Tonttia ympäröi aita, jonka pituus on yhteensä 100 metriä (siis yksi pitkä sivu <span class="math notranslate nohighlight">\(y\)</span> ja yksi lyhyt sivu <span class="math notranslate nohighlight">\(x\)</span> ovat yhteensä 50 metriä). Mitkä ovat tontin sivujen pituudet?</p>
+<p>Toisen asteen yhtälöön päädytään monissa geometrian ongelmissa. Sovellustehtävissä yhtälöt voi hyvin ratkaista esimerkiksi <a class="reference external" href="https://www.wolframalpha.com/">WolframAlphan</a> solve-toiminnolla. Oleellista on, että on osannut tehtävänannon perusteella muodostaa ratkaistavan yhtälön. Laskimessa yhtälön ei tarvitse olla toisen asteen yhtälön perusmuodossa!</p>
+<p>Yksinkertainen esimerkki geometrisesta käsitteestä, josta päädytään toisen asteen yhtälöön, on suorakulmio. Jos suorakulmainen sivujen pituudet ovat <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span>, niin sivujen pituuksia ja suorakulmion pinta-alaa <span class="math notranslate nohighlight">\(A\)</span> yhdistää yhtälö <span class="math notranslate nohighlight">\(A=xy\)</span>. Tällöin jos tiedetään toinen sivuista ja pinta-ala, voidaan toinen sivu esittää pinta-alan ja tunnetun sivun avulla. Vastaavasti jos tunnetaan suorakulmion toinen sivu ja ympärysmitta <span class="math notranslate nohighlight">\(2x+2y\)</span>, voidaan tuntematon sivu esittää tunnetun sivun ja ympärysmitan avulla. Lopuksi päädytään yhtälöön, jossa on vain yksi tuntematon, jolloin yhtälö voidaan ratkaista.</p>
+<p>(Yhtälöparien ratkaisua käsitellään tarkemmin <a class="reference external" href="https://luma-lapinamk.github.io/minna-lineaarialgebra/yhtaloryhmat_kertaus.html">Lineaarialgebra</a> -materiaaleissa. Tässä tapauksessa ratkaisu tapahtuu ns. sijoitusmenetelmällä.)</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Suorakulmion muotoisen tontin koko on 600 neliömetriä. Tonttia ympäröi joka puolelta aita, jonka pituus on yhteensä 100 metriä. Mitkä ovat tontin sivujen pituudet?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
-<p>Pinta-alan perusteella tiedetään, että <span class="math notranslate nohighlight">\(600=xy\)</span>. Aidan pituuden perusteella taas tiedetään, että <span class="math notranslate nohighlight">\(x+y=50\)</span>. Jälkimmäisestä yhtälöstä voidaan ratkaista <span class="math notranslate nohighlight">\(y=50-x\)</span>. Sijoittamalla tämä pinta-alan perusteella muodostettuun yhtälöön saadaan <span class="math notranslate nohighlight">\(600=x(50-x)\)</span>. Tästä saadaan sievennettyä toisen asteen yhtälö <span class="math notranslate nohighlight">\(600=50x-x^2\)</span> eli <span class="math notranslate nohighlight">\(x^2-50x+600=0\)</span>.</p>
-<p>WolframAlphalla saadaan ratkaisut <span class="math notranslate nohighlight">\(x=30, x=20\)</span>. Vastaavasti tällöin <span class="math notranslate nohighlight">\(y=50-30=20\)</span> tai <span class="math notranslate nohighlight">\(y=50-20=30\)</span>.</p>
+<p>Aloitetaan merkitsemällä tontin sivujen pituuksia joillakin kirjaimilla. Merkitään esimerkiksi lyhyttä sivua <span class="math notranslate nohighlight">\(x\)</span> ja pitkää sivua <span class="math notranslate nohighlight">\(y\)</span>. Kuvan piirtäminenkin voi auttaa:</p>
+<p><img alt="Toisen asteen yhtälö, geometriaa" src="_images/tontti.png" /></p>
+<p>Pinta-alan perusteella tiedetään, että <span class="math notranslate nohighlight">\(x\cdot y y=600\)</span>. Aidan pituuden perusteella taas tiedetään, että <span class="math notranslate nohighlight">\(2x+2y=100\)</span>.</p>
+<p>Jälkimmäisestä yhtälöstä voidaan ratkaista <span class="math notranslate nohighlight">\(2y=100-2x \Leftrightarrow y=50-x\)</span>.</p>
+<p>Sijoittamalla tämä pinta-alan perusteella muodostettuun yhtälöön saadaan <span class="math notranslate nohighlight">\(600=x(50-x)\)</span>. Tästä saadaan sievennettyä toisen asteen yhtälö <span class="math notranslate nohighlight">\(600=50x-x^2\)</span> eli <span class="math notranslate nohighlight">\(x^2-50x+600=0\)</span>.</p>
+<p>WolframAlphalla saadaan ratkaisut <span class="math notranslate nohighlight">\(x=30, x=20\)</span>. Vastaavasti tällöin <span class="math notranslate nohighlight">\(y=50-30=20\)</span> tai <span class="math notranslate nohighlight">\(y=50-20=30\)</span>. Näissä eri ratkaisuissa mitat ovat samat, mutta tontti on vain eri päin.</p>
+<p>Yhtälön voi ratkaista kirjoittamalla solve-komennon perään yhtälön <span class="math notranslate nohighlight">\(600=x(50-x)\)</span>, eli yhtälöä ei tarvitse muokata toisen asteen yhtälön perusmuotoon!</p>
+</div>
 </div>
 </section>
 </section>
@@ -603,7 +648,7 @@ a≠0). Oikealle puolelle jää nolla, sillä nolla jaettuna millä tahansa (nol
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Ensimmäisen asteen yhtälöt</p>
+            <p class="prev-next-title">Esimerkkejä yhtälöistä</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="trigonometriaa.html" title="next page">

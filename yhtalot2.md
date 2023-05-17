@@ -2,13 +2,12 @@
 
 Yhtälö, joka saadaan muokattua muotoon $ax^2+bx+c=0$, on toisen asteen yhtälö. Yhtälö ei suoraan ratkea samoilla menetelmillä kuin ensimmäisen asteen yhtälö, mutta yhtälölle on mahdollista johtaa ratkaisukaava:
 
-$\Large{x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}}$.
+$\Large{x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}}$
 
 :::{admonition} Ratkaisukaavan perustelu
 :class: tip, dropdown
 
-Aloitetaan kaavan johtaminen toisen asteen yhtälön perusmuodosta $ax^2+bx+c=0$. Jaetaan molemmat puolet luvulla $a$. (Näin voi tehdä, sillä oletetaan, että 
-a≠0). Oikealle puolelle jää nolla, sillä nolla jaettuna millä tahansa (nollasta poikkeavalla) luvulla on edelleen nolla.
+Aloitetaan kaavan johtaminen toisen asteen yhtälön perusmuodosta $ax^2+bx+c=0$. Jaetaan molemmat puolet luvulla $a$. Näin voi tehdä, sillä oletetaan, että $a\neq 0$. Oikealle puolelle jää nolla, sillä nolla jaettuna millä tahansa (nollasta poikkeavalla) luvulla on edelleen nolla.
 
 $x^2+\frac{b}{a}x+\frac{c}{a}=0$
 
@@ -62,7 +61,9 @@ $x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$
 
 :::
 
-**Esim.** Ratkaise yhtälö $2x^2-8x+6=0$.
+::::{admonition} Esimerkki
+
+Ratkaise yhtälö $2x^2-8x+6=0$.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -83,7 +84,11 @@ $x=\frac{8+4}{4}=\frac{12}{4}=3$ ja $x=\frac{8-4}{4}=\frac{4}{4}=1$.
 
 :::
 
-**Esim.** Ratkaise yhtälö $\frac{4}{x}+x=8-2x$.
+::::
+
+::::{admonition} Esimerkki
+
+Ratkaise yhtälö $\frac{4}{x}+x=8-2x$.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -108,10 +113,16 @@ Ratkaisut ovat $x=\frac{8+4}{6}=\frac{12}{6}=2$ ja $x=\frac{8-4}{6}=\frac{4}{6}=
 
 :::
 
+::::
+
 
 ## Diskriminantti ja ratkaisujen määrä
 
-Tarkastellaan tarkemmin ratkaisukaavassa neliöjuuren sisällä olevaa lauseketta $b^2-4ac$. Tätä sanotaan yhtälön diskriminantiksi ja merkitään kirjaimella $D$. Diskriminantin arvosta nähdään, onko yhtälöllä 0, 1 vai 2 ratkaisua.
+Toisen asteen yhtälöitä ratkaistessaan saattaa päätyä hämmentävään tilanteeseen, jossa ratkaisua ei löydykään tai niitä löytyy kaksi. Näin voi tapahtua esimerkiksi fysiikan ongelmissa. Esimerkiksi jos heitetään lumipallo korkeassa kaaressa kohti matalaa rakennusta, voidaan laskea, milloin tai missä kohtaa lumipallo osuu rakennuksen katolle. Lumipallon sijaintia kuvataan toisen asteen yhtälöllä. Jokainen, joka on joskus heittänyt lumipallon, tietää että aina pallo ei osu sinne minne olisi tarkoitus. Tämä vastaa tilannetta, jossa yhtälölle ei löydy ratkaisua. Toisaalta tarkka heittäjä saa pallon hipaisemaan sekä katon etu- että takareunaa, jolloin yhtälölle on kaksikin ratkaisua. 
+
+Joskus käytännön sovelluksissa itse yhtälön ratkaisu ei ole tärkein asia. Kun suunnitellaan jotakin laitetta, rakennusta tai muuta systeemiä, hyvä lähtökohta on miettiä, onko kyseisen systeemin avulla edes mahdollista saavuttaa haluttua asiaa. Toisin sanoen - onko olemassa ratkaisuja sille yhtälölle, jolla systeemin toimintaa mallinnetaan. Jos ei ole, niin mitä parametrejä systeemissä pitäisi muuttaa? Pitäisikö lumipallo heittää kauempaa, lähempää, suuremmassa vai pienemmässä kulmassa?
+
+Mahdollisten ratkaisujen lukumäärää tarkastellaan diskriminantti-käsitteen avulla. Diskriminantti $D$ tarkoittaa toisen asteen yhtälön ratkaisukaavassa neliöjuuren sisällä olevaa lauseketta $b^2-4ac$. Diskriminantin arvosta nähdään, onko yhtälöllä 0, 1 vai 2 ratkaisua seuraavien sääntöjen mukaan
 
 - Jos $D < 0$, niin neliöjuurta $\sqrt{D}$ ei ole määritelty. Tällöin yhtälöllä ei ole yhtään ratkaisua.
 
@@ -119,42 +130,85 @@ Tarkastellaan tarkemmin ratkaisukaavassa neliöjuuren sisällä olevaa lausekett
 
 - Jos $D > 0$, niin neliöjuuresta saadaan jokin luku $\sqrt{D}$ sijoitettavaksi ratkaisukaavaan. Yhtälölle on olemassa kaksi ratkaisua.
 
-**Esim.** Millä luvun $b$ arvolla yhtälöllä $3x^2+bx-2=0$ on tasan yksi ratkaisu?
+::::{admonition} Esimerkki
+
+Millä luvun $b$ arvolla tai arvoilla yhtälöllä $5x^2+bx+80=0$ on tasan yksi ratkaisu?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-Kirjoitetaan yhtälölle diskriminantti $D=b^2-4\cdot 3\cdot 2$, joka sievenee muotoon $D=b^2-24$. Ratkaisuja on tasan yksi silloin, kun $D=0$. On siis ratkaistava $b$ yhtälöstä $b^2-24=0$. Ratkaisuksi saadaan $b=\sqrt{24}$. Myös $b=-\sqrt{24}$ toteuttaa saman yhtälön.
+Kirjoitetaan yhtälölle diskriminantti $D=b^2-4\cdot 5\cdot 80$, joka sievenee muotoon $D=b^2-1600$. Ratkaisuja on tasan yksi silloin, kun $D=0$. On siis ratkaistava $b$ yhtälöstä $b^2-1600=0$. Ratkaisuksi saadaan $b=40$. Myös $b=-40$ toteuttaa saman yhtälön.
+
+On tärkeää huomata, että annettua yhtälöä ei ole vielä ratkaistu. Tarkastellaan erikseen tilanteita $b=40$ ja $b=-40$.
+
+Toisen asteen yhtälön ratkaisukaavalla saadaan ensimmäisessä tapauksessa
+
+$x=\frac{-40\pm 0}{2\cdot 5}=-4$
+
+ja toisessa tapauksessa 
+
+$x=\frac{-(-40)\pm 0}{2\cdot 5}=4$
 
 :::
 
-**Esim.** Mikä pitäisi olla luvun $c$, jotta yhtälö $2x^2-x+c=0$ olisi mahdollista ratkaista?
+::::
+
+::::{admonition} Esimerkki
+
+Mikä pitäisi olla luvun $c$, jotta yhtälö $2x^2-x+c=0$ olisi mahdollista ratkaista?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
 Diskriminantti on nyt $D=(-1)^2-4\cdot 2\cdot c$ eli $D=1-8c$. Ratkaisuja on olemassa, jos $1-8c \geq 0$. Tästä saadaan ehto $c \leq \frac{1}{8}$.
 
+Yhtälön ratkaisut riippuvat nyt valitusta luvun $c$ arvosta. Esimerkiksi jos valitaan $c=0$, niin ratkaisut ovat 
+
+$x=\frac{-(-1)\pm\sqrt{(-1)^2-4\cdot 2 \cdot 0}}{2\cdot 2}=\frac{1\pm 1}{4}$ eli $x=\frac{1}{2}$ tai $x=0$.
+
 :::
+
+::::
 
 
 ## Erikoistapauksia
 
-Jos $b=0$, niin yhtälö pelkistyy muotoon $ax^2+c=0$. Tällöin yhtälöstä saadaan ratkaistua (vähentämällä molemmilta puolilta luku $c$, jakamalla molemmat puolet luvulla $a$ ja ottamalla molemmista puolista neliöjuuri) $x=\pm \sqrt{\frac{-c}{a}}$. Ratkaisuja on olemassa vain, jos $\frac{-c}{a}\geq 0$, sillä muuten neliöjuurta ei voi laskea. 
+Jos $b=0$, niin yhtälö pelkistyy muotoon $ax^2+c=0$. Tällöin yhtälöstä saadaan ratkaistua $x=\pm \sqrt{\frac{-c}{a}}$. Kaavaa ei kannata opetella ulkoa, sillä se muodostuu vähentämällä molemmilta puolilta luku $c$, jakamalla molemmat puolet luvulla $a$ ja ottamalla molemmista puolista neliöjuuri. Ratkaisuja on olemassa vain, jos $\frac{-c}{a}\geq 0$, sillä muuten neliöjuurta ei voi laskea. 
 
-**Esim.** Ratkaise yhtälö $2x^2-18=0$.
+::::{admonition} Esimerkki
+
+Ratkaise yhtälö $2x^2-18=0$.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-Ratkaisut ovat $x=\pm \sqrt{\frac{-(-18)}{2}}= \pm \sqrt{\frac{18}{2}} = \pm \sqrt{9}$. Ratkaisut ovat siis $x=3$ ja $x=-3$.
+Lisätään aluksi yhtälön molemmille puolille luku $18$:
+
+$2x^2=18$
+
+Jaetaan yhtälön molemmat puolet luvulla $2$:
+
+$x^2=9$
+
+Otetaan yhtälön molemmista puolista neliöjuuri, huomioiden sekä positiivinen että negatiivinen vaihtoehto
+
+$x=\pm \sqrt{9}$.
+
+Ratkaisut ovat siis $x=3$ ja $x=-3$.
+
+Suoraan ratkaisukaavalla ratkaisu olisi
+
+$x=\pm \sqrt{\frac{-(-18)}{2}}= \pm \sqrt{\frac{18}{2}} = \pm \sqrt{9}$. 
 
 :::
 
+::::
 
 Jos $c=0$, niin yhtälö pelkistyy muotoon $ax^2+bx=0$. Tällöin yhtälön vasemmalla puolella voidaan erottaa $x$ yhteiseksi tekijäksi, ja yhtälö muuttuu muotoon $x(ax+b)=0$. Yhtälö voidaan ratkaista käyttämällä ns. tulon nollasääntöä: jos tulo on nolla, niin väistämättä vähintään yksi sen tekijöistä on nolla. Saadaan siis vaihtoehdot $x=0$ tai $ax+b=0$, josta $x$ ratkaistaan ensimmäisen asteen yhtälön ratkaisukeinoin.
 
-**Esim.** Ratkaise yhtälö $x^2+6x=0$.
+::::{admonition} Esimerkki
+
+Ratkaise yhtälö $x^2+6x=0$.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -163,18 +217,38 @@ Yhtälön vasemman puolen termien yhteinen tekijä on $x$, joten yhtälö muuttu
 
 :::
 
+::::
+
 ## Sovelluksia
 
-Toisen asteen yhtälöön päädytään monissa geometrian ongelmissa. Sovellustehtävissä yhtälöt voi hyvin ratkaista esimerkiksi [WolframAlphan](https://www.wolframalpha.com/) solve-toiminnolla. Oleellista on, että on osannut tehtävänannon perusteella muodostaa ratkaistavan yhtälön tai yhtälöparin.
+Toisen asteen yhtälöön päädytään monissa geometrian ongelmissa. Sovellustehtävissä yhtälöt voi hyvin ratkaista esimerkiksi [WolframAlphan](https://www.wolframalpha.com/) solve-toiminnolla. Oleellista on, että on osannut tehtävänannon perusteella muodostaa ratkaistavan yhtälön. Laskimessa yhtälön ei tarvitse olla toisen asteen yhtälön perusmuodossa!
 
-Yksinkertainen esimerkki geometrisesta käsitteestä, josta päädytään toisen asteen yhtälöön, on suorakulmio. Jos suorakulmainen sivujen pituudet ovat $x$ ja $y$, niin sivujen pituuksia ja suorakulmion pinta-alaa $A$ yhdistää yhtälö $A=xy$. Tällöin jos tiedetään toinen sivuista ja pinta-ala, voidaan toinen sivu esittää pinta-alan ja tunnetun sivun avulla. Vastaavasti jos tunnetaan suorakulmion toinen sivu ja ympärysmitta $2x+2y$, voidaan tuntematon sivu esittää tunnetun sivun ja ympärysmitan avulla.
+Yksinkertainen esimerkki geometrisesta käsitteestä, josta päädytään toisen asteen yhtälöön, on suorakulmio. Jos suorakulmainen sivujen pituudet ovat $x$ ja $y$, niin sivujen pituuksia ja suorakulmion pinta-alaa $A$ yhdistää yhtälö $A=xy$. Tällöin jos tiedetään toinen sivuista ja pinta-ala, voidaan toinen sivu esittää pinta-alan ja tunnetun sivun avulla. Vastaavasti jos tunnetaan suorakulmion toinen sivu ja ympärysmitta $2x+2y$, voidaan tuntematon sivu esittää tunnetun sivun ja ympärysmitan avulla. Lopuksi päädytään yhtälöön, jossa on vain yksi tuntematon, jolloin yhtälö voidaan ratkaista. 
 
-**Esim.** Tontin koko on 600 neliömetriä. Tonttia ympäröi aita, jonka pituus on yhteensä 100 metriä (siis yksi pitkä sivu $y$ ja yksi lyhyt sivu $x$ ovat yhteensä 50 metriä). Mitkä ovat tontin sivujen pituudet?
+(Yhtälöparien ratkaisua käsitellään tarkemmin [Lineaarialgebra](https://luma-lapinamk.github.io/minna-lineaarialgebra/yhtaloryhmat_kertaus.html) -materiaaleissa. Tässä tapauksessa ratkaisu tapahtuu ns. sijoitusmenetelmällä.)
+
+::::{admonition} Esimerkki
+
+Suorakulmion muotoisen tontin koko on 600 neliömetriä. Tonttia ympäröi joka puolelta aita, jonka pituus on yhteensä 100 metriä. Mitkä ovat tontin sivujen pituudet?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-Pinta-alan perusteella tiedetään, että $600=xy$. Aidan pituuden perusteella taas tiedetään, että $x+y=50$. Jälkimmäisestä yhtälöstä voidaan ratkaista $y=50-x$. Sijoittamalla tämä pinta-alan perusteella muodostettuun yhtälöön saadaan $600=x(50-x)$. Tästä saadaan sievennettyä toisen asteen yhtälö $600=50x-x^2$ eli $x^2-50x+600=0$.
+Aloitetaan merkitsemällä tontin sivujen pituuksia joillakin kirjaimilla. Merkitään esimerkiksi lyhyttä sivua $x$ ja pitkää sivua $y$. Kuvan piirtäminenkin voi auttaa:
 
-WolframAlphalla saadaan ratkaisut $x=30, x=20$. Vastaavasti tällöin $y=50-30=20$ tai $y=50-20=30$.
+![Toisen asteen yhtälö, geometriaa](tontti.png "Toisen asteen yhtälö, geometriaa")
+
+Pinta-alan perusteella tiedetään, että $x\cdot y y=600$. Aidan pituuden perusteella taas tiedetään, että $2x+2y=100$. 
+
+Jälkimmäisestä yhtälöstä voidaan ratkaista $2y=100-2x \Leftrightarrow y=50-x$.
+
+Sijoittamalla tämä pinta-alan perusteella muodostettuun yhtälöön saadaan $600=x(50-x)$. Tästä saadaan sievennettyä toisen asteen yhtälö $600=50x-x^2$ eli $x^2-50x+600=0$.
+
+
+WolframAlphalla saadaan ratkaisut $x=30, x=20$. Vastaavasti tällöin $y=50-30=20$ tai $y=50-20=30$. Näissä eri ratkaisuissa mitat ovat samat, mutta tontti on vain eri päin.
+
+Yhtälön voi ratkaista kirjoittamalla solve-komennon perään yhtälön $600=x(50-x)$, eli yhtälöä ei tarvitse muokata toisen asteen yhtälön perusmuotoon!
+
 :::
+
+::::

@@ -1,8 +1,10 @@
 # Potenssilausekkeet
 
-Potenssilausekkeiden käsittelyä tarvitaan erilaisten laskusääntöjen johtamisessa ja monimutkaisten yhtälöiden ratkaisemisessa. Monet laskinohjelmat osaavat käsitellä näitäkin lausekkeita, mutta on helpompaa pysyä mukana laajempien ongelmien ratkaisuissa, kun ymmärtää, miten lausekkeet voivat muuttua eri näköisiksi. Potenssilausekkeet ovat tärkeitä myös silloin, kun matemaattisia ongelmia halutaan esittää yleisissä tapauksissa, siis ilman, että jokaista lukuarvoa tarvitsee määritellä laskemista varten.
+Potenssilausekkeiden käsittelyä tarvitaan erilaisten laskusääntöjen johtamisessa ja monimutkaisten yhtälöiden ratkaisemisessa. Monet laskinohjelmat osaavat käsitellä näitäkin lausekkeita, mutta on helpompaa pysyä mukana laajempien ongelmien ratkaisuissa, kun ymmärtää, miten lausekkeet voivat muuttua eri näköisiksi. Potenssilausekkeet ovat käytännöllisiä myös silloin, kun matemaattisia ongelmia halutaan esittää yleisissä tapauksissa, siis ilman, että jokaista lukuarvoa tarvitsee määritellä laskemista varten.
 
-**Pohdittavaksi** Neliön sivun pituus on $3$ metriä. Kuinka moninkertaiseksi neliön pinta-ala muuttuu, jos neliön sivu kaksinkertaistuu? Ongelma on helppo, sillä neliön pinta-alan pystyy laskemaan sekä alkuperäisellä että uudella sivun pituudella. Entä, jos haluaisimmekin esittää ratkaisun yleisessä tapauksessa eli siten, että neliön sivun pituus voi olla mikä tahansa luku $x$?
+::::{admonition} Pohdittavaksi
+
+Neliön sivun pituus on $3$ metriä. Kuinka moninkertaiseksi neliön pinta-ala muuttuu, jos neliön sivu kaksinkertaistuu? Ongelma on helppo, sillä neliön pinta-alan pystyy laskemaan sekä alkuperäisellä että uudella sivun pituudella. Entä, jos haluaisimmekin esittää ratkaisun yleisessä tapauksessa eli siten, että neliön sivun pituus voi olla mikä tahansa luku $x$?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -11,7 +13,11 @@ Neliön alkuperäinen pinta-ala $A_1$ on sivun pituuden $x$ toinen potenssi, sii
 
 :::
 
-**Pohdittavaksi** Tuulivoimalan tuottama sähköteho on fysiikan lakien mukaisesti verrannollinen tuulen nopeuden kolmanteen potenssiin. Millä tavalla sähköteho muuttuu, jos tuulen nopeus pienenee 10 prosenttia? Tällaiseenkin kysymykseen voi potenssilukujen laskusääntöjen avulla vastata, vaikka alkuperäisestä sähkötehosta tai tuulen nopeudesta ei olisi mitään tietoa.
+::::
+
+::::{admonition} Pohdittavaksi
+
+Tuulivoimalan tuottama sähköteho on fysiikan lakien mukaisesti verrannollinen tuulen nopeuden kolmanteen potenssiin. Millä tavalla sähköteho muuttuu, jos tuulen nopeus pienenee 10 prosenttia? Tällaiseenkin kysymykseen voi potenssilukujen laskusääntöjen avulla vastata, vaikka alkuperäisestä sähkötehosta tai tuulen nopeudesta ei olisi mitään tietoa.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -21,6 +27,8 @@ Merkitään alkuperäistä tehoa $P_1$ ja tuulen nopeutta $v$. Matemaattisesti "
 Uusi tuulen nopeus on 90 % alkuperäisestä eli $0.9 v$. Tällöin uudeksi tehoksi tulee $P_2=k\cdot(0.9 v)^3 = k\cdot 0.9^3 v^3 = 0.729 kv^3 = 0.729 P_1$. Teho siis pienenee noin 100 % - 73 % = 27 % riippumatta siitä, mikä alkuperäinen teho tai tuulen nopeus oli.
 
 :::
+
+::::
 
 ## Määritelmä
 
@@ -140,7 +148,7 @@ Merkintä $(a^m)^n$ tarkoittaa tuloa, jossa lukua $a^m$ kerrotaan itsellään $n
 
 :::
 
-**Esim.** $(x^3)^{-2}=x^{3\cdot(-2}=x^{-6}=\frac{1}{x^6}$
+**Esim.** $(x^3)^{-2}=x^{3\cdot(-2)}=x^{-6}=\frac{1}{x^6}$
 
 **Esim.** $(10^3)^2=10^{3\cdot 2}=10^6$
 
@@ -177,6 +185,8 @@ Esimerkiksi pituus 5 mm tarkoittaa samaa kuin $5\cdot10^{-3}$ m ja 6 km tarkoitt
 
 ## Esimerkkejä laskusääntöjen yhdistelystä
 
+::::{admonition} Esimerkki
+
 Sievennä lauseke $\left(\frac{6x}{3y}\right)^2$
 
 :::{admonition} Ratkaisu
@@ -185,6 +195,10 @@ Sievennä lauseke $\left(\frac{6x}{3y}\right)^2$
 $\Large{\left(\frac{6x}{3y}\right)^2=\frac{(6x)^2}{(3y)^2} =\frac{6^2 x^2}{3^2 y^2}=\frac{36x^2}{9y^2} =4 \frac{x^2}{y^2}}$
 
 :::
+
+::::
+
+::::{admonition} Esimerkki
 
 Sievennä lauseke $\Large{\left(\frac{x^4 y^{-5}}{n^4 k^2}\right)^3 \cdot \frac{n^3 k^5}{(xy)^2}}$
 
@@ -196,6 +210,10 @@ $\Large{\frac{x^{12} y^{-15}}{n^{12}k^6} \cdot \frac{n^3 k^5}{x^2 y^2} = \frac{x
 
 :::
 
+::::
+
+::::{admonition} Esimerkki
+
 Sievennä lauseke $\Large{\frac{x^5 z}{z^6 x^3}}$
 
 :::{admonition} Ratkaisu
@@ -205,3 +223,4 @@ $\Large{\frac{x^5 z}{z^6 x^3}=\frac{x^5}{x^3} \frac{z}{z^6} = x^{5-3} z^{1-6} =x
 
 :::
 
+::::

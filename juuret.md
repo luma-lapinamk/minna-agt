@@ -1,22 +1,30 @@
 # Juurilausekkeet
 
-Juuret liittyvät läheisesti potensseihin. Esimerkiksi luvun 81 toinen juuri saadaan päättelemällä: mikä luku pitää korottaa potenssiin 2, jotta saadaan 81? Luku 9 täyttää tämän ehdon. Vastaavasti luvun 8 kolmas juuri eli kuutiojuuri on 2, sillä $2^3=8$. Juurilausekkeiden laskusääntöjä tarvitaan samanlaisissa tilanteissa kuin potenssilukujen laskusääntöjä: lausekkeiden sieventämisessä ja yleisten, tiettyihin lukuarvoihin sitomattomien, ongelmien ratkaisussa.
+Juuret liittyvät läheisesti potensseihin. Hyvin monessa sovelluksessa pärjää toisella juurella eli neliöjuurella, tai kolmannella juurella eli kuutiojuurella. Juurta voi ajatella potenssilaskun kantalukuna. Esimerkiksi luvun 81 neliöjuuri saadaan päättelemällä: mikä luku pitää korottaa potenssiin 2, jotta saadaan 81? Luku 9 täyttää tämän ehdon. Vastaavasti luvun 8 kolmas juuri eli kuutiojuuri on 2, sillä $2^3=8$. Juurilausekkeiden laskusääntöjä tarvitaan samanlaisissa tilanteissa kuin potenssilukujen laskusääntöjä: lausekkeiden sieventämisessä ja yleisten, tiettyihin lukuarvoihin sitomattomien, ongelmien ratkaisussa.
 
-**Pohdittavaksi** Neliöstä lohkaistaan pienempi neliö, jonka pinta-ala on $\frac{1}{8}$ alkuperäisestä pinta-alasta. Kuinka suuri on pienemmän neliön sivun pituus verrattuna alkuperäiseen?
+::::{admonition} Pohdittavaksi 
+
+Neliöstä lohkaistaan pienempi neliö, jonka pinta-ala on $\frac{1}{8}$ alkuperäisestä pinta-alasta. Kuinka suuri on pienemmän neliön sivun pituus verrattuna alkuperäiseen?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 Merkitään neliön alkuperäistä pinta-alaa $A$. Tällöin alkuperäinen sivun pituus on $x=\sqrt{A}$. Uusi pinta-ala on $\frac{A}{8}$. Uuden sivun pituus on $\sqrt{\frac{A}{8}}=\frac{\sqrt{A}}{\sqrt{8}}=\frac{\sqrt{A}}{2.83}=\frac{1}{2.83} x$. Sivu on siis noin $\frac{1}{2.83} x = 0.35 x$.
 :::
 
-**Pohdittavaksi** Tuulivoimalan tuottama sähköteho on fysiikan lakien mukaisesti verrannollinen tuulen nopeuden kolmanteen potenssiin. Kuinka paljon tuulen nopeuden pitäisi kasvaa, jotta tuulivoimalan teho kaksinkertaistuisi?
+::::
+
+::::{adminition} Pohdittavaksi
+
+Tuulivoimalan tuottama sähköteho on fysiikan lakien mukaisesti verrannollinen tuulen nopeuden kolmanteen potenssiin. Kuinka paljon tuulen nopeuden pitäisi kasvaa, jotta tuulivoimalan teho kaksinkertaistuisi?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
 Merkitään alkuperäistä tehoa $P=kv_1^3$, missä $k$ on verrannollisuuskerroin ja $v_1$ alkuperäinen tuulen nopeus. Uusi teho on $2P=kv_2^2$, missä $v_2$ on tämän tehon saavuttamiseksi tarvittava tuulen nopeus. Näistä saadaan yhtälö $2 kv_1^3=kv_2^3$, josta ratkeaa $v_2=\sqrt[3]{2v_1^3}=\sqrt[3]{2}v_1 = 1.26 v_1$. Tuulen nopeuden pitäisi kasvaa vain 26 % alkuperäisestä.
+
 :::
 
+::::
 
 ## Määritelmä
 
@@ -40,7 +48,7 @@ Yleinen juuri $\sqrt[n]{c}$ määritellään parillisille luvuille $n$ vastaavas
 
 Yleinen juuri $\sqrt[n]{c}$ määritellään parittomille luvuille n vastaavasti kuin kuutiojuuri: se on mikä tahansa luku, joka potenssiin $n$ korottamalla saadaan luku $c$. Myös luku $c$ voi olla positiivinen tai negatiivinen.
 
-**Esim.** luvun -32 viides juuri $\sqrt[5]{-32}$ on -2, sillä $(-2)^5=-32$.
+**Esim.** Luvun -32 viides juuri $\sqrt[5]{-32}$ on -2, sillä $(-2)^5=-32$.
 
 ## Laskusäännöt
 
@@ -56,7 +64,9 @@ $\sqrt{27}\sqrt{3} \approx 5.196\cdot 1.732 = 8.999$ tai $\sqrt{27}\sqrt{3} =\sq
 
 $\sqrt[3]{25}\sqrt[3]{5} \approx 2.924 \cdot 1.710 = 5.000$ tai $\sqrt[3]{25}\sqrt[3]{5} =\sqrt[3]{25\cdot 5}=\sqrt[3]{125}=5$.
 
-**Esim.** Sievennä lauseke $\sqrt{x^3}\sqrt{x^5}$.
+::::{admonition} Esimerkki
+
+Sievennä lauseke $\sqrt{x^3}\sqrt{x^5}$.
 
 :::{admonition} Ratkaisu
 : class: tip, dropdown
@@ -73,11 +83,15 @@ Nyt voidaan ratkaisu jo päätellä: kysytty juuri on se luku, joka potenssiin 2
 
 :::
 
+::::
+
 **2. Osamäärän juuri on juurten osamäärä:** $\sqrt{\frac{a}{b}}=\frac{\sqrt{a}}{\sqrt{b}}$ ja $\sqrt[3]{\frac{a}{b}}=\frac{\sqrt[3]{a}}{\sqrt[3]{b}}$	
 
 **Esim.** Jakolasku $\frac{\sqrt{810}}{\sqrt{10}}$ voidaan laskea vaikka päässälaskuna hyödyntämällä sääntöä $\frac{\sqrt{810}}{\sqrt{10}}=\sqrt{\frac{810}{10}}=\sqrt{81}=9$. Sääntöä voidaan käyttää myös seuraavasti: $\sqrt[3]{\frac{27}{64}}=\frac{\sqrt[3]{27}}{\sqrt[3]{64}}=\frac{3}{4}$.
 
-**Esim.** Sievennä lauseke $\frac{\sqrt{x^3}}{\sqrt{x}}$.
+::::{admonition} Esimerkki
+
+Sievennä lauseke $\frac{\sqrt{x^3}}{\sqrt{x}}$.
 
 :::{admonition} Ratkaisu
 : class: tip, dropdown
@@ -94,13 +108,17 @@ ja edelleen neliöjuuren määritelmän perusteella vastaukseksi tulee $x$.
 
 :::
 
+::::
+
 ## Murtopotenssiesitys
 
 Mitä tahansa juurta voidaan merkitä $\sqrt[n]{c}=c^{\frac{1}{n}}$. Tätä kutsutaan murtopotenssiesitykseksi. Merkinnän avulla juurilausekkeita päästään käsittelemään potenssien laskusääntöjen avulla. Murtopotenssiesitys on hyödyllinen, jos halutaan sieventää lauseke, jossa on mukana sekä juuria että potensseja, tai sekä neliö- että kuutiojuuria.
 
 [WolframAlpha](https://wolframalpha.com) ja monet muut työkalut ymmärtävät murtopotenssimerkintöjä. Esimerkiksi kuutiojuuri luvusta 100 voidaan WolframAlphassa laskea näppärästi komennolla "100^(1/3)". Toinen vaihtoehto olisi kirjoittaa "cubic root of 100".
 
-**Esim.** Sievennä lauseke $x \cdot \sqrt{x}$.
+::::{admonition} Esimerkki
+
+Sievennä lauseke $x \cdot \sqrt{x}$.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -108,10 +126,18 @@ Mitä tahansa juurta voidaan merkitä $\sqrt[n]{c}=c^{\frac{1}{n}}$. Tätä kuts
 $x \cdot \sqrt{x}=x\cdot x^{\frac{1}{2}}=x^1 \cdot x^{\frac{1}{2}}=x^{1+\frac{1}{2}}=x^{\frac{3}{2}}$
 :::
 
-**Esim.** Sievennä lauseke $\sqrt[3]{x}\cdot \sqrt{x}$.
+::::
+
+
+::::{admonition} Esimerkki
+
+Sievennä lauseke $\sqrt[3]{x}\cdot \sqrt{x}$.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
 $\sqrt[3]{x}\cdot \sqrt{x}=x^{\frac{1}{3}}\cdot x^{\frac{1}{2}}=x^{\frac{1}{3}+\frac{1}{2}}=x^{\frac{2}{6}+\frac{3}{6}}=x^{\frac{5}{6}}$
+
 :::
+
+::::
