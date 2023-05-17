@@ -1,14 +1,20 @@
 # Yhtälöiden ratkaisu
 
-Lähes kaikissa matematiikan ongelmissa päädytään yhtälöiden ratkaisuun. Yhtälön muodostaminen vaatii taitoa muuttaa sanallisessa muodossa esitettyjä ongelmia lausekkeiksi. Lausekkeita puolestaan muokataan potenssilukujen, juurien ja polynomien laskusäännöillä. Lausekkeista muodostuu yhtälö, jossa esiintyy jotakin tuntematonta suuretta symboloiva kirjain. 
+Lähes kaikissa matematiikan ongelmissa päädytään yhtälöiden ratkaisuun. Yhtälön muodostaminen vaatii taitoa muuttaa sanallisessa muodossa esitettyjä systeemejä lausekkeiksi. Lausekkeita puolestaan muokataan potenssilukujen, juurien ja polynomien laskusäännöillä. Lausekkeista muodostuu yhtälö, jossa esiintyy jotakin tuntematonta suuretta symboloiva kirjain. 
 
-Matemaattisesti yhtälön voi määritellä seuraavasti: Yhtälössä on yhtäsuuruusmerkin eri puolilla kaksi lauseketta, joiden arvo on yhtä suuri. Yhtälöissä on vähintään yksi kirjain, jota vastaavaa lukuarvoa ei aluksi tunneta, esimerkiksi $x$. Yhtälön ratkaiseminen tarkoittaa sitä, että etsitään tälle kirjaimelle sellainen lukuarvo, että yhtälön vasen ja oikea puoli ovat yhtä suuret. Mahdollisia muita kirjaimia pidetään tunnettuina, vaikkei niille olisi kerrottu mitään lukuarvoa.
+Matemaattisesti yhtälön voi määritellä seuraavasti: Yhtälössä on yhtäsuuruusmerkin eri puolilla kaksi lauseketta, joiden arvo on yhtä suuri.  Yhtälöissä on vähintään yksi kirjain, jota vastaavaa lukuarvoa ei aluksi tunneta, esimerkiksi $x$. Yhtälön ratkaiseminen tarkoittaa sitä, että etsitään tälle kirjaimelle sellainen lukuarvo, että yhtälön vasen ja oikea puoli ovat yhtä suuret. Mahdollisia muita kirjaimia pidetään tunnettuina, vaikkei niille olisi kerrottu mitään lukuarvoa.
 
-**Esim.** Yhtälöitä ovat esimerkiksi $13x+70=200$ ja $V=\pi r^2 h$. 
+Tässä luvussa käsitellään yhtälönratkaisun yleisiä periaatteita. Esimerkkejä erityyppisistä yhtälöistä on seuraavassa luvussa.
+
+::::{admonition} Esimerkki
+
+Yhtälöitä ovat esimerkiksi $13x+70=200$ ja $V=\pi r^2 h$. 
 
 Ensimmäinen yhtälö sopii vaikkapa seuraavanlaiseen ongelmaan: jos tuntipalkka on 13 euroa ja lisäksi äkillisesti ilmoitetusta työvuorosta saa 70 euron hälytysrahan, niin kuinka monen tunnin työvuorolla tienaisi 200 euroa?
 
 Toinen yhtälö taas voisi kuvata tynnyrin tilavuutta $V$, kun tynnyrin pohjan säde on $r$ ja tynnyrin korkeus on $h$. Mikä tahansa kirjaimista voidaan määritellä tuntemattomaksi. Jos pohjan säde on 30 cm ja tynnyriin pitäisi mahtua 600 litraa vettä, kuinka korkea tynnyrin pitäisi olla? Entä kuinka paljon vettä täytyy valuttaa hanasta, jos kyseessä onkin lasten uima-allas, jonka korkeus on 40 cm ja pohjan säde 2 metriä?
+
+Tässä vaiheessa näitä yhtälöitä ei vielä tarvitse osata ratkaista. Voit kuitenkin katsoa ratkaisut alta.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -41,9 +47,11 @@ Jos tuntemattomana onkin $V$, saman yhtälön ratkaisu on suoraviivainen kertola
 
 :::
 
+::::
+
 ## Yhtälön ratkaisun periaate
 
-Yhtälön ratkaisu perustuu siihen, että tuntematon kirjain pyritään saamaan sopivilla toimenpiteillä yksin jommallekummalle puolelle yhtäsuuruusmerkkiä. Nämä toimenpiteet pitää aina tehdä yhtä aikaa yhtälön kummallekin puolille. Esimerkkejä näistä toimenpiteistä ovat
+Yhtälön ratkaisu perustuu siihen, että tuntematon kirjain pyritään saamaan sopivilla toimenpiteillä yksin jommallekummalle puolelle yhtäsuuruusmerkkiä. Nämä toimenpiteet pitää aina tehdä yhtä aikaa yhtälön kummallekin puolille. Moni yhtälö ratkeaa pelkästään seuraavilla menetelmillä:
 
 - luvun lisääminen, 
 
@@ -53,17 +61,54 @@ Yhtälön ratkaisu perustuu siihen, että tuntematon kirjain pyritään saamaan 
 
 - luvulla jakaminen.
 
-Monimutkaisemmille yhtälöille voidaan tarvita näiden lisäksi myös potenssiinkorotusta tai juuren ottamista, logaritmia, trigonometrisia funktioita tai niiden käänteisfunktiota jne.
+Mistä tietää, mikä toimenpide pitää valita? Melkein kaikki yhtälöt voi ratkaista monella eri tavalla, soveltaen edellisiä menetelmiä eri järjestyksissä. Ratkaisun välivaiheiden määrä ja ulkonäkö voi vaihdella. Tärkeintä on, että jos yhtälön toisen lausekkeen arvoa muutetaan jollakin yllämainituista toimenpiteistä, on myös toisen lausekkeen arvoa samalla muutettava samalla tavalla.
 
-Jos siis yhtälön toisen lausekkeen arvoa muutetaan jollakin yllämainituista toimenpiteistä, on myös toisen lausekkeen arvoa samalla muutettava samalla tavalla. 
+Yhtälön lausekkeita saa kuitenkin sieventää tai olla sieventämättä erikseen. Lisäksi yhtälön vasemman ja oikean puolen saa missä tahansa vaiheessa yhtälön ratkaisua vaihtaa keskenään.
 
-Yhtälön lausekkeita saa kuitenkin sieventää tai olla sieventämättä erikseen. Yhtälön vasemman ja oikean puolen saa aina vaihtaa keskenään.
+::::{admonition} Esimerkki
 
-Yhtälön ratkaisu kirjoitetaan siten, että yhtälö säilyy koko ajan muodossa ”vasen puoli = oikea puoli”. Jokaisen välivaiheen jälkeen tulee rivinvaihto tai ns. ekvivalenssinuoli ”⇔”. Lopulta yhtälö muuttuu muotoon ”x=ratkaisu”. Yhtälön ratkaisua ei kannata aloittaa kirjoittamalla heti ensimmäisen rivin alkuun "x= ... ", sillä silloinhan ei vielä tiedä, mitä toiselle puolelle tulee!
+Ratkaistaan yhtälö $2x+3=5x-9$ vaiheittain. 
+
+:::{admonition} Ratkaisu
+:class: tip, dropdown
+
+Siivotaan ylimääräinen termi vasemmalta:
+
+- Huomataan, että vasemmalla puolella on ylimääräisenä luku $3$.
+- Poistetaan se sieltä vähennyslaskulla.
+- Sama lasku pitää tehdä myös yhtälön oikealle puolelle, jotta yhtälön molemmat puolet säilyvät yhtä suurina. 
+- Yhtälö muuttuu muotoon $2x+3-3=5x-9-3$. 
+- Sievennetään kumpikin lauseke: $2x=5x-12$.
+
+Siivotaan ylimääräinen termi oikealta:
+
+- Tavoitteena on, että tuntematonta $x$ olisi vain yhtälön vasemmalla puolella. 
+- Poistetaan siis oikealta termi $5x$ vähennyslaskulla. 
+- Tehdään sama toimenpide vasemmalle: yhtälöksi muuttuu muotoon $2x-5x=5x-12-5x$.
+- Sievennetään lausekkeet: $-3x=-12$.
+
+Siivotaan ylimääräinen kerroin vasemmalta:
+
+- Nyt tuntematon $x$ on vain vasemmalla, mutta sen edestä pitäisi saada pois kerroin $-3$.
+- Kerroin poistuu jakolaskulla.
+- Jaetaan yhtälön molemmat puolet luvulla $-3$ seuraavasti: $\frac{-3}{-3}x=\frac{-12}{-3}$ 
+- Sievennetään yhtälö muotoon $x=4$. Yhtälö on nyt ratkaistu!
+
+:::
+
+::::
+
+Monimutkaisemmille yhtälöille voidaan tarvita näiden lisäksi myös potenssiinkorotusta tai juuren ottamista, logaritmia, trigonometrisia funktioita tai niiden käänteisfunktiota jne. Näitä menetelmiä otetaan tässä materiaalissa käyttöön esimerkiksi kolmioihin liittyvissä luvuissa.
+
+Yhtälön ratkaisu kirjoitetaan siten, että yhtälö säilyy koko ajan muodossa "vasen puoli = oikea puoli". Jokaisen välivaiheen jälkeen tulee rivinvaihto tai ns. ekvivalenssinuoli $\Leftrightarrow$. 
+
+Lopulta, usean välivaiheen jälkeen, yhtälö muuttuu muotoon "x=ratkaisu". Yhtälön ratkaisua ei kannata aloittaa kirjoittamalla heti ensimmäisen rivin alkuun "x= ... ", sillä silloinhan ei vielä tiedä, mitä toiselle puolelle tulee!
 
 Yhtälön ratkaisun voi tarkistaa sijoittamalla saamansa ratkaisun alkuperäiseen yhtälöön. Tällöin vasemman ja oikean puolen pitäisi olla samat.
 
-**Esim.** Seuraavassa on esitetty erään yhtälön ratkaisu välivaiheineen. Mitä eri välivaiheissa on tehty?
+::::{admonition} Esimerkki
+
+Seuraavassa on esitetty erään yhtälön ratkaisu välivaiheineen. Mitä eri välivaiheissa on tehty?
 
 $\frac{1}{3} x + 2 = 8x -4$
 
@@ -98,7 +143,11 @@ Tämä vielä sievenee muotoon $x=\frac{18}{23}$.
 
 :::
 
-**Esim.** Ratkaise yhtälö $2x+7=x-4x$.
+::::
+
+::::{admonition} Esimerkki
+
+Ratkaise yhtälö $2x+7=x-4x$.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -145,38 +194,8 @@ Yhtälön vasemmasta ja oikeasta puolesta tuli samat, joten yhtälö on ratkaist
 
 :::
 
-**Esim.** Ratkaise yhtälö $\frac{3}{x}=4x$.
+::::
 
-:::{admonition} Ratkaisu
-:class: tip, dropdown
-
-Nimittäjässä olevan muuttujan $x$ saa pois nimittäjästä kertomalla yhtälön molemmat puolet luvulla $x$:
-
-$x\cdot \frac{3}{x}=x\cdot 4x$
-
-Sievennetään molemmat puolet:
-
-$3=4x^2$
-
-Vaihdetaan yhtälön puolet toisin päin:
-
-$4x^2=3$
-
-Jaetaan molemmat puolet luvulla $4$:
-
-$x^2 = \frac{3}{4}$
-
-Potenssiinkorotuksesta pääsee eroon ottamalla neliöjuuren, jälleen toimenpide tehdään yhtälön molemmille puolille:
-
-$\sqrt{x^2} = \sqrt{\frac{3}{4}}$
-
-$x=\sqrt{\frac{3}{4}}$.
-
-Juurten laskusääntöjen mukaisesti vastauksen voi vielä sieventää muotoon $x=\frac{\sqrt{3}}{2}$.
-
-Myös ratkaisu $x=-\frac{\sqrt{3}}{2}$ toteuttaa alkuperäisen yhtälön.
-
-:::
 
 ## Yhtälön ratkaisu tietokoneella
 
