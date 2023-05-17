@@ -50,13 +50,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Matemaattisia malleja" href="malleja.html" />
+    <link rel="next" title="Funktio mallina" href="malleja.html" />
     <link rel="prev" title="Suoraan ja kääntäen verrannollisuus" href="verrannollisuus_sivu.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -178,6 +176,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="sk_koordinaatisto.html">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="yleiset.html">
    Yleiset kolmiot
   </a>
@@ -247,7 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="malleja.html">
-   Matemaattisia malleja
+   Funktio mallina
   </a>
  </li>
  <li class="toctree-l1">
@@ -477,30 +480,41 @@ title="Print to PDF"
 <li><p>pinta-alojen suhteita luonnossa ja kartalla,</p></li>
 <li><p>tilavuuksien suhteita luonnossa ja esim. pienoismallissa.</p></li>
 </ul>
-<p>Kaikissa tapauksissa lähtökohtana on käsite nimeltä yhdenmuotoisuus. Kahta tasokuviota sanotaan yhdenmuotoisiksi, jos toinen saadaan toisesta siirtämällä, pienentämällä tai suurentamalla, kiertämällä tai peilaamalla. Kuvioiden toisiaan vastaavat pisteet ovat vastinpisteitä ja niiden väliset janat vastinjanoja. Mittakaava on vastinjanojen pituuksien suhde.</p>
-<p>Esim. Oheiset kuviot ovat yhdenmuotoisia. Vastinpisteitä ovat esim. E ja P, A ja L, C ja N. Vastinjanoja ovat esim. EA ja PL, DC ja ON.</p>
+<p>Kaikissa tapauksissa lähtökohtana on käsite nimeltä yhdenmuotoisuus. Kahta tasokuviota sanotaan yhdenmuotoisiksi, jos toinen saadaan toisesta siirtämällä, pienentämällä tai suurentamalla, kiertämällä tai peilaamalla. Esimerkiksi oikea lampi ja karttaan piirretty lampi ovat yhdenmuotoisia. Kuvioiden toisiaan vastaavat pisteet ovat vastinpisteitä ja niiden väliset janat vastinjanoja. Mittakaava on vastinjanojen pituuksien suhde. Vastaavasti yhdenmuotoisuus voidaan määritellä myös kolmiulotteisille kappaleille.</p>
+<p>Esimerkiksi oheiset monikulmiot <span class="math notranslate nohighlight">\(ABCD\)</span> ja <span class="math notranslate nohighlight">\(EFGH\)</span> ovat yhdenmuotoisia. Vastinpisteitä ovat <span class="math notranslate nohighlight">\(A\)</span> ja <span class="math notranslate nohighlight">\(E\)</span>, <span class="math notranslate nohighlight">\(B\)</span> ja <span class="math notranslate nohighlight">\(F\)</span>, <span class="math notranslate nohighlight">\(C\)</span> ja <span class="math notranslate nohighlight">\(G\)</span> sekä <span class="math notranslate nohighlight">\(D\)</span> ja <span class="math notranslate nohighlight">\(H\)</span>. Vastinjanoja ovat <span class="math notranslate nohighlight">\(AB\)</span> ja <span class="math notranslate nohighlight">\(EF\)</span>, <span class="math notranslate nohighlight">\(BC\)</span> ja <span class="math notranslate nohighlight">\(FG\)</span>, <span class="math notranslate nohighlight">\(CD\)</span> ja <span class="math notranslate nohighlight">\(GH\)</span> sekä <span class="math notranslate nohighlight">\(DA\)</span> ja <span class="math notranslate nohighlight">\(HE\)</span>.</p>
+<p><img alt="Yhdenmuotoiset kuviot" src="_images/yhdenmuotoiset_kuviot.png" /></p>
 <section id="pituuksien-suhteita">
 <h2>Pituuksien suhteita<a class="headerlink" href="#pituuksien-suhteita" title="Permalink to this headline">#</a></h2>
 <p>Pituuksien suhteisiin liittyvissä ongelmissa pätee yhtälö <span class="math notranslate nohighlight">\(y=kx\)</span>. Verrannollisuuskerroin eli mittakaava <span class="math notranslate nohighlight">\(k\)</span> tarkoittaa yhdenmuotoisten kuvioiden vastinjanojen pituuksien suhdetta. Yleensä mittakaavaa merkitään jakolaskumuodossa kaksoispisteellä esitettynä, esimerkiksi mittakaava <span class="math notranslate nohighlight">\(1:5000\)</span> tarkoittaa verrannollisuuskerrointa <span class="math notranslate nohighlight">\(k=\frac{1}{5000}\)</span>.</p>
-<p><strong>Esim.</strong> Eräässä kartassa mittakaava on 1:5000. Kuinka pitkä kartalla on pellon sivu, jonka pituus luonnossa on 200 m?</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Eräässä kartassa mittakaava on 1:5000. Kuinka pitkä kartalla on pellon sivu, jonka pituus luonnossa on 200 m?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Merkitään sivun pituutta maastossa <span class="math notranslate nohighlight">\(x\)</span> ja kartalla <span class="math notranslate nohighlight">\(y\)</span>. Yhtälö, joka kuvaa näiden suhdetta, on <span class="math notranslate nohighlight">\(y=kx\)</span>. Sivun pituus <span class="math notranslate nohighlight">\(y\)</span> kartalla saadaan sijoittamalla yhtälöön <span class="math notranslate nohighlight">\(k\)</span> ja <span class="math notranslate nohighlight">\(x\)</span>, siis <span class="math notranslate nohighlight">\(y=\frac{1}{5000}\cdot 200~\text{m}=\frac{200}{5000}~\text{m}=0.04~\text{m}\)</span>.</p>
 </div>
-<p><strong>Esim.</strong> Paljonko on polun pituus maastossa, jos se on retkeilykartassa (mittakaava 1:20 000) 8.5 cm pitkä?</p>
+</div>
+<p></p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Paljonko on polun pituus maastossa, jos se on retkeilykartassa (mittakaava 1:20 000) 8.5 cm pitkä?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Käytetään seuraavia merkintöjä: <span class="math notranslate nohighlight">\(x\)</span> on polun pituus maastossa, <span class="math notranslate nohighlight">\(y\)</span> on polun pituus kartalla, <span class="math notranslate nohighlight">\(k\)</span> on mittakaava.</p>
 <p>Ratkaistaan <span class="math notranslate nohighlight">\(x\)</span> yhtälöstä <span class="math notranslate nohighlight">\(y=kx\)</span>, jolloin saadaan <span class="math notranslate nohighlight">\(x=\frac{y}{k}\)</span>. Sijoitetaan <span class="math notranslate nohighlight">\(y\)</span> ja <span class="math notranslate nohighlight">\(k\)</span> yhtälöön: <span class="math notranslate nohighlight">\(x=\frac{0.085~\text{m}}{1:20000}\)</span>. Murtolukujen laskusääntöjen mukaisesti murtoluvulla jakaminen muuttuu sen käänteisluvulla kertomiseksi, siis <span class="math notranslate nohighlight">\(x=0.085~\text{m}\cdot 20 000 = 1700~\text{m}\)</span>.</p>
 </div>
+</div>
 <p>Kun mittakaavaa lasketaan, tuloksena voi olla desimaaliluku. Tämä voidaan ilmaista muodossa <span class="math notranslate nohighlight">\(k=\frac{1}{a}\)</span>, josta saadaan ratkaistua <span class="math notranslate nohighlight">\(a=\frac{1}{k}\)</span>. Tämän jälkeen mittakaava voidaan kirjoittaa, kuten se yleenä kartoissa yleensä esitetään, <span class="math notranslate nohighlight">\(1:a\)</span>.</p>
-<p><strong>Esim.</strong> Tien pituus maastossa on 360 m ja kartalla 14 cm. Mikä on kartan mittakaava?</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Tien pituus maastossa on 360 m ja kartalla 14 cm. Mikä on kartan mittakaava?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Mittakaava on <span class="math notranslate nohighlight">\(k=\frac{0.14}{360}=0.00038888\ldots \approx 0.000389\)</span>. Huomaa, että pituuksien täytyy olla jakolaskussa samassa yksikössä. Tässä tapauksessa pituus kartalla on muutettu metreiksi, mutta sama tulos saataisiin jos muutettaisiin pituus maastossa senttimetreiksi - tai vaikka kumpikin pituus desimetreiksi tai kilometreiksi.</p>
 <p>Ilmaistaan mittakaava muodossa <span class="math notranslate nohighlight">\(k=1:a\)</span> ratkaisemalla yhtälö</p>
 <p><span class="math notranslate nohighlight">\(0.000389=\frac{1}{a}\)</span>.</p>
 <p>Tästä saadaan <span class="math notranslate nohighlight">\(a=\frac{1}{0.000389}\approx 2571\)</span>. Mittakaava on siis suunnilleen 1:2571.</p>
+</div>
 </div>
 </section>
 <section id="pinta-alojen-suhteita">
@@ -511,7 +525,9 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(A_1=2~\text{m} \cdot 3~\text{m}=6~\text{m}^2, A_2=4~\text{m}\cdot 6~\text{m}=24~\text{m}^2\)</span>.</p>
 <p>Tarkistetaan, että mittakaava on todellakin alojen suhteen neliöjuuri:</p>
 <p><span class="math notranslate nohighlight">\(k=\sqrt{\frac{6~\text{m}^2}{24~\text{m}^2}}=\sqrt{\frac{1}{4}}=\frac{\sqrt{1}}{\sqrt{4}}=\frac{1}{\sqrt{4}}=\frac{1}{2}=1:2\)</span>.</p>
-<p><strong>Esim.</strong> Urheilukentän pinta-ala on kartalla <span class="math notranslate nohighlight">\(16~\text{cm}^2\)</span> ja oikeasti <span class="math notranslate nohighlight">\(4900~\text{m}^2\)</span>.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Urheilukentän pinta-ala on kartalla <span class="math notranslate nohighlight">\(16~\text{cm}^2\)</span> ja oikeasti <span class="math notranslate nohighlight">\(4900~\text{m}^2\)</span>.</p>
 <p>a) Mikä on kartan mittakaava?</p>
 <p>b) Kuinka pitkä on tie, jonka pituus on kartalla 18 cm?</p>
 <div class="tip dropdown admonition">
@@ -523,12 +539,16 @@ title="Print to PDF"
 <p>b) Tien pituus <span class="math notranslate nohighlight">\(x\)</span> saadaan nyt ratkaisemalla se yhtälöstä <span class="math notranslate nohighlight">\(y=kx\)</span>, siis <span class="math notranslate nohighlight">\(x=\frac{y}{k}\)</span>.</p>
 <p>Sijoitetaan yhtälöön mittakaava <span class="math notranslate nohighlight">\(k\)</span> ja tien pituus <span class="math notranslate nohighlight">\(y\)</span>: <span class="math notranslate nohighlight">\(x=\frac{18~\text{cm}}{0.000571}=31524~\text{cm}\approx 315.24~\text{m}\)</span>.</p>
 </div>
-<p><strong>Esim.</strong> Talon pohjapiirros on piirretty mittakaavassa 1:75. Talon pinta-ala on piirroksessa <span class="math notranslate nohighlight">\(A_1=0.027~\text{m}^2\)</span>. Mikä on todellinen pinta-ala <span class="math notranslate nohighlight">\(A_2\)</span>?</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Talon pohjapiirros on piirretty mittakaavassa 1:75. Talon pinta-ala on piirroksessa <span class="math notranslate nohighlight">\(A_1=0.027~\text{m}^2\)</span>. Mikä on todellinen pinta-ala <span class="math notranslate nohighlight">\(A_2\)</span>?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Pinta-alojen suhteelle pätee <span class="math notranslate nohighlight">\(\frac{A_1}{A_2} =k^2\)</span>.</p>
 <p>Ratkaistaan yhtälöstä kysytty pinta-ala <span class="math notranslate nohighlight">\(A_2\)</span>: <span class="math notranslate nohighlight">\(\frac{A_1}{A_2} =k^2 \leftrightarrow A_2 k^2 = A_1 \leftrightarrow A_2=\frac{A_1}{k^2}\)</span>.</p>
 <p>Sijoitetaan lukuarvot: <span class="math notranslate nohighlight">\(A_2=\frac{0.027~\text{m}^2}{\left(1/75\right)^2} = \frac{0.027~\text{m}^2}{\frac{1}{75^2}}=0.027~\text{m}^2 \cdot 75^2 \approx 152~\text{m}^2\)</span>.</p>
+</div>
 </div>
 </section>
 <section id="tilavuuksien-suhteita">
@@ -539,19 +559,26 @@ title="Print to PDF"
 <p>Kuvassa olevien rakennelmien mittakaava on 1:2, sillä kaikkien sivujen pituudet ovat isommassa rakennelmassa kaksinkertaiset pienempiin verrattuna. Purkamalla rakennukset osiin huomataan, että pienemmän rakennelman tilavuus on 6 yksikköä, ja isomman tilavuus on 48 yksikköä. Tarkistetaan, että mittakaava on todellakin tilavuuksien suhteen kuutiojuuri:</p>
 <p><span class="math notranslate nohighlight">\(k=\sqrt[3]{\frac{6}{48}}=\sqrt[3]{\frac{1}{8}}=\frac{\sqrt[3]{1}}{\sqrt[3]{8}}=\frac{1}{2}=1:2\)</span>.</p>
 <p>Jos pieni ja iso kappale on tehty yhtä tiheästä aineesta, niin tilavuuksien suhde on sama kuin massojen suhde, siis <span class="math notranslate nohighlight">\(k^3=\frac{m_1}{m_2}\)</span>.</p>
-<p><strong>Esim.</strong> 25 cm pitkä kala painaa 1 kg. Paljonko painaa 50 cm pitkä kala, jos oletetaan, että kalat ovat yhdenmuotoisia?</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>25 cm pitkä kala painaa 1 kg. Paljonko painaa 50 cm pitkä kala, jos oletetaan, että kalat ovat yhdenmuotoisia?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Mittakaava on pituuksien suhde: <span class="math notranslate nohighlight">\(k=\frac{25}{50}=\frac{1}{2}\)</span>.</p>
 <p>Massojen suhde on mittakaavan kolmas potenssi: <span class="math notranslate nohighlight">\(\frac{m_1}{m_2} =\left(\frac{1}{2}\right)^3\)</span>.</p>
 <p>Ratkaistaan tästä tuntematon massa <span class="math notranslate nohighlight">\(m_2\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(\frac{m_1}{m_2} =\left(\frac{1}{2}\right)^3 \leftrightarrow m_2=m_1\cdot 2^3 \leftrightarrow m_2=8\cdot 1~\text{kg} \leftrightarrow m_2=8~\text{kg}\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\frac{m_1}{m_2} =\left(\frac{1}{2}\right)^3 \Leftrightarrow m_2=m_1\cdot 2^3 \Leftrightarrow m_2=8\cdot 1~\text{kg} Lleftrightarrow m_2=8~\text{kg}\)</span>.</p>
+<p>Oikeasti kalat eivät taida olla yhdenmuotoisia! Tässä arkikieli poikkeaa matematiikan kielestä. Jos toisen kalan pituus on kaksi kertaa niin suuri kuin toisen, mutta muut mitat eivät, kalat eivät ole yhdenmuotoisia. Myöskään toisen kalan kaksi kertaa suurempi massa ei tarkoita sitä, että kalojen mittakaava olisi 1:2.</p>
 </div>
-<p><strong>Esim.</strong> Pieneen maljakkoon mahtuu 0.75 litraa vettä ja suureen maljakkoon 3 litraa. Maljakot ovat yhdenmuotoisia. Mikä on maljakoiden mittakaava? Kuinka korkea on suurempi maljakko, jos pienemmän maljakon korkeus on 12 cm? Maljakoiden muodosta ei ole tarkempaa tietoa.</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Pieneen maljakkoon mahtuu 0.75 litraa vettä ja suureen maljakkoon 3 litraa. Maljakot ovat yhdenmuotoisia. Mikä on maljakoiden mittakaava? Kuinka korkea on suurempi maljakko, jos pienemmän maljakon korkeus on 12 cm? Maljakoiden muodosta ei ole tarkempaa tietoa.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Mittakaavan kolmas potenssi on tilavuuksien suhde: <span class="math notranslate nohighlight">\(k^3=\frac{0.75}{3}\)</span>. Tästä saadaan <span class="math notranslate nohighlight">\(k=\sqrt[3]{\frac{0.75}{3}}=0.63\)</span>.</p>
 <p>Suuren maljakon korkeus saadaan yhtälöstä <span class="math notranslate nohighlight">\(y=kx\)</span> eli <span class="math notranslate nohighlight">\(12~\text{cm}=0.63\cdot x\)</span>, eli <span class="math notranslate nohighlight">\(x=\frac{12~\text{cm}}{0.63}=19~\text{cm}\)</span>.</p>
+</div>
 </div>
 </section>
 </section>
@@ -593,7 +620,7 @@ title="Print to PDF"
     <a class='right-next' id="next-link" href="malleja.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Matemaattisia malleja</p>
+        <p class="prev-next-title">Funktio mallina</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

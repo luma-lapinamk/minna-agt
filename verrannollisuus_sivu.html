@@ -50,8 +50,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -178,6 +176,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="sk_koordinaatisto.html">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="yleiset.html">
    Yleiset kolmiot
   </a>
@@ -247,7 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="malleja.html">
-   Matemaattisia malleja
+   Funktio mallina
   </a>
  </li>
  <li class="toctree-l1">
@@ -414,47 +417,11 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#suoraan-verrannollisuus">
    Suoraan verrannollisuus
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-kx">
-     Riippuvuus muotoa
-     <span class="math notranslate nohighlight">
-      \(y=kx\)
-     </span>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-kx-n-n-1">
-     Riippuvuus muotoa
-     <span class="math notranslate nohighlight">
-      \(y=kx^n, n &gt; 1\)
-     </span>
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#kaantaen-verrannollisuus">
    Kääntäen verrannollisuus
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-frac-k-x">
-     Riippuvuus muotoa
-     <span class="math notranslate nohighlight">
-      \(y=\frac{k}{x}\)
-     </span>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-frac-k-x-n-n-1">
-     Riippuvuus muotoa
-     <span class="math notranslate nohighlight">
-      \(y=\frac{k}{x^n}, n &gt; 1\)
-     </span>
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -479,47 +446,11 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#suoraan-verrannollisuus">
    Suoraan verrannollisuus
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-kx">
-     Riippuvuus muotoa
-     <span class="math notranslate nohighlight">
-      \(y=kx\)
-     </span>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-kx-n-n-1">
-     Riippuvuus muotoa
-     <span class="math notranslate nohighlight">
-      \(y=kx^n, n &gt; 1\)
-     </span>
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#kaantaen-verrannollisuus">
    Kääntäen verrannollisuus
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-frac-k-x">
-     Riippuvuus muotoa
-     <span class="math notranslate nohighlight">
-      \(y=\frac{k}{x}\)
-     </span>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#riippuvuus-muotoa-y-frac-k-x-n-n-1">
-     Riippuvuus muotoa
-     <span class="math notranslate nohighlight">
-      \(y=\frac{k}{x^n}, n &gt; 1\)
-     </span>
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -531,13 +462,13 @@ title="Print to PDF"
                 
               <div>
                 
-  <!-- #region -->
-<section class="tex2jax_ignore mathjax_ignore" id="suoraan-ja-kaantaen-verrannollisuus">
+  <section class="tex2jax_ignore mathjax_ignore" id="suoraan-ja-kaantaen-verrannollisuus">
 <h1>Suoraan ja kääntäen verrannollisuus<a class="headerlink" href="#suoraan-ja-kaantaen-verrannollisuus" title="Permalink to this headline">#</a></h1>
-<p>Verrannollisuus on käsite, jonka avulla voidaan vastata esimerkiksi seuraavanlaisiin kysymyksiin:</p>
-<p>a) Kolme kiloa mangoja maksaa 6.90 €. Paljonko maksaa viisi kiloa samoja mangoja?</p>
-<p>b) Säiliön tyhjentäminen kestää 4 h ja 30 min, kun tyhjennyspumpun teho on 200 l/min. Kauanko tyhjentäminen kestää pumpulla, jonka teho on 120 l/min?</p>
-<p>Lisäksi verrannollisuutta tarvitaan mittakaavoissa (kartat, pienoismallit).</p>
+<p>Verrannollisuus on käsite, jota tarvitaan mittakaavoissa, kuten kartoissa ja rakennuspiirustuksissa. Sen avulla voidaan vastata myös esimerkiksi seuraavanlaisiin kysymyksiin:</p>
+<ul class="simple">
+<li><p>Kolme kiloa mangoja maksaa 6.90 €. Paljonko maksaa viisi kiloa samoja mangoja?</p></li>
+<li><p>Säiliön tyhjentäminen kestää 4 h ja 30 min, kun tyhjennyspumpun teho on 200 l/min. Kauanko tyhjentäminen kestää pumpulla, jonka teho on 120 l/min?</p></li>
+</ul>
 <p>Verrannossa on kaksi toisistaan riippuvaa asiaa. Niitä merkitään usein kirjaimilla <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span>. Muuttujat <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span> voivat riippua toisistaan kahdella eri tavalla:</p>
 <ul class="simple">
 <li><p>Kun <span class="math notranslate nohighlight">\(x\)</span> kasvaa, niin myös <span class="math notranslate nohighlight">\(y\)</span> kasvaa. Tällöin kyseessä on suoraan verrannollisuus. Esimerkiksi kilohinnalla ostettujen hedelmien kokonaishinta <span class="math notranslate nohighlight">\(y\)</span> varmasti kasvaa, jos ostettujen hedelmien määrä <span class="math notranslate nohighlight">\(x\)</span> kasvaa.</p></li>
@@ -546,14 +477,15 @@ title="Print to PDF"
 <p></p>
 <section id="suoraan-verrannollisuus">
 <h2>Suoraan verrannollisuus<a class="headerlink" href="#suoraan-verrannollisuus" title="Permalink to this headline">#</a></h2>
-<p>Suoraan verrannollisten muuttujien <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span> välinen riippuvuus on muotoa <span class="math notranslate nohighlight">\(y=kx^n\)</span>, missä luku <span class="math notranslate nohighlight">\(k\)</span> on nimeltään verrannollisuuskerroin ja <span class="math notranslate nohighlight">\(n\)</span> on jokin positiivinen kokonaisluku. Kun <span class="math notranslate nohighlight">\(x\)</span> kasvaa, myös <span class="math notranslate nohighlight">\(y\)</span> kasvaa. Esimerkiksi jos riippuvuus on muotoa <span class="math notranslate nohighlight">\(y=3x\)</span>, niin verrannollisuuskerroin on <span class="math notranslate nohighlight">\(3\)</span>, ja arvot riippuvat toisistaan seuraavasti: <span class="math notranslate nohighlight">\(x=1 \rightarrow y=3, x=2 \rightarrow y=6, x=3 \rightarrow y=9, \ldots\)</span>.</p>
-<section id="riippuvuus-muotoa-y-kx">
-<h3>Riippuvuus muotoa <span class="math notranslate nohighlight">\(y=kx\)</span><a class="headerlink" href="#riippuvuus-muotoa-y-kx" title="Permalink to this headline">#</a></h3>
+<p>Suoraan verrannollisten muuttujien <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span> välinen riippuvuus on muotoa <span class="math notranslate nohighlight">\(y=kx^n\)</span>, missä luku <span class="math notranslate nohighlight">\(k\)</span> on nimeltään verrannollisuuskerroin ja <span class="math notranslate nohighlight">\(n\)</span> on jokin positiivinen kokonaisluku. Kun <span class="math notranslate nohighlight">\(x\)</span> kasvaa, myös <span class="math notranslate nohighlight">\(y\)</span> kasvaa.</p>
+<p><strong>Riippuvuus muotoa <span class="math notranslate nohighlight">\(y=kx\)</span></strong></p>
 <p>Yksinkertaisimmassa tapauksessa muuttujen <span class="math notranslate nohighlight">\(x\)</span> eksponentti on 1. Tällöin yhtälö on muotoa <span class="math notranslate nohighlight">\(y=kx\)</span>.</p>
 <p>Verrannollisuuskerrointa <span class="math notranslate nohighlight">\(k\)</span> ei välttämättä suoraan tiedetä. Se voidaan kuitenkin ratkaista yhtälöstä <span class="math notranslate nohighlight">\(y=kx\)</span>, siis <span class="math notranslate nohighlight">\(k=\frac{y}{x}\)</span>.</p>
 <p>Ongelmien ratkaisussa hyödynnetään tietoa, että <span class="math notranslate nohighlight">\(k\)</span> on sama kaikille lukupareille <span class="math notranslate nohighlight">\((x,y)\)</span>. Niinpä jos tiedetään yksi lukupari <span class="math notranslate nohighlight">\((x_1,y_1)\)</span>, voidaan sen avulla selvittää ensin verrannollisuuskerroin <span class="math notranslate nohighlight">\(k\)</span> yhtälöstä <span class="math notranslate nohighlight">\(y_1=k x_1\)</span>. Sen jälkeen voidaan toisesta lukuparista ratkaista <span class="math notranslate nohighlight">\((x_2,y_2)\)</span> jompikumpi muuttujista <span class="math notranslate nohighlight">\(x_2\)</span> tai <span class="math notranslate nohighlight">\(y_2\)</span> hyödyntämällä yhtälöä <span class="math notranslate nohighlight">\(y_2=k x_2\)</span>.</p>
 <p>Samantyyppinen ongelma voidaan ratkaista myös yhtälönä. Merkitään jälleen kahteen eri tilanteeseen liittyviä suureita <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span> alaindekseillä <span class="math notranslate nohighlight">\((x_1,y_1)\)</span> ja <span class="math notranslate nohighlight">\((x_2,y_2)\)</span>. Koska verrannollisuuskerroin on <span class="math notranslate nohighlight">\(k=\frac{y}{x}\)</span> riippumatta <span class="math notranslate nohighlight">\(x\)</span>:n ja <span class="math notranslate nohighlight">\(y\)</span>:n arvoista, voidaan kirjoittaa <span class="math notranslate nohighlight">\(k=\frac{y_1}{x_1}\)</span> ja <span class="math notranslate nohighlight">\(k=\frac{y_2}{x_2}\)</span> ja edelleen <span class="math notranslate nohighlight">\(\frac{y_1}{x_1} = \frac{y_2}{x_2}\)</span>. Tähän yhtälöön voidaan sijoittaa tunnetut suureiden arvot ja ratkaista tuntematon.</p>
-<p><strong>Esim.</strong> Eräässä kerrostalossa 80 neliömetrin kokoinen asunto maksaa 160 000 €. Oletetaan, että asunnon hinta <span class="math notranslate nohighlight">\(y\)</span> on suoraan verrannollinen asunnon kokoon <span class="math notranslate nohighlight">\(x\)</span>. Kuinka paljon maksaisi 120 neliömetrin kokoinen asunto?</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Eräässä kerrostalossa 80 neliömetrin kokoinen asunto maksaa 160 000 €. Oletetaan, että asunnon hinta <span class="math notranslate nohighlight">\(y\)</span> on suoraan verrannollinen asunnon kokoon <span class="math notranslate nohighlight">\(x\)</span>. Kuinka paljon maksaisi 120 neliömetrin kokoinen asunto?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Koska asunnon hinta oletettavasti on sitä suurempi, mitä suurempi on asunnon koko, niin kyseessä ovat suoraan verrannolliset suureet. Tällöin asunnon hinta riippuu asunnon koosta yhtälön <span class="math notranslate nohighlight">\(y=kx\)</span> mukaisesti.</p>
@@ -567,18 +499,22 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(y_2=\frac{120~\text{m}^2}{80~\text{m}^2}\cdot 160000~€\)</span></p>
 <p><span class="math notranslate nohighlight">\(y_2 = 240000~€\)</span>.</p>
 </div>
-</section>
-<section id="riippuvuus-muotoa-y-kx-n-n-1">
-<h3>Riippuvuus muotoa <span class="math notranslate nohighlight">\(y=kx^n, n &gt; 1\)</span><a class="headerlink" href="#riippuvuus-muotoa-y-kx-n-n-1" title="Permalink to this headline">#</a></h3>
+</div>
+<p><strong>Riippuvuus muotoa <span class="math notranslate nohighlight">\(y=kx^n, n &gt; 1\)</span></strong></p>
 <p>Vaikka muuttujan <span class="math notranslate nohighlight">\(x\)</span> eksponentti <span class="math notranslate nohighlight">\(n\)</span> olisi jokin lukua 1 suurempi luku, edelleen verrannollisuuskerroin <span class="math notranslate nohighlight">\(k\)</span> pysyy samana, ja ongelmien ratkaisu tapahtuu samalla periaatteella kuin edellä. Verrannollisuuskerroin voidaan laskea <span class="math notranslate nohighlight">\(k=\frac{y}{x^n}\)</span>. Vastaavasti voidaan ratkaista tuntematon muuttuja yhtälöstä <span class="math notranslate nohighlight">\(\frac{y_1}{x_1^n}=\frac{y_2}{x_2^n}\)</span>.</p>
-<p><strong>Esim.</strong> Auton jarrutusmatka pysähdykseen saakka riippuu olosuhteista, mutta on suoraan verrannollinen nopeuden toiseen potenssiin. Eräällä tiellä jarrutusmatkaksi nopeudesta 40 km/h todettiin 16 m. Kuinka pitkä on jarrutusmatka samalla tiellä, jos alkunopeus onkin 70 km/h?</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Auton jarrutusmatka pysähdykseen saakka riippuu olosuhteista, mutta on suoraan verrannollinen nopeuden toiseen potenssiin. Eräällä tiellä jarrutusmatkaksi nopeudesta 40 km/h todettiin 16 m. Kuinka pitkä on jarrutusmatka samalla tiellä, jos alkunopeus onkin 70 km/h?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Nopeus tunnetussa tilanteessa on <span class="math notranslate nohighlight">\(x_1=40\)</span> km/h ja jarrutusmatka <span class="math notranslate nohighlight">\(y_1=16\)</span> metriä. Toisessa tilanteessa nopeus on <span class="math notranslate nohighlight">\(x_2=70\)</span> km/h ja jarrutusmatka tuntematon <span class="math notranslate nohighlight">\(y_2\)</span>. Ratkaistaan <span class="math notranslate nohighlight">\(y_2\)</span> yhtälöstä <span class="math notranslate nohighlight">\(\frac{y_1}{x_1^2}=\frac{y_2}{x_2^2}\)</span>:</p>
 <p><span class="math notranslate nohighlight">\(y_2=y_1 \frac{x_2^2}{x_1}^2= 16~\text{m}\cdot\frac{70^2}{40^2} = 49~\text{m}\)</span>.</p>
 <p>Huomaa, että nopeuden yksikkö km/h on jätetty pois, sillä se supistuu pois, kunhan vain kumpikin nopeus on ilmoitettu samassa yksikössä. Fysiikan tehtävissä nopeudet yleensä muutetaan muotoon m/s, jolloin voidaan käyttää monia muitakin laskukaavoja. Tässä tapauksessa kuitenkin riittää tarkastella nopeuksien suhdetta, ja se on sama riippumatta siitä, missä yksikössä nopeudet on ilmaistu.</p>
 </div>
-<p><strong>Esim.</strong> Auton jarrutusjäljet olivat 32 metriä pitkät. Samoissa olosuhteissa todettiin, että jarrutusmatka nopeudesta 60 km/h on 22 metriä. Mikä oli jarrutusjäljet jättäneen auton nopeus ennen jarrutusta?</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Auton jarrutusjäljet olivat 32 metriä pitkät. Samoissa olosuhteissa todettiin, että jarrutusmatka nopeudesta 60 km/h on 22 metriä. Mikä oli jarrutusjäljet jättäneen auton nopeus ennen jarrutusta?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Nyt nopeus tunnetussa tilanteessa on <span class="math notranslate nohighlight">\(x_1=60\)</span> km/h ja jarrutusmatka <span class="math notranslate nohighlight">\(y_1=22\)</span> metriä. Toisessa tilanteessa nopeus on <span class="math notranslate nohighlight">\(x_2\)</span> on tuntematon ja jarrutusmatka on <span class="math notranslate nohighlight">\(y_2=32\)</span> metriä. Ratkaistaan <span class="math notranslate nohighlight">\(x_2\)</span> yhtälöstä <span class="math notranslate nohighlight">\(\frac{y_1}{x_1^2}=\frac{y_2}{x_2^2}\)</span>:</p>
@@ -587,16 +523,17 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(x_2=\sqrt{(60~\text{km/h})^2 \cdot \frac{32~\text{m}}{22~\text{m}}}\)</span></p>
 <p><span class="math notranslate nohighlight">\(x_2 \approx 72~\text{km/h}\)</span>.</p>
 </div>
+</div>
 <p></p>
-</section>
 </section>
 <section id="kaantaen-verrannollisuus">
 <h2>Kääntäen verrannollisuus<a class="headerlink" href="#kaantaen-verrannollisuus" title="Permalink to this headline">#</a></h2>
-<p>Kääntäen verrannollisten muuttujien suhdetta kuvaava yhtälö on <span class="math notranslate nohighlight">\(y=\frac{k}{x^n}\)</span>. Kun <span class="math notranslate nohighlight">\(x\)</span> kasvaa, niin <span class="math notranslate nohighlight">\(y\)</span> pienenee. Esimerkiksi jos riippuvuus on muotoa <span class="math notranslate nohighlight">\(y=\frac{120}{x}\)</span>, niin arvot riippuvat toisistaan seuraavasti: <span class="math notranslate nohighlight">\(x=1 \rightarrow y=120, x=2 \rightarrow y=60, x=3 \rightarrow y=40, \ldots\)</span>. Ongelmat ratkeavat samaan tapaan kuin suoraan verrannollisuudessa, eli kirjoittamalla yhtälö, joka yhdistää lukuparit <span class="math notranslate nohighlight">\((x_1,y_1)\)</span> ja <span class="math notranslate nohighlight">\((x_2,y_2)\)</span> verrannollisuuskertoimen <span class="math notranslate nohighlight">\(k\)</span> avulla.</p>
-<section id="riippuvuus-muotoa-y-frac-k-x">
-<h3>Riippuvuus muotoa <span class="math notranslate nohighlight">\(y=\frac{k}{x}\)</span><a class="headerlink" href="#riippuvuus-muotoa-y-frac-k-x" title="Permalink to this headline">#</a></h3>
+<p>Kääntäen verrannollisten muuttujien suhdetta kuvaava yhtälö on <span class="math notranslate nohighlight">\(y=\frac{k}{x^n}\)</span>. Kun <span class="math notranslate nohighlight">\(x\)</span> kasvaa, niin <span class="math notranslate nohighlight">\(y\)</span> pienenee. Ongelmat ratkeavat samaan tapaan kuin suoraan verrannollisuudessa, eli kirjoittamalla yhtälö, joka yhdistää lukuparit <span class="math notranslate nohighlight">\((x_1,y_1)\)</span> ja <span class="math notranslate nohighlight">\((x_2,y_2)\)</span> verrannollisuuskertoimen <span class="math notranslate nohighlight">\(k\)</span> avulla.</p>
+<p><strong>Riippuvuus muotoa <span class="math notranslate nohighlight">\(y=\frac{k}{x}\)</span></strong></p>
 <p>Yksinkertaisimmassa tapauksessa kääntäen verrannollisia suureita yhdistää yhtälö <span class="math notranslate nohighlight">\(y=\frac{k}{x}\)</span>. Tällöin verrannollisuuskertoimeksi saadaan <span class="math notranslate nohighlight">\(k=yx\)</span>. Lukupareille <span class="math notranslate nohighlight">\((x_1,y_1)\)</span> ja <span class="math notranslate nohighlight">\((x_2,y_2)\)</span> pätee siis yhtälö <span class="math notranslate nohighlight">\(x_1 y_1 = x_2 y_2\)</span>.</p>
-<p><strong>Esim.</strong> Neljä henkilöä tekee työn 6 tunnissa. Paljonko aikaa kuluu kolmelta henkilöltä saman työn tekemiseen?</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Neljä henkilöä tekee työn 6 tunnissa. Paljonko aikaa kuluu kolmelta henkilöltä saman työn tekemiseen?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Merkitään työntekijöiden määrää <span class="math notranslate nohighlight">\(x\)</span> ja työhön kuluvaa aikaa <span class="math notranslate nohighlight">\(y\)</span>. Kun työntekijöiden määrä kasvaa, niin työhön kuluva aika pienenee. Aika riippuu siis henkilömäärästä yhtälön <span class="math notranslate nohighlight">\(y=\frac{k}{x}\)</span> mukaisesti.</p>
@@ -605,7 +542,10 @@ title="Print to PDF"
 <p>Toinen vaihtoehto on ratkaista yhtälö <span class="math notranslate nohighlight">\(x_1 y_1 = x_2 y_2\)</span>, missä tunnetut lukuarvot ovat <span class="math notranslate nohighlight">\(x_1=4\)</span>, <span class="math notranslate nohighlight">\(y_1=6\)</span> ja <span class="math notranslate nohighlight">\(x_2=3\)</span>. Tuntematon aika <span class="math notranslate nohighlight">\(y_2\)</span> on</p>
 <p><span class="math notranslate nohighlight">\(y_2=y_1\frac{x_1}{x_2}=6~\text{h}\frac{4~\text{hlö}}{3\text{hlö}}=8~\text{h}\)</span>.</p>
 </div>
-<p><strong>Esim.</strong> Uima-altaan täyttö pumppausnopeudella <span class="math notranslate nohighlight">\(x_1=120\)</span> l/min kestää <span class="math notranslate nohighlight">\(y_1=4\)</span> h. Kuinka kauan täyttäminen kestää pumpulla, jonka nopeus on <span class="math notranslate nohighlight">\(x_2=210\)</span> l/min?</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Uima-altaan täyttö pumppausnopeudella <span class="math notranslate nohighlight">\(x_1=120\)</span> litraa/min kestää <span class="math notranslate nohighlight">\(y_1=4\)</span> h. Kuinka kauan täyttäminen kestää pumpulla, jonka nopeus on <span class="math notranslate nohighlight">\(x_2=210\)</span> litraa/min?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Ratkaistaan tuntematon täyttöaika <span class="math notranslate nohighlight">\(y_2\)</span> yhtälöstä <span class="math notranslate nohighlight">\(y_1 x_1=y_2 x_2\)</span>:</p>
@@ -616,17 +556,21 @@ title="Print to PDF"
 <p>tai</p>
 <p><span class="math notranslate nohighlight">\(k=210~\text{l/min}\cdot 2~\text{h}~18~\text{min}=210~\text{l/min}\cdot 138~\text{min}\approx 29 000~\text{l}\)</span>.</p>
 </div>
-</section>
-<section id="riippuvuus-muotoa-y-frac-k-x-n-n-1">
-<h3>Riippuvuus muotoa <span class="math notranslate nohighlight">\(y=\frac{k}{x^n}, n &gt; 1\)</span><a class="headerlink" href="#riippuvuus-muotoa-y-frac-k-x-n-n-1" title="Permalink to this headline">#</a></h3>
+</div>
+<p><strong>Riippuvuus muotoa <span class="math notranslate nohighlight">\(y=\frac{k}{x^n}, n &gt; 1\)</span></strong></p>
 <p>Jos kääntäen verrannollisia suureita yhdistää yhtälö <span class="math notranslate nohighlight">\(y=\frac{k}{x^n}, n&gt; 1\)</span>, niin verrannollisuuskertoimeksi saadaan <span class="math notranslate nohighlight">\(k=yx^n\)</span>. Lukupareille <span class="math notranslate nohighlight">\((x_1,y_1)\)</span> ja <span class="math notranslate nohighlight">\((x_2,y_2)\)</span> pätee siis yhtälö <span class="math notranslate nohighlight">\(x_1^n y_1 = x_2^n y_2\)</span>.</p>
-<p><strong>Esim.</strong> Lampun valaistusvoimakkuus, jota mitataan lukseina (lux), on kääntäen verrannollinen etäisyyden toiseen potenssiin. Jos valaistusvoimakkuus kahden metrin päässä lampusta on 90 lux, paljonko se on viiden metrin päässä lampusta?</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Lampun valaistusvoimakkuus, jota mitataan lukseina (lux), on kääntäen verrannollinen etäisyyden toiseen potenssiin. Jos valaistusvoimakkuus kahden metrin päässä lampusta on 90 lux, paljonko se on viiden metrin päässä lampusta?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Merkitään tunnettua valaistusvoimakkuutta <span class="math notranslate nohighlight">\(y_1=90~\text{lx}\)</span>, tunnettua etäisyyttä <span class="math notranslate nohighlight">\(x_2=2~\text{m}\)</span> ja toista etäisyyttä <span class="math notranslate nohighlight">\(x_2=5~\text{m}\)</span>. Ratkaistaan tuntematon valaistusvoimakkuus <span class="math notranslate nohighlight">\(y_2\)</span> yhtälöstä <span class="math notranslate nohighlight">\(x_1^2 y_1 = x_2^2 y_2\)</span>:</p>
 <p><span class="math notranslate nohighlight">\(x_1^2 y_1 = x_2^2 y_2 \leftrightarrow y_2 = y_2 \frac{x_1^2}{x_2}^2 = 90~\text{lux}\cdot \frac{\left(2~\text{m}\right)^2}{\left(5~\text{m}\right)^2} = 14.4~\text{lx}\)</span>.</p>
 </div>
-<p><strong>Esim.</strong> Auringon säteilyn intensiteetti jollakin planeetilla on kääntäen verrannollinen planeetan etäisyyden toiseen potenssiin. Maan etäisyys auringosta on 1 AU (astronomical unit). Intensiteetti maapallolla on noin <span class="math notranslate nohighlight">\(1400~\text{W/m}^2\)</span>. Millä etäisyydellä intensiteetti olisi kaksinkertainen maapallolle kohdistuvaan intensiteettiin verrattuna?</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Auringon säteilyn intensiteetti jollakin planeetilla on kääntäen verrannollinen planeetan etäisyyden toiseen potenssiin. Maan etäisyys auringosta on 1 AU (astronomical unit). Intensiteetti maapallolla on noin <span class="math notranslate nohighlight">\(1400~\text{W/m}^2\)</span>. Millä etäisyydellä intensiteetti olisi kaksinkertainen maapallolle kohdistuvaan intensiteettiin verrattuna?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Merkitään maapallon etäisyyttä auringosta <span class="math notranslate nohighlight">\(x_1=1~\text{AU}\)</span> ja intensiteettiä <span class="math notranslate nohighlight">\(y_1=1400~\text{W/m}^2\)</span>. Tehtävässä annettu intensiteetti on <span class="math notranslate nohighlight">\(y_2=2\cdot 1400~\text{W/m}^2\)</span>. Ratkaistaan tuntematon etäisyys <span class="math notranslate nohighlight">\(x_2\)</span> yhtälöstä <span class="math notranslate nohighlight">\(x_1^2 y_1 = x_2^2 y_2\)</span>:</p>
@@ -638,8 +582,7 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(x_2 = \sqrt{(1~\text{AU})^2\cdot \frac{1}{2}} \approx 0.71~\text{AU}\)</span>.</p>
 <p>Etäisyys vastaa suunnilleen Venuksen sijaintia.</p>
 </div>
-<!-- #endregion -->
-</section>
+</div>
 </section>
 </section>
 

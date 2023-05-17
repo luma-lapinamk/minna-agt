@@ -1,13 +1,10 @@
-<!-- #region -->
 # Suoraan ja kääntäen verrannollisuus
 
-Verrannollisuus on käsite, jonka avulla voidaan vastata esimerkiksi seuraavanlaisiin kysymyksiin:
+Verrannollisuus on käsite, jota tarvitaan mittakaavoissa, kuten kartoissa ja rakennuspiirustuksissa. Sen avulla voidaan vastata myös esimerkiksi seuraavanlaisiin kysymyksiin:
 
-a) Kolme kiloa mangoja maksaa 6.90 €. Paljonko maksaa viisi kiloa samoja mangoja?
+- Kolme kiloa mangoja maksaa 6.90 €. Paljonko maksaa viisi kiloa samoja mangoja?
 
-b) Säiliön tyhjentäminen kestää 4 h ja 30 min, kun tyhjennyspumpun teho on 200 l/min. Kauanko tyhjentäminen kestää pumpulla, jonka teho on 120 l/min?
-
-Lisäksi verrannollisuutta tarvitaan mittakaavoissa (kartat, pienoismallit). 
+- Säiliön tyhjentäminen kestää 4 h ja 30 min, kun tyhjennyspumpun teho on 200 l/min. Kauanko tyhjentäminen kestää pumpulla, jonka teho on 120 l/min?
 
 Verrannossa on kaksi toisistaan riippuvaa asiaa. Niitä merkitään usein kirjaimilla $x$ ja $y$. Muuttujat $x$ ja $y$ voivat riippua toisistaan kahdella eri tavalla: 
 
@@ -18,9 +15,9 @@ Verrannossa on kaksi toisistaan riippuvaa asiaa. Niitä merkitään usein kirjai
  
 ## Suoraan verrannollisuus
 
-Suoraan verrannollisten muuttujien $x$ ja $y$ välinen riippuvuus on muotoa $y=kx^n$, missä luku $k$ on nimeltään verrannollisuuskerroin ja $n$ on jokin positiivinen kokonaisluku. Kun $x$ kasvaa, myös $y$ kasvaa. Esimerkiksi jos riippuvuus on muotoa $y=3x$, niin verrannollisuuskerroin on $3$, ja arvot riippuvat toisistaan seuraavasti: $x=1 \rightarrow y=3, x=2 \rightarrow y=6, x=3 \rightarrow y=9, \ldots$.
+Suoraan verrannollisten muuttujien $x$ ja $y$ välinen riippuvuus on muotoa $y=kx^n$, missä luku $k$ on nimeltään verrannollisuuskerroin ja $n$ on jokin positiivinen kokonaisluku. Kun $x$ kasvaa, myös $y$ kasvaa.
 
-### Riippuvuus muotoa $y=kx$
+**Riippuvuus muotoa $y=kx$**
 
 Yksinkertaisimmassa tapauksessa muuttujen $x$ eksponentti on 1. Tällöin yhtälö on muotoa $y=kx$. 
 
@@ -30,7 +27,9 @@ Ongelmien ratkaisussa hyödynnetään tietoa, että $k$ on sama kaikille lukupar
 
 Samantyyppinen ongelma voidaan ratkaista myös yhtälönä. Merkitään jälleen kahteen eri tilanteeseen liittyviä suureita $x$ ja $y$ alaindekseillä $(x_1,y_1)$ ja $(x_2,y_2)$. Koska verrannollisuuskerroin on $k=\frac{y}{x}$ riippumatta $x$:n ja $y$:n arvoista, voidaan kirjoittaa $k=\frac{y_1}{x_1}$ ja $k=\frac{y_2}{x_2}$ ja edelleen $\frac{y_1}{x_1} = \frac{y_2}{x_2}$. Tähän yhtälöön voidaan sijoittaa tunnetut suureiden arvot ja ratkaista tuntematon. 
 
-**Esim.** Eräässä kerrostalossa 80 neliömetrin kokoinen asunto maksaa 160 000 €. Oletetaan, että asunnon hinta $y$ on suoraan verrannollinen asunnon kokoon $x$. Kuinka paljon maksaisi 120 neliömetrin kokoinen asunto?
+::::{admonition} Esimerkki
+
+Eräässä kerrostalossa 80 neliömetrin kokoinen asunto maksaa 160 000 €. Oletetaan, että asunnon hinta $y$ on suoraan verrannollinen asunnon kokoon $x$. Kuinka paljon maksaisi 120 neliömetrin kokoinen asunto?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -53,13 +52,18 @@ $y_2=\frac{x_2}{x_1} y_1$
 $y_2=\frac{120~\text{m}^2}{80~\text{m}^2}\cdot 160000~€$
 
 $y_2 = 240000~€$.
+
 :::
 
-### Riippuvuus muotoa $y=kx^n, n > 1$
+::::
+
+**Riippuvuus muotoa $y=kx^n, n > 1$**
 
 Vaikka muuttujan $x$ eksponentti $n$ olisi jokin lukua 1 suurempi luku, edelleen verrannollisuuskerroin $k$ pysyy samana, ja ongelmien ratkaisu tapahtuu samalla periaatteella kuin edellä. Verrannollisuuskerroin voidaan laskea $k=\frac{y}{x^n}$. Vastaavasti voidaan ratkaista tuntematon muuttuja yhtälöstä $\frac{y_1}{x_1^n}=\frac{y_2}{x_2^n}$.
 
-**Esim.** Auton jarrutusmatka pysähdykseen saakka riippuu olosuhteista, mutta on suoraan verrannollinen nopeuden toiseen potenssiin. Eräällä tiellä jarrutusmatkaksi nopeudesta 40 km/h todettiin 16 m. Kuinka pitkä on jarrutusmatka samalla tiellä, jos alkunopeus onkin 70 km/h?
+::::{admonition} Esimerkki
+
+Auton jarrutusmatka pysähdykseen saakka riippuu olosuhteista, mutta on suoraan verrannollinen nopeuden toiseen potenssiin. Eräällä tiellä jarrutusmatkaksi nopeudesta 40 km/h todettiin 16 m. Kuinka pitkä on jarrutusmatka samalla tiellä, jos alkunopeus onkin 70 km/h?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -72,7 +76,11 @@ Huomaa, että nopeuden yksikkö km/h on jätetty pois, sillä se supistuu pois, 
 
 :::
 
-**Esim.** Auton jarrutusjäljet olivat 32 metriä pitkät. Samoissa olosuhteissa todettiin, että jarrutusmatka nopeudesta 60 km/h on 22 metriä. Mikä oli jarrutusjäljet jättäneen auton nopeus ennen jarrutusta?
+::::
+
+::::{admonition} Esimerkki
+
+Auton jarrutusjäljet olivat 32 metriä pitkät. Samoissa olosuhteissa todettiin, että jarrutusmatka nopeudesta 60 km/h on 22 metriä. Mikä oli jarrutusjäljet jättäneen auton nopeus ennen jarrutusta?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -89,17 +97,21 @@ $x_2 \approx 72~\text{km/h}$.
 
 :::
 
+::::
+
  
 ## Kääntäen verrannollisuus
 
-Kääntäen verrannollisten muuttujien suhdetta kuvaava yhtälö on $y=\frac{k}{x^n}$. Kun $x$ kasvaa, niin $y$ pienenee. Esimerkiksi jos riippuvuus on muotoa $y=\frac{120}{x}$, niin arvot riippuvat toisistaan seuraavasti: $x=1 \rightarrow y=120, x=2 \rightarrow y=60, x=3 \rightarrow y=40, \ldots$. Ongelmat ratkeavat samaan tapaan kuin suoraan verrannollisuudessa, eli kirjoittamalla yhtälö, joka yhdistää lukuparit $(x_1,y_1)$ ja $(x_2,y_2)$ verrannollisuuskertoimen $k$ avulla.
+Kääntäen verrannollisten muuttujien suhdetta kuvaava yhtälö on $y=\frac{k}{x^n}$. Kun $x$ kasvaa, niin $y$ pienenee. Ongelmat ratkeavat samaan tapaan kuin suoraan verrannollisuudessa, eli kirjoittamalla yhtälö, joka yhdistää lukuparit $(x_1,y_1)$ ja $(x_2,y_2)$ verrannollisuuskertoimen $k$ avulla.
 
 
-### Riippuvuus muotoa $y=\frac{k}{x}$
+**Riippuvuus muotoa $y=\frac{k}{x}$**
 
 Yksinkertaisimmassa tapauksessa kääntäen verrannollisia suureita yhdistää yhtälö $y=\frac{k}{x}$. Tällöin verrannollisuuskertoimeksi saadaan $k=yx$. Lukupareille $(x_1,y_1)$ ja $(x_2,y_2)$ pätee siis yhtälö $x_1 y_1 = x_2 y_2$.
 
-**Esim.** Neljä henkilöä tekee työn 6 tunnissa. Paljonko aikaa kuluu kolmelta henkilöltä saman työn tekemiseen? 
+::::{admonition} Esimerkki
+
+Neljä henkilöä tekee työn 6 tunnissa. Paljonko aikaa kuluu kolmelta henkilöltä saman työn tekemiseen? 
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -116,7 +128,11 @@ $y_2=y_1\frac{x_1}{x_2}=6~\text{h}\frac{4~\text{hlö}}{3\text{hlö}}=8~\text{h}$
 
 :::
 
-**Esim.** Uima-altaan täyttö pumppausnopeudella $x_1=120$ l/min kestää $y_1=4$ h. Kuinka kauan täyttäminen kestää pumpulla, jonka nopeus on $x_2=210$ l/min?
+::::
+
+::::{admonition} Esimerkki
+
+Uima-altaan täyttö pumppausnopeudella $x_1=120$ litraa/min kestää $y_1=4$ h. Kuinka kauan täyttäminen kestää pumpulla, jonka nopeus on $x_2=210$ litraa/min?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -137,11 +153,15 @@ $k=210~\text{l/min}\cdot 2~\text{h}~18~\text{min}=210~\text{l/min}\cdot 138~\tex
 
 :::
 
-### Riippuvuus muotoa $y=\frac{k}{x^n}, n > 1$
+::::
+
+**Riippuvuus muotoa $y=\frac{k}{x^n}, n > 1$**
 
 Jos kääntäen verrannollisia suureita yhdistää yhtälö $y=\frac{k}{x^n}, n> 1$, niin verrannollisuuskertoimeksi saadaan $k=yx^n$. Lukupareille $(x_1,y_1)$ ja $(x_2,y_2)$ pätee siis yhtälö $x_1^n y_1 = x_2^n y_2$.
 
-**Esim.** Lampun valaistusvoimakkuus, jota mitataan lukseina (lux), on kääntäen verrannollinen etäisyyden toiseen potenssiin. Jos valaistusvoimakkuus kahden metrin päässä lampusta on 90 lux, paljonko se on viiden metrin päässä lampusta?
+::::{admonition} Esimerkki
+
+Lampun valaistusvoimakkuus, jota mitataan lukseina (lux), on kääntäen verrannollinen etäisyyden toiseen potenssiin. Jos valaistusvoimakkuus kahden metrin päässä lampusta on 90 lux, paljonko se on viiden metrin päässä lampusta?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -152,7 +172,11 @@ $x_1^2 y_1 = x_2^2 y_2 \leftrightarrow y_2 = y_2 \frac{x_1^2}{x_2}^2 = 90~\text{
 
 :::
 
-**Esim.** Auringon säteilyn intensiteetti jollakin planeetilla on kääntäen verrannollinen planeetan etäisyyden toiseen potenssiin. Maan etäisyys auringosta on 1 AU (astronomical unit). Intensiteetti maapallolla on noin $1400~\text{W/m}^2$. Millä etäisyydellä intensiteetti olisi kaksinkertainen maapallolle kohdistuvaan intensiteettiin verrattuna?
+::::
+
+::::{admonition} Esimerkki
+
+Auringon säteilyn intensiteetti jollakin planeetilla on kääntäen verrannollinen planeetan etäisyyden toiseen potenssiin. Maan etäisyys auringosta on 1 AU (astronomical unit). Intensiteetti maapallolla on noin $1400~\text{W/m}^2$. Millä etäisyydellä intensiteetti olisi kaksinkertainen maapallolle kohdistuvaan intensiteettiin verrattuna?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -175,4 +199,4 @@ Etäisyys vastaa suunnilleen Venuksen sijaintia.
 
 :::
 
-<!-- #endregion -->
+::::

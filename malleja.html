@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Matemaattisia malleja &#8212; Algebra, geometria, trigonometria</title>
+    <title>Funktio mallina &#8212; Algebra, geometria, trigonometria</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,8 +50,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -178,6 +176,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="sk_koordinaatisto.html">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="yleiset.html">
    Yleiset kolmiot
   </a>
@@ -247,7 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Matemaattisia malleja
+   Funktio mallina
   </a>
  </li>
  <li class="toctree-l1">
@@ -424,7 +427,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Matemaattisia malleja</h1>
+                <h1>Funktio mallina</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -449,14 +452,15 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="matemaattisia-malleja">
-<h1>Matemaattisia malleja<a class="headerlink" href="#matemaattisia-malleja" title="Permalink to this headline">#</a></h1>
-<p>Erilaisia yhtälöitä voi ajatella myös matemaattisina malleina eri ilmiöille. Esimerkiksi viruksen leviämistä voidaan kuvata tietynlaisella yhtälöllä, joka yhdistää ajan kulumisen ja virukseen sairastuneiden henkilöiden määrän. Tällöin kyseinen yhtälö toimii matemaattisena mallina virusepidemialle. Tarkastellaan tässä kolmea erilaista yhtälötyyppiä, joiden avulla voidaan mallintaa yksinkertaisia ilmiöitä. Tässä yhteydessä yhtälöistä käytetään usein myös nimeä funktio.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="funktio-mallina">
+<h1>Funktio mallina<a class="headerlink" href="#funktio-mallina" title="Permalink to this headline">#</a></h1>
+<p>Erilaisia lausekkeita ja niistä muodostettuja yhtälöitä voi ajatella myös matemaattisina malleina eri ilmiöille. Esimerkiksi viruksen leviämistä voidaan kuvata tietynlaisella yhtälöllä, joka yhdistää ajan kulumisen ja virukseen sairastuneiden henkilöiden määrän. Tällöin kyseinen yhtälö toimii matemaattisena mallina virusepidemialle. Tarkastellaan seuraavissa luvuissa kolmea erilaista yhtälötyyppiä, joiden avulla voidaan mallintaa yksinkertaisia ilmiöitä. Tässä yhteydessä yhtälöistä käytetään usein myös nimeä funktio.</p>
 <section id="funktion-kasite">
 <h2>Funktion käsite<a class="headerlink" href="#funktion-kasite" title="Permalink to this headline">#</a></h2>
 <p>Funktio <span class="math notranslate nohighlight">\(f(x)\)</span> on lauseke, joka yhdistää jokaisen määrittelyjoukkonsa lukuun <span class="math notranslate nohighlight">\(x\)</span> jonkin toisen luvun. Esimerkiksi <span class="math notranslate nohighlight">\(f(x)=3x+1\)</span> on lauseke, johon voidaan luvun <span class="math notranslate nohighlight">\(x\)</span> paikalle sijoittaa jokin luku ja laskea vastaava funktion arvo. Jos esimerkiksi <span class="math notranslate nohighlight">\(x=2\)</span>, niin saadaan funktiolle arvo <span class="math notranslate nohighlight">\(f(2)=3\cdot 2 + 1=7\)</span>.</p>
 <p>Määrittelyjoukko tarkoittaa niitä lukuja, jotka funktion lausekkeen voi sijoittaa - tai jotka siihen on mielekästä sijoittaa - luvun <span class="math notranslate nohighlight">\(x\)</span> paikalle. Usein määrittelyjoukko muodostuu kaikista reaaliluvuista, mutta ei aina. Esimerkiksi lausekkeeseen <span class="math notranslate nohighlight">\(f(x)=\frac{2x}{x-3}\)</span> ei voida sijoittaa lukua <span class="math notranslate nohighlight">\(x=3\)</span>, sillä tällöin murtoluvun nimittäjään tulisi <span class="math notranslate nohighlight">\(3-3=0\)</span>, eikä luvulla 0 jakamista ole määritelty. Jos taas funktio kuvaa esimerkiksi koiranpennun painon kehitystä, kun pennun ikä viikkoina mitattuna on <span class="math notranslate nohighlight">\(x\)</span>, ei ole mielekästä sisällyttää määrittelyjoukkoon negatiivisia eikä kovin suuria positiivisia lukuja.</p>
 <p>Arvojoukko tarkoittaa niitä lukuja, jotka funktiosta voidaan saada tuloksiksi, kun lausekkeeseen sijoitetaan kaikki määrittelyjoukon luvut. Arvojoukkokin voi joskus sisältää kaikki reaaliluvut. Toisaalta esimerkiksi funktio <span class="math notranslate nohighlight">\(f(x)=2x^2+3\)</span> ei millään luvun <span class="math notranslate nohighlight">\(x\)</span> arvolla voi tuottaa lukua 3 pienempiä arvoja, sillä olipa luku <span class="math notranslate nohighlight">\(x\)</span> mikä tahansa, niin toiseen potenssiin korotettuna se on aina vähintään 0. Tämän funktion arvojoukko koostuu siis luvusta 3 ja kaikista sitä suuremmista luvuista.</p>
+<p>Funktioiden yleisiä ominaisuuksia tarkastellaan enemmän opintojaksolla <a class="reference external" href="https://luma-lapinamk.github.io/minna-diffint/funktiot.html">Differentiaali- ja integraalilaskenta</a>.</p>
 <p></p>
 </section>
 </section>

@@ -50,13 +50,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Yleiset kolmiot" href="yleiset.html" />
+    <link rel="next" title="Suorakulmainen koordinaatisto" href="sk_koordinaatisto.html" />
     <link rel="prev" title="Trigonometriaa" href="trigonometriaa.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -178,6 +176,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="sk_koordinaatisto.html">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="yleiset.html">
    Yleiset kolmiot
   </a>
@@ -247,7 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="malleja.html">
-   Matemaattisia malleja
+   Funktio mallina
   </a>
  </li>
  <li class="toctree-l1">
@@ -420,11 +423,6 @@ title="Print to PDF"
    Suorakulmaisen kolmion trigonometriset funktiot
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#suorakulmainen-koordinaatisto">
-   Suorakulmainen koordinaatisto
-  </a>
- </li>
 </ul>
 
     </nav>
@@ -452,11 +450,6 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#suorakulmaisen-kolmion-trigonometriset-funktiot">
    Suorakulmaisen kolmion trigonometriset funktiot
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#suorakulmainen-koordinaatisto">
-   Suorakulmainen koordinaatisto
   </a>
  </li>
 </ul>
@@ -487,7 +480,9 @@ title="Print to PDF"
 <p>Siirretään sitten kolmiot jokainen omaan nurkkaansa. Näidenkin neliöiden kateetit ovat <span class="math notranslate nohighlight">\(a\)</span> ja <span class="math notranslate nohighlight">\(b\)</span>. Valkoisen pienemmän neliön pinta-ala on nyt <span class="math notranslate nohighlight">\(a^2\)</span> ja isomman neliön pinta-ala on <span class="math notranslate nohighlight">\(b^2\)</span>.  Valkoiseksi alueesta jää nyt yhteensä <span class="math notranslate nohighlight">\(a^2+b^2\)</span>.</p>
 <p>Lopuksi verrataan kuvia: kummassakin tapauksessa kolmiot ovat aivan yhtä suuret, joten kolmiot vievät yhtä paljon tilaa riippumatta siitä kummalla tavalla ne on ison neliön sisälle aseteltu. Valkoiseksi jäävä alue on tällöin kummassakin kuvassa yhtä suuri. Voidaan kirjoittaa: <span class="math notranslate nohighlight">\(a^2+b^2=c^2\)</span>.</p>
 </div>
-<p><strong>Esim.</strong> Laske suorakulmaisen kolmion hypotenuusan pituus, kun kateettien pituudet ovat 5 cm ja 3 cm.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Laske suorakulmaisen kolmion hypotenuusan pituus, kun kateettien pituudet ovat 5 cm ja 3 cm.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Sijoitetaan kateettien pituudet ja tuntematon hypotenuusan pituus Pythagoraan lauseeseen ja ratkaistaan yhtälö:</p>
@@ -495,7 +490,10 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(c^2=25+9\)</span></p>
 <p><span class="math notranslate nohighlight">\(c=\sqrt{34}\)</span></p>
 </div>
-<p><strong>Esim.</strong> Laske suorakulmaisen kolmion toisen kateetin pituus, kun hypotenuusan pituus on 10 cm ja toisen kateetin pituus on 2 cm.</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Laske suorakulmaisen kolmion toisen kateetin pituus, kun hypotenuusan pituus on 10 cm ja toisen kateetin pituus on 2 cm.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Sijoitetaan tunnetut arvot Pythagoraan lauseeseen. Ei ole väliä, merkitäänkö tuntematonta kateettia <span class="math notranslate nohighlight">\(a\)</span> vai <span class="math notranslate nohighlight">\(b\)</span>.</p>
@@ -505,10 +503,13 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(b^2=100-4\)</span></p>
 <p><span class="math notranslate nohighlight">\(b=\sqrt{96}\)</span></p>
 </div>
-<p><strong>Esim.</strong> Suorakulmaisen kolmion kaksi sivua ovat pituudeltaan 6 m ja 8 m. Laske kolmannen sivun pituus.</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Suorakulmaisen kolmion kaksi sivua ovat pituudeltaan 6 m ja 8 m. Laske kolmannen sivun pituus.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
-<p>Tässä tapauksessa ei tiedetä, ovatko annetut sivut kolmion kateetit vai onko toinen niistä hypotenuusta. Ratkaistaan tehtävä kumpikin vaihtoehto huomioiden.</p>
+<p>Tässä tapauksessa ei tiedetä, ovatko annetut sivut kolmion kateetit vai onko toinen niistä hypotenuusa. Ratkaistaan tehtävä kumpikin vaihtoehto huomioiden.</p>
 <p>(1) Oletetaan, että annetut sivut ovat kateetteja. Tällöin hypotenuusan pituus on <span class="math notranslate nohighlight">\(c=\sqrt{6^2+8^2}=\sqrt{100}=10\)</span>.</p>
 <p>(2) Oletetaan, että annetuista sivuista pitempi on hypotenuusa (lyhyempi sivu ei voi olla hypotenuusa, koska hypotenuusa on suorakulmaisen kolmion pisin sivu). Tällöin on ratkaistava yhtälö</p>
 <p><span class="math notranslate nohighlight">\(8^2 = 6^2 + b^2\)</span></p>
@@ -516,12 +517,18 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(b^2 = 28\)</span></p>
 <p><span class="math notranslate nohighlight">\(b=\sqrt{28}\)</span></p>
 </div>
-<p><strong>Esim.</strong> Kolmion sivut ovat pituudeltaan 4, 5 ja 7. Onko kyseinen kolmio suorakulmainen?</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Kolmion sivut ovat pituudeltaan 4, 5 ja 7. Onko kyseinen kolmio suorakulmainen?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
-<p>Tarkistetaan, pitääkö Pythagoraan lause paikkansa näillä arvoilla. Kateettien neliöiden summa on <span class="math notranslate nohighlight">\(4^2 + 5^2 = 16+25 = 41\)</span>. Hypotenuusan neliö on <span class="math notranslate nohighlight">\(7^2 = 49\)</span>. Luvut eivät ole yhtä suuret, joten kolmio ei ole suorakulmainen.</p>
+<p>Tarkistetaan, pitääkö Pythagoraan lause paikkansa näillä arvoilla. Hypotenuusa on annetuista luvuista pisin, ja kaksi muuta ovat kateetteja. Kateettien neliöiden summa on <span class="math notranslate nohighlight">\(4^2 + 5^2 = 16+25 = 41\)</span>. Hypotenuusan neliö on <span class="math notranslate nohighlight">\(7^2 = 49\)</span>. Luvut eivät ole yhtä suuret, joten kolmio ei ole suorakulmainen.</p>
 </div>
-<p><strong>Esim.</strong> Millä luvun <span class="math notranslate nohighlight">\(a &gt; 2 \)</span> arvolla kolmio, jonka sivut ovat <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(2x\)</span> ja <span class="math notranslate nohighlight">\(ax\)</span>, olisi suorakulmainen?</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Millä luvun <span class="math notranslate nohighlight">\(a &gt; 2 \)</span> arvolla kolmio, jonka sivut ovat <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(2x\)</span> ja <span class="math notranslate nohighlight">\(ax\)</span>, olisi suorakulmainen?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Kirjoitetaan Pythagoraan lause ja ratkaistaan yhtälöstä kerroin <span class="math notranslate nohighlight">\(a\)</span>. Huomaa, että nyt kirjain <span class="math notranslate nohighlight">\(a\)</span> ei tarkoita kateettia, vaan kerrointa kolmion sivun pituudessa. Koska tehtävässä on kerrottu, että <span class="math notranslate nohighlight">\(a &gt; 2\)</span>, niin sivu <span class="math notranslate nohighlight">\(ax\)</span> on pitempi kuin kumpikaan muista annetuista sivuista, ja siten kolmion hypotenuusa. Kirjoitetaan Pythagoraan lause ja ratkaistaan <span class="math notranslate nohighlight">\(a\)</span>:</p>
@@ -531,7 +538,10 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(a^2 = 5\)</span></p>
 <p><span class="math notranslate nohighlight">\(a= \sqrt{5}\)</span></p>
 </div>
-<p><strong>Esim.</strong> Suorakulmaisen kolmion hypotenuusa on 3 kertaa niin pitkä kuin toinen kateetti. Selvitä toisen kateetin pituus.</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Suorakulmaisen kolmion hypotenuusa on 3 kertaa niin pitkä kuin toinen kateetti. Selvitä toisen kateetin pituus.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Merkitään kateettia vaikkapa kirjaimella <span class="math notranslate nohighlight">\(a\)</span>. Tällöin hypotenuusa on <span class="math notranslate nohighlight">\(3a\)</span>. Ratkaistaan toisen kateetin pituus <span class="math notranslate nohighlight">\(b\)</span> Pythagoraan lauseesta:</p>
@@ -541,6 +551,7 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(b = \sqrt{8a^2}\)</span></p>
 <p><span class="math notranslate nohighlight">\(b= \sqrt{8} a\)</span></p>
 <p>Kummankaan kateetin lukuarvoa ei siis tehtävänannon perusteella tiedetä, mutta saatiin selville, että toinen kateetti on <span class="math notranslate nohighlight">\(\sqrt{8}\)</span> kertaa niin pitkä kuin toinen. On olemassa äärettömän monta kolmiota, jotka täyttävät annetut ehdot. Jos yksi kateetti on 1 metrin pituinen, niin toinen on <span class="math notranslate nohighlight">\(1\cdot \sqrt{8} \approx 2.83\)</span> m ja hypotenuusa 3 m.</p>
+</div>
 </div>
 </section>
 <section id="suorakulmaisen-kolmion-trigonometriset-funktiot">
@@ -560,9 +571,9 @@ title="Print to PDF"
 </ul>
 <p>Sinin ja kosinin arvot ovat suorakulmaisissa kolmioissa lukujen 0 ja 1 välissä. Tangentit voivat saada muitakin positiivisia arvoja. Kun tiedetään kulman sinin, kosinin tai tangentin arvo, saadaan kulman suuruus ratkaistua laskimen arkusfunktioiden avulla. Laskimessa arkusfunktioita voidaan merkitä eri tavoin: arcsin/arccos/arctan, asin/acos/atan, sin<sup>-1</sup>/cos<sup>-1</sup>/tan<sup>-1</sup>. <a class="reference external" href="https://wolframalpha.com">WolfamAlpha</a> ymmärtää komennot “arcsin” ja “asin” (sekä vastaavat kosinille ja tangentille).</p>
 <p><strong>Esim.</strong> Ratkaistaan kulma <span class="math notranslate nohighlight">\(\alpha\)</span>, kun <span class="math notranslate nohighlight">\(\sin{\alpha}=0.562\)</span>. Tällöin <span class="math notranslate nohighlight">\(\alpha=\arcsin{⁡0.562}=34.2^{\circ}\)</span>.</p>
-<p><strong>HUOM!</strong> Jos tiedetään kulman sinin arvo <span class="math notranslate nohighlight">\(x\)</span> ja ratkaistaan kulma <span class="math notranslate nohighlight">\(\alpha\)</span>, on ratkaisu tarkistettava, sillä arkussinifunktion ominaisuuksista johtuen kulmalle on kaksi vaihtoehtoa: <span class="math notranslate nohighlight">\(\alpha=\arcsin{x}\)</span> ja <span class="math notranslate nohighlight">\(\alpha = 180^{\circ}-\arcsin{x}\)</span>.</p>
-<p><strong>Esim.</strong> Kulman sini on 0.9. Laskimella saadaan kulman suuruudeksi <span class="math notranslate nohighlight">\(\arcsin⁡{0.9}=64.16^{\circ}\)</span>. Toinen kulma, jonka sini on 0.9, on <span class="math notranslate nohighlight">\(180^{\circ}-\arcsin{⁡0.9}=180^{\circ}-64.16^{\circ}=115.84^{\circ}\)</span>.</p>
-<p><strong>Esim.</strong> Ratkaise oheisen kolmion tuntemattomat osat, kun tiedetään, että <span class="math notranslate nohighlight">\(c=12.3\)</span> m ja <span class="math notranslate nohighlight">\(\alpha=38.0^{\circ}\)</span>.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise edellisen kuvan kolmion tuntemattomat osat, kun tiedetään, että <span class="math notranslate nohighlight">\(c=12.3\)</span> m ja <span class="math notranslate nohighlight">\(\alpha=38.0^{\circ}\)</span>.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Sivut <span class="math notranslate nohighlight">\(a\)</span> ja <span class="math notranslate nohighlight">\(b\)</span> saadaan selville kulman <span class="math notranslate nohighlight">\(\alpha\)</span> trigonometristen funktioiden avulla:</p>
@@ -579,7 +590,10 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(\beta=180^{\circ}-90^{\circ}-38.0^{\circ}=52.0^{\circ}\)</span>.</p>
 <p>Sama ratkaisu saataisiin myös trigonometrisia funktioita hyödyntämällä.</p>
 </div>
-<p><strong>Esim.</strong> Ratkaise suorakulmaisen kolmion tuntemattomat osat, kun tiedetään, että kateettien pituudet ovat <span class="math notranslate nohighlight">\(a=3.54~\text{m}\)</span> ja <span class="math notranslate nohighlight">\(b=4.36~\text{m}\)</span>.</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise suorakulmaisen kolmion tuntemattomat osat, kun tiedetään, että kateettien pituudet ovat <span class="math notranslate nohighlight">\(a=3.54~\text{m}\)</span> ja <span class="math notranslate nohighlight">\(b=4.36~\text{m}\)</span>.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Tuntemattomia osia ovat hypotenuusa sekä terävien kulmien suuruudet. Pythagoraan lauseen avulla saadaan hypotenuusan pituus:</p>
@@ -594,47 +608,15 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(\alpha=\arctan⁡\left(\frac{3.54}{4.36}\right)\approx 39.1^{\circ}\)</span></p>
 <p><span class="math notranslate nohighlight">\(β=90^{\circ}-39.1^{\circ} = 50.9^{\circ}\)</span>.</p>
 </div>
-<p><strong>Esim.</strong> Suorakulmaisen kolmion kateetit ovat <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(4x\)</span>. Selvitä kolmion kulmien suuruudet.</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Suorakulmaisen kolmion kateetit ovat <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(4x\)</span>. Selvitä kolmion kulmien suuruudet.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
+<p>Tässä tapauksessa kateettien pituuksia ei tiedetä. Niitä ei tarvitsekaan tietää, sillä trigonometrien funktiot riippuvat sivujen pituuksien <em>suhteista</em> eivätkä absoluuttisista pituuksista.</p>
 <p>Lyhyempää sivua vastapäätä olevan kulman <span class="math notranslate nohighlight">\(\alpha\)</span> tangentti on <span class="math notranslate nohighlight">\(\tan{\alpha} = \frac{x}{4x}\)</span>. Kulma saadaan laskemalla <span class="math notranslate nohighlight">\(\alpha = \arctan{\frac{x}{4x}}= \arctan{\frac{1}{4}} \approx 14.04^{\circ}\)</span>. Kolmas kulma <span class="math notranslate nohighlight">\(\beta\)</span> on <span class="math notranslate nohighlight">\(180^{\circ}-90^{\circ}-14.04^{\circ} = 75.96^{\circ}\)</span>. Sama tulos saataisiin myös tämän kulman tangentin avulla: <span class="math notranslate nohighlight">\(\beta = \arctan{\frac{4x}{x}}= \arctan{4} \approx 75.96^{\circ}\)</span>.</p>
 </div>
-</section>
-<section id="suorakulmainen-koordinaatisto">
-<h2>Suorakulmainen koordinaatisto<a class="headerlink" href="#suorakulmainen-koordinaatisto" title="Permalink to this headline">#</a></h2>
-<p>Eräs suorakulmaisten kolmioiden sovellus on kaksiulotteinen suorakulmainen koordinaatisto. Se koostuu kahdesta lukusuorasta: ”x-akseli” ja ”y-akseli”. Lukusuoran kasvavaa suuntaa merkitään nuolella. Pisteen paikka <span class="math notranslate nohighlight">\(A\)</span> ilmoitetaan muodossa <span class="math notranslate nohighlight">\(A=(x,y)\)</span>. Pisteellä <span class="math notranslate nohighlight">\((0,0)\)</span> on erityisnimitys origo.</p>
-<p><img alt="Kaksiulotteinen suorakulmainen koordinaatisto" src="_images/skkoord.jpg" /></p>
-<p><strong>Esim.</strong> Kuvassa <span class="math notranslate nohighlight">\(A=(4,6)\)</span>, <span class="math notranslate nohighlight">\(B=(10,-2)\)</span>, <span class="math notranslate nohighlight">\(C=(-4,-2)\)</span> ja <span class="math notranslate nohighlight">\(D=(-4,8)\)</span>.
- 
-Pisteiden etäisyys origosta saadaan Pythagoraan lauseella, kun täydennetään kuvio suorakulmaiseksi kolmioksi. Pythagoraan lauseeseen voi sijoittaa myös negatiivisia koordinaattien arvoja.</p>
-<p><strong>Esim.</strong> Mitkä ovat edellisen kuvan pisteiden <span class="math notranslate nohighlight">\(A\)</span> ja <span class="math notranslate nohighlight">\(D\)</span> etäisyydet origosta?</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Ratkaisu</p>
-<p>Pisteen <span class="math notranslate nohighlight">\(A\)</span> etäisyys saadaan ratkaisemalla yhtälö:</p>
-<p><span class="math notranslate nohighlight">\(r^2=4^2+6^2\)</span></p>
-<p><span class="math notranslate nohighlight">\(r=\sqrt{4^2+6^2}\)</span></p>
-<p><span class="math notranslate nohighlight">\(r\approx 7.2\)</span></p>
-<p>Pisteen <span class="math notranslate nohighlight">\(D\)</span> etäisyys on vastaavasti <span class="math notranslate nohighlight">\(\sqrt{(-4)^2+8^2} = \sqrt{16+64} = \sqrt{80} \approx 8.94\)</span>.</p>
-</div>
-<p>Kahden pisteen välisen etäisyyden laskemiseksi tarvitaan pisteiden x-koordinaattien erotus <span class="math notranslate nohighlight">\(\Delta x\)</span> ja y-koordinaattien erotus <span class="math notranslate nohighlight">\(\Delta y\)</span>. Sen jälkeen sovelletaan näille etäisyyksille Pythagoraan lausetta. Koordinaattien erotukset saadaan vähentämällä ensimmäisen pisteen koordinaatit jälkimmäisistä. Erotuksen voi myös päätellä: kuinka monta askelta x-suunnassa täytyy siirtyä, jotta päästään ensimmäisen pisteet x-koordinaatista jälkimmäisen pisteen x-koordinaattiin? Entä kuinka monta askelta tarvitaan y-suunnassa?</p>
-<p><strong>Esim.</strong> Laske pisteiden <span class="math notranslate nohighlight">\(A=(4,6)\)</span> ja <span class="math notranslate nohighlight">\(D=(-4,8)\)</span> etäisyys.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Ratkaisu</p>
-<p>Aluksi lasketaan x-koordinaattien ero: <span class="math notranslate nohighlight">\(\Delta x = -4-4=-8\)</span>, ja y-koordinaattien ero: <span class="math notranslate nohighlight">\(\Delta y = 8-6=2\)</span>. Sama tulos saadaan päättelemällä: pisteestä <span class="math notranslate nohighlight">\((4,6)\)</span> pitää siirtyä vaakasuunnassa 8 yksikköä taaksepäin ja 2 yksikköä ylöspäin, jotta päästään pisteeseen <span class="math notranslate nohighlight">\((-4,8)\)</span>. Pisteiden välinen etäisyys on siis <span class="math notranslate nohighlight">\(\sqrt{(-8)^2+2^2}=\sqrt{68}\approx 8.24\)</span>.</p>
-</div>
-<p>Pisteiden välinen suuntakulma saadaan täydentämällä koordinaatistoon suorakulmainen kolmio ja hyödyntämällä trigonometrisiä funktioita. Matematiikassa käytäntö on, että suuntakulma mitataan positiivisesta x-akselista vastapäivään. Esimerkiksi suunnistuksessa kulma voidaan määritellä eri tavalla.</p>
-<p><strong>Esim.</strong> Pisteestä <span class="math notranslate nohighlight">\(A=(10,0)\)</span> liikutaan pisteeseen <span class="math notranslate nohighlight">\(B=(25,8)\)</span>. Miten pitkä matka siirryttiin ja mihin suuntaan?</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Ratkaisu</p>
-<p>Siirtymän suuruus on <span class="math notranslate nohighlight">\(\sqrt{(25-10)^2+(8-0)^2} = \sqrt{15^2+8^2} = \sqrt{289} = 17\)</span>.</p>
-<p>Suuntakulmalle <span class="math notranslate nohighlight">\(\alpha\)</span> pätee <span class="math notranslate nohighlight">\(\tan{\alpha}=\frac{\Delta y}{\Delta x}\)</span>, josta saadaan ratkaistua <span class="math notranslate nohighlight">\(\alpha=\arctan{\frac{8-0}{25-10}}=\arctan{\frac{8}{15}} \approx 28.1^{\circ}\)</span>.</p>
-</div>
-<p><strong>Esim.</strong> Pisteestä <span class="math notranslate nohighlight">\(A=(2,8)\)</span> liikutaan 50 yksikköä 10 asteen suuntakulmassa. Mihin pisteeseen <span class="math notranslate nohighlight">\(B\)</span> päädytään?</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Ratkaisu</p>
-<p><img alt="Siirtymä pisteestä A pisteeseen B" src="_images/astabhen.jpg" /></p>
-<p>Kuvaan täydennetylle suorakulmaiselle kolmiolle pätee: <span class="math notranslate nohighlight">\(\cos{⁡10^{\circ}}=\frac{\Delta x}{50}\)</span>, <span class="math notranslate nohighlight">\(\sin{⁡10^{\circ}}=\frac{\Delta y}{50}\)</span>. Siis <span class="math notranslate nohighlight">\(\Delta x=50\cdot \cos{⁡10^{\circ}}=49.2^{\circ}\)</span> ja <span class="math notranslate nohighlight">\(\Delta y=50\cdot \sin{⁡10^{\circ}}=8.7^{\circ}\)</span>.</p>
-<p>Pisteen <span class="math notranslate nohighlight">\(B\)</span> koordinaatit saadaan lisäämällä x- ja y-suuntainen siirtymä pisteen <span class="math notranslate nohighlight">\(A\)</span> koordinaatteihin: <span class="math notranslate nohighlight">\(B=(2+49.2, 8+8.7)=(51.2,16.7)\)</span>.</p>
 </div>
 </section>
 </section>
@@ -673,10 +655,10 @@ Pisteiden etäisyys origosta saadaan Pythagoraan lauseella, kun täydennetään 
             <p class="prev-next-title">Trigonometriaa</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="yleiset.html" title="next page">
+    <a class='right-next' id="next-link" href="sk_koordinaatisto.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Yleiset kolmiot</p>
+        <p class="prev-next-title">Suorakulmainen koordinaatisto</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

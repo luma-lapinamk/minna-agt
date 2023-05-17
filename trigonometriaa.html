@@ -50,8 +50,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -178,6 +176,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="sk_koordinaatisto.html">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="yleiset.html">
    Yleiset kolmiot
   </a>
@@ -247,7 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="malleja.html">
-   Matemaattisia malleja
+   Funktio mallina
   </a>
  </li>
  <li class="toctree-l1">
@@ -459,10 +462,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <!-- #region -->
-<section class="tex2jax_ignore mathjax_ignore" id="trigonometriaa">
+  <section class="tex2jax_ignore mathjax_ignore" id="trigonometriaa">
 <h1>Trigonometriaa<a class="headerlink" href="#trigonometriaa" title="Permalink to this headline">#</a></h1>
-<p>Useimmat geometriset ongelmat sisältävät kulmia. Jos muuttokuormasta kannetaan suurta lipastoa kapeassa käytävässä, on mahdollista, että lipaston kanssa on vaikeaa tai mahdotonta mahtua kääntymään kulmassa. Tällaisesta haasteesta selviää kokeilemallakin. Sen sijaan rakennuksiin ja kartoitukseen liittyvät mittaukset vaativat teoreettistakin tietoa kulmista, eli trigonometriaa. Perehdytään aluksi kulmiin liittyviin mittayksiköihin ja käsitteisiin.</p>
+<p>Monet geometriset ja myös käytännön ongelmat sisältävät kulmia. Jos muuttokuormasta kannetaan suurta lipastoa kapeassa käytävässä, on mahdollista, että lipaston kanssa on vaikeaa tai mahdotonta mahtua kääntymään kulmassa. Tällaisesta haasteesta selviää kokeilemallakin. Sen sijaan rakennuksiin ja kartoitukseen liittyvät mittaukset vaativat teoreettistakin tietoa kulmista, eli trigonometriaa. Perehdytään aluksi kulmiin liittyviin mittayksiköihin ja käsitteisiin.</p>
 <section id="kulmiin-liittyvia-kasitteita">
 <h2>Kulmiin liittyviä käsitteitä<a class="headerlink" href="#kulmiin-liittyvia-kasitteita" title="Permalink to this headline">#</a></h2>
 <p>Kuvassa on esimerkkejä kulmista piirrettynä ns. yksikköympyrälle. Jokaisen kulman oikea kylki on jana pisteestä A pisteeseen B, ja vasen kylki on jana pisteestä A pisteeseen C, D, E tai F.</p>
@@ -493,17 +495,17 @@ title="Print to PDF"
 <li><p>1 minuutti = 1/60 astetta, merkitään 1’</p></li>
 <li><p>1 sekunti = 1/60 minuuttia = 1/3600 astetta, merkitään 1’’</p></li>
 </ul>
-<p><strong>Esim.</strong> Muuta <span class="math notranslate nohighlight">\(87^{\circ}~56'~28''\)</span> desimaaliluvuksi.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>a) Muuta <span class="math notranslate nohighlight">\(87^{\circ}~56'~28''\)</span> desimaaliluvuksi.</p>
+<p>b) Muuta <span class="math notranslate nohighlight">\(56.72^{\circ}\)</span> asteiksi, minuuteiksi ja sekunneiksi.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
-<p><span class="math notranslate nohighlight">\(87^{\circ}~56'~28''\)</span> tarkoittaa <span class="math notranslate nohighlight">\((87+\frac{56}{60}+\frac{28}{3600})^{\circ} \approx 87.94^{\circ}\)</span>.</p>
-</div>
-<p><strong>Esim.</strong> Muuta <span class="math notranslate nohighlight">\(56.72^{\circ}\)</span> asteiksi, minuuteiksi ja sekunneiksi.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Ratkaisu</p>
-<p>Kokonaisia asteita on 56. Merkitään minuuttien määrää <span class="math notranslate nohighlight">\(x\)</span> ja kirjoitetaan desimaaliosa 0.72 minuutteina: <span class="math notranslate nohighlight">\(0.72=\frac{x}{60}\)</span>. Tästä saadaan ratkaisua <span class="math notranslate nohighlight">\(x=0.72\cdot 60=43.2\)</span>.</p>
-<p>Kokonaisia minuutteja on siis 43. Lisäksi jää 0.2 minuuttia. Merkitään nyt sekuntien määrää <span class="math notranslate nohighlight">\(y\)</span> ja kirjoitetaan minuuttien desimaaliosa sekunteina: <span class="math notranslate nohighlight">\(0.43 = \frac{y}{60}\)</span>. Sekuntien määräksi saadaan <span class="math notranslate nohighlight">\(y=0.2\cdot 60=12\)</span>.</p>
+<p>a) <span class="math notranslate nohighlight">\(87^{\circ}~56'~28''\)</span> tarkoittaa <span class="math notranslate nohighlight">\((87+\frac{56}{60}+\frac{28}{3600})^{\circ} \approx 87.94^{\circ}\)</span>.</p>
+<p>b) Kokonaisia asteita on 56. Muutetaan desimaaliosa minuuteiksi, eli kerrotaan se luvulla 60. Näin saadaan minuuttien määräksi <span class="math notranslate nohighlight">\(0.72\cdot 60=43.2\)</span>.</p>
+<p>Kokonaisia minuutteja on siis 43. Lisäksi jää 0.2 minuuttia. Kirjoitetaan minuuttien desimaaliosa sekunteina: <span class="math notranslate nohighlight">\(0.2\cdot 60=12\)</span>.</p>
 <p>Kulma voidaan siis esittää muodossa <span class="math notranslate nohighlight">\(56^{\circ}~43'~12''\)</span>.</p>
+</div>
 </div>
 <p><strong>Gooni</strong> on määritelty seuraavasti: <span class="math notranslate nohighlight">\(100~\text{gon}=90^{\circ}\)</span>. Määritelmästä saadaan johdettua muunnoskaavat</p>
 <ul class="simple">
@@ -521,15 +523,15 @@ title="Print to PDF"
 <li><p><span class="math notranslate nohighlight">\(45^{\circ}=\frac{\pi}{4}\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(30^{\circ}=\frac{\pi}{6}\)</span></p></li>
 </ul>
-<p><strong>Esim.</strong> Muunna radiaaneiksi <span class="math notranslate nohighlight">\(137.2^{\circ}\)</span>.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>a) Muunna radiaaneiksi <span class="math notranslate nohighlight">\(137.2^{\circ}\)</span>.</p>
+<p>b) Muunna asteiksi 0.25 radiaania.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
-<p>Määritelmän mukaan <span class="math notranslate nohighlight">\(\pi~\text{rad} = 180^{\circ}\)</span>, josta voidaan ratkaista <span class="math notranslate nohighlight">\(1^{\circ} = \frac{\pi}{180}~\text{rad}\)</span>, joten <span class="math notranslate nohighlight">\(137.2^{\circ}=137.2\cdot \frac{\pi}{180}~\text{rad} \approx 2.395~\text{rad}\)</span>.</p>
+<p>a) Määritelmän mukaan <span class="math notranslate nohighlight">\(\pi~\text{rad} = 180^{\circ}\)</span>, josta voidaan ratkaista <span class="math notranslate nohighlight">\(1^{\circ} = \frac{\pi}{180}~\text{rad}\)</span>, joten <span class="math notranslate nohighlight">\(137.2^{\circ}=137.2\cdot \frac{\pi}{180}~\text{rad} \approx 2.395~\text{rad}\)</span>.</p>
+<p>b) Koska <span class="math notranslate nohighlight">\(\pi~\text{rad} = 180^{\circ}\)</span>, niin <span class="math notranslate nohighlight">\(1~\text{rad} =\frac{180^{\circ}}{\pi}\)</span>, joten <span class="math notranslate nohighlight">\(0.25~\text{rad}=0.25\cdot \frac{180^{\circ}}{\pi} \approx 14.32^{\circ}\)</span>.</p>
 </div>
-<p><strong>Esim.</strong> Muunna asteiksi 0.25 radiaania.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Ratkaisu</p>
-<p>Koska <span class="math notranslate nohighlight">\(\pi~\text{rad} = 180^{\circ}\)</span>, niin <span class="math notranslate nohighlight">\(1~\text{rad} =\frac{180^{\circ}}{\pi}\)</span>, joten <span class="math notranslate nohighlight">\(0.25~\text{rad}=0.25\cdot \frac{180^{\circ}}{\pi} \approx 14.32^{\circ}\)</span>.</p>
 </div>
 </section>
 </section>

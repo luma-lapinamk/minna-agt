@@ -6,23 +6,31 @@ Mittakaava on eräs suoraan verrannollisuuden sovellus. Jos esimerkiksi suoran t
 - pinta-alojen suhteita luonnossa ja kartalla,
 - tilavuuksien suhteita luonnossa ja esim. pienoismallissa. 
 
-Kaikissa tapauksissa lähtökohtana on käsite nimeltä yhdenmuotoisuus. Kahta tasokuviota sanotaan yhdenmuotoisiksi, jos toinen saadaan toisesta siirtämällä, pienentämällä tai suurentamalla, kiertämällä tai peilaamalla. Kuvioiden toisiaan vastaavat pisteet ovat vastinpisteitä ja niiden väliset janat vastinjanoja. Mittakaava on vastinjanojen pituuksien suhde. 
+Kaikissa tapauksissa lähtökohtana on käsite nimeltä yhdenmuotoisuus. Kahta tasokuviota sanotaan yhdenmuotoisiksi, jos toinen saadaan toisesta siirtämällä, pienentämällä tai suurentamalla, kiertämällä tai peilaamalla. Esimerkiksi oikea lampi ja karttaan piirretty lampi ovat yhdenmuotoisia. Kuvioiden toisiaan vastaavat pisteet ovat vastinpisteitä ja niiden väliset janat vastinjanoja. Mittakaava on vastinjanojen pituuksien suhde. Vastaavasti yhdenmuotoisuus voidaan määritellä myös kolmiulotteisille kappaleille.
 
-Esim. Oheiset kuviot ovat yhdenmuotoisia. Vastinpisteitä ovat esim. E ja P, A ja L, C ja N. Vastinjanoja ovat esim. EA ja PL, DC ja ON.
+Esimerkiksi oheiset monikulmiot $ABCD$ ja $EFGH$ ovat yhdenmuotoisia. Vastinpisteitä ovat $A$ ja $E$, $B$ ja $F$, $C$ ja $G$ sekä $D$ ja $H$. Vastinjanoja ovat $AB$ ja $EF$, $BC$ ja $FG$, $CD$ ja $GH$ sekä $DA$ ja $HE$.
+
+![Yhdenmuotoiset kuviot](yhdenmuotoiset_kuviot.png "Yhdenmuotoiset kuviot")
 
 ## Pituuksien suhteita
 
 Pituuksien suhteisiin liittyvissä ongelmissa pätee yhtälö $y=kx$. Verrannollisuuskerroin eli mittakaava $k$ tarkoittaa yhdenmuotoisten kuvioiden vastinjanojen pituuksien suhdetta. Yleensä mittakaavaa merkitään jakolaskumuodossa kaksoispisteellä esitettynä, esimerkiksi mittakaava $1:5000$ tarkoittaa verrannollisuuskerrointa $k=\frac{1}{5000}$.
 
-**Esim.** Eräässä kartassa mittakaava on 1:5000. Kuinka pitkä kartalla on pellon sivu, jonka pituus luonnossa on 200 m?
+::::{admonition} Esimerkki
+
+Eräässä kartassa mittakaava on 1:5000. Kuinka pitkä kartalla on pellon sivu, jonka pituus luonnossa on 200 m?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
 Merkitään sivun pituutta maastossa $x$ ja kartalla $y$. Yhtälö, joka kuvaa näiden suhdetta, on $y=kx$. Sivun pituus $y$ kartalla saadaan sijoittamalla yhtälöön $k$ ja $x$, siis $y=\frac{1}{5000}\cdot 200~\text{m}=\frac{200}{5000}~\text{m}=0.04~\text{m}$.
 :::
+
+::::
  
-**Esim.** Paljonko on polun pituus maastossa, jos se on retkeilykartassa (mittakaava 1:20 000) 8.5 cm pitkä? 
+::::{admonition} Esimerkki
+
+Paljonko on polun pituus maastossa, jos se on retkeilykartassa (mittakaava 1:20 000) 8.5 cm pitkä? 
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -32,9 +40,13 @@ Käytetään seuraavia merkintöjä: $x$ on polun pituus maastossa, $y$ on polun
 Ratkaistaan $x$ yhtälöstä $y=kx$, jolloin saadaan $x=\frac{y}{k}$. Sijoitetaan $y$ ja $k$ yhtälöön: $x=\frac{0.085~\text{m}}{1:20000}$. Murtolukujen laskusääntöjen mukaisesti murtoluvulla jakaminen muuttuu sen käänteisluvulla kertomiseksi, siis $x=0.085~\text{m}\cdot 20 000 = 1700~\text{m}$.
 :::
 
+::::
+
 Kun mittakaavaa lasketaan, tuloksena voi olla desimaaliluku. Tämä voidaan ilmaista muodossa $k=\frac{1}{a}$, josta saadaan ratkaistua $a=\frac{1}{k}$. Tämän jälkeen mittakaava voidaan kirjoittaa, kuten se yleenä kartoissa yleensä esitetään, $1:a$.
 
-**Esim.** Tien pituus maastossa on 360 m ja kartalla 14 cm. Mikä on kartan mittakaava?
+::::{admonition} Esimerkki
+
+Tien pituus maastossa on 360 m ja kartalla 14 cm. Mikä on kartan mittakaava?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -47,6 +59,8 @@ $0.000389=\frac{1}{a}$.
 
 Tästä saadaan $a=\frac{1}{0.000389}\approx 2571$. Mittakaava on siis suunnilleen 1:2571. 
 :::
+
+::::
 
 ## Pinta-alojen suhteita
 
@@ -62,8 +76,9 @@ Tarkistetaan, että mittakaava on todellakin alojen suhteen neliöjuuri:
 
 $k=\sqrt{\frac{6~\text{m}^2}{24~\text{m}^2}}=\sqrt{\frac{1}{4}}=\frac{\sqrt{1}}{\sqrt{4}}=\frac{1}{\sqrt{4}}=\frac{1}{2}=1:2$.
 
+::::{admonition} Esimerkki
 
-**Esim.** Urheilukentän pinta-ala on kartalla $16~\text{cm}^2$ ja oikeasti $4900~\text{m}^2$. 
+Urheilukentän pinta-ala on kartalla $16~\text{cm}^2$ ja oikeasti $4900~\text{m}^2$. 
 
 a) Mikä on kartan mittakaava?
 
@@ -86,7 +101,11 @@ Sijoitetaan yhtälöön mittakaava $k$ ja tien pituus $y$: $x=\frac{18~\text{cm}
 
 :::
 
-**Esim.** Talon pohjapiirros on piirretty mittakaavassa 1:75. Talon pinta-ala on piirroksessa $A_1=0.027~\text{m}^2$. Mikä on todellinen pinta-ala $A_2$?
+::::
+
+::::{admonition} Esimerkki
+
+Talon pohjapiirros on piirretty mittakaavassa 1:75. Talon pinta-ala on piirroksessa $A_1=0.027~\text{m}^2$. Mikä on todellinen pinta-ala $A_2$?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -98,6 +117,8 @@ Ratkaistaan yhtälöstä kysytty pinta-ala $A_2$: $\frac{A_1}{A_2} =k^2 \leftrig
 Sijoitetaan lukuarvot: $A_2=\frac{0.027~\text{m}^2}{\left(1/75\right)^2} = \frac{0.027~\text{m}^2}{\frac{1}{75^2}}=0.027~\text{m}^2 \cdot 75^2 \approx 152~\text{m}^2$.
 
 :::
+
+::::
 
 ## Tilavuuksien suhteita
 
@@ -113,7 +134,9 @@ $k=\sqrt[3]{\frac{6}{48}}=\sqrt[3]{\frac{1}{8}}=\frac{\sqrt[3]{1}}{\sqrt[3]{8}}=
 
 Jos pieni ja iso kappale on tehty yhtä tiheästä aineesta, niin tilavuuksien suhde on sama kuin massojen suhde, siis $k^3=\frac{m_1}{m_2}$. 
 
-**Esim.** 25 cm pitkä kala painaa 1 kg. Paljonko painaa 50 cm pitkä kala, jos oletetaan, että kalat ovat yhdenmuotoisia?
+::::{admonition} Esimerkki
+
+25 cm pitkä kala painaa 1 kg. Paljonko painaa 50 cm pitkä kala, jos oletetaan, että kalat ovat yhdenmuotoisia?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -124,11 +147,17 @@ Massojen suhde on mittakaavan kolmas potenssi: $\frac{m_1}{m_2} =\left(\frac{1}{
 
 Ratkaistaan tästä tuntematon massa $m_2$:
 
-$\frac{m_1}{m_2} =\left(\frac{1}{2}\right)^3 \leftrightarrow m_2=m_1\cdot 2^3 \leftrightarrow m_2=8\cdot 1~\text{kg} \leftrightarrow m_2=8~\text{kg}$.
+$\frac{m_1}{m_2} =\left(\frac{1}{2}\right)^3 \Leftrightarrow m_2=m_1\cdot 2^3 \Leftrightarrow m_2=8\cdot 1~\text{kg} Lleftrightarrow m_2=8~\text{kg}$.
+
+Oikeasti kalat eivät taida olla yhdenmuotoisia! Tässä arkikieli poikkeaa matematiikan kielestä. Jos toisen kalan pituus on kaksi kertaa niin suuri kuin toisen, mutta muut mitat eivät, kalat eivät ole yhdenmuotoisia. Myöskään toisen kalan kaksi kertaa suurempi massa ei tarkoita sitä, että kalojen mittakaava olisi 1:2. 
 
 :::
 
-**Esim.** Pieneen maljakkoon mahtuu 0.75 litraa vettä ja suureen maljakkoon 3 litraa. Maljakot ovat yhdenmuotoisia. Mikä on maljakoiden mittakaava? Kuinka korkea on suurempi maljakko, jos pienemmän maljakon korkeus on 12 cm? Maljakoiden muodosta ei ole tarkempaa tietoa.
+::::
+
+::::{admonition} Esimerkki
+
+Pieneen maljakkoon mahtuu 0.75 litraa vettä ja suureen maljakkoon 3 litraa. Maljakot ovat yhdenmuotoisia. Mikä on maljakoiden mittakaava? Kuinka korkea on suurempi maljakko, jos pienemmän maljakon korkeus on 12 cm? Maljakoiden muodosta ei ole tarkempaa tietoa.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -138,3 +167,5 @@ Mittakaavan kolmas potenssi on tilavuuksien suhde: $k^3=\frac{0.75}{3}$. Tästä
 Suuren maljakon korkeus saadaan yhtälöstä $y=kx$ eli $12~\text{cm}=0.63\cdot x$, eli $x=\frac{12~\text{cm}}{0.63}=19~\text{cm}$.
 
 :::
+
+::::

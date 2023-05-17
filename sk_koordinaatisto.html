@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search &#8212; Algebra, geometria, trigonometria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Suorakulmainen koordinaatisto &#8212; Algebra, geometria, trigonometria</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -30,7 +31,6 @@
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -50,19 +50,18 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
-  <script src="searchindex.js" defer></script>
-  
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Yleiset kolmiot" href="yleiset.html" />
+    <link rel="prev" title="Suorakulmaiset kolmiot" href="suorakulmaiset.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
 
     <!-- Google Analytics -->
     
-
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
@@ -103,7 +102,7 @@ const thebe_selector_output = ".output, .cell_output"
       <h1 class="site-logo" id="site-title">Algebra, geometria, trigonometria</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="#" method="get">
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -165,7 +164,7 @@ const thebe_selector_output = ".output, .cell_output"
   Trigonometriaa
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="trigonometriaa.html">
    Trigonometriaa
@@ -176,8 +175,8 @@ const thebe_selector_output = ".output, .cell_output"
    Suorakulmaiset kolmiot
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="sk_koordinaatisto.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Suorakulmainen koordinaatisto
   </a>
  </li>
@@ -347,6 +346,52 @@ title="Source repository"
 
 </a>
 
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/sk_koordinaatisto.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
     </div>
 </div>
 
@@ -358,7 +403,7 @@ title="Source repository"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1></h1>
+                <h1>Suorakulmainen koordinaatisto</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -370,36 +415,75 @@ title="Source repository"
                 
               <div>
                 
-  <h1 id="search-documentation">Search</h1>
-  
-  <noscript>
-  <div class="admonition warning">
-  <p>
-    Please activate JavaScript to enable the search
-    functionality.
-  </p>
-  </div>
-  </noscript>
-  
-  
-  <p>
-    Searching for multiple words only shows matches that contain
-    all words.
-  </p>
-  
-  
-  <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-    <input type="submit" value="search" />
-    <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
-  
-  
-  
-  <div id="search-results">
-  
-  </div>
-  
+  <section class="tex2jax_ignore mathjax_ignore" id="suorakulmainen-koordinaatisto">
+<h1>Suorakulmainen koordinaatisto<a class="headerlink" href="#suorakulmainen-koordinaatisto" title="Permalink to this headline">#</a></h1>
+<p>Eräs suorakulmaisten kolmioiden sovellus on kaksiulotteinen suorakulmainen koordinaatisto. Se koostuu kahdesta lukusuorasta: ”x-akseli” ja ”y-akseli”. Lukusuoran kasvavaa suuntaa merkitään nuolella. Pisteen paikka <span class="math notranslate nohighlight">\(A\)</span> ilmoitetaan muodossa <span class="math notranslate nohighlight">\(A=(x,y)\)</span>. Pisteellä <span class="math notranslate nohighlight">\((0,0)\)</span> on erityisnimitys origo.</p>
+<p><img alt="Kaksiulotteinen suorakulmainen koordinaatisto" src="_images/skkoord.jpg" /></p>
+<p><strong>Esim.</strong> Kuvassa <span class="math notranslate nohighlight">\(A=(4,6)\)</span>, <span class="math notranslate nohighlight">\(B=(10,-2)\)</span>, <span class="math notranslate nohighlight">\(C=(-4,-2)\)</span> ja <span class="math notranslate nohighlight">\(D=(-4,8)\)</span>.
+ 
+Pisteiden etäisyys origosta saadaan Pythagoraan lauseella, kun täydennetään kuvio suorakulmaiseksi kolmioksi. Pythagoraan lauseeseen voi sijoittaa myös negatiivisia koordinaattien arvoja.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Mitkä ovat edellisen kuvan pisteiden <span class="math notranslate nohighlight">\(A\)</span> ja <span class="math notranslate nohighlight">\(D\)</span> etäisyydet origosta?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Pisteen <span class="math notranslate nohighlight">\(A\)</span> etäisyys saadaan ratkaisemalla yhtälö:</p>
+<p><span class="math notranslate nohighlight">\(r^2=4^2+6^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(r=\sqrt{4^2+6^2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(r\approx 7.2\)</span></p>
+<p>Pisteen <span class="math notranslate nohighlight">\(D\)</span> etäisyys on vastaavasti <span class="math notranslate nohighlight">\(\sqrt{(-4)^2+8^2} = \sqrt{16+64} = \sqrt{80} \approx 8.94\)</span>.</p>
+</div>
+</div>
+<p>Kahden pisteen välisen etäisyyden laskemiseksi tarvitaan pisteiden <span class="math notranslate nohighlight">\(x\)</span>-koordinaattien erotus <span class="math notranslate nohighlight">\(\Delta x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span>-koordinaattien erotus <span class="math notranslate nohighlight">\(\Delta y\)</span>. Sen jälkeen sovelletaan näille etäisyyksille Pythagoraan lausetta. Koordinaattien erotukset saadaan vähentämällä ensimmäisen pisteen koordinaatit jälkimmäisistä. Erotuksen voi myös päätellä: kuinka monta askelta x-suunnassa täytyy siirtyä, jotta päästään ensimmäisen pisteet x-koordinaatista jälkimmäisen pisteen x-koordinaattiin? Entä kuinka monta askelta tarvitaan y-suunnassa?</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Laske pisteiden <span class="math notranslate nohighlight">\(A=(4,6)\)</span> ja <span class="math notranslate nohighlight">\(D=(-4,8)\)</span> etäisyys.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Aluksi lasketaan x-koordinaattien ero: <span class="math notranslate nohighlight">\(\Delta x = -4-4=-8\)</span>, ja y-koordinaattien ero: <span class="math notranslate nohighlight">\(\Delta y = 8-6=2\)</span>. Sama tulos saadaan päättelemällä: pisteestä <span class="math notranslate nohighlight">\((4,6)\)</span> pitää siirtyä vaakasuunnassa 8 yksikköä taaksepäin ja 2 yksikköä ylöspäin, jotta päästään pisteeseen <span class="math notranslate nohighlight">\((-4,8)\)</span>. Pisteiden välinen etäisyys on siis <span class="math notranslate nohighlight">\(\sqrt{(-8)^2+2^2}=\sqrt{68}\approx 8.24\)</span>.</p>
+</div>
+</div>
+<p>Pisteiden välinen suuntakulma saadaan täydentämällä koordinaatistoon suorakulmainen kolmio ja hyödyntämällä trigonometrisiä funktioita. Matematiikassa käytäntö on, että suuntakulma mitataan positiivisesta x-akselista vastapäivään. Esimerkiksi suunnistuksessa kulma voidaan määritellä eri tavalla.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Pisteestä <span class="math notranslate nohighlight">\(A=(10,0)\)</span> liikutaan pisteeseen <span class="math notranslate nohighlight">\(B=(25,8)\)</span>. Miten pitkä matka siirryttiin ja mihin suuntaan?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Siirtymän suuruus on <span class="math notranslate nohighlight">\(\sqrt{(25-10)^2+(8-0)^2} = \sqrt{15^2+8^2} = \sqrt{289} = 17\)</span>.</p>
+<p>Suuntakulmalle <span class="math notranslate nohighlight">\(\alpha\)</span> pätee <span class="math notranslate nohighlight">\(\tan{\alpha}=\frac{\Delta y}{\Delta x}\)</span>, josta saadaan ratkaistua <span class="math notranslate nohighlight">\(\alpha=\arctan{\frac{8-0}{25-10}}=\arctan{\frac{8}{15}} \approx 28.1^{\circ}\)</span>.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Pisteestä <span class="math notranslate nohighlight">\(A=(2,8)\)</span> liikutaan 50 yksikköä 10 asteen suuntakulmassa. Mihin pisteeseen <span class="math notranslate nohighlight">\(B\)</span> päädytään?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p><img alt="Siirtymä pisteestä A pisteeseen B" src="_images/astabhen.jpg" /></p>
+<p>Kuvaan täydennetylle suorakulmaiselle kolmiolle pätee: <span class="math notranslate nohighlight">\(\cos{⁡10^{\circ}}=\frac{\Delta x}{50}\)</span>, <span class="math notranslate nohighlight">\(\sin{⁡10^{\circ}}=\frac{\Delta y}{50}\)</span>. Siis <span class="math notranslate nohighlight">\(\Delta x=50\cdot \cos{⁡10^{\circ}}=49.2^{\circ}\)</span> ja <span class="math notranslate nohighlight">\(\Delta y=50\cdot \sin{⁡10^{\circ}}=8.7^{\circ}\)</span>.</p>
+<p>Pisteen <span class="math notranslate nohighlight">\(B\)</span> koordinaatit saadaan lisäämällä x- ja y-suuntainen siirtymä pisteen <span class="math notranslate nohighlight">\(A\)</span> koordinaatteihin: <span class="math notranslate nohighlight">\(B=(2+49.2, 8+8.7)=(51.2,16.7)\)</span>.</p>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "luma-lapinamk/minna-agt",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -408,6 +492,20 @@ title="Source repository"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="suorakulmaiset.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Suorakulmaiset kolmiot</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="yleiset.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Yleiset kolmiot</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

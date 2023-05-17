@@ -50,8 +50,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -178,6 +176,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="sk_koordinaatisto.html">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="yleiset.html">
    Yleiset kolmiot
   </a>
@@ -247,7 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="malleja.html">
-   Matemaattisia malleja
+   Funktio mallina
   </a>
  </li>
  <li class="toctree-l1">
@@ -579,6 +582,18 @@ title="Print to PDF"
 </div>
 </div>
 <p>Ensimmäisen asteen yhtälössä voi olla myös kirjaimia, jotka on korotettu toiseen tai korkeampaan potenssiin. Yhtälö on silti ensimmäisen asteen yhtälö, jos ratkaistava muuttuja esiintyy ainoastaan potenssiin 1 korotettuna. Muita kirjaimia käsitellään samalla tavalla kuin lukuja, eli niitä voi lisätä ja vähentää, ja niillä voi kertoa ja jakaa yhtälön molempia puolia.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise yhtälö <span class="math notranslate nohighlight">\(ax+8b=cx-d\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p><span class="math notranslate nohighlight">\(ax+8b=cx-d~\hspace{1cm} || -cx\)</span></p>
+<p><span class="math notranslate nohighlight">\(ax+8b-cx=-d~\hspace{1cm} || -8b\)</span></p>
+<p><span class="math notranslate nohighlight">\(ax-cx=-d-8b\)</span></p>
+<p><span class="math notranslate nohighlight">\(x(a-c)=-d-8b~\hspace{1cm} || :(a-c)\)</span></p>
+<p><span class="math notranslate nohighlight">\(x=\frac{-d-8b}{a-c}\)</span></p>
+</div>
+</div>
 <div class="admonition-esimerkki admonition">
 <p class="admonition-title">Esimerkki</p>
 <p>Ratkaise <span class="math notranslate nohighlight">\(h\)</span> yhtälöstä <span class="math notranslate nohighlight">\(gh=\frac{1}{2}v^2\)</span>.</p>

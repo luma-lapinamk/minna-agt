@@ -1,9 +1,6 @@
-<!-- #region -->
 # Trigonometriaa
 
-
-Useimmat geometriset ongelmat sisältävät kulmia. Jos muuttokuormasta kannetaan suurta lipastoa kapeassa käytävässä, on mahdollista, että lipaston kanssa on vaikeaa tai mahdotonta mahtua kääntymään kulmassa. Tällaisesta haasteesta selviää kokeilemallakin. Sen sijaan rakennuksiin ja kartoitukseen liittyvät mittaukset vaativat teoreettistakin tietoa kulmista, eli trigonometriaa. Perehdytään aluksi kulmiin liittyviin mittayksiköihin ja käsitteisiin.
-
+Monet geometriset ja myös käytännön ongelmat sisältävät kulmia. Jos muuttokuormasta kannetaan suurta lipastoa kapeassa käytävässä, on mahdollista, että lipaston kanssa on vaikeaa tai mahdotonta mahtua kääntymään kulmassa. Tällaisesta haasteesta selviää kokeilemallakin. Sen sijaan rakennuksiin ja kartoitukseen liittyvät mittaukset vaativat teoreettistakin tietoa kulmista, eli trigonometriaa. Perehdytään aluksi kulmiin liittyviin mittayksiköihin ja käsitteisiin.
 
 ## Kulmiin liittyviä käsitteitä
 
@@ -43,28 +40,29 @@ Kulmien suuruuksia mitataan usealla eri yksiköllä.
 
 Koordinaateissa tavallinen asteiden esitysmuoto on minuuttien ja sekuntien avulla:
 
-- 1 minuutti = 1/60 astetta, merkitään 1’ 
-- 1 sekunti = 1/60 minuuttia = 1/3600 astetta, merkitään 1’’
+- 1 minuutti = 1/60 astetta, merkitään 1'
+- 1 sekunti = 1/60 minuuttia = 1/3600 astetta, merkitään 1''
 
-**Esim.** Muuta $87^{\circ}~56'~28''$ desimaaliluvuksi.
+::::{admonition} Esimerkki
 
-:::{admonition} Ratkaisu
-:class: tip, dropdown
-$87^{\circ}~56'~28''$ tarkoittaa $(87+\frac{56}{60}+\frac{28}{3600})^{\circ} \approx 87.94^{\circ}$.
-:::
+a) Muuta $87^{\circ}~56'~28''$ desimaaliluvuksi.
 
-**Esim.** Muuta $56.72^{\circ}$ asteiksi, minuuteiksi ja sekunneiksi.
+b) Muuta $56.72^{\circ}$ asteiksi, minuuteiksi ja sekunneiksi.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-Kokonaisia asteita on 56. Merkitään minuuttien määrää $x$ ja kirjoitetaan desimaaliosa 0.72 minuutteina: $0.72=\frac{x}{60}$. Tästä saadaan ratkaisua $x=0.72\cdot 60=43.2$.
+a) $87^{\circ}~56'~28''$ tarkoittaa $(87+\frac{56}{60}+\frac{28}{3600})^{\circ} \approx 87.94^{\circ}$.
 
-Kokonaisia minuutteja on siis 43. Lisäksi jää 0.2 minuuttia. Merkitään nyt sekuntien määrää $y$ ja kirjoitetaan minuuttien desimaaliosa sekunteina: $0.43 = \frac{y}{60}$. Sekuntien määräksi saadaan $y=0.2\cdot 60=12$.
+b) Kokonaisia asteita on 56. Muutetaan desimaaliosa minuuteiksi, eli kerrotaan se luvulla 60. Näin saadaan minuuttien määräksi $0.72\cdot 60=43.2$.
+
+Kokonaisia minuutteja on siis 43. Lisäksi jää 0.2 minuuttia. Kirjoitetaan minuuttien desimaaliosa sekunteina: $0.2\cdot 60=12$.
 
 Kulma voidaan siis esittää muodossa $56^{\circ}~43'~12''$.
+
 :::
 
+::::
 
 **Gooni** on määritelty seuraavasti: $100~\text{gon}=90^{\circ}$. Määritelmästä saadaan johdettua muunnoskaavat 
 
@@ -85,20 +83,19 @@ Joillekin kulmille muunnoskaavan tuloksena on tarkat, murtolukumuotoiset arvot, 
 - $45^{\circ}=\frac{\pi}{4}$
 - $30^{\circ}=\frac{\pi}{6}$
 
-**Esim.** Muunna radiaaneiksi $137.2^{\circ}$. 
+::::{admonition} Esimerkki
+
+a) Muunna radiaaneiksi $137.2^{\circ}$. 
+
+b) Muunna asteiksi 0.25 radiaania.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-Määritelmän mukaan $\pi~\text{rad} = 180^{\circ}$, josta voidaan ratkaista $1^{\circ} = \frac{\pi}{180}~\text{rad}$, joten $137.2^{\circ}=137.2\cdot \frac{\pi}{180}~\text{rad} \approx 2.395~\text{rad}$.
+a) Määritelmän mukaan $\pi~\text{rad} = 180^{\circ}$, josta voidaan ratkaista $1^{\circ} = \frac{\pi}{180}~\text{rad}$, joten $137.2^{\circ}=137.2\cdot \frac{\pi}{180}~\text{rad} \approx 2.395~\text{rad}$.
+
+b) Koska $\pi~\text{rad} = 180^{\circ}$, niin $1~\text{rad} =\frac{180^{\circ}}{\pi}$, joten $0.25~\text{rad}=0.25\cdot \frac{180^{\circ}}{\pi} \approx 14.32^{\circ}$. 
 
 :::
 
-**Esim.** Muunna asteiksi 0.25 radiaania.
-
-:::{admonition} Ratkaisu
-:class: tip, dropdown
-
-Koska $\pi~\text{rad} = 180^{\circ}$, niin $1~\text{rad} =\frac{180^{\circ}}{\pi}$, joten $0.25~\text{rad}=0.25\cdot \frac{180^{\circ}}{\pi} \approx 14.32^{\circ}$. 
-
-:::
+::::

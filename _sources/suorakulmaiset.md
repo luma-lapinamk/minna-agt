@@ -29,7 +29,9 @@ Lopuksi verrataan kuvia: kummassakin tapauksessa kolmiot ovat aivan yhtä suuret
 
 :::
 
-**Esim.** Laske suorakulmaisen kolmion hypotenuusan pituus, kun kateettien pituudet ovat 5 cm ja 3 cm.
+::::{admonition} Esimerkki
+
+Laske suorakulmaisen kolmion hypotenuusan pituus, kun kateettien pituudet ovat 5 cm ja 3 cm.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -44,7 +46,11 @@ $c=\sqrt{34}$
 
 :::
 
-**Esim.** Laske suorakulmaisen kolmion toisen kateetin pituus, kun hypotenuusan pituus on 10 cm ja toisen kateetin pituus on 2 cm.
+::::
+
+::::{admonition} Esimerkki
+
+Laske suorakulmaisen kolmion toisen kateetin pituus, kun hypotenuusan pituus on 10 cm ja toisen kateetin pituus on 2 cm.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -63,12 +69,16 @@ $b=\sqrt{96}$
 
 :::
 
-**Esim.** Suorakulmaisen kolmion kaksi sivua ovat pituudeltaan 6 m ja 8 m. Laske kolmannen sivun pituus.
+::::
+
+::::{admonition} Esimerkki
+
+Suorakulmaisen kolmion kaksi sivua ovat pituudeltaan 6 m ja 8 m. Laske kolmannen sivun pituus.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-Tässä tapauksessa ei tiedetä, ovatko annetut sivut kolmion kateetit vai onko toinen niistä hypotenuusta. Ratkaistaan tehtävä kumpikin vaihtoehto huomioiden.
+Tässä tapauksessa ei tiedetä, ovatko annetut sivut kolmion kateetit vai onko toinen niistä hypotenuusa. Ratkaistaan tehtävä kumpikin vaihtoehto huomioiden.
 
 (1) Oletetaan, että annetut sivut ovat kateetteja. Tällöin hypotenuusan pituus on $c=\sqrt{6^2+8^2}=\sqrt{100}=10$.
 
@@ -84,17 +94,24 @@ $b=\sqrt{28}$
 
 :::
 
-**Esim.** Kolmion sivut ovat pituudeltaan 4, 5 ja 7. Onko kyseinen kolmio suorakulmainen?
+::::
+
+::::{admonition} Esimerkki
+
+Kolmion sivut ovat pituudeltaan 4, 5 ja 7. Onko kyseinen kolmio suorakulmainen?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-Tarkistetaan, pitääkö Pythagoraan lause paikkansa näillä arvoilla. Kateettien neliöiden summa on $4^2 + 5^2 = 16+25 = 41$. Hypotenuusan neliö on $7^2 = 49$. Luvut eivät ole yhtä suuret, joten kolmio ei ole suorakulmainen.
+Tarkistetaan, pitääkö Pythagoraan lause paikkansa näillä arvoilla. Hypotenuusa on annetuista luvuista pisin, ja kaksi muuta ovat kateetteja. Kateettien neliöiden summa on $4^2 + 5^2 = 16+25 = 41$. Hypotenuusan neliö on $7^2 = 49$. Luvut eivät ole yhtä suuret, joten kolmio ei ole suorakulmainen.
 
 :::
 
+::::
 
-**Esim.** Millä luvun $a > 2 $ arvolla kolmio, jonka sivut ovat $x$, $2x$ ja $ax$, olisi suorakulmainen?
+::::{admonition} Esimerkki
+
+Millä luvun $a > 2 $ arvolla kolmio, jonka sivut ovat $x$, $2x$ ja $ax$, olisi suorakulmainen?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -113,7 +130,11 @@ $a= \sqrt{5}$
 
 :::
 
-**Esim.** Suorakulmaisen kolmion hypotenuusa on 3 kertaa niin pitkä kuin toinen kateetti. Selvitä toisen kateetin pituus.
+::::
+
+::::{admonition} Esimerkki
+
+Suorakulmaisen kolmion hypotenuusa on 3 kertaa niin pitkä kuin toinen kateetti. Selvitä toisen kateetin pituus.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -134,6 +155,9 @@ Kummankaan kateetin lukuarvoa ei siis tehtävänannon perusteella tiedetä, mutt
 
 :::
 
+::::
+
+
 ## Suorakulmaisen kolmion trigonometriset funktiot
 
 Suorakulmaisen kolmion teräville kulmille on määritelty kolme ns. trigonometrista funktiota:
@@ -153,11 +177,9 @@ Sinin ja kosinin arvot ovat suorakulmaisissa kolmioissa lukujen 0 ja 1 välissä
 
 **Esim.** Ratkaistaan kulma $\alpha$, kun $\sin{\alpha}=0.562$. Tällöin $\alpha=\arcsin{⁡0.562}=34.2^{\circ}$.
 
-**HUOM!** Jos tiedetään kulman sinin arvo $x$ ja ratkaistaan kulma $\alpha$, on ratkaisu tarkistettava, sillä arkussinifunktion ominaisuuksista johtuen kulmalle on kaksi vaihtoehtoa: $\alpha=\arcsin{x}$ ja $\alpha = 180^{\circ}-\arcsin{x}$.
+::::{admonition} Esimerkki
 
-**Esim.** Kulman sini on 0.9. Laskimella saadaan kulman suuruudeksi $\arcsin⁡{0.9}=64.16^{\circ}$. Toinen kulma, jonka sini on 0.9, on $180^{\circ}-\arcsin{⁡0.9}=180^{\circ}-64.16^{\circ}=115.84^{\circ}$.
-
-**Esim.** Ratkaise oheisen kolmion tuntemattomat osat, kun tiedetään, että $c=12.3$ m ja $\alpha=38.0^{\circ}$.
+Ratkaise edellisen kuvan kolmion tuntemattomat osat, kun tiedetään, että $c=12.3$ m ja $\alpha=38.0^{\circ}$.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -190,7 +212,11 @@ Sama ratkaisu saataisiin myös trigonometrisia funktioita hyödyntämällä.
 
 :::
 
-**Esim.** Ratkaise suorakulmaisen kolmion tuntemattomat osat, kun tiedetään, että kateettien pituudet ovat $a=3.54~\text{m}$ ja $b=4.36~\text{m}$.
+::::
+
+::::{admonition} Esimerkki
+
+Ratkaise suorakulmaisen kolmion tuntemattomat osat, kun tiedetään, että kateettien pituudet ovat $a=3.54~\text{m}$ ja $b=4.36~\text{m}$.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -219,70 +245,19 @@ $β=90^{\circ}-39.1^{\circ} = 50.9^{\circ}$.
 
 :::
 
-**Esim.** Suorakulmaisen kolmion kateetit ovat $x$ ja $4x$. Selvitä kolmion kulmien suuruudet.
+::::
+
+::::{admonition} Esimerkki
+
+Suorakulmaisen kolmion kateetit ovat $x$ ja $4x$. Selvitä kolmion kulmien suuruudet.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
+
+Tässä tapauksessa kateettien pituuksia ei tiedetä. Niitä ei tarvitsekaan tietää, sillä trigonometrien funktiot riippuvat sivujen pituuksien *suhteista* eivätkä absoluuttisista pituuksista.
 
 Lyhyempää sivua vastapäätä olevan kulman $\alpha$ tangentti on $\tan{\alpha} = \frac{x}{4x}$. Kulma saadaan laskemalla $\alpha = \arctan{\frac{x}{4x}}= \arctan{\frac{1}{4}} \approx 14.04^{\circ}$. Kolmas kulma $\beta$ on $180^{\circ}-90^{\circ}-14.04^{\circ} = 75.96^{\circ}$. Sama tulos saataisiin myös tämän kulman tangentin avulla: $\beta = \arctan{\frac{4x}{x}}= \arctan{4} \approx 75.96^{\circ}$.
 
 :::
 
-## Suorakulmainen koordinaatisto
-
-Eräs suorakulmaisten kolmioiden sovellus on kaksiulotteinen suorakulmainen koordinaatisto. Se koostuu kahdesta lukusuorasta: ”x-akseli” ja ”y-akseli”. Lukusuoran kasvavaa suuntaa merkitään nuolella. Pisteen paikka $A$ ilmoitetaan muodossa $A=(x,y)$. Pisteellä $(0,0)$ on erityisnimitys origo.
-
-![Kaksiulotteinen suorakulmainen koordinaatisto](skkoord.jpg "Kaksiulotteinen suorakulmainen koordinaatisto")
-
-**Esim.** Kuvassa $A=(4,6)$, $B=(10,-2)$, $C=(-4,-2)$ ja $D=(-4,8)$.
-   
-Pisteiden etäisyys origosta saadaan Pythagoraan lauseella, kun täydennetään kuvio suorakulmaiseksi kolmioksi. Pythagoraan lauseeseen voi sijoittaa myös negatiivisia koordinaattien arvoja.
-
-**Esim.** Mitkä ovat edellisen kuvan pisteiden $A$ ja $D$ etäisyydet origosta?
-
-:::{admonition} Ratkaisu
-:class: tip, dropdown
-Pisteen $A$ etäisyys saadaan ratkaisemalla yhtälö:
-
-$r^2=4^2+6^2$
-
-$r=\sqrt{4^2+6^2}$
-
-$r\approx 7.2$
-
-Pisteen $D$ etäisyys on vastaavasti $\sqrt{(-4)^2+8^2} = \sqrt{16+64} = \sqrt{80} \approx 8.94$.
-:::
-
-Kahden pisteen välisen etäisyyden laskemiseksi tarvitaan pisteiden x-koordinaattien erotus $\Delta x$ ja y-koordinaattien erotus $\Delta y$. Sen jälkeen sovelletaan näille etäisyyksille Pythagoraan lausetta. Koordinaattien erotukset saadaan vähentämällä ensimmäisen pisteen koordinaatit jälkimmäisistä. Erotuksen voi myös päätellä: kuinka monta askelta x-suunnassa täytyy siirtyä, jotta päästään ensimmäisen pisteet x-koordinaatista jälkimmäisen pisteen x-koordinaattiin? Entä kuinka monta askelta tarvitaan y-suunnassa?
-
-**Esim.** Laske pisteiden $A=(4,6)$ ja $D=(-4,8)$ etäisyys.
-
-:::{admonition} Ratkaisu
-:class: tip, dropdown
-
-Aluksi lasketaan x-koordinaattien ero: $\Delta x = -4-4=-8$, ja y-koordinaattien ero: $\Delta y = 8-6=2$. Sama tulos saadaan päättelemällä: pisteestä $(4,6)$ pitää siirtyä vaakasuunnassa 8 yksikköä taaksepäin ja 2 yksikköä ylöspäin, jotta päästään pisteeseen $(-4,8)$. Pisteiden välinen etäisyys on siis $\sqrt{(-8)^2+2^2}=\sqrt{68}\approx 8.24$.
-:::
-
-Pisteiden välinen suuntakulma saadaan täydentämällä koordinaatistoon suorakulmainen kolmio ja hyödyntämällä trigonometrisiä funktioita. Matematiikassa käytäntö on, että suuntakulma mitataan positiivisesta x-akselista vastapäivään. Esimerkiksi suunnistuksessa kulma voidaan määritellä eri tavalla.
-
-**Esim.** Pisteestä $A=(10,0)$ liikutaan pisteeseen $B=(25,8)$. Miten pitkä matka siirryttiin ja mihin suuntaan?
-
-:::{admonition} Ratkaisu
-:class: tip, dropdown
-
-Siirtymän suuruus on $\sqrt{(25-10)^2+(8-0)^2} = \sqrt{15^2+8^2} = \sqrt{289} = 17$.
-
-Suuntakulmalle $\alpha$ pätee $\tan{\alpha}=\frac{\Delta y}{\Delta x}$, josta saadaan ratkaistua $\alpha=\arctan{\frac{8-0}{25-10}}=\arctan{\frac{8}{15}} \approx 28.1^{\circ}$.
-:::
- 
-**Esim.** Pisteestä $A=(2,8)$ liikutaan 50 yksikköä 10 asteen suuntakulmassa. Mihin pisteeseen $B$ päädytään?
-
-:::{admonition} Ratkaisu
-:class: tip, dropdown
-
-![Siirtymä pisteestä A pisteeseen B](astabhen.jpg "Siirtymä pisteestä A pisteeseen B")
-
-Kuvaan täydennetylle suorakulmaiselle kolmiolle pätee: $\cos{⁡10^{\circ}}=\frac{\Delta x}{50}$, $\sin{⁡10^{\circ}}=\frac{\Delta y}{50}$. Siis $\Delta x=50\cdot \cos{⁡10^{\circ}}=49.2^{\circ}$ ja $\Delta y=50\cdot \sin{⁡10^{\circ}}=8.7^{\circ}$. 
-
-Pisteen $B$ koordinaatit saadaan lisäämällä x- ja y-suuntainen siirtymä pisteen $A$ koordinaatteihin: $B=(2+49.2, 8+8.7)=(51.2,16.7)$.
-:::
+::::
