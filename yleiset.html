@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Yleiset trigonometriset funktiot" href="trigo_funktiot.html" />
+    <link rel="next" title="Sini- ja kosinilause" href="sinilause_kosinilause.html" />
     <link rel="prev" title="Suorakulmainen koordinaatisto" href="sk_koordinaatisto.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -183,6 +183,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Yleiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinilause_kosinilause.html">
+   Sini- ja kosinilause
   </a>
  </li>
  <li class="toctree-l1">
@@ -423,16 +428,6 @@ title="Print to PDF"
    Yleisen kolmion pinta-ala
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sinilause">
-   Sinilause
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#kosinilause">
-   Kosinilause
-  </a>
- </li>
 </ul>
 
     </nav>
@@ -462,16 +457,6 @@ title="Print to PDF"
    Yleisen kolmion pinta-ala
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sinilause">
-   Sinilause
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#kosinilause">
-   Kosinilause
-  </a>
- </li>
 </ul>
 
                         </nav>
@@ -484,7 +469,7 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="yleiset-kolmiot">
 <h1>Yleiset kolmiot<a class="headerlink" href="#yleiset-kolmiot" title="Permalink to this headline">#</a></h1>
-<p>Yleisessä eli vinokulmaisessa kolmiossa kaikki kulmat voivat olla teräviä, tai yksi kulma on tylppä ja kaksi teräviä. Kolmio pitää olettaa vinokulmaiseksi, jos ei ole erikseen kerrottu, että se on suorakulmainen. Kaikkia tässä osioissa esiteltyjä laskukaavoja voidaan käyttää myös suorakulmaisille kolmioille. Sen sijaan suorakulmaisen kolmion omia laskusääntöjä (Pythagoraan lause ja suorakulmaisen kolmion trigonometriset funktiot) voidaan käyttää vain suorakulmaisille kolmioille.</p>
+<p>Yleisessä eli vinokulmaisessa kolmiossa kaikki kulmat voivat olla teräviä, tai yksi kulma on tylppä ja kaksi teräviä. Kolmio pitää olettaa vinokulmaiseksi, jos ei ole erikseen kerrottu, että se on suorakulmainen. Tässä kappaleessa esitellään yleiset ehdot kolmion sivujen pituuksille ja opitaan laskemaan minkä tahansa kolmion pinta-ala.</p>
 <p><img alt="Vinokulmaisia kolmioita" src="_images/vinokulmainen.png" /></p>
 <section id="kolmioepayhtalot">
 <h2>Kolmioepäyhtälöt<a class="headerlink" href="#kolmioepayhtalot" title="Permalink to this headline">#</a></h2>
@@ -551,126 +536,6 @@ Pinta-ala saadaan sijoittamalla laskettu luku ja annetut sivujen pituudet Heroni
 </div>
 </div>
 </section>
-<section id="sinilause">
-<h2>Sinilause<a class="headerlink" href="#sinilause" title="Permalink to this headline">#</a></h2>
-<p>Sinilause kuvaa kulmien ja niiden vastaisten sivujen suhteita. Lauseen mukaan kulman sinin ja kulman vastaisen sivun pituuden suhde on vakio, siis</p>
-<p><span class="math notranslate nohighlight">\(\frac{\sin{\alpha}}{a}=\frac{\sin{\beta}}{b}=\frac{\sin{\gamma}}{c}\)</span>.</p>
-<p>Sinilause voidaan esittää myös muodossa</p>
-<p><span class="math notranslate nohighlight">\(\frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}=\frac{c}{\sin{\gamma}}\)</span>.</p>
-<p>Käytännössä sinilauseesta käytetään vain osaa kerrallaan. Jos tunnetaan kaksi sivua ja toisen vastainen kulma, voidaan ratkaista toisenkin sivun vastainen kulma. Vastaavasti jos tunnetaan kaksi kulmaa ja toista vastapäätä olevan sivun pituus, voidaan toisenkin sivun pituus selvittää. Kolmaskin kulma tietysti selviää, kun muistetaan, että kolmiot kulmat ovat yhteensä 180 astetta.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Sinilauseen perustelu</p>
-<p>Kolmion alalle saatiin jo aiemmin määritelmä: ala on kahden sivun pituuksien tulo, kerrottuna sivujen välisen kulman sinillä, ja jaettuna kahdella. Kolmion pinta-alan pitää olla sama, olivatpa laskussa käytetyt kaksi sivua mitkä tahansa kolmion sivuista. Niinpä tulee olla</p>
-<p><span class="math notranslate nohighlight">\(\frac{1}{2} bc \sin {\alpha} = \frac{1}{2} ac \sin{\beta} = \frac{1}{2} ab \sin{\gamma}\)</span>.</p>
-<p>Tarkastellaan kahden ensimmäisen lausekkeen yhtäsuuruutta:</p>
-<p><span class="math notranslate nohighlight">\(\frac{1}{2} bc \sin {\alpha} = \frac{1}{2} ac \sin{\beta}\)</span></p>
-<p>Kerrotaan molemmat puolet kahdella ja jaetaan molemmat puolet luvulla <span class="math notranslate nohighlight">\(c &gt; 0\)</span>, jonka jälkeen yhtälö on sieventynyt muotoon</p>
-<p><span class="math notranslate nohighlight">\(b \sin{\alpha} = a \sin{\beta}\)</span>.</p>
-<p>Yhtälö on muokattavissa muotoon <span class="math notranslate nohighlight">\(\frac{\sin{\alpha}}{a}=\frac{\sin{\beta}}{b}\)</span>.</p>
-<p>Vastaavasti voidaan verrata 1. ja 3. lauseketta sekä 2. ja 3. lauseketta.</p>
-</div>
-<div class="admonition-esimerkki admonition">
-<p class="admonition-title">Esimerkki</p>
-<p>Ratkaise sivun <span class="math notranslate nohighlight">\(a\)</span>  pituus, kun <span class="math notranslate nohighlight">\(b=10~\text{m}, \beta=35^{\circ}, \alpha=52^{\circ}\)</span>. Merkinnät ovat samat kuin sivun yläreunan kolmiossa.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Ratkaisu</p>
-<p>Ratkaistaan sinilauseesta kysytty suure <span class="math notranslate nohighlight">\(a\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(\frac{a}{\sin{\alpha}} = \frac{b}{\sin{\beta}} \leftrightarrow a = b \frac{\sin{\alpha}}{\sin{\beta}} \leftrightarrow a=10~\text{m} \frac{\sin{52^{\circ}}}{\sin{35^{\circ}}}=13.74~\text{m}\)</span>.</p>
-</div>
-</div>
-<div class="admonition-esimerkki admonition">
-<p class="admonition-title">Esimerkki</p>
-<p>Ratkaise kulma <span class="math notranslate nohighlight">\(\alpha\)</span>, kun <span class="math notranslate nohighlight">\(a=80~\text{m}, c=95~\text{m}, \gamma=45^{\circ}\)</span>. Merkinnät ovat samat kuin sivun yläreunan kolmiossa.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Ratkaisu</p>
-<p>Ratkaistaan kysytty suure <span class="math notranslate nohighlight">\(\alpha\)</span> sinilauseesta. Yhtälön ratkaisu on lyhyempi, kun sinilause kirjoitetaan toisessa järjestyksessä kuin edellisessä esimerkissä.</p>
-<p><span class="math notranslate nohighlight">\(\frac{\sin{\alpha}}{a}=\frac{\sin{\gamma}}{c} \leftrightarrow \sin{\alpha}=\frac{a}{c} \sin{\gamma} \leftrightarrow \sin{\alpha}=\frac{80~\text{m}}{95~\text {m}}\cdot \sin{⁡45^{\circ}} \leftrightarrow \alpha \approx 36.5^{\circ}\)</span>.</p>
-</div>
-</div>
-<p></p>
-<div class="admonition-esimerkki admonition">
-<p class="admonition-title">Esimerkki</p>
-<p>Ratkaise kuviosta sivun <span class="math notranslate nohighlight">\(x\)</span> pituus.</p>
-<p><img alt="Sinilause, esimerkki" src="_images/sinilause_esim.png" /></p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Ratkaisu</p>
-<p>Sinilauseen käyttämiseksi pitäisi tietää ainoan tunnetun sivun vastaisen kulman suuruus. Koska kolmion kulmien summa on aina <span class="math notranslate nohighlight">\(180^{\circ}\)</span>, niin tuntematon kulma on <span class="math notranslate nohighlight">\((180-47-39)^{\circ}=94^{\circ}\)</span>. Nyt sinilauseen perusteella</p>
-<p><span class="math notranslate nohighlight">\(\frac{128}{\sin{⁡94^{\circ}}}=\frac{x}{\sin{⁡47^{\circ}}}\leftrightarrow x = 128\cdot \frac{\sin{⁡47^{\circ}}}{\sin{⁡94^{\circ}}} \approx 94\)</span>.</p>
-</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Huomautus arkussinistä</p>
-<p>Samaa sinin, kosinin tai tangentin arvoa vastaa itse asiassa äärettömän monta eri kulmaa. Käytännössä kolmioihin liittyvissä laskuissa arkussini voi tuottaa “väärän” vastauksen, sillä 0 ja 180 asteen väliltä löytyy aina kaksi kulmaa, joilla on sama sini. Niinpä jos tiedetään kulman sinin arvo <span class="math notranslate nohighlight">\(x\)</span> ja ratkaistaan kulma <span class="math notranslate nohighlight">\(\alpha\)</span>, on ratkaisu tarkistettava, sillä kulmalle on kaksi vaihtoehtoa: <span class="math notranslate nohighlight">\(\alpha=\arcsin{x}\)</span> ja <span class="math notranslate nohighlight">\(\alpha = 180^{\circ}-\arcsin{x}\)</span>.</p>
-<p><strong>Esim.</strong> Kulman sini on 0.9. Laskimella saadaan kulman suuruudeksi <span class="math notranslate nohighlight">\(\arcsin⁡{0.9}=64.16^{\circ}\)</span>. Toinen kulma, jonka sini on 0.9, on <span class="math notranslate nohighlight">\(180^{\circ}-\arcsin{⁡0.9}=180^{\circ}-64.16^{\circ}=115.84^{\circ}\)</span>.</p>
-</div>
-</section>
-<section id="kosinilause">
-<h2>Kosinilause<a class="headerlink" href="#kosinilause" title="Permalink to this headline">#</a></h2>
-<p>Kosinilause on laskusääntö, jonka mukaan tietyn kulman kyljet, kulman vastainen sivu ja kulman kosini ovat yhteydessä toisiinsa seuraavien yhtälöiden mukaisesti:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(c^2=a^2+b^2-2ab \cos{\gamma}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(b^2=a^2+c^2-2ac \cos⁡{\beta}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(a^2=b^2+c^2-2bc \cos{\alpha}\)</span></p></li>
-</ul>
-<p>Yhtälöiden oikealle puolelle tulee siis aina yhtälön vasemmalla puolella olevaa sivua vastapäätä oleva kulma.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Kosinilauseen perustelu</p>
-<p><img alt="Kosinilauseen perustelu" src="_images/kosinilause.png" /></p>
-<p>Kosinilause voidaan perustella piirtämällä kolmioon korkeusjana ja ilmaisemalla sen pituus <span class="math notranslate nohighlight">\(h\)</span> kahdella eri tavalla. Korkeus ilmaistaan nyt Pythagoraan lauseen avulla kahdessa eri kolmiossa. Korkeuden pitää olla sama molemmilla tavoilla ilmaistuna. Tästä seuraa, että myös korkeuden toisen potenssin <span class="math notranslate nohighlight">\(h^2\)</span> tulee olla sama. Tällä ei ole muuta merkitystä kuin se, että laskusta tulee hieman lyhyempi.</p>
-<p>Korkeusjana jakaa kolmion kannan <span class="math notranslate nohighlight">\(c\)</span> osiin <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(c-x\)</span>. Vasemmalle puolelle muodostuvasta suorakulmaisesta kolmiosta nähdään, että <span class="math notranslate nohighlight">\(\cos{\alpha}=\frac{x}{b}\)</span>, joten <span class="math notranslate nohighlight">\(x=b\cos{\alpha}\)</span>. Niinpä kanta jakautuu osiin <span class="math notranslate nohighlight">\(b \cos{\alpha}\)</span> ja <span class="math notranslate nohighlight">\(c-b\cos{\alpha}\)</span>.</p>
-<p>Ratkaistaan nyt korkeusjanan <span class="math notranslate nohighlight">\(h\)</span> toinen potenssi <span class="math notranslate nohighlight">\(h^2\)</span> Pythagoraan lauseen avulla vasemmanpuoleisen kolmion merkinnöin:</p>
-<p><span class="math notranslate nohighlight">\((b \cos{\alpha})^2 + h^2 = b^2\)</span>, josta seuraa <span class="math notranslate nohighlight">\(h^2 = b^2 - (b \cos{\alpha})^2 = b^2 - b^2 \cos^2{\alpha}\)</span>.</p>
-<p>Oikeanpuoleisesta kolmiosta saadaan vastaavasti</p>
-<p><span class="math notranslate nohighlight">\((c-b \cos{\alpha})^2 + h^2 = a^2\)</span>, josta saadaan binomikaavan avulla</p>
-<p><span class="math notranslate nohighlight">\(c^2 -2bc \cos{\alpha} + b^2 \cos^2{\alpha} + h^2 = a^2\)</span></p>
-<p>ja edelleen</p>
-<p><span class="math notranslate nohighlight">\(h^2 = a^2 - c^2 + 2bc \cos{\alpha} - b^2 \cos^2{\alpha}\)</span></p>
-<p>Nyt yhtälöiden oikeiden puolien pitää olla samat:</p>
-<p><span class="math notranslate nohighlight">\(b^2-b^2 \cos^2{\alpha}=a^2-c^2+2bc \cos{\alpha}-b^2 \cos^2{\alpha}\)</span></p>
-<p>Lisätään yhtälön molemmille puolille <span class="math notranslate nohighlight">\(b^2 \cos^2{\alpha}\)</span>, jolloin yhtälö sievenee muotoon</p>
-<p><span class="math notranslate nohighlight">\(b^2=a^2-c^2+2 bc \cos{\alpha}\)</span></p>
-<p>josta voidaan ratkaista</p>
-<p><span class="math notranslate nohighlight">\(a^2 = b^2+c^2-2bc \cos{\alpha}\)</span>.</p>
-<p>Vastaavasti voidaan johtaa kosinilause piirtämällä korkeusjana jostakin muusta kärjestä sitä vastaavalle kannalle.</p>
-</div>
-<div class="admonition-esimerkki admonition">
-<p class="admonition-title">Esimerkki</p>
-<p>Ratkaise kuvan kolmiosta sivu <span class="math notranslate nohighlight">\(a\)</span>, kun tiedetään, että <span class="math notranslate nohighlight">\(b=389, c=372, \alpha={91.9^{\circ}}\)</span>.</p>
-<p><img alt="Kosinilause, esimerkki" src="_images/kosinilause_esim.png" /></p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Ratkaisu</p>
-<p>Kosinilauseen nojalla <span class="math notranslate nohighlight">\(a^2=b^2+c^2-2bc \cos⁡{\alpha}\)</span>, joten <span class="math notranslate nohighlight">\(a^2=389^2+372^2-2\cdot 389\cdot 372 \cos⁡{91.9^{\circ}}\)</span>, josta saadaan <span class="math notranslate nohighlight">\(a^2=299300.639\)</span> ja edelleen <span class="math notranslate nohighlight">\(a=547\)</span>.</p>
-</div>
-</div>
-<div class="admonition-esimerkki admonition">
-<p class="admonition-title">Esimerkki</p>
-<p>Kuinka suuret ovat kolmion kulmat <span class="math notranslate nohighlight">\(\alpha, \beta, \gamma\)</span>, kun sivujen pituudet ovat <span class="math notranslate nohighlight">\(a=10, b=7, c=5\)</span>?</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Ratkaisu</p>
-<p>Ratkaistaan ensin kulma <span class="math notranslate nohighlight">\(\alpha\)</span> kirjoittamalla kosinilause siten, että yhtälön toiselle puolelle tulee kulma <span class="math notranslate nohighlight">\(\alpha\)</span> ja toiselle puolelle kyseistä kulmaa vastapäätä oleva sivu <span class="math notranslate nohighlight">\(a\)</span>.</p>
-<p><span class="math notranslate nohighlight">\(a^2=b^2+c^2-2bc \cos{\alpha}\)</span></p>
-<p><span class="math notranslate nohighlight">\(b^2+c^2-2bc \cos{\alpha}=a^2\)</span></p>
-<p><span class="math notranslate nohighlight">\(-2bc \cos{\alpha}=a^2-b^2-c^2\)</span></p>
-<p><span class="math notranslate nohighlight">\(\cos{\alpha}=\frac{a^2-b^2-c^2}{-2bc}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\cos{\alpha⁡}=\frac{10^2-7^2-5^2}{-2\cdot 7 \cdot 5}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\cos{\alpha} = -0.371\)</span></p>
-<p><span class="math notranslate nohighlight">\(\alpha=\arccos{-0.371}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\alpha = 111.8^{\circ}\)</span>.</p>
-<p>Kulman <span class="math notranslate nohighlight">\(\beta\)</span> voi ratkaista vastaavalla tavalla kosinilauseella:</p>
-<p><span class="math notranslate nohighlight">\(b^2=a^2+c^2-2ac \cos{\beta}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\cos{\beta}=\frac{b^2-a^2-c^2}{-2ac}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\cos{\beta}=\frac{7^2-10^2-5^2}{-2\cdot 10 \cdot5}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\cos{\beta} = 0.76\)</span>$</p>
-<p><span class="math notranslate nohighlight">\(\beta = \arccos{⁡0.76}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\beta=40.5^{\circ}\)</span>.</p>
-<p>Kulman ratkaisu onnistuisi myös sinilauseella:</p>
-<p><span class="math notranslate nohighlight">\(\frac{\sin{\beta}}{7}=\frac{\sin{\alpha}}{10}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\beta=\arcsin{\sin{111.8^{\circ}}\frac{7}{10}}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\beta = 40.5^{\circ}\)</span></p>
-<p>Kolmas kulma saadaan helposti vähennyslaskulla: <span class="math notranslate nohighlight">\(\gamma=(180-111.8-40.5)^{\circ}=27.7^{\circ}\)</span>.</p>
-</div>
-</div>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -707,10 +572,10 @@ Pinta-ala saadaan sijoittamalla laskettu luku ja annetut sivujen pituudet Heroni
             <p class="prev-next-title">Suorakulmainen koordinaatisto</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="trigo_funktiot.html" title="next page">
+    <a class='right-next' id="next-link" href="sinilause_kosinilause.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Yleiset trigonometriset funktiot</p>
+        <p class="prev-next-title">Sini- ja kosinilause</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

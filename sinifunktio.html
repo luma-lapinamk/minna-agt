@@ -185,6 +185,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="sinilause_kosinilause.html">
+   Sini- ja kosinilause
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="trigo_funktiot.html">
    Yleiset trigonometriset funktiot
   </a>
@@ -467,7 +472,9 @@ title="Print to PDF"
 <p>Sinifunktion maksimiarvo saavutetaan, kun <span class="math notranslate nohighlight">\(\sin{(\omega t-\phi)}=1\)</span>, sillä sinifunktio voi saada arvoja vain lukujen -1 ja 1 väliltä. Yksikköympyrältä voidaan päätellä, että arvo 1 saavutetaan, kun <span class="math notranslate nohighlight">\(\omega t-\phi = \frac{\pi}{2}\)</span>. Tästä voidaan ratkaista yhden ajanhetken <span class="math notranslate nohighlight">\(t\)</span>, jolloin funktio saa suurimman arvonsa. Muut huippuarvot seuraavat aallonpituuden välein tästä hetkestä. Vastaavasti minimiarvoja saavutetaan silloin, kun <span class="math notranslate nohighlight">\(\omega t -\phi = -\frac{\pi}{2}\)</span>.</p>
 <p>Vaihesiirto <span class="math notranslate nohighlight">\(\phi\)</span> ei suoraan tarkoita sitä, kuinka paljon funktion kuvaaja on vaakasuunnassa siirtynyt aika-akselin yksiköissä mitattuna. Alla olevan kuvan esimerkissä katkoviivalla piirretty käyrä <span class="math notranslate nohighlight">\(g(t)\)</span> tulee ajan <span class="math notranslate nohighlight">\(T=0.1\)</span> verran mustalla viivalla piirrettyä funktiota <span class="math notranslate nohighlight">\(f(t)\)</span> jäljessä. Kummankin käyrän huippukohtien välinen aika on <span class="math notranslate nohighlight">\(\lambda=1\)</span>, joten kulmataajuus on kummallakin sinikäyrällä <span class="math notranslate nohighlight">\(\omega=\frac{2\pi}{1}=2\pi\)</span>. Vaihesiirto saadaan laskettua yhtälöstä <span class="math notranslate nohighlight">\(T=\frac{\phi}{\omega}\)</span>. Tässä esimerkissä vaihe-ero on siis <span class="math notranslate nohighlight">\(\phi=\omega T = 2\pi \cdot 0.1 = 0.2 \pi = \frac{\pi}{5}\)</span>. Lisäksi vielä nähdään, että kummankin funktion keskiarvo on <span class="math notranslate nohighlight">\(0\)</span> ja amplitudi <span class="math notranslate nohighlight">\(1\)</span>. Funktioiden lausekkeiksi saadaan siis <span class="math notranslate nohighlight">\(f(t)=\sin{(2\pi t)}\)</span> ja <span class="math notranslate nohighlight">\(g(t)=\sin{(2\pi t -\frac{\pi}{5})}\)</span>.</p>
 <p><img alt="Vaihe-eron laskeminen" src="_images/2sinikayraa.png" /></p>
-<p><strong>Esim.</strong> Muodosta lauseke funktiolle <span class="math notranslate nohighlight">\(f(t)=A\sin{(\omega t-\phi)}+B\)</span>, kun tiedetään, että funktion aallonpituus on
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Muodosta lauseke funktiolle <span class="math notranslate nohighlight">\(f(t)=A\sin{(\omega t-\phi)}+B\)</span>, kun tiedetään, että funktion aallonpituus on
 6, eräs maksimiarvo on 3 hetkellä <span class="math notranslate nohighlight">\(t=2\)</span>, ja minimiarvo on -1.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
@@ -478,6 +485,27 @@ title="Print to PDF"
 <li><p>Koska eräs sinifunktion maksimikohta esiintyy kulman arvolla <span class="math notranslate nohighlight">\(\frac{\pi}{2}\)</span>, niin vaihe-ero voidaan ratkaista yhtälöstä <span class="math notranslate nohighlight">\(\omega t-\phi = \frac{\pi}{2}\)</span>, siis <span class="math notranslate nohighlight">\(\phi=\omega t -\frac{\pi}{2}\)</span>. Sijoittamalla lukuarvot saadaan <span class="math notranslate nohighlight">\(\phi = \frac{\pi}{3}\cdot 2 -\frac{\pi}{2} = \frac{2\pi}{3}-\frac{\pi}{2}=\frac{\pi}{6}\)</span>.</p></li>
 </ol>
 <p>Lauseke on siis <span class="math notranslate nohighlight">\(f(t)=2\sin{(\frac{\pi}{3} t-\frac{\pi}{6})}+1\)</span>. Ratkaisun voi vielä tarkistaa piirtämällä yhtälöstä kuvaajan esimerkiksi <a class="reference external" href="https://www.geogebra.org/">GeoGebralla</a>.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Auringonpilkkujen määrä vaihtelee jaksollisesti. Vuosittain havaittavien auringonpilkkujen määrä noudattaa likimain sinifunktiota. Auringonpilkkuja on ollut vähimmillään yksi ja enimmillään 110 kappaletta. Maksimiarvot saavutettiin vuosina 1750 ja 1948, ja niiden välissä oli 18 jaksoa. Selvitä sinifunktion parametrit.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Funktion yleinen muoto on <span class="math notranslate nohighlight">\(f(t)=A\sin{(\omega t-\phi)}+B\)</span>.</p>
+<p>Aluksi voidaan selvittää keskiarvo <span class="math notranslate nohighlight">\(B=\frac{1+110}{2}=55.5\)</span></p>
+<p>Amplitudi saadaan vähentämällä keskiarvosta minimiarvo, eli <span class="math notranslate nohighlight">\(A=55.5-1=54.5\)</span>, tai vähentämällä maksimiarvosta keskiarvo eli <span class="math notranslate nohighlight">\(A=110-55.5=54.5.\)</span></p>
+<p>Aallonpituus eli yhden jakson pituus saadaan jakamalla annettu aikaväli (1750-1948) eli 198 vuotta jaksojen määrällä:</p>
+<p><span class="math notranslate nohighlight">\(\lambda=\frac{198}{18}=11\)</span></p>
+<p>Tällöin kulmataajuus on <span class="math notranslate nohighlight">\(\omega=\frac{2\pi}{\lambda}=\frac{2\pi}{11}\approx 0.57\)</span></p>
+<p>Lopuksi lasketaan vaihe-ero <span class="math notranslate nohighlight">\(\phi\)</span> hyödyntämällä tietoa, että eräs maksimi esiintyi vuonna 1750:</p>
+<p><span class="math notranslate nohighlight">\(\omega t - \phi = \frac{\pi}{2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(-\phi = \frac{\pi}{2}-\omega t\)</span></p>
+<p><span class="math notranslate nohighlight">\(\phi=\omega t - \frac{pi}{2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\phi=\frac{2\pi}{11}\cdot 1750 - \frac{\pi}{2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\phi\approx 998\)</span></p>
+<p>Malli on siis muotoa <span class="math notranslate nohighlight">\(54.5~\sin{(0.57 t - 998)}+55.5\)</span></p>
+</div>
 </div>
 </section>
 </section>

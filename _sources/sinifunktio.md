@@ -18,7 +18,9 @@ Vaihesiirto $\phi$ ei suoraan tarkoita sitä, kuinka paljon funktion kuvaaja on 
 
 ![Vaihe-eron laskeminen](2sinikayraa.png "Vaihe-eron laskeminen")
 
-**Esim.** Muodosta lauseke funktiolle $f(t)=A\sin{(\omega t-\phi)}+B$, kun tiedetään, että funktion aallonpituus on 
+::::{admonition} Esimerkki
+
+Muodosta lauseke funktiolle $f(t)=A\sin{(\omega t-\phi)}+B$, kun tiedetään, että funktion aallonpituus on 
 6, eräs maksimiarvo on 3 hetkellä $t=2$, ja minimiarvo on -1.
 
 :::{admonition} Ratkaisu
@@ -34,3 +36,42 @@ Vaihesiirto $\phi$ ei suoraan tarkoita sitä, kuinka paljon funktion kuvaaja on 
 Lauseke on siis $f(t)=2\sin{(\frac{\pi}{3} t-\frac{\pi}{6})}+1$. Ratkaisun voi vielä tarkistaa piirtämällä yhtälöstä kuvaajan esimerkiksi [GeoGebralla](https://www.geogebra.org/).
 
 :::
+
+::::
+
+::::{admonition} Esimerkki
+
+Auringonpilkkujen määrä vaihtelee jaksollisesti. Vuosittain havaittavien auringonpilkkujen määrä noudattaa likimain sinifunktiota. Auringonpilkkuja on ollut vähimmillään yksi ja enimmillään 110 kappaletta. Maksimiarvot saavutettiin vuosina 1750 ja 1948, ja niiden välissä oli 18 jaksoa. Selvitä sinifunktion parametrit.
+
+:::{admonition} Ratkaisu
+:class: tip, dropdown
+
+Funktion yleinen muoto on $f(t)=A\sin{(\omega t-\phi)}+B$.
+
+Aluksi voidaan selvittää keskiarvo $B=\frac{1+110}{2}=55.5$
+
+Amplitudi saadaan vähentämällä keskiarvosta minimiarvo, eli $A=55.5-1=54.5$, tai vähentämällä maksimiarvosta keskiarvo eli $A=110-55.5=54.5.$
+
+Aallonpituus eli yhden jakson pituus saadaan jakamalla annettu aikaväli (1750-1948) eli 198 vuotta jaksojen määrällä:
+
+$\lambda=\frac{198}{18}=11$
+
+Tällöin kulmataajuus on $\omega=\frac{2\pi}{\lambda}=\frac{2\pi}{11}\approx 0.57$
+
+Lopuksi lasketaan vaihe-ero $\phi$ hyödyntämällä tietoa, että eräs maksimi esiintyi vuonna 1750:
+
+$\omega t - \phi = \frac{\pi}{2}$
+
+$-\phi = \frac{\pi}{2}-\omega t$
+
+$\phi=\omega t - \frac{pi}{2}$
+
+$\phi=\frac{2\pi}{11}\cdot 1750 - \frac{\pi}{2}$
+
+$\phi\approx 998$
+
+Malli on siis muotoa $54.5~\sin{(0.57 t - 998)}+55.5$
+
+:::
+
+::::

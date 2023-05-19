@@ -186,6 +186,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="sinilause_kosinilause.html">
+   Sini- ja kosinilause
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="trigo_funktiot.html">
    Yleiset trigonometriset funktiot
   </a>
@@ -432,13 +437,49 @@ title="Print to PDF"
 <p>Toisin sanoen</p>
 <p><span class="math notranslate nohighlight">\(A=\frac{3}{r}\cdot V = \frac{3}{r} \cdot \frac{4}{3} \pi r^3 = 4\pi r^2\)</span>.</p>
 </div>
-<p>Esim. Pallon A pinta-ala on <span class="math notranslate nohighlight">\(2400~\text{cm}^2\)</span> ja pallon B tilavuus on <span class="math notranslate nohighlight">\(9200~\text{cm}^3\)</span>. Kumpi palloista on suurempi?</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Pallon A pinta-ala on <span class="math notranslate nohighlight">\(2400~\text{cm}^2\)</span> ja pallon B tilavuus on <span class="math notranslate nohighlight">\(9200~\text{cm}^3\)</span>. Kumpi palloista on suurempi?</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Ratkaisu</p>
 <p>Kirjoitetaan ja ratkaistaan yhtälöt, joissa tuntemattomina ovat pallojen säteet <span class="math notranslate nohighlight">\(r_A\)</span> ja <span class="math notranslate nohighlight">\(r_B\)</span>:</p>
 <p><span class="math notranslate nohighlight">\(2400~\text{cm}^2=4 \pi r_A^2 \leftrightarrow r_A=\sqrt{\frac{2400~\text{cm}^2}{4\pi}}\approx 13.8~\text{cm}\)</span></p>
 <p><span class="math notranslate nohighlight">\(9200~\text{cm}^2=\frac{4}{3} \pi r_B^3 \leftrightarrow r_B=\sqrt[3]{\frac{3\cdot 9200~\text{cm}^3}{4\pi}}\approx 13.0~\text{cm}\)</span></p>
 <p>Vastaus: Pallon A säde on noin 13.8 cm ja pallon B säde on noin 13.0 cm, joten pallo A on suurempi.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Pihallasi on suunnilleen pallon muotoinen kivi. Haluaisit siirtää kiven ja arvioit, jaksaako sen siirtää vierittämällä. Mittaat kiven ympärysmitaksi leveimmältä kohdalta 180 cm. Selvität netistä, että kivilajin tiheys on keskimäärin noin 3000 kiloa kuutiometriä kohden. Paljonko kiven massa on? Massa on tiheyden ja tilavuuden tulo.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Leveimmältä kohdalta pallon poikkileikkaus on ympyrä, jonka säde on sama kuin pallon säde. Ympärysmittaa <span class="math notranslate nohighlight">\(p\)</span> ja sädettä yhdistää kaava <span class="math notranslate nohighlight">\(p=2\pi r\)</span>, joten pallon säde on $r=\frac{p}{2 \pi}. Sijoitetaan säde tilavuuden kaavaan:</p>
+<p><span class="math notranslate nohighlight">\(V=\frac{4}{3}\pi r^3 = \frac{4}{3} \pi \left(\frac{p}{2 \pi}\right)^3\)</span></p>
+<p>Sijoitetaan mitattu ympärysmitta yhtälöön. Koska tiheys on annettu kuutiometriä kohden, ympärysmitan pitää olla yksikössä metri.</p>
+<p><span class="math notranslate nohighlight">\(V=\frac{4}{3} \pi \left(\frac{1.80~\text{m}}{2 \pi}\right)^3\approx 0.0985~\text{m}^3\)</span></p>
+<p>Massa on <span class="math notranslate nohighlight">\(3000~\frac{~text{kg}}{\text{m}^3}\cdot 0.0985~\text{m}^3 \approx 296~\text{kg}\)</span>.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Maan säde on noin 6380 km ja Kuun säde noin 1737 km. Vertaa Maan ja Kuun pinta-alaa ja tilavuutta.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Vertailu onnistuisi laskemalla Maan ja Kuun pinta-ala ja tilavuus ja sitten niiden suhteet. Toinen tapa on tarkastella pinta-alan ja tilavuuden laskukaavoja. Merkitään Maan sädettä <span class="math notranslate nohighlight">\(r_M\)</span>, pinta-alaa <span class="math notranslate nohighlight">\(A_M\)</span> ja tilavuutta <span class="math notranslate nohighlight">\(V_M\)</span>, ja Kuun sädettä <span class="math notranslate nohighlight">\(r_K\)</span>, pinta-alaa <span class="math notranslate nohighlight">\(A_K\)</span> ja tilavuutta <span class="math notranslate nohighlight">\(V_k\)</span>.</p>
+<p>Pinta-alojen suhde on</p>
+<p><span class="math notranslate nohighlight">\(\frac{A_M}{A_K}=\frac{4\pi r_M^2}{4 \pi r_K^2}\)</span>,</p>
+<p>joka voidaan sieventää muotoon</p>
+<p><span class="math notranslate nohighlight">\(\frac{r_M^2}{r_K^2}\)</span></p>
+<p>ja edelleen</p>
+<p><span class="math notranslate nohighlight">\(\left\frac{r_M}{r_K}\right)^2\)</span></p>
+<p>ja lukuarvot sijoittamalla saadaan suhteeksi</p>
+<p><span class="math notranslate nohighlight">\(\left(\frac{1737}{6380}\right)^2\approx 13.5\)</span></p>
+<p>(yksikötkin supistuvat laskussa pois). Maan pinta-ala on siis 13.5 kertaa Kuun pinta-alaan verrattuna.</p>
+<p>Vastaavasti tilavuuksien suhde</p>
+<p><span class="math notranslate nohighlight">\(\frac{V_M}{V_K}=\frac{\frac{4}{3}\pi r_M^3}{\frac{4}{3} \pi r_K^3}\)</span></p>
+<p>sievenee muotoon</p>
+<p><span class="math notranslate nohighlight">\(\left\frac{r_M}{r_K}\right)^3\)</span> eli <span class="math notranslate nohighlight">\(\left(\frac{1737}{6380}\right)^2\approx 50\)</span>.</p>
+</div>
 </div>
 <p>Harvemmin käytettyjä palloon liittyviä laskukaavoja ovat esim. pallokalotin alan ja tilavuuden kaava. Tällaisilla kaavoilla voidaan arvioida vaikkapa sitä, kuinka suuri alue maapallolla on pohjoisen napapiirin pohjoispuolella. Kalotti saadaan aikaan, kun pallo leikataan kahteen palaan. Kalotin korkeus <span class="math notranslate nohighlight">\(h\)</span> on kohtisuora matka tämän leikkauspinnan keskeltä pallon säteen etäisyydelle. Pallon segmentti tarkoittaa pallokalotin sisäpuolelle jäävää osuutta pallosta (eli kalotti on ikään kuin hattu ja segmentti on se osa päästä, joka jää hatun suojaan). Kaavojen perusteluja löytyy esimerkiksi <a class="reference external" href="https://en.wikipedia.org/wiki/Spherical_cap">Wikipediasta</a>.</p>
 <ul class="simple">

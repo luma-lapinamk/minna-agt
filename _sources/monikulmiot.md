@@ -2,7 +2,9 @@
 
 Kolmiot ovat yksi erityistapaus monikulmioista. Yleisesti monikulmiota, jossa on $n$ kulmaa, sanotaan $n$-kulmioksi. Monikulmio on säännöllinen, jos sen kaikki sivut ovat keskenään yhtä pitkiä ja kaikki kulmat yhtä suuria, esim. neliö. Yleisesti $n$-kulmion kulmien summa on $(n-2) \cdot 180^{\circ}$. 
 
-**Esim.** Määritä kuvassa olevien kulmien x,y ja z suuruudet. 
+::::{admonition} Esimerkki
+
+Määritä kuvassa olevien kulmien $x$, $y$ ja $z$ suuruudet. 
 
 ![Monikulmion kulmat](monikulmio1.png "Monikulmion kulmat, esimerkki")
 
@@ -15,18 +17,22 @@ Lisäksi saadaan selville kulman $y$ ristikulma $z=130^{\circ}$ ja 102 asteen ku
 
 :::
 
+::::
+
 ## Suunnikas ja puolisuunnikas
 
-Nelikulmio, jonka vastakkaiset sivut ovat yhdensuuntaisia, on suunnikas. Jos suunnikkaan kaikki sivut ovat yhtä pitkät, se on neljäkäs. Nelikulmio, jonka kaksi vastakkaista sivua ovat yhdensuuntaisia, on puolisuunnikas. Tasakylkisessä puolisuunnikkaassa yhdensuuntaisten sivujen väliset sivut ovat yhtä pitkät.
+Nelikulmio, jonka vastakkaiset sivut ovat yhdensuuntaisia, on suunnikas. Jos suunnikkaan kaikki sivut ovat yhtä pitkät, se on neljäkäs. Nelikulmio, jonka kaksi vastakkaista sivua ovat yhdensuuntaisia, on puolisuunnikas. Tasakylkisessä puolisuunnikkaassa yhdensuuntaisten sivujen väliset sivut ovat yhtä pitkät. Sovellustehtävissä suunnikkaan tai puolisuunnikkaan sisälle voi piirtää avuksi kolmioita, joiden laskukaavoilla tehtävä ratkeaa.
 
-**Esim.** Kuinka syvä on kuvan tasakylkinen oja?
+::::{admonition} Esimerkki
+
+Kuinka syvä on kuvan tasakylkinen oja?
 
 ![Tasakylkinen puolisuunnikas, esimerkki](monikulmio2.png "Tasakylkinen puolisuunnikas, esimerkki")
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
  
-Tasakylkisyyden perusteella saadaan $50~\text{cm}+2x=115~\text{cm}$, josta ratkeaa $x=\frac{115~\text{cm}-50~\text{cm}}{2}=32.5~\text{cm}$.
+Koska puolisuunnikas on tasakylkinen, niin yläreunaan pituus on yhtä suuri kuin jos alareunaan lisätään molempiin reunoihin tuntematon yläreunan osa $x$. Saadaan siis yhtälö $50~\text{cm}+2x=115~\text{cm}$, josta ratkeaa $x=\frac{115~\text{cm}-50~\text{cm}}{2}=32.5~\text{cm}$.
 
 Korkeus $h$ saadaan nyt Pythagoraan lauseen avulla. Yksiköt on nyt jätetty pois yksinkertaisuuden takia.
 
@@ -37,7 +43,10 @@ $h^2=60^2-32.5^2$
 $h=\sqrt{2543.75}$
 
 $h=50.4$
+
 :::
+
+::::
 
 ## Pinta-aloja
 
@@ -123,6 +132,33 @@ $A=\frac{1}{2} h \cdot (AB+BC+CD+BC)$.
 Nyt voidaan sijoittaa kaavaan $AB+BC+CD=a$ ja $BC=b$, joten $A=\frac{1}{2} h \cdot (a+b)$.
 
 :::
+
+::::{admonition} Esimerkki
+
+Laske oheisen puolisuunnikkaan pinta-ala ja ympärysmitta, kun tiedetään mitat $x=80~\text{m}$, $b=100~\text{m}$ ja $h=50~\text{m}$. Selvitä lisäksi kulman $\alpha$ suuruus.
+
+![Puolisuunnikas, esimerkki](puolisuunnikas_esim.png "Puolisuunnikas, esimerkki")
+
+:::{admonition} Ratkaisu
+:class: tip, dropdown
+
+Pinta-alan laskukaavaan tarvittaisiin alareunan pituus $a=y+b+y$. Matkan $y$ saa selville helpoiten Pythagoraan lauseella:
+
+$y^2+h^2=x^2 \Leftrightarrow y=\sqrt{x^2-h^2} \Leftrightarrow  $
+
+$y=\sqrt{(80~\text{m})^2-(50~\text{m})^2}=62.45~\text{m}$.
+
+Alareunan pituus on siis $100~\text{m} + 2 \cdot 62.45~\text{m} = 224.9~\text{m}$, ja siten pinta-ala on $\frac{1}{2}\cdot 224.9~\text{m} \cdot 50~\text{m} = 8123~\text{m}^2$, ja ympärysmitta on tietenkin $100~\text{m}+224.~\text{m}+2\cdot 80~\text{m}=482~\text{m}$.
+
+Kysytty kulma $\alpha$ voidaan ratkaista suorakulmaisen kolmion trigonometrisilla funktioilla, esimerkiksi seuraavasti:
+
+$\tan{\alpha}=\frac{h}{y} \Leftrightarrow \alpha=\arctan{\frac{h}{y}}$ 
+
+josta luvut sijoittamalla saadaan $\alpha=\arctan{\frac{50~\text{m}}{62.45~\text{m}}}\approx 38.68^{\circ}$.
+
+:::
+
+::::
  
 Yleisesti monikulmion pinta-ala voidaan laskea jakamalla se osiin, joiden pinta-ala voidaan laskea, eli käytännössä helpoiten suorakulmioihin ja suorakulmaisiin kolmioihin.
 

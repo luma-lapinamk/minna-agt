@@ -1,16 +1,18 @@
 # Lieriö ja kartio
 
-Lieriö ja kartio eivät ehkä ole arkipäiväisiä ilmaisuja, mutta muotoina ne ovat kyllä yleisiä. Esimerkiksi kahvimukin sisäpuoli on yleensä jossain määrin lieriön, tai ehkäpä katkaistun kartion, mallinen. Näiden muotojen avulla voi mallintaa myös esimerkiksi jäävuoria, tukkipuuta tai sorakasoja.
+Lieriö ja kartio eivät ehkä ole arkipäiväisiä ilmaisuja, mutta muotoina ne ovat kyllä yleisiä. Esimerkiksi kahvimuki on yleensä jossain määrin lieriön, tai ehkäpä katkaistun kartion, mallinen. Näiden muotojen avulla voi mallintaa myös esimerkiksi jäävuoria, tukkipuuta tai sorakasoja.
 
 ## Lieriö
 
 ![Lieriö](lierio.png "Lieriö")
 
-Lieriön osiin kuuluu kaksi samanlaista pohjaa, pohjia yhdistävät sivujanat, ja sivujanojen muodostama vaikka. Lieriön korkeus h on pohjien kohtisuora etäisyys. Suorassa lieriössä sivujanat ovat yhtä pitkät kuin lieriön korkeus. Ympyrälieriön pohjat ovat ympyröitä. Prisma on lieriö, jonka pohja on monikulmio.
+Lieriön osiin kuuluu kaksi samanlaista pohjaa, pohjia yhdistävät sivujanat, ja sivujanojen muodostama vaippa. Lieriön korkeus $h$ on pohjien kohtisuora etäisyys. Suorassa lieriössä sivujanat ovat yhtä pitkät kuin lieriön korkeus. Ympyrälieriön pohjat ovat ympyröitä. Prisma on lieriö, jonka pohja on monikulmio.
 
 Lieriön tilavuus saadaan laskemalla pohjan alan $A$ ja korkeuden $h$ tulo, $V=Ah$. Lieriön muodosta riippuu, millä laskukaavalla pohjan ala lasketaan. 
 
-**Esim.** Oletetaan, että Pisan kalteva torni on muodoltaan ympyrälieriö, jonka korkeus (kohtisuoraan maasta huipulle) on 55.9 metriä ja pohjan halkaisija 15.5 metriä. Laske tornin tilavuus.
+::::{admonition} Esimerkki
+
+Oletetaan, että Pisan kalteva torni on muodoltaan ympyrälieriö. Lieriön korkeus eli matka kohtisuoraan maasta huipulle on 55.9 metriä ja pohjan halkaisija 15.5 metriä. Laske tornin tilavuus.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -19,13 +21,59 @@ Tornin tilavuus on $V=Ah=\pi r^2 h= \pi \cdot \left(\frac{15.5}{2}~\text{m}\righ
 
 :::
 
+::::
+
+::::{admonition} Esimerkki
+
+Tynnyrin tilavuus on 300 litraa ja pohjaympyrän säde on 40 cm. Tynnyri on suoran ympyrälieriön muotoinen. Kuinka korkea tynnyri on?
+
+:::{admonition} Ratkaisu
+:class: tip, dropdown
+
+Tynnyrin tilavuus on $V=\pi r^2 h$, missä $r$ on säde ja $h$ on korkeus, joten korkeus on $h=\frac{V}{\pi r^2}$.
+
+Sijoitetaan lukuarvot. Tilavuus pitää muuttaa kuutiometreiksi. Tuhat litraa vastaa yhtä kuutiometriä, joten 300 litraa on $\frac{300}{1000}~\text{m}^3=0.3~\text{m}^3$. Myös säde pitää ilmaista metreinä. Siis korkeus on
+
+$h=\frac{0.3~\text{m}^3}{\pi\cdot (0.4~\text{m})^2} \approx 0.6~\text{m}$
+
+:::
+
+::::
+
+::::{admonition} Esimerkki
+
+Erästä taipuisaa materiaalia on suorakulmion muotoinen pala, jonka sivujen pituudet ovat 60 cm ja 100 cm. Pala kääräistään rullalle siten, että se muodostaa suoran ympyräpohjaisen lieriön seinät. Kuinka suuri on muodostuvan lieriön tilavuus?
+
+:::{admonition} Ratkaisu
+:class: tip, dropdown
+
+Lieriö voidaan muodostaa kuvan mukaisesti kahdella tavalla:
+
+![Kaksi lieriötä samasta suorakulmiosta](tynnyrit.png "Kaksi lieriötä samasta suorakulmiosta")
+
+Tapauksessa A lieriön korkeus on 60 cm ja pohjaympyrän kehä 100 cm. Pohjaympyrän säde on siten $\frac{100~\text{cm}}{2\pi}$. Sijoitetaan luvut tilavuuden laskukaavaan metreinä, jolloin tilavuus saadaan kuutiometreinä:
+
+$\pi\cdot \left(\frac{1.00~\text{m}}{2\pi}\right)^2\cdot 0.60~\text{m} \approx 0.048~\text{m}^3$ eli 48 litraa.
+
+Tapauksessa B lieriön korkeus on 100 cm ja pohjaympyrän kehä 60 cm, josta saadaan pohjaympyrän säteeksi $\frac{60~\text{cm}}{2\pi}$. 
+
+Tilavuudeksi saadaan
+
+$\pi\cdot \left(\frac{0.60~\text{m}}{2\pi}\right)^2\cdot 1.00~\text{m} \approx 0.029~\text{m}^3$ eli 29 litraa.
+
+:::
+
+::::
+
+
+
 ## Kartio
 
 ![Kartio](kartio.png "Kartio")
 
 Kartion osia ovat pohja (ala $A$), huippu ja sivujanat. Sivujanat muodostavat kartion vaipan ja yhdistyvät kartion huipulla. Kartion korkeus $h$ on kohtisuora etäisyys huipulta pohjalle. Suoran kartion korkeus on sama kuin etäisyys huipulta pohjan keskipisteeseen. Ympyräkartio on kartio, jonka pohja on ympyrä. Pyramidi on kartio, jonka pohja on monikulmio. 
  
-Kartion tilavuudelle voidaan johtaa laskukaava $V=\frac{1}{3} Ah$.
+Kartion tilavuudelle voidaan johtaa laskukaava $V=\frac{1}{3} Ah$. Erityiesti ympyräpohjaiselle kartiolle pätee $V=\frac{1}{3} \pi r^2 h$.
 
 :::{admonition} Perustelu
 :class: tip, dropdown
@@ -66,7 +114,9 @@ Vastaavanlaisella päättelyllä, mutta määrittämällä kiekot kartion "sisä
 
 :::
 
-Esim. Popcornia pakataan suoran ympyräkartion muotoiseen pahviastiaan, jonka korkeus on 20 cm ja pohjaympyrän halkaisija 14 cm. Jos sama määrä popcornia pakattaisiin yhtä korkeaan neliöpohjaisen pyramidin muotoiseen astiaan, niin kuinka pitkä olisi pyramidin pohjana olevan neliön sivu $x$?
+::::{admonition} Esimerkki
+
+Popcornia pakataan suoran ympyräkartion muotoiseen pahviastiaan, jonka korkeus on 20 cm ja pohjaympyrän halkaisija 14 cm. Jos sama määrä popcornia pakattaisiin yhtä korkeaan neliöpohjaisen pyramidin muotoiseen astiaan, niin kuinka pitkä olisi pyramidin pohjana olevan neliön sivu $x$?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -80,6 +130,33 @@ Kertoimet $\frac{1}{3}$ saadaan pois kertomalla yhtälön molemmat puolet luvull
 $x=\sqrt{\pi \cdot 7^2~\text{cm}^2} \leftrightarrow x=12.4~\text{cm}$
 
 :::
+
+::::
+
+::::{admonition} Esimerkki
+
+Hiekkaa kipataan maahan 3 kuutiometriä. Hiekka asettuu suoran ympyräpohjaisen kartion muotoiseksi kasaksi, jonka korkeus on 2 metriä. Mikä on kasan ympärysmitta?
+
+Selvitä lisäksi kasan kaltevuuskulma eli sivujanan ja pohjaympyrän säteen välinen kulma. Eri aineet asettuvat luonnostaan erilaisiksi kasoiksi. Voit vertailla vaikka uimarannalla märän ja kuivan hiekan kasautumista. Kaltevuuskulma on eksakti tapa kuvailla kasan muotoa. 
+
+:::{admonition} Ratkaisu
+:class: tip, dropdown
+
+Selvitään ensin kasan säde yhtälöstä $V= \pi r^2 h$, siis $r=\sqrt{\frac{V}{\pi h}}$. 
+
+Sijoitetaan lukuarvot: $r=\sqrt{\frac{3~\text{m}^3}{\pi \cdot 2~\text{m}}}\approx 1.2~\text{m}$
+
+Ympärysmitta on $2 \pi r=2\pi \cdot 1.2~\text{m}=7.5~\text{m}$
+
+Kaltevuuskulma on kuvan mukaisesti $\alpha=\arctan{\frac{h}{r}}=\arctan{\frac{2}{1.2}}\approx 59^{\circ}$.
+
+![Kartion sivujanan kaltevuus](hiekkakasa.png "Kartion sivujanan kaltevuus")
+
+:::
+
+::::
+
+## Katkaistu kartio
 
 Katkaistu kartio on nimensä mukaisesti kartio, josta on katkaistu kärki pois. Tällaisella kartiossa on kaksi pohjaa, joiden alat ovat $A_1$ ja $A_2$. Katkaistua kartiota voidaan käyttää mallina esim. puutukin tilavuuden laskemiseen. Puuthan ovat yleensä tyvestä paksumpia kuin latvasta.
 
@@ -108,15 +185,21 @@ $V=\frac{1}{3} h (A_1+\sqrt{A_1 A_2} + A_2)$
 
 :::
 
-**Esim.** Puutukin pituus on 6 metriä. Tyvipään halkaisija on 40 cm ja latvapään halkaisija 20 cm. Laske tukin tilavuus kuutiometreinä.
+::::{admonition} Esimerkki
+
+Puutukin pituus on 6 metriä. Tyvipään halkaisija on 40 cm ja latvapään halkaisija 20 cm. Laske tukin tilavuus kuutiometreinä.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
 Pohjien säteet ovat puolet halkaisijoista, siis metreinä ilmaistuna 0.2 m ja 0.1 m. Tukin tilavuus on 
 
-$V=\frac{1}{3} \cdot 6~\text{m}\cdot \left(\pi\cdot (0.2~\text{m})^2+\sqrt {(\pi \cdot (0.2 ~\text{m})^2 \cdot \pi \cdot (0.1~\text{m})^2}+ \pi\cdot (0.1~\text{m})^2\right)$
+$V=\frac{1}{3} \cdot 6~\text{m}\cdot \dots $
+
+$ \dots \left(\pi\cdot (0.2~\text{m})^2+\sqrt {(\pi \cdot (0.2 ~\text{m})^2 \cdot \pi \cdot (0.1~\text{m})^2}+ \pi\cdot (0.1~\text{m})^2\right)$
 
 $V=0.44~\text{m}^3$.
 
 :::
+
+::::

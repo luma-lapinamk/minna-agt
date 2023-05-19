@@ -26,19 +26,62 @@ Ympyrän kehän ja halkaisijan suhde $\pi=\frac{p}{2r}$ on tunnettu tuhansia vuo
 
 :::
 
-Kaksi sädettä jakaa ympyrän kahteen sektoriin. Säteiden väliin jää kaksi keskuskulmaa: $\alpha$ ja $360^{\circ}-\alpha$. Keskuskulmaa $\alpha$ vastaavan kaaren pituus $p_{\alpha}$ on keskuskulmaa vastaava osa koko ympyrän kehästä: $p_{\alpha}=\frac{\alpha}{360}\cdot 2\pi r$.
+::::{admonition} Esimerkki
+
+Miten ympyrän pinta-ala ja kehän pituus muuttuvat, kun ympyrän säde a) muuttuu arvosta 10 cm arvoon 15 cm, b) kolminkertaistuu riippumatta siitä, mikä oli alkuperäinen arvo?
+
+:::{admonition} Ratkaisu
+:class: tip, dropdown
+
+a) Uuden ja vanhan pinta-alan suhde on $\frac{\pi \cdot (15~\text{cm})^2}{\pi \cdot (10~\text{cm})^2}=\frac{15^2}{10^2}^2=2.25$.
+
+Kehän pituuksien suhde on $\frac{2 \pi \cdot 15~\text{cm}}{2 \pi \cdot 10~\text{cm}}=\frac{15}{10}=1.5$
+
+b) Merkitään alkuperäistä sädettä $r$ ja uutta $3r$.
+
+Nyt pinta-alojen suhde on $\frac{\pi (3r)^2}{\pi r^2}=\frac{9r^2}{r^2}=9$
+
+ja kehän pituuksien suhde on $\frac{2\pi \cdot 3r}{2\pi r}=3$.
+
+:::
+
+::::
+
+Kaksi sädettä jakaa ympyrän kahteen sektoriin. Säteiden väliin jää kaksi keskuskulmaa: $\alpha$ ja $360^{\circ}-\alpha$. Yleensä sektorina käsitetään vain se sektori, jonka keskuskulma on pienempi. Keskuskulmaa $\alpha$ vastaavan kaaren pituus $p_{\text{sek}}$ on keskuskulmaa vastaava osa koko ympyrän kehästä: $p_{\alpha}=\frac{\alpha}{360}\cdot 2\pi r$.
 
 Vastaavasti sektorin pinta-ala $A_{\text{sek}}$ on keskuskulmaa $\alpha$ vastaava osuus koko ympyrän alasta: $A_{\text{sek}}=\frac{\alpha}{360}\cdot \pi r^2$.
 
-![Segmentti](segmentti.png "Segmentti")
+![Sektori ja segmentti](segmentti.png "Sektori ja segmentti")
 
 Segmentin pinta-ala $A_{\text{seg}}$ saadaan, kun sektorin pinta-alasta vähennetään sen kolmion ala, joka muodostuu kahden säteen ja jänteen väliin. Laskusääntö pätee silloin, kun sektorin keskuskulma on alle 180 astetta. Kolmion pinta-ala on kahden sivun pituuden tulo, jaettuna kahdella ja kerrottuna sivujen välisen kulman sinillä. Siis segmentin alaksi saadaan
 
 $A_{\text{seg}}=\frac{\alpha}{360}\cdot \pi r^2 -\frac{1}{2}r^2 \sin{\alpha}$.
 
+::::{admonition} Esimerkki
+
+a) Kulma $\alpha$ rajaa ympyrästä sektorin. Ympyrän säde on 1 metri ja sektorin pinta-ala 0.5 neliömetriä. Kuinka suuri on kulma $\alpha$?
+
+b) Kulma $\alpha=30^{\circ}$ rajaa ympyrästä sektorin, jonka kaaren pituus on 5 metriä. Kuinka suuri on ympyrän säde?
+
+:::{admonition} Ratkaisu
+:class: tip, dropdown
+
+a) Ratkaistaan kulma yhtälöstä $\frac{\alpha}{360^{\circ}}\cdot \pi\cdot (1~\text{m})^2 = 0.5~\text{m}^2$:
+
+$\alpha=360^{\circ} \cdot \frac{0.5~\text{m}^2}{\pi\cdot (1~\text{m})^2}\approx 57.3^{\circ}$
+
+b) Ratkaistaan säde yhtälöstä $\frac{30^{\circ}}{360^{\circ}}\cdot 2 \pi\cdot r = 5~\text{m}$:
+
+$r=\frac{360^{\circ}}{30^{\circ}}\cdot \frac{5~\text{m}}{2\pi}\approx 9.55~\text{m}$
+
+:::
+
+::::
+
+
 Ympyrän kehällä olevasta pisteestä lähtevien kahden jänteen välinen kulma on nimeltään kehäkulma $\beta$ (kuvassa alla vasemmalla). Kehäkulman suuruus on puolet vastaavasta keskuskulmasta $\alpha$, siis $\beta=\frac{\alpha}{2}$.
 
-Kun ympyrän ulkopuolelta olevasta pisteestä piirretään ympyrälle tangentit (eli ympyrää yhdessä pisteessä sivuavat suorat), tangenttien väliin jää tangenttikulma $\beta$. Tangenttikulman ja sitä vastaavan keskuskulman summa on $\alpha+\beta=180^{\circ}$.
+Kun ympyrän ulkopuolelta olevasta pisteestä piirretään ympyrälle tangentit (eli ympyrää yhdessä pisteessä sivuavat suorat), tangenttien väliin jää tangenttikulma $\beta$. Keskuskulma $\alpha$ muodostuu, kun tangenteilta piirretään säteet suorassa kulmassa ympyrän keskipisteeseen. Tangenttikulman ja sitä vastaavan keskuskulman summa on $\alpha+\beta=180^{\circ}$. Summa on peräisin siitä, että ympyrän keskipiste, ympyrän ulkopuolinen piste ja tangenttien sivuamispisteet rajaavat nelikulmion. Minkä tahansa nelikulmion kulmien summa on tunnetusti 360 astetta, ja tässä tapauksessa nelikulmio sisältää kaksi suoraa kulmaa, joten kahden muun kulman summaksi jää 180 astetta. 
 
 ![Ympyrään liittyviä kulmia](ympyra_kulmat.png "Keskuskulma, kehäkulma ja tangenttikulma")
 
@@ -61,7 +104,9 @@ Yhtälö voidaan esittää muodossa $PA\cdot PB = PC \cdot PD$.
 
 :::
  
-**Esim.** Kuinka suuri on kuvan ympyrän halkaisija $CD$, kun tiedetään, että $PC=6$ ja $PA=PB=2$?
+::::{admonition} Esimerkki
+
+Kuinka suuri on kuvan ympyrän halkaisija $CD$, kun tiedetään, että $PC=6$ ja $PA=PB=2$?
 
 ![Sekanttilause, esimerkki](sekanttilause_esim.png "Sekanttilause, esimerkki")
 
@@ -72,6 +117,8 @@ Sekanttilauseen perusteella $PA\cdot PB=PC\cdot PD$, josta saadaan $PD=\frac{PA\
 
 :::
 
+::::
+
 ## Pituus- ja leveyspiirit
 
 Maapallon pituuspiirit (longitude) tai pituusasteet määritellään kulmina $\lambda$ sovitun ns. nollameridiaanin suhteen. Nollameridiaanin sijainniksi on vuonna 1884 valittu Greenwichin kuninkaallisen tähtitornin kautta kulkeva pituuspiiri. Pituuspiirit ovat napojen kautta kulkevia isoympyröitä, eli pisimpiä mahdollisia pallon pinnalla kulkevia ratoja.
@@ -80,11 +127,13 @@ Leveyspiirit (latitude) tai leveysasteet määritellään kulmina $\phi$ päivä
 
 ![Pituus- ja leveyspiirit](pituus_leveys.png "Pituus- ja leveyspiirit")
 
-Seuraavat laskuesimerkit pätevät sillä oletuksella, että maapallo olisi todella pallon muotoinen. Oikeasti näin ei ole. Maapallon pyöriminen akselinsa ympäri muokkaa hieman maapallon muotoa siten, että maapallo on aavistuksen litistynyt. Leveyspiireihin liittyy myös ajallista vaihtelua. Pohjoisen napapiirin leveysasteet ovat tällä hetkellä noin $66^{\circ}~33'~39''$. Napapiiri määräytyy maapallon pyörimisakselin kaltevuuden perusteella, ja se puolestaan vaihtelee säännöllisin väliajoin maan, auringon ja kuun välisten vuorovaikutusten mukaan.
+Seuraavat laskuesimerkit pätevät sillä oletuksella, että maapallo olisi todella pallon muotoinen. Oikeasti näin ei ole. Maapallon pyöriminen akselinsa ympäri muokkaa hieman maapallon muotoa siten, että maapallo on aavistuksen litistynyt. Leveyspiireihin liittyy myös ajallista vaihtelua, vaikkakaan se ei vaikuta laskukaavoihin. Pohjoisen napapiirin leveysasteet ovat tällä hetkellä noin $66^{\circ}~33'~39''$. Napapiiri määräytyy maapallon pyörimisakselin kaltevuuden perusteella, ja se puolestaan vaihtelee säännöllisin väliajoin maan, auringon ja kuun välisten vuorovaikutusten mukaan.
 
-Lyhin reitti maapallolla pisteestä toiseen on kahden pisteen välistä isoympyrää pitkin. Laskuihin sopiva likiarvo isoympyrän pituudelle, eli maapallon ympärysmitalle, on 40 000 km. Maapallon säteelle käytetään yleensä arvoa 6370-6380 km. Laskemalla säteen avulla ympärysmitta kaavalla $p=2 \pi r$ saataisiin hieman eri arvo. 
+Lyhin reitti maapallolla pisteestä toiseen on kahden pisteen välistä isoympyrää pitkin. Laskuihin sopiva likiarvo isoympyrän pituudelle, eli maapallon ympärysmitalle, on 40 000 km. Maapallon säteelle käytetään yleensä arvoa 6370-6380 km. Laskemalla säteen avulla ympärysmitta kaavalla $p=2 \pi r$ saataisiin hieman eri arvo. Seuraavissa esimerkeissä liikutaan maapallon pinnalla pysyen joko samalla pituus- tai leveyspiirillä. Laskukaavat, joilla saadaan lyhin etäisyys, kun sekä pituus- että leveyspiiri muuttuu, eivät kuulu tämän opintojakson sisältöihin. Todellisuudessa maapalloon liittyvissä kaavoissa, esimerkiksi karttaohjelmissa, huomioidaan myös maapallon litistynyt muoto.
 
-**Esim.** Helsinki ja Ateena sijaitsevat likimain samalla pituuspiirillä. Helsingin leveyspiiri on 60° pohjoista leveyttä ja Ateenan 38° pohjoista leveyttä. Mikä on kaupunkien etäisyys?
+::::{admonition} Esimerkki
+
+Helsinki ja Ateena sijaitsevat likimain samalla pituuspiirillä. Helsingin leveyspiiri on 60° pohjoista leveyttä ja Ateenan 38° pohjoista leveyttä. Mikä on kaupunkien etäisyys?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -97,9 +146,13 @@ $\frac{22^{\circ}}{360^{\circ}}\cdot 40000~\text{km} = 2440~\text{km}$.
 
 :::
 
+::::
+
 Leveyspiiriä pitkin kuljettaessa matkan pituus riippuu sekä pisteiden pituuspiirien välisestä kulmasta että leveyspiirin sijainnista. Eri leveyspiirithän ovat eri mittaisia. On siis ensin laskettava maapallon ympärysmitta annetun leveyspiirin kohdalla.
 
-**Esim.** Helsinki ja Oslo sijaitsevat likimain leveyspiirillä 60°. Oslo sijaitsee pituuspiirillä 10.4° ja Helsinki pituuspiirillä 25.0°. Mikä on kaupunkien etäisyys?
+::::{admonition} Esimerkki
+
+Helsinki ja Oslo sijaitsevat likimain leveyspiirillä 60°. Oslo sijaitsee pituuspiirillä 10.4° ja Helsinki pituuspiirillä 25.0°. Mikä on kaupunkien etäisyys?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -117,3 +170,5 @@ $\alpha=25.0^{\circ}-10.4^{\circ}=14.6^{\circ}$,
 $s=\frac{\alpha}{360^{\circ}}\cdot 2\pi r=\frac{14.6^{\circ}}{360^{\circ}}\cdot 2\pi \cdot 3185~\text{km}=812~\text{km}$.
 
 :::
+
+::::
