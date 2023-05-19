@@ -18,6 +18,7 @@ parts:
     chapters:
     - file: trigonometriaa
     - file: suorakulmaiset
+    - file: sk_koordinaatisto
     - file: yleiset
     - file: trigo_funktiot
   - caption: Tasogeometriaa

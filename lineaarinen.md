@@ -29,7 +29,9 @@ Ensin lasketaan kulmakerroin $a=\frac{y_2-y_1}{x_2-x_1}$
 
 Sen jälkeen ratkaistaan leikkausvakio $b$ yhtälöstä $y=ax+b$, siis $b=y-ax$. Leikkausvakion arvo saadaan sijoittamalla yhtälöön joko $(x_1,y_1)$ tai $(x_2,y_2)$.
 
-**Esim.** Muodosta yhtälö suoralle, joka kulkee pisteiden $(x_1,y_1)=(-3,-2)$ ja $(x_2,y_2)=(7,1)$ kautta.
+::::{admonition} Esimerkki
+
+Muodosta yhtälö suoralle, joka kulkee pisteiden $(x_1,y_1)=(-3,-2)$ ja $(x_2,y_2)=(7,1)$ kautta.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -45,7 +47,9 @@ Yhtälö on siis $y=0.3x-1.1$.
 
 Suoran yhtälöstä voidaan laskea joko luvun $y$ arvoja, kun luku $x$ muuttuu, tai luvun $x$ arvoja, kun luku $y$ muuttuu.
 
-**Esim.** Pienessä tehtaassa tuotteiden valmistuskuluja kuvaa yhtälö $y=2.5x+950$, missä $x$ on tuotteiden määrä ja $y$ näiden tuotteiden valmistukseen kuluva rahamäärä.
+::::{admonition} Esimerkki
+
+Pienessä tehtaassa tuotteiden valmistuskuluja kuvaa yhtälö $y=2.5x+950$, missä $x$ on tuotteiden määrä ja $y$ näiden tuotteiden valmistukseen kuluva rahamäärä.
 
 a) Paljonko maksaa valmistaa 150 tuotetta?
 
@@ -74,11 +78,15 @@ $x=420$
 
 :::
 
+::::
+
 ## Suorien leikkauspisteen laskeminen
 
 Jos tiedetään kaksi suoraa $y=ax+b$ ja $y=cx+d$, niiden leikkauspiste löytyy ratkaisemalla yhtälö $ax+b=cx+d$ ja sijoittamalla saatu $x$:n arvo kumman tahansa suoran yhtälöön.
 
-**Esim.** Laske suorien $y=4x+3$ ja $y=7x+15$ leikkauspiste.
+::::{admonition} Esimerkki
+
+Laske suorien $y=4x+3$ ja $y=7x+15$ leikkauspiste.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -103,9 +111,17 @@ Leikkauspiste on siis $(x,y)=(-4,-13)$.
 
 :::
 
+::::
+
 ## Sovelluksia
 
-**Esim.** Autokauppias on todennut, että tietyn merkkinen auto maksaa 3 vuotta käytettynä keskimäärin 16 000 € ja 8 vuotta käytettynä keskimäärin 10 500 €. Hän haluaisi laatia mallin, jonka avulla voi hinnoitella minkä tahansa ikäisiä autoja.
+Suoran yhtälö on hyvin yksinkertainen ja toisinaan myös käyttökelpoinen matemaattinen malli. Mallin heikkous on se, että mukana on vain yksi muuttuja $x$. Ajatellaan vaikka, että kerrostaloyksiön hinnalle yritettäisiin laatia malli siten, että muuttujana olisi etäisyys torilta. Aivan torin laidalla sijaitsevan asunnon hinta olisi 100 000 euroa, ja jokainen kilometri pudottaisi hintaa 5000 eurolla. Tällöin malli olisi $y=-5000x+100000$. Malli antaisi jonkinlaisen arvion hinnalle, mutta ei huomioi asunnon ikää, kokoa, varustelutasoa, kuntoa jne.
+
+Suoran yhtälö ei myöskään sovellu kaikkiin ilmiöihin. Esimerkkejä muista sopivista malleista käsitellään [Tilastotieteen](https://luma-lapinamk.github.io/minna-tiltod/malli_intro.html) opintojaksolla. Siellä tarkastellaan myös sellaisia lineaarisia malleja, joissa muuttuja on kaksi (esimerkiksi asunnon ikä ja koko). Tavallinenkin suoran yhtälö kyllä voi sopia hämmentävän hyvin joihinkin ilmiöihin. Esimerkiksi Suomesta löytyy kuntia, joiden väkiluku on viime vuosina laskenut varsin tarkasti suoran yhtälöä mukaillen.
+
+::::{admonition} Esimerkki
+
+Autokauppias on todennut, että tietyn merkkinen auto maksaa 3 vuotta käytettynä keskimäärin 16 000 € ja 8 vuotta käytettynä keskimäärin 10 500 €. Hän haluaisi laatia mallin, jonka avulla voi hinnoitella minkä tahansa ikäisiä autoja.
 
 a) Muodosta yhtälö $y=ax+b$, jossa $y$ on auton hinta ja $x$ auton ikä.
 
@@ -139,8 +155,12 @@ $x=\frac{-6300}{-1100}$
 $x=5.7$
  
 :::
- 
-**Esim.** Oletetaan, että eräiden kaupunkien asukaslukua voidaan arvioida yhtälöllä $y=ax+b$, missä $x$ on tästä hetkestä kuluneiden vuosien määrä, $y$ on asukasluku kyseisenä ajankohtana, $a$ on asukasluvun muutos vuodessa ja $b$ on asukasluku nyt.
+
+::::
+
+::::{admonition} Esimerkki
+
+Oletetaan, että eräiden kaupunkien asukaslukua voidaan arvioida yhtälöllä $y=ax+b$, missä $x$ on tästä hetkestä kuluneiden vuosien määrä, $y$ on asukasluku kyseisenä ajankohtana, $a$ on asukasluvun muutos vuodessa ja $b$ on asukasluku nyt.
 
 Kaupungin A asukasluku on nyt 50 000, ja sen arvioidaan vähenevän 250 asukkaalla vuodessa. Kaupungin B asukasluku on nyt 28 000, ja sen arvioidaan kasvavan 750 asukkaalla vuodessa. Milloin kaupungin B asukasluku on yhtä suuri kuin kaupungin A asukasluku?
 
@@ -164,7 +184,10 @@ Asukkaita on siis yhtä paljon 22 vuoden kuluttua. Asukkaiden määrä on $y_A=-
 
 :::
 
-### Huomautus
+::::
+
+:::{admonition} Oikean datan mallinnus
+:class: tip, dropdown
 
 Kun tehdään johonkin oikeaan dataan perustuvaa matemaattista mallia, käytetään enemmän kuin kahta pistettä (x,y). Mikään suora ei kulje täsmälleen kaikkien pisteiden kautta, joten suoran yhtälöä ei voida muodosta edellä kerrotuilla menetelmillä.
 
@@ -172,5 +195,6 @@ Kun tehdään johonkin oikeaan dataan perustuvaa matemaattista mallia, käytetä
 
 **Esim.** Kuvaajassa pisteet kuvaavat Kalifornian osavaltion väkilukua eri vuosina, ja katkoviiva esittää lineaarista mallia, joka kuvaa väkilukua parhaalla mahdollisella tavalla.
   
-Laskentaohjelmat etsivät suoran, joka kuvaa datajoukkoa mahdollisimman hyvin. Matemaattinen toimenpide on etsiä avulla ”pienimmän neliösumman” toteuttava suora. Pienin neliösumma tarkoittaa summaa seuraavista luvuista jokaisesta datapisteestä laskettuna: (datapiste – suoran piste)$^2$. Pienimmän neliösumman voi etsiä matriisilaskennan keinoin (Lineaarialgebran opintojakso) tai käyttää apuna esim. Exceliä.
-<!-- #endregion -->
+Laskentaohjelmat etsivät suoran, joka kuvaa datajoukkoa mahdollisimman hyvin. Matemaattinen toimenpide on etsiä avulla "pienimmän neliösumman" toteuttava suora. Pienin neliösumma tarkoittaa summaa seuraavista luvuista jokaisesta datapisteestä laskettuna: (datapiste – suoran piste)$^2$. Pienimmän neliösumman voi etsiä differentiaali- tai matriisilaskennan keinoin ([Differentiaali- ja integraalilaskennan](https://luma-lapinamk.github.io/minna-diffint/pns_sovitus.html) opintojakso) tai käyttää apuna esim. Exceliä.
+
+:::

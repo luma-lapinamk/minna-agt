@@ -238,6 +238,27 @@ Ensimmäisen asteen yhtälössä voi olla myös kirjaimia, jotka on korotettu to
 
 ::::{admonition} Esimerkki
 
+Ratkaise yhtälö $ax+8b=cx-d$.
+
+:::{admonition} Ratkaisu
+:class: tip, dropdown
+
+$ax+8b=cx-d~\hspace{1cm} || -cx$
+
+$ax+8b-cx=-d~\hspace{1cm} || -8b$
+
+$ax-cx=-d-8b$
+
+$x(a-c)=-d-8b~\hspace{1cm} || :(a-c)$
+
+$x=\frac{-d-8b}{a-c}$
+
+:::
+
+::::
+
+::::{admonition} Esimerkki
+
 Ratkaise $h$ yhtälöstä $gh=\frac{1}{2}v^2$. 
 
 :::{admonition} Ratkaisu
