@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Funktio mallina &#8212; Algebra, geometria, trigonometria</title>
+    <title>Murtoluvuilla laskeminen &#8212; Algebra, geometria, trigonometria</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lineaarinen malli" href="lineaarinen.html" />
-    <link rel="prev" title="Mittakaavat" href="mittakaavat.html" />
+    <link rel="next" title="Potenssilausekkeet" href="potenssit.html" />
+    <link rel="prev" title="Luvut ja laskeminen" href="lukujoukot.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -120,14 +120,14 @@ const thebe_selector_output = ".output, .cell_output"
   Perusteita
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="lukujoukot.html">
    Luvut ja laskeminen
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="murtoluvut.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Murtoluvuilla laskeminen
   </a>
  </li>
@@ -262,9 +262,9 @@ const thebe_selector_output = ".output, .cell_output"
   Matemaattisia malleja
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="malleja.html">
    Funktio mallina
   </a>
  </li>
@@ -369,7 +369,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/malleja.md"
+        <a href="_sources/murtoluvut.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -429,8 +429,8 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#funktion-kasite">
-   Funktion käsite
+  <a class="reference internal nav-link" href="#laskusaannot">
+   Laskusäännöt
   </a>
  </li>
 </ul>
@@ -442,7 +442,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Funktio mallina</h1>
+                <h1>Murtoluvuilla laskeminen</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -453,8 +453,8 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#funktion-kasite">
-   Funktion käsite
+  <a class="reference internal nav-link" href="#laskusaannot">
+   Laskusäännöt
   </a>
  </li>
 </ul>
@@ -467,16 +467,51 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="funktio-mallina">
-<h1>Funktio mallina<a class="headerlink" href="#funktio-mallina" title="Permalink to this headline">#</a></h1>
-<p>Erilaisia lausekkeita ja niistä muodostettuja yhtälöitä voi ajatella myös matemaattisina malleina eri ilmiöille. Esimerkiksi viruksen leviämistä voidaan kuvata tietynlaisella yhtälöllä, joka yhdistää ajan kulumisen ja virukseen sairastuneiden henkilöiden määrän. Tällöin kyseinen yhtälö toimii matemaattisena mallina virusepidemialle. Tarkastellaan seuraavissa luvuissa kolmea erilaista yhtälötyyppiä, joiden avulla voidaan mallintaa yksinkertaisia ilmiöitä. Tässä yhteydessä yhtälöistä käytetään usein myös nimeä funktio.</p>
-<section id="funktion-kasite">
-<h2>Funktion käsite<a class="headerlink" href="#funktion-kasite" title="Permalink to this headline">#</a></h2>
-<p>Funktio <span class="math notranslate nohighlight">\(f(x)\)</span> on lauseke, joka yhdistää jokaisen määrittelyjoukkonsa lukuun <span class="math notranslate nohighlight">\(x\)</span> jonkin toisen luvun. Esimerkiksi <span class="math notranslate nohighlight">\(f(x)=3x+1\)</span> on lauseke, johon voidaan luvun <span class="math notranslate nohighlight">\(x\)</span> paikalle sijoittaa jokin luku ja laskea vastaava funktion arvo. Jos esimerkiksi <span class="math notranslate nohighlight">\(x=2\)</span>, niin saadaan funktiolle arvo <span class="math notranslate nohighlight">\(f(2)=3\cdot 2 + 1=7\)</span>.</p>
-<p>Määrittelyjoukko tarkoittaa niitä lukuja, jotka funktion lausekkeen voi sijoittaa - tai jotka siihen on mielekästä sijoittaa - luvun <span class="math notranslate nohighlight">\(x\)</span> paikalle. Usein määrittelyjoukko muodostuu kaikista reaaliluvuista, mutta ei aina. Esimerkiksi lausekkeeseen <span class="math notranslate nohighlight">\(f(x)=\frac{2x}{x-3}\)</span> ei voida sijoittaa lukua <span class="math notranslate nohighlight">\(x=3\)</span>, sillä tällöin murtoluvun nimittäjään tulisi <span class="math notranslate nohighlight">\(3-3=0\)</span>, eikä luvulla 0 jakamista ole määritelty. Jos taas funktio kuvaa esimerkiksi koiranpennun painon kehitystä, kun pennun ikä viikkoina mitattuna on <span class="math notranslate nohighlight">\(x\)</span>, ei ole mielekästä sisällyttää määrittelyjoukkoon negatiivisia eikä kovin suuria positiivisia lukuja.</p>
-<p>Arvojoukko tarkoittaa niitä lukuja, jotka funktiosta voidaan saada tuloksiksi, kun lausekkeeseen sijoitetaan kaikki määrittelyjoukon luvut. Arvojoukkokin voi joskus sisältää kaikki reaaliluvut. Toisaalta esimerkiksi funktio <span class="math notranslate nohighlight">\(f(x)=2x^2+3\)</span> ei millään luvun <span class="math notranslate nohighlight">\(x\)</span> arvolla voi tuottaa lukua 3 pienempiä arvoja, sillä olipa luku <span class="math notranslate nohighlight">\(x\)</span> mikä tahansa, niin toiseen potenssiin korotettuna se on aina vähintään 0. Tämän funktion arvojoukko koostuu siis luvusta 3 ja kaikista sitä suuremmista luvuista.</p>
-<p>Funktioiden yleisiä ominaisuuksia tarkastellaan enemmän opintojaksolla <a class="reference external" href="https://luma-lapinamk.github.io/minna-diffint/funktiot.html">Differentiaali- ja integraalilaskenta</a>.</p>
-<p></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="murtoluvuilla-laskeminen">
+<h1>Murtoluvuilla laskeminen<a class="headerlink" href="#murtoluvuilla-laskeminen" title="Permalink to this headline">#</a></h1>
+<p>Laskuissa esiintyy usein murtolukuja. Ne ovat niinsanottuja tarkkoja arvoja. Joillekin luvuille voidaan kirjoittaa tarkka arvo myös desimaalilukuna. Esimerkiksi jos yksi kakku jaettaisiin neljälle henkilölle, niin jokaisen saama <span class="math notranslate nohighlight">\(0.25\)</span> kakkua olisi kyllä tarkka.</p>
+<p>Usein murtoluku on kuitenkin ainoa mahdollisuus esittää laskun tulos tarkkana arvona. Jos täytekakku jaetaan kolmelle henkilölle, jokainen saa <span class="math notranslate nohighlight">\(\frac{1}{3}\)</span> kakusta. Se on tarkka arvo. Laskimesta saatavat luvut <span class="math notranslate nohighlight">\(0.33\)</span> tai <span class="math notranslate nohighlight">\(0.333333\)</span> tai edes <span class="math notranslate nohighlight">\(0.3333333333333\)</span> eivät ole tarkkoja arvoja. Aina ei ole väliä sillä, onko laskun tulos tarkka arvo vai ei, koska usein se kuitenkin pyöristetään jollakin tavalla. Tarkkojen arvojen laskeminen ja murtolukujen käsittely muutenkin on kuitenkin osa algebran yleissivistystä.</p>
+<p>Murtoluku koostuu murtoviivan yläpuolella olevan osoittajasta ja murtoviivan alapuolella olevasta nimittäjästä. Esimerkiksi luvussa <span class="math notranslate nohighlight">\(\frac{3}{8}\)</span> osoittaja on 3 ja nimittäjä 8. Nimittäjä kertoo, kuinka suuria osia murtoluvussa on, ja osoittaja sen, kuinka monta kappaletta näitä on. Esimerkiksi tässä on kyseessä kahdeksasosat, joita on kolme kappaletta.</p>
+<section id="laskusaannot">
+<h2>Laskusäännöt<a class="headerlink" href="#laskusaannot" title="Permalink to this headline">#</a></h2>
+<p><strong>Laventaminen ja supistaminen</strong></p>
+<p>Murtoluvun osoittajan ja nimittäjän voi kertoa tai jakaa samalla luvulla. Näin saattaa joutua tekemään, jos samassa laskutoimituksessa on murtolukuja, joissa on eri nimittäjät. Joskus laskun vastaus halutaan mahdollisimman pitkälle supistetussa muodossa eli siten, että nimittäjä on mahdollisimman pieni.</p>
+<p>Laventaminen merkitään osoittajan vasempaan yläkulmaan:</p>
+<p><span class="math notranslate nohighlight">\(^{2)}\frac{3}{7}=\frac{2\cdot 3}{2\cdot 7}=\frac{6}{14}\)</span>, <span class="math notranslate nohighlight">\(\frac{^{3)}x}{5}=\frac{3\cdot x}{3\cdot 5}=\frac{3x}{15}\)</span></p>
+<p>Supistaminen merkitään osoittajan oikeaan yläkulmaan:</p>
+<p><span class="math notranslate nohighlight">\(\frac{3}{15}^{(3}=\frac{3/3}{15/3}=\frac{1}{5}\)</span>, <span class="math notranslate nohighlight">\(\frac{2x}{4}^{(2}=\frac{2x/2}{4/2}=\frac{x}{2}\)</span></p>
+<p>Kerto- tai jakolasku pitää tehdä koko osoittajalle ja koko nimittäjälle:</p>
+<p><span class="math notranslate nohighlight">\(^{2)}\frac{5+x}{5}=\frac{2\cdot 5 + 2 \cdot x}{2\cdot 5}=\frac{10+2x}{10}\)</span></p>
+<p><span class="math notranslate nohighlight">\(^{2)}\frac{5+x}{x-3}=\frac{2\cdot 5 + 2 \cdot x}{2\cdot x - 2 \cdot 3}=\frac{10+2x}{2x-6}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\frac{4+x}{8}^{(2}=\frac{4/2+x/2}{8/2}=\frac{2+\frac{x}{2}}{4}\)</span></p>
+<p><strong>Yhteen- ja vähennyslasku</strong></p>
+<p>Jos murtoluvuissa on sama nimittäjä, niin yhteen-/vähennyslasku tehdään vain osoittajille, ja nimittäjä pysyy ennallaan.</p>
+<p>Esim. <span class="math notranslate nohighlight">\(\frac{3}{8}+\frac{2}{8}=\frac{3+2}{8}=\frac{5}{8}\)</span></p>
+<p>Esim. <span class="math notranslate nohighlight">\(\frac{6}{7}-\frac{4}{7}=\frac{6-4}{7}=\frac{3}{7}\)</span></p>
+<p>Jos murtoluvuissa on eri nimittäjä, laskussa esiintyvät murtoluvut pitää laventaa tai supistaa samannimisiksi. Joskus riittää supistaa tai laventaa yksi laskussa esiintyvistä murtoluvuista, joskus joutuu muokkaamaan useampaa.</p>
+<p>Esim. <span class="math notranslate nohighlight">\(\frac{3}{8}+\frac{2}{4}=\frac{3}{8}+ ^{2)}\frac{2}{4}=\frac{3}{8}+\frac{2\cdot 2}{2\cdot 4}=\frac{3}{8}+\frac{4}{8}=\frac{3+4}{8}=\frac{7}{8}\)</span></p>
+<p>Esim. <span class="math notranslate nohighlight">\(\frac{3}{12}+\frac{6}{4}=\frac{3}{12}^{(3}+\frac{6}{4}=\frac{3/3}{12/3}+\frac{6}{4}=\frac{1}{4}+\frac{6}{4}=\frac{1+6}{4}=\frac{7}{4}\)</span></p>
+<p>Esim. <span class="math notranslate nohighlight">\(\frac{1}{9}+\frac{1}{4}=^{4)}\frac{1}{9}+^{9)}\frac{1}{4}=\frac{4}{36}+\frac{9}{36}=\frac{13}{36}\)</span></p>
+<p><strong>Sekaluvut murtoluvuiksi</strong></p>
+<p>Sekaluku tarkoittaa kokonaisluvun ja murtoluvun summaa. Esimerkiksi <span class="math notranslate nohighlight">\(2\frac{1}{4}\)</span> tarkoittaa samaa kuin <span class="math notranslate nohighlight">\(2+\frac{1}{4}\)</span>.</p>
+<p>Sekaluku kannattaa muuttaa murtoluvuksi ennen muita laskutoimituksia. Kokonaisluvussa 1 osoittaja on yhtä suuri kuin nimittäjä, kokonaisluvussa 2 osoittaja on 2 kertaa niin suuri kuin nimittäjä jne. Nimittäjäksi valitaan sama kuin murtoluvun nimittäjä.</p>
+<p>Esim. <span class="math notranslate nohighlight">\(3 \frac{4}{5}=3+\frac{4}{5}=\frac{}{3\cdot 5}{5}+\frac{4}{5}=\frac{15}{5}+\frac{4}{5}=\frac{15+4}{5}=\frac{19}{5}\)</span></p>
+<p>Esim. <span class="math notranslate nohighlight">\(1 \frac{3}{4}+\frac{5}{4}=1+\frac{3}{4}+\frac{5}{4}=\frac{4}{4}+\frac{3}{4}+\frac{5}{4}=\frac{4+3+5}{4}=\frac{12}{4}=3\)</span></p>
+<p>tai: <span class="math notranslate nohighlight">\(1 \frac{3}{4}+\frac{5}{4}=1+\frac{3}{4}+\frac{5}{4}=1+\frac{3+5}{4}=1+\frac{8}{4}=1+2=3\)</span></p>
+<p>Esim. <span class="math notranslate nohighlight">\(2 \frac{5}{8}+\frac{3}{4}=2+\frac{5}{8}+\frac{3}{4}=2+\frac{5}{8}+^{2)}\frac{3}{4}= \)</span></p>
+<p><span class="math notranslate nohighlight">\( 2+\frac{5}{8}+\frac{6}{8}=\frac{2\cdot 8}{8}+\frac{5}{8}+\frac{6}{8}=\frac{16}{8}+\frac{5}{8}+\frac{6}{8}=\frac{16+5+6}{8}=\frac{27}{8}\)</span></p>
+<p><strong>Murtoluvut sekaluvuiksi</strong></p>
+<p>Muunnos toisinpäin onnistuu seuraavasti: ensin etsitään luvun kokonaislukuosa, eli se luku, kuinka monta kertaa nimittäjä mahtuu osoittajaan. Esimerkiksi luvussa <span class="math notranslate nohighlight">\(\frac{27}{8}\)</span> kokonaislukuosa on <span class="math notranslate nohighlight">\(3\)</span>, sillä <span class="math notranslate nohighlight">\(3\cdot 8 = 24\)</span> on vielä pienempi kuin osoittaja, mutta <span class="math notranslate nohighlight">\(4\cdot 8 = 32\)</span> olisi jo liian suuri luku.</p>
+<p>Murtolukuosan osoittaja on se luku, joka jää yli, kun murtoluvun osoittajasta vähennetään kokonaislukuosan ja nimittäjän tulo. Esimerkiksi luvussa <span class="math notranslate nohighlight">\(\frac{27}{8}\)</span> osoittajaksi jää <span class="math notranslate nohighlight">\(27-3\cdot 8=27-24=3\)</span>. Nimittäjäksi jää alkuperäinen osoittaja. Siis esimerkiksi sekaluvuksi saadaan <span class="math notranslate nohighlight">\(3 \frac{3}{8}\)</span>.</p>
+<p><strong>Kertolasku</strong></p>
+<p>Murtolukujen kertolaskussa osoittajat kerrotaan keskenään ja nimittäjät kerrotaan keskenään. Nimittäjien ei tarvitse olla keskenään samat, kuten yhteen- tai vähennyslaskussa! Lopputuloksen voi mielellään supistaa, jos se on mahdollista, eli jos osoittaja ja nimittäjä ovat samalla luvulla jaollisia. Kokonaisluvut voidaan muuttaa murtoluvuiksi, joissa nimittäjä on 1.</p>
+<p>Esim. <span class="math notranslate nohighlight">\(\frac{3}{8}\cdot \frac{2}{4}=\frac{3\cdot 2}{8\cdot 4}=^{2)}\frac{6}{32}=\frac{3}{16}\)</span></p>
+<p>Esim. <span class="math notranslate nohighlight">\(\frac{3}{5}\cdot \frac{7}{4}=\frac{3\cdot 7}{5\cdot 4}=\frac{21}{20}\)</span></p>
+<p>Esim. <span class="math notranslate nohighlight">\(3 \cdot \frac{5}{4}=\frac{3}{1}\cdot \frac{5}{4}=\frac{3\cdot 5}{1\cdot 4}=\frac{15}{4}=3\frac{3}{4}\)</span></p>
+<p><strong>Jakolasku</strong></p>
+<p>Kun murtoluku jaetaan toisella murtolukuvulla, niin jaettava kerrotaan jakajan käänteisluvulla. Käänteisluku tarkoittaa sitä, että osoittajan ja nimittäjä vaihdetaan keskenään. Esimerkiksi luvun <span class="math notranslate nohighlight">\(\frac{2}{5}\)</span> käänteisluku on <span class="math notranslate nohighlight">\(\frac{5}{2}\)</span>. Kokonaisluvullakin on käänteisluku: luvun <span class="math notranslate nohighlight">\(a\)</span> käänteisluku on <span class="math notranslate nohighlight">\(\frac{1}{a}\)</span>.</p>
+<p>Esim. <span class="math notranslate nohighlight">\(\frac{3}{4}:\frac{7}{9}=\frac{3}{4}\cdot \frac{9}{7}=\frac{3 \cdot 9}{4 \cdot 7}=\frac{27}{28}\)</span></p>
+<p>Esim. <span class="math notranslate nohighlight">\(\frac{15}{4}:3=\frac{15}{4}\cdot \frac{1}{3}=\frac{15\cdot 1}{4\cdot 3}=\frac{15}{12}^{(3}=\frac{5}{4}=1 \frac{1}{4}\)</span></p>
 </section>
 </section>
 
@@ -507,17 +542,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="mittakaavat.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="lukujoukot.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Mittakaavat</p>
+            <p class="prev-next-title">Luvut ja laskeminen</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="lineaarinen.html" title="next page">
+    <a class='right-next' id="next-link" href="potenssit.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lineaarinen malli</p>
+        <p class="prev-next-title">Potenssilausekkeet</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

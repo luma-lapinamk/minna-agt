@@ -1,0 +1,672 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Luvut ja laskeminen &#8212; Algebra, geometria, trigonometria</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Murtoluvuilla laskeminen" href="murtoluvut.html" />
+    <link rel="prev" title="Algebra, geometria ja trigonometria" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Algebra, geometria, trigonometria</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Algebra, geometria ja trigonometria
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Perusteita
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Luvut ja laskeminen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="murtoluvut.html">
+   Murtoluvuilla laskeminen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="potenssit.html">
+   Potenssilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="juuret.html">
+   Juurilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="polynomit.html">
+   Polynomit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Yhtälöt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot.html">
+   Yhtälöiden ratkaisu
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot1.html">
+   Esimerkkejä yhtälöistä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot2.html">
+   Toisen asteen yhtälöt
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigonometriaa.html">
+   Trigonometriaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suorakulmaiset.html">
+   Suorakulmaiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sk_koordinaatisto.html">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yleiset.html">
+   Yleiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinilause_kosinilause.html">
+   Sini- ja kosinilause
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigo_funktiot.html">
+   Yleiset trigonometriset funktiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasogeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyrat.html">
+   Ympyrä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="monikulmiot.html">
+   Monikulmiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Avaruusgeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lierio_kartio.html">
+   Lieriö ja kartio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pallo.html">
+   Pallo
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Verrannollisuus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="verrannollisuus_sivu.html">
+   Suoraan ja kääntäen verrannollisuus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mittakaavat.html">
+   Mittakaavat
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Matemaattisia malleja
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="malleja.html">
+   Funktio mallina
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lineaarinen.html">
+   Lineaarinen malli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="toisenasteen.html">
+   Toisen asteen polynomimalli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinifunktio.html">
+   Sinifunktio
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/luma-lapinamk/minna-agt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/lukujoukot.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lukujoukot">
+   Lukujoukot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lukusuora">
+   Lukusuora
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#laskemisen-saantoja">
+   Laskemisen sääntöjä
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Luvut ja laskeminen</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lukujoukot">
+   Lukujoukot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lukusuora">
+   Lukusuora
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#laskemisen-saantoja">
+   Laskemisen sääntöjä
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="luvut-ja-laskeminen">
+<h1>Luvut ja laskeminen<a class="headerlink" href="#luvut-ja-laskeminen" title="Permalink to this headline">#</a></h1>
+<p>Peruskoulun ensimmäiset vuodet olet luultavasti opiskellut hieman toisenlaista matematiikkaa kuin nyt olet opiskelemassa, nimeltään <strong>aritmetiikkaa</strong>. Aritmetiikka tarkoittaa yksinkertaistetusti sitä, että suoritetaan laskutoimituksia päässä, ruutupaperilla tai laskimella. Käytännössä voitaisiin vaikka laskea, paljonko 60 metriä pitkän ja 180 cm korkean aidan rakennuskustannukset kasvavat, jos aitalaudan hinta nousee 2 eurosta/metri 10 sentillä.</p>
+<p><strong>Algebrassa</strong> opetellaan käyttämään matematiikan sääntöjä yleisemmin. Tällöin vapaudutaan lukujen käytöstä. Voidaan laskea esimerkiksi, paljonko aidan hinta nousee, jos aitalaudan hinta nousee <em>mistä tahansa</em> alkuperäisestä arvosta <em>minkä tahansa</em> verran, sentteinä tai vaikka prosentteina.</p>
+<p>Minulle on syksyisin ensimmäisillä oppitunteilla tullut sellainen vaikutelma, että monen opiskelijan on vaikea luopua numeroista. Algebrassa voidaan merkitä vaikka aidan pituutta kirjaimella <span class="math notranslate nohighlight">\(x\)</span>, laudan hintaa kirjaimella <span class="math notranslate nohighlight">\(y\)</span>, ja niin edelleen. Sitten vain kirjoitetaan tarpeelliset laskutoimitukset ja saadaan aikaan jokin lauseke, eli kirjaimien ja kenties muutamien numeroiden yhdistelmä, joka toimii muillekin kuin omaa pihaa kiertävälle aidalle. Tähän lausekkeeseen voidaan sitten sijoittaa sopivat lukuarvot, jos halutaan soveltaa lauseketta johonkin tiettyyn aitaan ja aitalautaan. Päästiinkin vähemmällä työllä!</p>
+<p>Ennen kuin opetellaan käyttämään algebran työkaluja, kerrataan miten numeroilla lasketaan, sillä usein laskulle kuitenkin halutaan jokin lukuna esitettävä lopputulos. Millaisia lukuja on olemassa, ja miten niitä syötetään laskimeen?</p>
+<section id="lukujoukot">
+<h2>Lukujoukot<a class="headerlink" href="#lukujoukot" title="Permalink to this headline">#</a></h2>
+<p>Kaikki luvut kuuluvat johonkin lukujoukkoon. Lisäksi lukujoukot ovat osa toisia, suurempia lukujoukkoja (paitsi tietysti kaikkein suurin eli kompleksilukujen joukko). Esimerkiksi luonnolliset luvut ovat osa kokonaislukujen joukkoa, ja kokonaisluvut taas voidaan esittää murtolukumuodossa eli rationaalilukuna. Seuraavassa taulukossa on esitetty yleisimmät lukujoukot ja esimerkkejä siitä, missä niiden jäseniä esiintyy.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Lukujoukko</p></th>
+<th class="head"><p>Sisältö</p></th>
+<th class="head"><p>Esimerkkejä</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Luonnolliset luvut <span class="math notranslate nohighlight">\(\mathbb{N}\)</span></p></td>
+<td><p>positiiviset kokonaisluvut (myös 0)</p></td>
+<td><p>50 henkilöä ryhmässä</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kokonaisluvut <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span></p></td>
+<td><p>positiiviset ja negatiiviset kokonaisluvut</p></td>
+<td><p>henkilöiden määrän muutos -2</p></td>
+</tr>
+<tr class="row-even"><td><p>Rationaaliluvut <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span></p></td>
+<td><p>murtoluvut, päättyvät ja jaksolliset desimaaliluvut</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{3}\)</span>, <span class="math notranslate nohighlight">\(2.55\)</span>, <span class="math notranslate nohighlight">\(0.973973\dots\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Irrationaaliluvut <span class="math notranslate nohighlight">\(\mathbb{I}\)</span></p></td>
+<td><p>päättymättömät, jaksottomat desimaaliluvut</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pi\)</span>, <span class="math notranslate nohighlight">\(\sqrt{2}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Reaaliluvut <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></td>
+<td><p>kaikki ylempien joukkojen luvut</p></td>
+<td><p><span class="math notranslate nohighlight">\(-18.2\)</span>, <span class="math notranslate nohighlight">\(\frac{\pi}{2}\)</span>, jne.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kompleksiluvut <span class="math notranslate nohighlight">\(\mathbb{C}\)</span></p></td>
+<td><p>reaaliluvut ja imaginaariluvut</p></td>
+<td><p><span class="math notranslate nohighlight">\(2+3i\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Huomautus rationaaliluvuista</strong></p>
+<p>Murtoluku eli kahden kokonaisluvun osa tuottaa laskimeen näppäiltynä tulokseksi aina joko päättyvän tai jaksollisen desimaaliluvun. Päättyvä luku yksinkertaisesti loppuu, kuten vaikka <span class="math notranslate nohighlight">\(0.25\)</span>. Jaksollisessa desimaaliluvussa sama numerosarja toistuu äärettömän monta kertaa. Toistuva sarja ei välttämättä ala heti ensimmäisestä desimaalista, ja se voi olla hyvin pitkä. Kokeile laskea laskimella vaikkapa 7/23 tai 9/14. Löydätkö toistuvan sarjan? Lasku kannattaa kirjoittaa esimerkiksi <a class="reference external" href="https://www.wolframalpha.com/">WolframAlphaan</a>, sillä taskulaskimen tai puhelimen laskinsovelluksen näyttötila saattaa loppua kesken.</p>
+<p><strong>Huomautus kompleksiluvuista</strong></p>
+<p>Kompleksilukuja käytetään paljon esimerkiksi värähtelyliikkeen ja virtapiirien mallinnuksessa, mutta tällä opintojaksolla niitä ei tarvita. Kompleksiluvut koostuvat ns. reaaliosasta ja imaginaariosasta. Imaginaariosan tunnistaa i-kirjaimesta. Esimerkiksi 2+3i on kompleksiluku, jonka reaaliosa on 2 ja imaginaariosa 3i. Kompleksiluvussa saattaa olla pelkkä imaginaariosakin, esimerkiksi <span class="math notranslate nohighlight">\(4i\)</span>. Kompleksilukuja tulee vastauksena sellaisista laskutoimituksista, jotka eivät reaalilukujen laskusääntöjen mukaan ole mahdollisia. Kokeile laskea neliöjuuri jostain negatiivisesta luvusta, esimerkiksi <span class="math notranslate nohighlight">\(\sqrt{-3}\)</span>.</p>
+</section>
+<section id="lukusuora">
+<h2>Lukusuora<a class="headerlink" href="#lukusuora" title="Permalink to this headline">#</a></h2>
+<p>Reaaliluvuilla (toisin kuin kompleksiluvuilla) on sellainen ominaisuus, että ne voidaan asetella suuruusjärjestykseen. Peräkkäin järjestykseen asetetut luvut muodostavat lukusuoran. Se on kuin kyljelleen käännetty lämpömittari. Lukusuoralle voidaan merkitä näkyviin joitakin lukuja, mutta ei kaikkia, sillä niitä on äärettömän monta. Pelkästään esimerkiksi lukujen <span class="math notranslate nohighlight">\(1.0\)</span> ja <span class="math notranslate nohighlight">\(1.1\)</span> väliin mahtuu äärettömän monta lukua. Kuvan lukusuora on peräisin <a class="reference external" href="https://fi.wikipedia.org/wiki/Lukusuora">Wikipediasta</a>.</p>
+<p><img alt="Lukusuora" src="_images/lukusuora.png" /></p>
+<p>Lukusuoran avulla voidaan hahmottaa pari tärkeää reaalilukuihin liittyvää käsitettä:</p>
+<p><strong>Vastaluku</strong></p>
+<p>Luvun <span class="math notranslate nohighlight">\(a\)</span> vastaluku sijaitsee lukusuoralla yhtä kaukana nollasta kuin <span class="math notranslate nohighlight">\(a\)</span>, mutta vastakkaisella puolella nollaa. Luvun <span class="math notranslate nohighlight">\(a\)</span> vastaluku saadaan aina laskemalla <span class="math notranslate nohighlight">\(-a\)</span>. Esimerkkejä:</p>
+<ul class="simple">
+<li><p>Luvun <span class="math notranslate nohighlight">\(17.5\)</span> vastaluku on <span class="math notranslate nohighlight">\(–17.5\)</span></p></li>
+<li><p>Luvun <span class="math notranslate nohighlight">\(–5.3\)</span> vastaluku on <span class="math notranslate nohighlight">\(–(–5.3) = 5.3\)</span></p></li>
+<li><p>Luvun <span class="math notranslate nohighlight">\((a+8)\)</span> vastaluku on <span class="math notranslate nohighlight">\(–(a+8) = –a–8\)</span></p></li>
+<li><p>Luvun <span class="math notranslate nohighlight">\((3-a)\)</span> vastaluku on <span class="math notranslate nohighlight">\(–(3-a) = -3-(-a)=-3+a=a-3\)</span></p></li>
+</ul>
+<p>Kaksi viimeistä esimerkkiä toimivat riippumatta siitä, mikä luku on <span class="math notranslate nohighlight">\(a\)</span>-kirjaimen paikalla. Kokeile esimerkiksi sijoittaa <span class="math notranslate nohighlight">\(a=5\)</span>.</p>
+<p><strong>Itseisarvo</strong></p>
+<p>Luvun <span class="math notranslate nohighlight">\(a\)</span> itseisarvo <span class="math notranslate nohighlight">\(|a|\)</span> kuvaa sitä, kuinka kaukana nollasta luku <span class="math notranslate nohighlight">\(a\)</span> on lukusuoralla, kummalla tahansa puolella nollaa. Esimerkiksi -30 asteen pakkasella ja 30 asteen helteellä lämpötilaa kuvaavan luvun itseisarvo on sama. Luvun <span class="math notranslate nohighlight">\(a\)</span> paikalla voi olla myös jokin laskutoimitus. Itseisarvo lasketaan seuraavilla säännöillä:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(|a|=a\)</span>, jos <span class="math notranslate nohighlight">\(a &gt; 0\)</span>, esimerkiksi: <span class="math notranslate nohighlight">\(|85-3|=|82|=82\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(|a|= –a\)</span>, jos <span class="math notranslate nohighlight">\(a &lt; 0\)</span>, esimerkiksi: <span class="math notranslate nohighlight">\(|3-7|=|-4|=-(-4)=4\)</span></p></li>
+</ul>
+<p>Lisäksi lukusuoraan liittyvät <strong>lukuvälit</strong>, joita merkitään seuraavasti:</p>
+<ul class="simple">
+<li><p>“<span class="math notranslate nohighlight">\(x\)</span> on suurempi kuin <span class="math notranslate nohighlight">\(y\)</span>”: <span class="math notranslate nohighlight">\(x&gt;y\)</span></p></li>
+<li><p>“<span class="math notranslate nohighlight">\(x\)</span> on suurempi tai yhtä suuri kuin <span class="math notranslate nohighlight">\(y\)</span>: <span class="math notranslate nohighlight">\(x \geq y\)</span></p></li>
+<li><p>“<span class="math notranslate nohighlight">\(x\)</span> on pienempi kuin <span class="math notranslate nohighlight">\(y\)</span>”: <span class="math notranslate nohighlight">\(x&lt;y\)</span></p></li>
+<li><p>“<span class="math notranslate nohighlight">\(x\)</span> on pienempi tai yhtä suuri kuin <span class="math notranslate nohighlight">\(y\)</span>: <span class="math notranslate nohighlight">\(x \leq y\)</span></p></li>
+<li><p>“<span class="math notranslate nohighlight">\(x\)</span> kuuluu lukujoukkoon, jonka pienin luku on <span class="math notranslate nohighlight">\(a\)</span> ja suurin luku on <span class="math notranslate nohighlight">\(b\)</span>”: <span class="math notranslate nohighlight">\(a \leq x \leq b\)</span> tai <span class="math notranslate nohighlight">\(x \in [a,b]\)</span></p></li>
+<li><p>“<span class="math notranslate nohighlight">\(x\)</span> kuuluu lukujoukkoon, jonka alaraja <span class="math notranslate nohighlight">\(a\)</span> ja yläraja <span class="math notranslate nohighlight">\(b\)</span> eivät kuulu kyseiseen joukkoon”: <span class="math notranslate nohighlight">\(a&lt;x&lt;b\)</span> tai <span class="math notranslate nohighlight">\(x \in ]a,b[\)</span></p></li>
+<li><p>“<span class="math notranslate nohighlight">\(x\)</span> kuuluu reaalilukujen joukkoon ilman mitään rajoituksia”: <span class="math notranslate nohighlight">\( \in \Re\)</span></p></li>
+</ul>
+<p>Ehtoja voi myös yhdistellä, esimerkiksi “luku <span class="math notranslate nohighlight">\(x\)</span> on suurempi tai yhtä suuri kuin <span class="math notranslate nohighlight">\(-3\)</span>, mutta pienempi kuin <span class="math notranslate nohighlight">\(4\)</span>” merkitään joko <span class="math notranslate nohighlight">\(-3 \leq x &lt; 4\)</span> tai <span class="math notranslate nohighlight">\(x \in [-3,4[\)</span>.</p>
+</section>
+<section id="laskemisen-saantoja">
+<h2>Laskemisen sääntöjä<a class="headerlink" href="#laskemisen-saantoja" title="Permalink to this headline">#</a></h2>
+<p><strong>Lauseke</strong> on näkyviin merkitty laskutoimitus, esimermkiksi 2+3. Lausekkeelle voidaan laskea jokin arvo, esimerkiksi 2+3=5. Tätä varten lauseke pitää syöttää oikealla tavalla laskimeen. Lausekkeen sieventäminen eli muokkaaminen yksinkertaisempaan muotoon ei muuta lausekkeen arvoa. Kerrataan sieventämisestä aluksi merkkisäännöt.</p>
+<p><strong>Merkkisäännöt</strong></p>
+<p>Itseisarvon yhteydessä tarvittiin jo miinusmerkkejä. Niin lukuja kuin kirjaimiakin sisältävissä laskutoimituksissa pitää noudattaa seuraavia merkkisääntöjä:</p>
+<ul class="simple">
+<li><p>kertolaskussa parillinen määrä miinuksia kumoaa toisensa, mutta pariton määrä ei</p></li>
+<li><p>vähennyslaskussa kaksi miinusmerkiä kumoaa toisensa</p></li>
+<li><p>jakolaskussa tulos on positiivinen, jos jaettavan ja jakajan merkit ovat samat, muulloin negatiivinen</p></li>
+</ul>
+<p>Esimerkkejä:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(-2\cdot(-5)=10\)</span>, mutta <span class="math notranslate nohighlight">\(-2\cdot 5 = -10\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(-3 \cdot x = -3x\)</span>, mutta <span class="math notranslate nohighlight">\(-3\cdot(-x)=3x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(5-2=3\)</span>, mutta <span class="math notranslate nohighlight">\(5-(-2)=5+2=7\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x-5\)</span> on vain <span class="math notranslate nohighlight">\(x-5\)</span>, mutta <span class="math notranslate nohighlight">\(x-(-5)\)</span> voidaan kirjoittaa lyhyemmin <span class="math notranslate nohighlight">\(x+5\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{8}{4}=2\)</span>, mutta <span class="math notranslate nohighlight">\(\frac{-8}{4}=-2\)</span> ja <span class="math notranslate nohighlight">\(\frac{-8}{-4}=2\)</span></p></li>
+</ul>
+<p><strong>Laskujärjestys</strong></p>
+<p>Lausekkeen sisältämät laskutoimitukset pitää laskea seuraavassa järjestyksessä:</p>
+<ul class="simple">
+<li><p>sulut, sisimmistä aloittaen</p></li>
+<li><p>potenssilaskut ja juuret</p></li>
+<li><p>kerto-ja jakolaskut vasemmalta oikealle</p></li>
+<li><p>yhteen- ja vähennyslaskut</p></li>
+</ul>
+<p>Jakomerkkinä voi käyttää / tai : tai ÷, ja kertomerkkinä * tai käsin kirjoitettaessa <span class="math notranslate nohighlight">\(\cdot\)</span>.
+Esimerkkejä:</p>
+<p>a) <span class="math notranslate nohighlight">\(18+6/2+4=18+3+4=25\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\((18+6)/(2+4)=24:6=4\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(28/2\cdot 7=14 \cdot 7=98\)</span></p>
+<p>Sulkujen lisääminen ei tee laskutoimituksesta väärää, päinvastoin sulut voivat selkeyttää merkintää. Esimerkiksi <span class="math notranslate nohighlight">\(28:2:7\)</span> on kyllä laskujärjestyksen mukaisesti <span class="math notranslate nohighlight">\(14:7=2\)</span>, mutta selkeämmin sitä voisi merkitä <span class="math notranslate nohighlight">\((28:2):7=14:7=2\)</span>.</p>
+<p>Laskinta käytettäessä ole tarkkana sulkujen kanssa mm. jakolaskuissa, joissa joko jaettava tai jakajana on muun laskutoimituksen lopputulos. Laskimelle pitää sulkujen avulla kertoa, mitä kaikkea jaetaan, ja millä kaikella jaetaan. Esimerkiksi lasku <span class="math notranslate nohighlight">\(100/(4+1)\)</span> on aivan eri asia kuin <span class="math notranslate nohighlight">\(100/4+1\)</span>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "luma-lapinamk/minna-agt",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Algebra, geometria ja trigonometria</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="murtoluvut.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Murtoluvuilla laskeminen</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
