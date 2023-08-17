@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Prosenttilaskentaa &#8212; Algebra, geometria, trigonometria</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Trigonometriaa" href="trigonometriaa.html" />
+    <link rel="prev" title="Toisen asteen yhtälöt" href="yhtalot2.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Algebra, geometria, trigonometria</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Algebra, geometria ja trigonometria
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Perusteita
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lukujoukot.html">
+   Luvut ja laskeminen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="murtoluvut.html">
+   Murtoluvuilla laskeminen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="potenssit.html">
+   Potenssilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="juuret.html">
+   Juurilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="polynomit.html">
+   Polynomit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Yhtälöt
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot.html">
+   Yhtälöiden ratkaisu
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot1.html">
+   Esimerkkejä yhtälöistä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot2.html">
+   Toisen asteen yhtälöt
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Prosenttilaskentaa
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigonometriaa.html">
+   Trigonometriaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suorakulmaiset.html">
+   Suorakulmaiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sk_koordinaatisto.html">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yleiset.html">
+   Yleiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinilause_kosinilause.html">
+   Sini- ja kosinilause
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigo_funktiot.html">
+   Yleiset trigonometriset funktiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasogeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyrat.html">
+   Ympyrä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="monikulmiot.html">
+   Monikulmiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Avaruusgeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lierio_kartio.html">
+   Lieriö ja kartio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pallo.html">
+   Pallo
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Verrannollisuus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="verrannollisuus_sivu.html">
+   Suoraan ja kääntäen verrannollisuus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mittakaavat.html">
+   Mittakaavat
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Matemaattisia malleja
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="malleja.html">
+   Funktio mallina
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lineaarinen.html">
+   Lineaarinen malli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="toisenasteen.html">
+   Toisen asteen polynomimalli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinifunktio.html">
+   Sinifunktio
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/luma-lapinamk/minna-agt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/prosentti.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#peruslaskuja">
+   Peruslaskuja
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sovelluksia">
+   Sovelluksia
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Prosenttilaskentaa</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#peruslaskuja">
+   Peruslaskuja
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sovelluksia">
+   Sovelluksia
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <p><span class="math notranslate nohighlight">\( \def\euro{\unicode{x20AC}} \)</span></p>
+<section class="tex2jax_ignore mathjax_ignore" id="prosenttilaskentaa">
+<h1>Prosenttilaskentaa<a class="headerlink" href="#prosenttilaskentaa" title="Permalink to this headline">#</a></h1>
+<p>Vaikka matematiikkaa ei muuten juurikaan tarvitsisi työtehtävissään tai muussa elämässä, niin prosenttilaskuille saattaa olla käyttöä. On hyvä osata laskea esimerkiksi, paljonko tuote maksaa 40 % alennuksen jälkeen, paljonko 3.5 % palkankorotus tuo rahaa pankkitilille, tai paljonko on arvonlisäverollisen tuotteen veroton hinta.</p>
+<p>Prosentti % on lyhyt esitysmuoto murtoluvulle <span class="math notranslate nohighlight">\(\frac{1}{100}\)</span>. Tällöin <span class="math notranslate nohighlight">\(a~\%\)</span> tarkoittaa lukua <span class="math notranslate nohighlight">\(a\cdot \frac{1}{100}\)</span> eli <span class="math notranslate nohighlight">\(\frac{a}{100}\)</span>.</p>
+<p>Kahdelle luvulle <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span> sekä prosenttiosuudelle <span class="math notranslate nohighlight">\(a\)</span> voidaan muodostaa yhtälö: <span class="math notranslate nohighlight">\(\frac{x}{y}=\frac{a}{100}\)</span>. Monet prosenttilaskuihin liittyvät ongelmat ratkeavat tämän yhtälön avulla.</p>
+<section id="peruslaskuja">
+<h2>Peruslaskuja<a class="headerlink" href="#peruslaskuja" title="Permalink to this headline">#</a></h2>
+<div class="admonition-kuinka-monta-prosenttia-luku-x-on-luvusta-y admonition">
+<p class="admonition-title">Kuinka monta prosenttia luku <span class="math notranslate nohighlight">\(x\)</span> on luvusta <span class="math notranslate nohighlight">\(y\)</span>?</p>
+<p>Ratkaisu: Yhtälöstä <span class="math notranslate nohighlight">\(\frac{x}{y}=\frac{a}{100}\)</span> saadaan ratkaistua <span class="math notranslate nohighlight">\(a=\frac{x}{y} \cdot 100~\%\)</span></p>
+<p>Esim. Kuinka monta prosenttia luku 55 on luvusta 225?</p>
+<p><span class="math notranslate nohighlight">\(a=\frac{55}{225}\cdot 100~\%=24~\%\)</span></p>
+</div>
+<div class="admonition-kuinka-paljon-tietty-prosenttiosuus-a-on-luvusta-y admonition">
+<p class="admonition-title">Kuinka paljon tietty prosenttiosuus <span class="math notranslate nohighlight">\(a\)</span> on luvusta <span class="math notranslate nohighlight">\(y\)</span>?</p>
+<p>Ratkaisu: Yhtälöstä  <span class="math notranslate nohighlight">\(\frac{x}{y}=\frac{a}{100}\)</span> saadaan ratkaistua <span class="math notranslate nohighlight">\(x=\frac{a}{100} \cdot y\)</span></p>
+<p>Huomaa, että kyseessä on ihan tavallinen kertolasku, joten sen voi esittää myös muodossa <span class="math notranslate nohighlight">\(x=\frac{y}{100} \cdot a\)</span>.</p>
+<p>Esim. Kuinka paljon on a) 5 prosenttia 70:stä? b) 70 prosenttia 5:stä?</p>
+<p>a) <span class="math notranslate nohighlight">\(x=\frac{5}{100}\cdot 70=3.5\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(x=\frac{70}{100}\cdot 5=3.5\)</span></p>
+</div>
+<div class="admonition-kuinka-monta-prosenttia-suurempi-luku-x-on-kuin-luku-y admonition">
+<p class="admonition-title">Kuinka monta prosenttia suurempi luku <span class="math notranslate nohighlight">\(x\)</span> on kuin luku <span class="math notranslate nohighlight">\(y\)</span>?</p>
+<p>Ratkaisu: Nyt yhtälöön <span class="math notranslate nohighlight">\(a=\frac{x}{y} \cdot 100~\%\)</span> laitetaan luvun <span class="math notranslate nohighlight">\(x\)</span> paikalle erotus <span class="math notranslate nohighlight">\(x-y\)</span>. Saadan laskukaava <span class="math notranslate nohighlight">\(\frac{x-y}{y}\cdot 100~\%\)</span>.</p>
+<p>Esim. Kuinka paljon pidempi on 195 cm pitkä henkilö kuin 180 cm pitkä henkilö?</p>
+<p><span class="math notranslate nohighlight">\(\frac{195-180}{180}\cdot 100~\% \approx 8.3~\%\)</span></p>
+<p>Huomaa: Luvun <span class="math notranslate nohighlight">\(y\)</span> paikalle tulee se luku, johon verrataan. Voitaisiin myös kysyä, kuinka paljon lyhyempi 180 cm pitkä henkilö on kuin 195 cm pitkä henkilö. Tällöin laskuksi muodostuisi</p>
+<p><span class="math notranslate nohighlight">\(\frac{195-180}{195}\cdot 100~\% \approx 7.7~\%\)</span></p>
+<p>ja toisaalta voitaisiin myös kysyä, kuinka monta prosenttia 180 cm pitkän henkilön pituus on 195 cm pitkän henkilön pituudesta:</p>
+<p><span class="math notranslate nohighlight">\(\frac{180}{195}\cdot 100~\% \approx 92.3~\%\)</span>.</p>
+</div>
+<div class="admonition-kuinka-paljon-luku-kasvaa-tai-pienenee-kun-sita-muutetaan-a-prosenttia admonition">
+<p class="admonition-title">Kuinka paljon luku kasvaa tai pienenee, kun sitä muutetaan <span class="math notranslate nohighlight">\(a\)</span> prosenttia?</p>
+<p>Ratkaisu: Lukuun <span class="math notranslate nohighlight">\(x\)</span> lisätään tai luvusta <span class="math notranslate nohighlight">\(x\)</span> vähennetään prosenttiosuutta <span class="math notranslate nohighlight">\(a\)</span> luvusta <span class="math notranslate nohighlight">\(x\)</span> vastaava määrä.</p>
+<p>Uusi luku on siis <span class="math notranslate nohighlight">\(x\pm \frac{a}{100} \cdot x\)</span> jonka voi esittää myös muodossa <span class="math notranslate nohighlight">\(x\cdot(1\pm\frac{a}{100})\)</span>.</p>
+<p>Esim. Palkka nousee 2.8 %. Mikä on uusi palkka, kun se alunperin oli 4352 euroa?</p>
+<p><span class="math notranslate nohighlight">\(4352~\euro + \frac{2.8}{100} \cdot 4352~\euro \approx 4473.86~\euro\)</span> tai <span class="math notranslate nohighlight">\(4352~\euro \cdot (1+\frac{2.8}{100}) \approx 4473.86~\euro\)</span></p>
+<p>Huom! Sulkulausekkeeseen kaavassa <span class="math notranslate nohighlight">\(x\cdot(1\pm\frac{a}{100})\)</span> tulee lopputuloksena desimaalikerroin, jonka voi suoraan päätelläkin. Esimerkiksi jos arvo nousee 20 %, niin alkuperäinen luku pitää kertoa luvulla <span class="math notranslate nohighlight">\(1+\frac{20}{100}=1+0.2=1.2\)</span>. Jos taas arvo laskee 13 %, niin kertoimeksi tulee $1-0.13=9.87€.</p>
+</div>
+<div class="admonition-mika-on-alkuperainen-luku-kun-tiedetaan-a-prosenttia-muuttunut-luku admonition">
+<p class="admonition-title">Mikä on alkuperäinen luku, kun tiedetään <span class="math notranslate nohighlight">\(a\)</span> prosenttia muuttunut luku?</p>
+<p>Ratkaisu: Merkitään alkuperäistä lukua <span class="math notranslate nohighlight">\(x_1\)</span> ja uutta lukua <span class="math notranslate nohighlight">\(x_2\)</span>. Edellisessä kohdassa laskettiin <span class="math notranslate nohighlight">\(x_2=x_1 (1\pm \frac{a}{100})\)</span>. Tästä saadaan ratkaistua alkuperäinen luku:</p>
+<p><span class="math notranslate nohighlight">\(x_1=\frac{x_2}{1\pm \frac{a}{100}}\)</span></p>
+<p>Esim. Tuotteen hintaa laskettiin 15 %. Hinta oli muutoksen jälkeen 77.50 €. Paljonko oli alkuperäinen hinta?</p>
+<p><span class="math notranslate nohighlight">\(x_1=\frac{77.50~\euro}{1-\frac{15}{100}}=91.18~\euro\)</span> tai suoraan desimaaliluvuilla <span class="math notranslate nohighlight">\(\frac{77.50~\euro}{0.85}=91.18~\euro\)</span></p>
+<p>Tällaiset tehtävät kannattaa tarkistaa: Jos alkuperäistä hintaa <span class="math notranslate nohighlight">\(91.18~\euro\)</span> pienennetään 15 %, uusi hinta todellakin on <span class="math notranslate nohighlight">\(91.18~\euro\cdot (1-0.15) = 77.50~\euro\)</span>.</p>
+</div>
+<div class="admonition-prosentti-ja-prosenttiyksikko admonition">
+<p class="admonition-title">Prosentti ja prosenttiyksikkö</p>
+<p>Usein mediassa käsitellään prosenttiyksiköitä. Esimerkiksi jonkin puolueen kannatus voi aluksi olla 22 % ja kuukautta myöhemmin 26 %. Tällöin puolueen kannatus on noussut <span class="math notranslate nohighlight">\(26-22=4\)</span> prosenttiyksikköä. Kannatuksen muutos prosentteina lasketaan kuitenkin toisin:</p>
+<p><span class="math notranslate nohighlight">\(\frac{26-22}{22}\cdot 100~\% \approx 18.2~\%\)</span></p>
+</div>
+<p><strong>Harjoituksia</strong></p>
+<p>Seuraavat tehtävät ratkeavat edellisten mallien mukaisilla laskuilla. Mieti ennen ratkaisun katsomista, mikä kaava sopisi mihinkin ongelmaan. Tehtävät eivät välttämättä ole samassa järjestyksessä kuin laskukaavat!</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Jalkapalloseuran joukkueet tekivät talkootyötä yhteensä 62 tuntia. Seura sai työn tilaajalta urakkapalkkana 900 €. Eräs joukkue työskenteli yhteensä 18 tuntia. Montako prosenttia palkasta kuuluu tälle joukkueelle? Kuinka monta euroa palkka on?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Joukkueen osuus työtunneista on <span class="math notranslate nohighlight">\(\frac{18}{62}\cdot 100~\% \approx 29~\%\)</span> ja näin ollen palkka on <span class="math notranslate nohighlight">\(\frac{29}{100}\cdot 900~\euro = 261~\euro\)</span>.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Uuden puhelimen akun kapasiteetti on 5200 mAh ja vanhan puhelimen akun kapasiteetti oli 3800 mAh. Kuinka monta prosenttia suurempi uuden akun kapasiteetti on kuin vanhan? Jos hintakin kasvaa tässä samassa suhteessa, niin mikä olisi uusi hinta, kun vanhan mallin hinta oli 259 euroa?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Verrataan kapasiteettien erotusta vanhaan kapasiteettiin: <span class="math notranslate nohighlight">\(\frac{5200-3800}{3800} \cdot 100~\% \approx 36.8~\%\)</span></p>
+<p>Hinnaksi saadaan <span class="math notranslate nohighlight">\(259~\euro\cdot(1+\frac{36.8}{100}) \approx 354 ~\euro\)</span>.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Suomenhevonen jaksaa vetää reessä noin 110 % omasta massastaan. Hevosen massa on 530 kg. Paljonko voi olla tukkikuorman massa? Suositeltu ratsastajan enimmäismassa sen sijaan on vain noin 18 % hevosen massasta. Kuinka monta prosenttia enemmän hevonen vetää perässään kuin kantaa selässään?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Merkitään kuormaa luvulla <span class="math notranslate nohighlight">\(x\)</span>, jolloin on ratkaistava yhtälö <span class="math notranslate nohighlight">\(\frac{x}{530~\text{kg}}=\frac{110}{100}\)</span>. Tästä ratkeaa <span class="math notranslate nohighlight">\(x=\frac{110}{100}\cdot 530~\text{kg}\)</span> eli 583 kg.</p>
+<p>Ratsastajan massa voi olla <span class="math notranslate nohighlight">\(\frac{18}{100}\cdot 530~\text{kg}\)</span> eli 95.4 kg.</p>
+<p>Tukkikuorman massa on <span class="math notranslate nohighlight">\(\frac{583-95.4}{95.4}\cdot 100~\% \approx 511 ~\%\)</span> suurempi kuin ratsastajan. Tämän voi laskea myös ilman tietoa varsinaisista kilomääristä: <span class="math notranslate nohighlight">\(\frac{110-18}{18}\cdot 100~\% \approx 511 ~\%\)</span>$.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Kahvikupillinen maksaa 2.30 € ja teemukillinen 2.10 €. Kummankin hintaa nostetaan 20 %. Kuinka monta prosenttia kalliimpi kahvi on kuin tee ennen korotusta? Entä korotuksen jälkeen?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Ennen korotusta: <span class="math notranslate nohighlight">\(\frac{2.30~\euro-2.10~\euro}{2.10~\euro} \cdot 100~\% \approx 9.5~\%\)</span></p>
+<p>Uudet hinnat ovat <span class="math notranslate nohighlight">\(2.30~\euro\cdot(1+0.2)=2.76~\euro\)</span> ja <span class="math notranslate nohighlight">\(2.30~\euro\cdot(1+0.2)=2.52~\euro\)</span>.</p>
+<p>Hintaero on edelleen <span class="math notranslate nohighlight">\(\frac{2.76~\euro-2.52~\euro}{2.52~\euro} \cdot 100~\% \approx 9.5~\%\)</span></p>
+<p>Yleisesti kun luvut <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span> muuttuvat saman prosenttiosuuden <span class="math notranslate nohighlight">\(a\)</span>, niin laskun <span class="math notranslate nohighlight">\(\frac{x\cdot(1 \pm \frac{a}{100})-y\cdot (1 \pm \frac{a}{100})}{y\cdot(1 \pm \frac{a}{100})}\)</span> tulos on sama kuin laskun <span class="math notranslate nohighlight">\(\frac{x-y}{y}\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="sovelluksia">
+<h2>Sovelluksia<a class="headerlink" href="#sovelluksia" title="Permalink to this headline">#</a></h2>
+<p>Käytännönläheisen prosenttilaskuihin liittyvät ongelmat vaativat edellisten laskukaavojen soveltamista. Tehtävistä selviää, kun muistaa, että alennukset ja korotukset ovat käytännössä desimaaliluvulla kertomista.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Nappulakenkien hinta urheiluliikkeen hyllyssä oli 90 euroa. Paketissa oli alennustarra -30 %. Urheiluseuran jäsenet saavat loppusummasta 10 % alennuksen. Paljonko kengille jäi hintaa?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Äkkiseltään voisi kuvitella, että alennusta saisi yhteensä 40 %, jolloin hinnaksi jäisi <span class="math notranslate nohighlight">\(90~\euro \cdot(1-0.40) = 54~\euro\)</span>. Näin ei kuitenkaan ole. Kahdesta erillisestä prosenttiosuudesta tulee kertolasku, ei yhteenlasku.</p>
+<p>Tässä tapauksessa alennettu hinta on <span class="math notranslate nohighlight">\(90~\euro \cdot(1-0.3) = 0.7\cdot 90~\euro = 63~\euro\)</span> ja sen jälkeen lasketaan jäsenalennus tästä hinnasta kertolaskulla: <span class="math notranslate nohighlight">\(63~\euro \cdot (1-0.1) = 0.9~\cdot 63~\euro = 56.70~\euro\)</span>.</p>
+<p>Kertolaskut voi toki laskea kerrallakin: <span class="math notranslate nohighlight">\(0.7~\cdot 0.9 \cdot 90~\euro = 56.70~\euro\)</span>.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Laimennuslaskuja tarvitaan esimerkiksi hoitoalalla. Kuinka paljon vettä pitää lisätä 250 grammaan 4-prosenttista suolaliuosta, jotta liuos laimenee 3-prosenttiseksi?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Lasketaan ensin suolan määrä grammoina alkuperäisessä liuoksessa:</p>
+<p><span class="math notranslate nohighlight">\(\frac{4}{100}\cdot 250~\text{g} = 10 ~\text{g}\)</span></p>
+<p>Lopullisessa liuoksessa suolaa on yhä tämä 10 grammaa, ja sen pitäisi olla 3 % koko liuoksesta. Siis koko liuoksen massa <span class="math notranslate nohighlight">\(m\)</span> saadaan yhtälöstä</p>
+<p><span class="math notranslate nohighlight">\(\frac{3}{100} \cdot m =10~\text{g}\)</span>, josta <span class="math notranslate nohighlight">\(m=10~\text{g}\cdot \frac{100}{3}\approx 333.33~\text{g}\)</span>.</p>
+<p>Lisäystä alkuperäiseen on siis <span class="math notranslate nohighlight">\(333.33~\text{g}-250\text{g}\approx 83~\text{g}\)</span>. Vettä on lisättävä tämän verran.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Tuotteen hinta 240 € sisältää 24 % arvonlisäveroa. Paljonko on tuotteen veroton hinta? Mikä on tuotteen uusi hinta, jos verokanta muuttuu siten että uusi vero on 14 % verottomasta hinnasta?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Arvonlisävero 24 % lisätään tuotteen verottomaan hintaan. Veroton hinta saadaan samalla tavalla kuin alkuperäinen arvo ennen muutosta:</p>
+<p><span class="math notranslate nohighlight">\(\frac{240~\euro}{1+0.24}\approx 193.55~\euro\)</span></p>
+<p>Uusi hinta pienemmällä verolla on <span class="math notranslate nohighlight">\(193.55~\euro \cdot(1+0.14) \approx 220.65~\euro\)</span></p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Verkkokaupassa tuotteen hinta nousi ensin 20 % ja laski sitten 15 %. Kuinka monta prosenttia hinta muuttui kokonaisuudessaan?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Korotusta vastaa luvulla <span class="math notranslate nohighlight">\(1+\frac{20}{100}=1.2\)</span> kertominen ja alennusta luvulla <span class="math notranslate nohighlight">\(1-\frac{15}{100}=0.85\)</span> kertominen. Hinnaksi jää siis <span class="math notranslate nohighlight">\(1.2\cdot 0.85 = 1.02\)</span> kertaa alkuperäinen hinta. Hinta siis nousi 2 %. Laskun tulos ei riipu alkuperäisestä hinnasta.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Bensiinin litrahinta nousee 12 %. Kuinka monta prosenttia bensiinin kulutusta pitäisi vähentää, jotta polttoainekulut pysyisivät ennallaan?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Alkuun pääsee merkitsemällä polttoaineen hintaa, polttoaineen kulutusta ja ajamisen kustannuksia joillakin kirjaimilla. Olkoon bensiinin hinta ennen korotusta <span class="math notranslate nohighlight">\(x\)</span> euroa/litra ja alkuperäinen kulutettu määrä <span class="math notranslate nohighlight">\(y\)</span> litraa jossakin tietyssä ajassa. Tällöin kyseisenä ajanjaksona polttoainekustannuksiksi tulee hinnan ja kulutuksen tulo <span class="math notranslate nohighlight">\(xy\)</span> euroa.</p>
+<p>Hinnankorotuksen jälkeen bensiinin hinta on <span class="math notranslate nohighlight">\(1.12x\)</span> euroa/litra. Kerrotaan kulutus jollain toistaiseksi tuntemattomalla kertoimella <span class="math notranslate nohighlight">\(a\)</span>, eli uusi kulutus on <span class="math notranslate nohighlight">\(ay\)</span>. Tällöin kustannuksiksi tulee <span class="math notranslate nohighlight">\(1.12xay\)</span>. Ratkaistaan <span class="math notranslate nohighlight">\(a\)</span> yhtälöstä <span class="math notranslate nohighlight">\(1.12xay=xy\)</span>. Alkuperäinen hinta ja kulutus supistuvat pois, jolloin yhtälöksi jää <span class="math notranslate nohighlight">\(1.12a=1\)</span> ja tästä ratkeaa <span class="math notranslate nohighlight">\(a=\frac{1}{1.12}\)</span> eli <span class="math notranslate nohighlight">\(a\approx 0.893\)</span>. Kulutuksen pitäisi siis laskea <span class="math notranslate nohighlight">\(100~\%-89.3~\% = 10.7~\%\)</span> tai noin 11 %.</p>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "luma-lapinamk/minna-agt",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="yhtalot2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toisen asteen yhtälöt</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="trigonometriaa.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Trigonometriaa</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
