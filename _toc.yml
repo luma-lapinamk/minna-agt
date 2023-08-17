@@ -6,6 +6,8 @@ root: intro
 parts: 
   - caption: Perusteita
     chapters:
+    - file: lukujoukot
+    - file: murtoluvut
     - file: potenssit
     - file: juuret
     - file: polynomit
