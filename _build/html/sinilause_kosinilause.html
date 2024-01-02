@@ -1,0 +1,703 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Sini- ja kosinilause &#8212; Algebra, geometria, trigonometria</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Yleiset trigonometriset funktiot" href="trigo_funktiot.html" />
+    <link rel="prev" title="Yleiset kolmiot" href="yleiset.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Algebra, geometria, trigonometria</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Algebra, geometria ja trigonometria
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Perusteita
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lukujoukot.html">
+   Luvut ja laskeminen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="murtoluvut.html">
+   Murtoluvuilla laskeminen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="potenssit.html">
+   Potenssilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="juuret.html">
+   Juurilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="polynomit.html">
+   Polynomit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Yhtälöt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot.html">
+   Yhtälöiden ratkaisu
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot1.html">
+   Esimerkkejä yhtälöistä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot2.html">
+   Toisen asteen yhtälöt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="prosentti.html">
+   Prosenttilaskentaa
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometriaa
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigonometriaa.html">
+   Trigonometriaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suorakulmaiset.html">
+   Suorakulmaiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sk_koordinaatisto.html">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yleiset.html">
+   Yleiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Sini- ja kosinilause
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigo_funktiot.html">
+   Yleiset trigonometriset funktiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasogeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyrat.html">
+   Ympyrä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="monikulmiot.html">
+   Monikulmiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Avaruusgeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lierio_kartio.html">
+   Lieriö ja kartio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pallo.html">
+   Pallo
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Verrannollisuus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="verrannollisuus_sivu.html">
+   Suoraan ja kääntäen verrannollisuus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mittakaavat.html">
+   Mittakaavat
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Matemaattisia malleja
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="malleja.html">
+   Funktio mallina
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lineaarinen.html">
+   Lineaarinen malli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="toisenasteen.html">
+   Toisen asteen polynomimalli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinifunktio.html">
+   Sinifunktio
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/luma-lapinamk/minna-agt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/sinilause_kosinilause.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sinilause">
+   Sinilause
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kosinilause">
+   Kosinilause
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Sini- ja kosinilause</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sinilause">
+   Sinilause
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kosinilause">
+   Kosinilause
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="sini-ja-kosinilause">
+<h1>Sini- ja kosinilause<a class="headerlink" href="#sini-ja-kosinilause" title="Permalink to this headline">#</a></h1>
+<p>Suorakulmaisten kolmioiden sivujen pituuksia ja kulmia saatiin selville Pythagoraan lauseen ja suorakulmaisen kolmion trigonometristen funktioiden avulla. Ne laskusäännöt eivät toimi yleisessä tapauksessa. Sen sijaan tässä luvussa esiteltävät yleisen kolmion laskukaavat toimivat myös suorakulmaisille kolmioille.</p>
+<p>Seuraavissa laskusäännöissä käytetään oheisen kuvan merkintöjä.</p>
+<p><img alt="Vinokulmaisia kolmioita" src="_images/vinokulmainen.png" /></p>
+<section id="sinilause">
+<h2>Sinilause<a class="headerlink" href="#sinilause" title="Permalink to this headline">#</a></h2>
+<p>Sinilause kuvaa kulmien ja niiden vastaisten sivujen suhteita. Lauseen mukaan kulman sinin ja kulman vastaisen sivun pituuden suhde on vakio, siis</p>
+<p><span class="math notranslate nohighlight">\(\frac{\sin{\alpha}}{a}=\frac{\sin{\beta}}{b}=\frac{\sin{\gamma}}{c}\)</span>.</p>
+<p>Sinilause voidaan esittää myös muodossa</p>
+<p><span class="math notranslate nohighlight">\(\frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}=\frac{c}{\sin{\gamma}}\)</span>.</p>
+<p>Käytännössä sinilauseesta käytetään vain osaa kerrallaan. Jos tunnetaan kaksi sivua ja toisen vastainen kulma, voidaan ratkaista toisenkin sivun vastainen kulma. Vastaavasti jos tunnetaan kaksi kulmaa ja toista vastapäätä olevan sivun pituus, voidaan toisenkin sivun pituus selvittää. Kolmaskin kulma tietysti selviää, kun muistetaan, että kolmiot kulmat ovat yhteensä 180 astetta.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Sinilauseen perustelu</p>
+<p>Kolmion alalle saatiin jo aiemmin määritelmä: ala on kahden sivun pituuksien tulo, kerrottuna sivujen välisen kulman sinillä, ja jaettuna kahdella. Kolmion pinta-alan pitää olla sama, olivatpa laskussa käytetyt kaksi sivua mitkä tahansa kolmion sivuista. Niinpä tulee olla</p>
+<p><span class="math notranslate nohighlight">\(\frac{1}{2} bc \sin {\alpha} = \frac{1}{2} ac \sin{\beta} = \frac{1}{2} ab \sin{\gamma}\)</span>.</p>
+<p>Tarkastellaan kahden ensimmäisen lausekkeen yhtäsuuruutta:</p>
+<p><span class="math notranslate nohighlight">\(\frac{1}{2} bc \sin {\alpha} = \frac{1}{2} ac \sin{\beta}\)</span></p>
+<p>Kerrotaan molemmat puolet kahdella ja jaetaan molemmat puolet luvulla <span class="math notranslate nohighlight">\(c &gt; 0\)</span>, jonka jälkeen yhtälö on sieventynyt muotoon</p>
+<p><span class="math notranslate nohighlight">\(b \sin{\alpha} = a \sin{\beta}\)</span>.</p>
+<p>Yhtälö on muokattavissa muotoon <span class="math notranslate nohighlight">\(\frac{\sin{\alpha}}{a}=\frac{\sin{\beta}}{b}\)</span>.</p>
+<p>Vastaavasti voidaan verrata 1. ja 3. lauseketta sekä 2. ja 3. lauseketta.</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise sivun <span class="math notranslate nohighlight">\(a\)</span>  pituus, kun <span class="math notranslate nohighlight">\(b=10~\text{m}, \beta=35^{\circ}, \alpha=52^{\circ}\)</span>. Merkinnät ovat samat kuin sivun yläreunan kolmiossa.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Ratkaistaan sinilauseesta kysytty suure <span class="math notranslate nohighlight">\(a\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(\frac{a}{\sin{\alpha}} = \frac{b}{\sin{\beta}} \leftrightarrow a = b \frac{\sin{\alpha}}{\sin{\beta}} \leftrightarrow a=10~\text{m} \frac{\sin{52^{\circ}}}{\sin{35^{\circ}}}=13.74~\text{m}\)</span>.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise kulma <span class="math notranslate nohighlight">\(\alpha\)</span>, kun <span class="math notranslate nohighlight">\(a=80~\text{m}, c=95~\text{m}, \gamma=45^{\circ}\)</span>. Merkinnät ovat samat kuin sivun yläreunan kolmiossa.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Ratkaistaan kysytty suure <span class="math notranslate nohighlight">\(\alpha\)</span> sinilauseesta. Yhtälön ratkaisu on lyhyempi, kun sinilause kirjoitetaan toisessa järjestyksessä kuin edellisessä esimerkissä.</p>
+<p><span class="math notranslate nohighlight">\(\frac{\sin{\alpha}}{a}=\frac{\sin{\gamma}}{c} \leftrightarrow \sin{\alpha}=\frac{a}{c} \sin{\gamma} \leftrightarrow \sin{\alpha}=\frac{80~\text{m}}{95~\text {m}}\cdot \sin{⁡45^{\circ}} \leftrightarrow \alpha \approx 36.5^{\circ}\)</span>.</p>
+</div>
+</div>
+<p></p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise kuviosta sivun <span class="math notranslate nohighlight">\(x\)</span> pituus.</p>
+<p><img alt="Sinilause, esimerkki" src="_images/sinilause_esim.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Sinilauseen käyttämiseksi pitäisi tietää ainoan tunnetun sivun vastaisen kulman suuruus. Koska kolmion kulmien summa on aina <span class="math notranslate nohighlight">\(180^{\circ}\)</span>, niin tuntematon kulma on <span class="math notranslate nohighlight">\((180-47-39)^{\circ}=94^{\circ}\)</span>. Nyt sinilauseen perusteella</p>
+<p><span class="math notranslate nohighlight">\(\frac{128}{\sin{⁡94^{\circ}}}=\frac{x}{\sin{⁡47^{\circ}}}\leftrightarrow x = 128\cdot \frac{\sin{⁡47^{\circ}}}{\sin{⁡94^{\circ}}} \approx 94\)</span>.</p>
+</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Soveltaminen suorakulmaiseen kolmioon</p>
+<p><img alt="Sinilause suorakulmaisessa kolmiossa" src="_images/skk_sinilause.png" /></p>
+<p>Oletetaan, että kulma <span class="math notranslate nohighlight">\(\alpha\)</span> olisikin suora, kuten kuvassa. Tällöin pätee <span class="math notranslate nohighlight">\(\sin{\alpha}=1\)</span> ja sinilause sievenee muotoon</p>
+<p><span class="math notranslate nohighlight">\(a=\frac{b}{\sin{\beta}}=\frac{c}{\sin{\gamma}}\)</span></p>
+<p>josta voidaan ratkaista <span class="math notranslate nohighlight">\(\sin{\beta}=\frac{b}{a}\)</span> ja <span class="math notranslate nohighlight">\(\sin{\gamma}=\frac{c}{a}\)</span></p>
+<p>Laskukaavat ovat samat kuin suorakulmaisten kolmioiden yhtedessä opitut.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Huomautus arkussinistä</p>
+<p>Samaa sinin, kosinin tai tangentin arvoa vastaa itse asiassa äärettömän monta eri kulmaa. Käytännössä kolmioihin liittyvissä laskuissa arkussini voi tuottaa “väärän” vastauksen, sillä 0 ja 180 asteen väliltä löytyy aina kaksi kulmaa, joilla on sama sini. Niinpä jos tiedetään kulman sinin arvo <span class="math notranslate nohighlight">\(x\)</span> ja ratkaistaan kulma <span class="math notranslate nohighlight">\(\alpha\)</span>, on ratkaisu tarkistettava, sillä kulmalle on kaksi vaihtoehtoa: <span class="math notranslate nohighlight">\(\alpha=\arcsin{x}\)</span> ja <span class="math notranslate nohighlight">\(\alpha = 180^{\circ}-\arcsin{x}\)</span>.</p>
+<p><strong>Esim.</strong> Kulman sini on 0.9. Laskimella saadaan kulman suuruudeksi <span class="math notranslate nohighlight">\(\arcsin⁡{0.9}=64.16^{\circ}\)</span>. Toinen kulma, jonka sini on 0.9, on <span class="math notranslate nohighlight">\(180^{\circ}-\arcsin{⁡0.9}=180^{\circ}-64.16^{\circ}=115.84^{\circ}\)</span>.</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise kuvan kolmiosta kulma <span class="math notranslate nohighlight">\(\alpha\)</span>.</p>
+<p><img alt="Esimerkki arkussinistä" src="_images/arkussini_esimerkki.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Sinilauseen perusteella <span class="math notranslate nohighlight">\(\frac{\sin{\alpha}}{40}=\frac{\sin{27^{\circ}}}{30}\)</span>, josta ratkeaa <span class="math notranslate nohighlight">\(\sin{\alpha}=40\cdot \frac{\sin{27^{\circ}}}{30}\)</span>. Edelleen</p>
+<p><span class="math notranslate nohighlight">\(\alpha=\arcsin{40\cdot \frac{\sin{27^{\circ}}}{30}}\)</span>,</p>
+<p>josta laskin antaa tulokseksi <span class="math notranslate nohighlight">\(37.25^{\circ}\)</span>. Kuvan perusteella kuitenkin kulma <span class="math notranslate nohighlight">\(\alpha\)</span> on tylppä, joten oikea vastaus onkin <span class="math notranslate nohighlight">\(\alpha=180^{\circ}-37.25^{\circ}=142.75^{\circ}\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="kosinilause">
+<h2>Kosinilause<a class="headerlink" href="#kosinilause" title="Permalink to this headline">#</a></h2>
+<p>Kosinilause on laskusääntö, jonka mukaan tietyn kulman kyljet, kulman vastainen sivu ja kulman kosini ovat yhteydessä toisiinsa seuraavien yhtälöiden mukaisesti:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(c^2=a^2+b^2-2ab \cos{\gamma}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(b^2=a^2+c^2-2ac \cos⁡{\beta}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a^2=b^2+c^2-2bc \cos{\alpha}\)</span></p></li>
+</ul>
+<p>Yhtälöiden oikealle puolelle tulee siis aina yhtälön vasemmalla puolella olevaa sivua vastapäätä oleva kulma.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Kosinilauseen perustelu</p>
+<p><img alt="Kosinilauseen perustelu" src="_images/kosinilause.png" /></p>
+<p>Kosinilause voidaan perustella piirtämällä kolmioon korkeusjana ja ilmaisemalla sen pituus <span class="math notranslate nohighlight">\(h\)</span> kahdella eri tavalla. Korkeus ilmaistaan nyt Pythagoraan lauseen avulla kahdessa eri kolmiossa. Korkeuden pitää olla sama molemmilla tavoilla ilmaistuna. Tästä seuraa, että myös korkeuden toisen potenssin <span class="math notranslate nohighlight">\(h^2\)</span> tulee olla sama. Tällä ei ole muuta merkitystä kuin se, että laskusta tulee hieman lyhyempi.</p>
+<p>Korkeusjana jakaa kolmion kannan <span class="math notranslate nohighlight">\(c\)</span> osiin <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(c-x\)</span>. Vasemmalle puolelle muodostuvasta suorakulmaisesta kolmiosta nähdään, että <span class="math notranslate nohighlight">\(\cos{\alpha}=\frac{x}{b}\)</span>, joten <span class="math notranslate nohighlight">\(x=b\cos{\alpha}\)</span>. Niinpä kanta jakautuu osiin <span class="math notranslate nohighlight">\(b \cos{\alpha}\)</span> ja <span class="math notranslate nohighlight">\(c-b\cos{\alpha}\)</span>.</p>
+<p>Ratkaistaan nyt korkeusjanan <span class="math notranslate nohighlight">\(h\)</span> toinen potenssi <span class="math notranslate nohighlight">\(h^2\)</span> Pythagoraan lauseen avulla vasemmanpuoleisen kolmion merkinnöin:</p>
+<p><span class="math notranslate nohighlight">\((b \cos{\alpha})^2 + h^2 = b^2\)</span>, josta seuraa <span class="math notranslate nohighlight">\(h^2 = b^2 - (b \cos{\alpha})^2 = b^2 - b^2 \cos^2{\alpha}\)</span>.</p>
+<p>Oikeanpuoleisesta kolmiosta saadaan vastaavasti</p>
+<p><span class="math notranslate nohighlight">\((c-b \cos{\alpha})^2 + h^2 = a^2\)</span>, josta saadaan binomikaavan avulla</p>
+<p><span class="math notranslate nohighlight">\(c^2 -2bc \cos{\alpha} + b^2 \cos^2{\alpha} + h^2 = a^2\)</span></p>
+<p>ja edelleen</p>
+<p><span class="math notranslate nohighlight">\(h^2 = a^2 - c^2 + 2bc \cos{\alpha} - b^2 \cos^2{\alpha}\)</span></p>
+<p>Nyt yhtälöiden oikeiden puolien pitää olla samat:</p>
+<p><span class="math notranslate nohighlight">\(b^2-b^2 \cos^2{\alpha}=a^2-c^2+2bc \cos{\alpha}-b^2 \cos^2{\alpha}\)</span></p>
+<p>Lisätään yhtälön molemmille puolille <span class="math notranslate nohighlight">\(b^2 \cos^2{\alpha}\)</span>, jolloin yhtälö sievenee muotoon</p>
+<p><span class="math notranslate nohighlight">\(b^2=a^2-c^2+2 bc \cos{\alpha}\)</span></p>
+<p>josta voidaan ratkaista</p>
+<p><span class="math notranslate nohighlight">\(a^2 = b^2+c^2-2bc \cos{\alpha}\)</span>.</p>
+<p>Vastaavasti voidaan johtaa kosinilause piirtämällä korkeusjana jostakin muusta kärjestä sitä vastaavalle kannalle.</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise kuvan kolmiosta sivu <span class="math notranslate nohighlight">\(a\)</span>, kun tiedetään, että <span class="math notranslate nohighlight">\(b=389, c=372, \alpha={91.9^{\circ}}\)</span>.</p>
+<p><img alt="Kosinilause, esimerkki" src="_images/kosinilause_esim.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Kosinilauseen nojalla <span class="math notranslate nohighlight">\(a^2=b^2+c^2-2bc \cos⁡{\alpha}\)</span>, joten <span class="math notranslate nohighlight">\(a^2=389^2+372^2-2\cdot 389\cdot 372 \cos⁡{91.9^{\circ}}\)</span>, josta saadaan <span class="math notranslate nohighlight">\(a^2=299300.639\)</span> ja edelleen <span class="math notranslate nohighlight">\(a=547\)</span>.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Kuinka suuret ovat kolmion kulmat <span class="math notranslate nohighlight">\(\alpha, \beta, \gamma\)</span>, kun sivujen pituudet ovat <span class="math notranslate nohighlight">\(a=10, b=7, c=5\)</span>?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Ratkaistaan ensin kulma <span class="math notranslate nohighlight">\(\alpha\)</span> kirjoittamalla kosinilause siten, että yhtälön toiselle puolelle tulee kulma <span class="math notranslate nohighlight">\(\alpha\)</span> ja toiselle puolelle kyseistä kulmaa vastapäätä oleva sivu <span class="math notranslate nohighlight">\(a\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(a^2=b^2+c^2-2bc \cos{\alpha}\)</span></p>
+<p><span class="math notranslate nohighlight">\(b^2+c^2-2bc \cos{\alpha}=a^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(-2bc \cos{\alpha}=a^2-b^2-c^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(\cos{\alpha}=\frac{a^2-b^2-c^2}{-2bc}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\cos{\alpha⁡}=\frac{10^2-7^2-5^2}{-2\cdot 7 \cdot 5}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\cos{\alpha} = -0.371\)</span></p>
+<p><span class="math notranslate nohighlight">\(\alpha=\arccos{-0.371}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\alpha = 111.8^{\circ}\)</span>.</p>
+<p>Kulman <span class="math notranslate nohighlight">\(\beta\)</span> voi ratkaista vastaavalla tavalla kosinilauseella:</p>
+<p><span class="math notranslate nohighlight">\(b^2=a^2+c^2-2ac \cos{\beta}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\cos{\beta}=\frac{b^2-a^2-c^2}{-2ac}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\cos{\beta}=\frac{7^2-10^2-5^2}{-2\cdot 10 \cdot5}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\cos{\beta} = 0.76\)</span>$</p>
+<p><span class="math notranslate nohighlight">\(\beta = \arccos{⁡0.76}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\beta=40.5^{\circ}\)</span>.</p>
+<p>Kulman ratkaisu onnistuisi myös sinilauseella:</p>
+<p><span class="math notranslate nohighlight">\(\frac{\sin{\beta}}{7}=\frac{\sin{\alpha}}{10}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\beta=\arcsin{\sin{111.8^{\circ}}\frac{7}{10}}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\beta = 40.5^{\circ}\)</span></p>
+<p>Kolmas kulma saadaan helposti vähennyslaskulla: <span class="math notranslate nohighlight">\(\gamma=(180-111.8-40.5)^{\circ}=27.7^{\circ}\)</span>.</p>
+</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Soveltaminen suorakulmaiseen kolmioon</p>
+<p><img alt="Kosinilause suorakulmaisessa kolmiossa" src="_images/skk_sinilause.png" /></p>
+<p>Oletetaan, että kulma <span class="math notranslate nohighlight">\(\alpha\)</span> on suora, kuten kuvassa. Suoralle kulmalle pätee <span class="math notranslate nohighlight">\(\cos{\alpha}=0\)</span>. Sijottamalla tämä kosinilauseeseen saadaan
+<span class="math notranslate nohighlight">\(a^2=b^2+c^2-2bc\cdot 0\)</span> eli <span class="math notranslate nohighlight">\(a^2=b^2+c^2\)</span>, toisin sanoen Pythagoraan lause.</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "luma-lapinamk/minna-agt",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="yleiset.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Yleiset kolmiot</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="trigo_funktiot.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Yleiset trigonometriset funktiot</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

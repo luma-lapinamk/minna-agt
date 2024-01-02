@@ -28,9 +28,9 @@ Periaatteessa jokaisessa polynomin termissä on sekä kerroin- että kirjainosa,
 
 - Jos numeroa ei näy, kerroinosa on $1$. Esimerkiksi $1\cdot x$ on sama asia kuin $x$. Jos termi on $-x$, niin kerroinosa on $-1$.
 
-- Jos kirjainta ei näy, niin kirjainosan voisi kirjoittaa muodossa $x^0$. Potenssilukujen laskusääntöjen mukaanhan $a^0=1$. Yleensä kirjainosaa ei kuitenkaan tällöin kirjoiteta näkyviin, vaan kyseistä termiä voi käsitellä pelkkänä lukuna. 
+- Jos kirjainta ei näy, niin kirjainosan voisi kirjoittaa muodossa $x^0$. Potenssilukujen laskusääntöjen mukaanhan $x^0=1$. Yleensä kirjainosaa ei kuitenkaan tällöin kirjoiteta näkyviin, vaan kyseistä termiä voi käsitellä pelkkänä lukuna. 
 
-Kirjainosan eksponenttia $1$ ei yleensä merkitä näkyviin, sillä mille tahansa luvulle $a$ pätee $a^1=1$. Niinpä esimerkiksi polynomi $x+2$ voitaisiin esittää myös muodossa $1\cdot x^1+2\cdot x^0$. 
+Kirjainosan eksponenttia $1$ ei yleensä merkitä näkyviin, sillä mille tahansa luvulle $a$ pätee $a^1=a$. Niinpä esimerkiksi polynomi $x+2$ voitaisiin esittää myös muodossa $1\cdot x^1+2\cdot x^0$. 
 
 Lisäksi polynomin voi ajatella koostuvan pelkästään yhteenlaskuista. Jos polynomissa on termi, jossa on miinusmerkkinen kerroin, voidaan ajatella että yhteenlaskussa vain on mukana negatiivinen luku. Esimerkiksi $3x^2-4x$ on siis sama asia kuin $3x^2+(-4x)$.
 

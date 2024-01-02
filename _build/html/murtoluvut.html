@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Murtoluvuilla laskeminen &#8212; Algebra, geometria, trigonometria</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Potenssilausekkeet" href="potenssit.html" />
+    <link rel="prev" title="Luvut ja laskeminen" href="lukujoukot.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Algebra, geometria, trigonometria</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Algebra, geometria ja trigonometria
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Perusteita
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lukujoukot.html">
+   Luvut ja laskeminen
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Murtoluvuilla laskeminen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="potenssit.html">
+   Potenssilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="juuret.html">
+   Juurilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="polynomit.html">
+   Polynomit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Yhtälöt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot.html">
+   Yhtälöiden ratkaisu
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot1.html">
+   Esimerkkejä yhtälöistä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot2.html">
+   Toisen asteen yhtälöt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="prosentti.html">
+   Prosenttilaskentaa
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigonometriaa.html">
+   Trigonometriaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suorakulmaiset.html">
+   Suorakulmaiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sk_koordinaatisto.html">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yleiset.html">
+   Yleiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinilause_kosinilause.html">
+   Sini- ja kosinilause
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigo_funktiot.html">
+   Yleiset trigonometriset funktiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasogeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyrat.html">
+   Ympyrä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="monikulmiot.html">
+   Monikulmiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Avaruusgeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lierio_kartio.html">
+   Lieriö ja kartio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pallo.html">
+   Pallo
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Verrannollisuus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="verrannollisuus_sivu.html">
+   Suoraan ja kääntäen verrannollisuus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mittakaavat.html">
+   Mittakaavat
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Matemaattisia malleja
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="malleja.html">
+   Funktio mallina
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lineaarinen.html">
+   Lineaarinen malli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="toisenasteen.html">
+   Toisen asteen polynomimalli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinifunktio.html">
+   Sinifunktio
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/luma-lapinamk/minna-agt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/murtoluvut.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#laskusaannot">
+   Laskusäännöt
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Murtoluvuilla laskeminen</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#laskusaannot">
+   Laskusäännöt
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="murtoluvuilla-laskeminen">
+<h1>Murtoluvuilla laskeminen<a class="headerlink" href="#murtoluvuilla-laskeminen" title="Permalink to this headline">#</a></h1>
+<p>Laskuissa esiintyy usein murtolukuja. Ne ovat niinsanottuja tarkkoja arvoja. Joillekin luvuille voidaan kirjoittaa tarkka arvo myös desimaalilukuna. Esimerkiksi jos yksi kakku jaettaisiin neljälle henkilölle, niin jokaisen saama <span class="math notranslate nohighlight">\(0.25\)</span> kakkua olisi tarkka arvo.</p>
+<p>Usein murtoluku on kuitenkin ainoa mahdollisuus esittää laskun tulos tarkkana arvona. Jos täytekakku jaetaan kolmelle henkilölle, jokainen saa <span class="math notranslate nohighlight">\(\frac{1}{3}\)</span> kakusta. Se on tarkka arvo. Laskimesta saatavat luvut <span class="math notranslate nohighlight">\(0.33\)</span> tai <span class="math notranslate nohighlight">\(0.333333\)</span> tai edes <span class="math notranslate nohighlight">\(0.3333333333333\)</span> eivät ole tarkkoja arvoja. Aina ei ole väliä sillä, onko laskun tulos tarkka arvo vai ei, koska usein se kuitenkin pyöristetään jollakin tavalla. Tarkkojen arvojen laskeminen ja murtolukujen käsittely muutenkin on kuitenkin osa algebran yleissivistystä.</p>
+<p>Murtoluku koostuu murtoviivan yläpuolella olevan osoittajasta ja murtoviivan alapuolella olevasta nimittäjästä. Esimerkiksi luvussa <span class="math notranslate nohighlight">\(\frac{3}{8}\)</span> osoittaja on 3 ja nimittäjä 8. Nimittäjä kertoo, kuinka suuria osia murtoluvussa on, ja osoittaja sen, kuinka monta kappaletta näitä on. Esimerkiksi tässä on kyseessä kahdeksasosat, joita on kolme kappaletta.</p>
+<p><img alt="osoittaja/nimittäjä" src="_images/osoittaja_nimittaja.png" /></p>
+<section id="laskusaannot">
+<h2>Laskusäännöt<a class="headerlink" href="#laskusaannot" title="Permalink to this headline">#</a></h2>
+<p><strong>Laventaminen ja supistaminen</strong></p>
+<p>Murtoluvun osoittajan ja nimittäjän voi kertoa tai jakaa samalla luvulla. Tällöin murtoluku muuttuu eri näköiseksi, mutta sen arvo pysyy ennallaan. Kertolaskua sanotaan laventamiseksi ja jakolaskua supistamiseksi. Näitä laskutoimituksia joutuu tekemään, kun lasketaan yhteen tai vähennetään toisistaan murtolukuja, joissa on eri nimittäjät.</p>
+<p>Laventaminen merkitään osoittajan vasempaan yläkulmaan:</p>
+<p>Esim. a) <span class="math notranslate nohighlight">\(\frac{^{2)}3}{7}=\frac{2\cdot 3}{2\cdot 7}=\frac{6}{14}\)</span>, b) <span class="math notranslate nohighlight">\(\frac{^{3)}x}{5}=\frac{3\cdot x}{3\cdot 5}=\frac{3x}{15}\)</span></p>
+<p>Supistaminen merkitään osoittajan oikeaan yläkulmaan:</p>
+<p>Esim. a) <span class="math notranslate nohighlight">\(\frac{3}{15}^{(3}=\frac{3/3}{15/3}=\frac{1}{5}\)</span>, b) <span class="math notranslate nohighlight">\(\frac{2x}{4}^{(2}=\frac{2x/2}{4/2}=\frac{x}{2}\)</span></p>
+<p>Usein tehtävien vastaus halutaan supistetussa muodossa, eli siten, että osoittaja nimittäjä ovat mahdollisimman pieniä. Mahdollisimman pienten lukujen etsiminen onnistuu siten, että kirjoitetaan osoittaja ja nimittäjä kertolaskuina ja katsotaan, onko näissä kertolaskussa sama luku. Jos on, niin tämä yhteinen luku supistuu pois. Kaikkia murtolukuja ei ole mahdollista supistaa (sanotaan, että ne ovat jo valmiiksi supistetussa muodossa). Jos osoittaja tai nimittäjä eivät ole yksittäisiä lukuja vaan esimerkiksi summia, niin kerto- tai jakolaskut pitää tehdä koko näille lausekkeille.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Esimerkkejä</p>
+<p>a) <span class="math notranslate nohighlight">\(\frac{14}{56}=\frac{2\cdot 7}{7\cdot 8}=\frac{2}{8}=\frac{2 \cdot 1}{2\cdot 4}=\frac{1}{4}\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\frac{12}{25}=\frac{3 \cdot 4}{5\cdot 5}\)</span>, ei voi supistaa, antaa olla sellaisenaan</p>
+<p>c) Laventaminen luvulla 2, kun osoittajassa summa:</p>
+<p><span class="math notranslate nohighlight">\(\frac{^{2)}5+x}{5}=\frac{2\cdot 5 + 2 \cdot x}{2\cdot 5}=\frac{10+2x}{10}\)</span></p>
+<p>d) Laventaminen luvulla 2, kun osoittajassa ja nimittäjässä summa:</p>
+<p><span class="math notranslate nohighlight">\(\frac{^{2)}5+x}{x-3}=\frac{2\cdot 5 + 2 \cdot x}{2\cdot x - 2 \cdot 3}=\frac{10+2x}{2x-6}\)</span></p>
+<p>e) Supistaminen luvulla 2, kun osoittajassa summa:</p>
+<p><span class="math notranslate nohighlight">\(\frac{4+x^{(2}}{8}=\frac{4/2+x/2}{8/2}=\frac{2+\frac{x}{2}}{4}\)</span></p>
+</div>
+<p><strong>Yhteen- ja vähennyslasku</strong></p>
+<p>Jos murtoluvuissa on sama nimittäjä, niin yhteen- tai vähennyslasku tehdään vain osoittajille, ja nimittäjä pysyy ennallaan. Jos murtoluvuissa on eri nimittäjä, laskussa esiintyvät murtoluvut pitää laventaa tai supistaa samannimisiksi. Joskus riittää supistaa tai laventaa yksi laskussa esiintyvistä murtoluvuista, joskus joutuu muokkaamaan useampaa. Seuraavissa taulukoissa on esimerkkejä erilaisista yhteen- ja vähennyslaskuista.</p>
+<ul class="simple">
+<li><p>Kummallakin murtoluvulla on sama nimittäjä
+<img alt="Murtoluvuilla sama nimittäjä" src="_images/murtoluvut_yhteen_1.png" /></p></li>
+<li><p>Toinen nimittäjä on toisen monikerta: riittää laventaa se murtoluku, jonka nimittäjä on pienempi
+<img alt="Toinen nimittäjä on toisen monikerta" src="_images/murtoluvut_yhteen_2.png" /></p></li>
+<li><p>Toinen nimittäjä ei ole toisen monikerta: lavenna murtoluvut toistensa nimittäjillä
+<img alt="Toinen nimittäjä ei ole toisen monikerta" src="_images/murtoluvut_yhteen_3.png" /></p></li>
+</ul>
+<p><strong>Sekaluvut</strong></p>
+<p>Sekaluku tarkoittaa kokonaisluvun ja murtoluvun summaa. Esimerkiksi <span class="math notranslate nohighlight">\(2\frac{1}{4}\)</span> tarkoittaa samaa kuin <span class="math notranslate nohighlight">\(2+\frac{1}{4}\)</span>.</p>
+<p>Sekaluku kannattaa muuttaa murtoluvuksi ennen muita laskutoimituksia. Nimittäjäksi valitaan sama kuin murtoluvun nimittäjä. Kokonaisluvussa 1 osoittaja on yhtä suuri kuin nimittäjä, kokonaisluvussa 2 osoittaja on 2 kertaa niin suuri kuin nimittäjä jne. Esimerkiksi <span class="math notranslate nohighlight">\(3~\frac{2}{5}\)</span> on <span class="math notranslate nohighlight">\(3+\frac{2}{5}=\frac{15}{5}+\frac{2}{5}=\frac{15+2}{5}=\frac{17}{5}\)</span>.</p>
+<p>Muunnos toisinpäin onnistuu seuraavasti: ensin etsitään luvun kokonaislukuosa, eli se luku, kuinka monta kertaa nimittäjä mahtuu osoittajaan. Esimerkiksi luvussa <span class="math notranslate nohighlight">\(\frac{27}{8}\)</span> kokonaislukuosa on <span class="math notranslate nohighlight">\(3\)</span>, sillä <span class="math notranslate nohighlight">\(3\cdot 8 = 24\)</span> on vielä pienempi kuin osoittaja, mutta <span class="math notranslate nohighlight">\(4\cdot 8 = 32\)</span> olisi jo liian suuri luku. Murtolukuosan osoittaja on se luku, joka jää yli, kun murtoluvun osoittajasta vähennetään kokonaislukuosan ja nimittäjän tulo. Esimerkiksi luvussa <span class="math notranslate nohighlight">\(\frac{27}{8}\)</span> osoittajaksi jää <span class="math notranslate nohighlight">\(27-3\cdot 8=27-24=3\)</span>. Nimittäjäksi jää alkuperäinen nimittäjä. Siis sekaluvuksi saadaan <span class="math notranslate nohighlight">\(3~\frac{3}{8}\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Esimerkkejä</p>
+<p>a) <span class="math notranslate nohighlight">\(3~\frac{4}{5}=3+\frac{4}{5}=\frac{}{3\cdot 5}{5}+\frac{4}{5}=\frac{15}{5}+\frac{4}{5}=\frac{15+4}{5}=\frac{19}{5}\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(1~\frac{3}{4}+\frac{5}{4}=1+\frac{3}{4}+\frac{5}{4}=\frac{4}{4}+\frac{3}{4}+\frac{5}{4}=\frac{4+3+5}{4}=\frac{12}{4}=3\)</span></p>
+<p>tai: <span class="math notranslate nohighlight">\(1 \frac{3}{4}+\frac{5}{4}=1+\frac{3}{4}+\frac{5}{4}=1+\frac{3+5}{4}=1+\frac{8}{4}=1+2=3\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(2~\frac{5}{8}+\frac{3}{4}=2+\frac{5}{8}+\frac{3}{4}=2+\frac{5}{8}+^{2)}\frac{3}{4}= \)</span></p>
+<p><span class="math notranslate nohighlight">\( 2+\frac{5}{8}+\frac{6}{8}=\frac{2\cdot 8}{8}+\frac{5}{8}+\frac{6}{8}=\frac{16}{8}+\frac{5}{8}+\frac{6}{8}=\frac{16+5+6}{8}=\frac{27}{8}\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(\frac{19}{7}=2~\frac{5}{7}\)</span>, sillä <span class="math notranslate nohighlight">\(2+\frac{5}{7}=\frac{14}{7}+\frac{5}{7}=\frac{14+5}{7}=\frac{19}{7}\)</span></p>
+</div>
+<p><strong>Kerto- ja jakolasku</strong></p>
+<p>Murtolukujen kertolaskussa osoittajat kerrotaan keskenään ja nimittäjät kerrotaan keskenään. Nimittäjien ei tarvitse olla keskenään samat, kuten yhteen- tai vähennyslaskussa! Lopputuloksen voi mielellään supistaa, jos se on mahdollista, eli jos osoittaja ja nimittäjä ovat samalla luvulla jaollisia. Kokonaisluvut voidaan muuttaa murtoluvuiksi, joissa nimittäjä on 1.</p>
+<p><img alt="Murtolukujen kertolaskuja" src="_images/murtoluvut_kerto.png" /></p>
+<p>Kun murtoluku jaetaan toisella murtolukuvulla, niin jaettava kerrotaan jakajan käänteisluvulla. Käänteisluku tarkoittaa sitä, että osoittajan ja nimittäjä vaihdetaan keskenään. Esimerkiksi luvun <span class="math notranslate nohighlight">\(\frac{2}{5}\)</span> käänteisluku on <span class="math notranslate nohighlight">\(\frac{5}{2}\)</span>. Kokonaisluvullakin on käänteisluku: luvun <span class="math notranslate nohighlight">\(a\)</span> käänteisluku on <span class="math notranslate nohighlight">\(\frac{1}{a}\)</span>.</p>
+<p><img alt="Murtolukujen jakolaskuja" src="_images/murtoluvut_jako.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Esimerkkejä kerto- ja jakolaskuista</p>
+<p>a) <span class="math notranslate nohighlight">\(\frac{3}{8}\cdot \frac{2}{4}=\frac{3\cdot 2}{8\cdot 4}=^{2)}\frac{6}{32}=\frac{3}{16}\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\frac{3}{5}\cdot \frac{7}{4}=\frac{3\cdot 7}{5\cdot 4}=\frac{21}{20}\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(3 \cdot \frac{5}{4}=\frac{3}{1}\cdot \frac{5}{4}=\frac{3\cdot 5}{1\cdot 4}=\frac{15}{4}=3\frac{3}{4}\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(\frac{3}{4}:\frac{7}{9}=\frac{3}{4}\cdot \frac{9}{7}=\frac{3 \cdot 9}{4 \cdot 7}=\frac{27}{28}\)</span></p>
+<p>e) <span class="math notranslate nohighlight">\(\frac{15}{4}:3=\frac{15}{4}\cdot \frac{1}{3}=\frac{15\cdot 1}{4\cdot 3}=\frac{15}{12}^{(3}=\frac{5}{4}=1 \frac{1}{4}\)</span></p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "luma-lapinamk/minna-agt",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="lukujoukot.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Luvut ja laskeminen</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="potenssit.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Potenssilausekkeet</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,687 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Yhtälöiden ratkaisu &#8212; Algebra, geometria, trigonometria</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Esimerkkejä yhtälöistä" href="yhtalot1.html" />
+    <link rel="prev" title="Polynomit" href="polynomit.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Algebra, geometria, trigonometria</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Algebra, geometria ja trigonometria
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Perusteita
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lukujoukot.html">
+   Luvut ja laskeminen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="murtoluvut.html">
+   Murtoluvuilla laskeminen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="potenssit.html">
+   Potenssilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="juuret.html">
+   Juurilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="polynomit.html">
+   Polynomit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Yhtälöt
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Yhtälöiden ratkaisu
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot1.html">
+   Esimerkkejä yhtälöistä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot2.html">
+   Toisen asteen yhtälöt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="prosentti.html">
+   Prosenttilaskentaa
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigonometriaa.html">
+   Trigonometriaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suorakulmaiset.html">
+   Suorakulmaiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sk_koordinaatisto.html">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yleiset.html">
+   Yleiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinilause_kosinilause.html">
+   Sini- ja kosinilause
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigo_funktiot.html">
+   Yleiset trigonometriset funktiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasogeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyrat.html">
+   Ympyrä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="monikulmiot.html">
+   Monikulmiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Avaruusgeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lierio_kartio.html">
+   Lieriö ja kartio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pallo.html">
+   Pallo
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Verrannollisuus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="verrannollisuus_sivu.html">
+   Suoraan ja kääntäen verrannollisuus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mittakaavat.html">
+   Mittakaavat
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Matemaattisia malleja
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="malleja.html">
+   Funktio mallina
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lineaarinen.html">
+   Lineaarinen malli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="toisenasteen.html">
+   Toisen asteen polynomimalli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinifunktio.html">
+   Sinifunktio
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/luma-lapinamk/minna-agt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/yhtalot.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#yhtalon-ratkaisun-periaate">
+   Yhtälön ratkaisun periaate
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#yhtalon-ratkaisu-tietokoneella">
+   Yhtälön ratkaisu tietokoneella
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Yhtälöiden ratkaisu</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#yhtalon-ratkaisun-periaate">
+   Yhtälön ratkaisun periaate
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#yhtalon-ratkaisu-tietokoneella">
+   Yhtälön ratkaisu tietokoneella
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="yhtaloiden-ratkaisu">
+<h1>Yhtälöiden ratkaisu<a class="headerlink" href="#yhtaloiden-ratkaisu" title="Permalink to this headline">#</a></h1>
+<p>Lähes kaikissa matematiikan ongelmissa päädytään yhtälöiden ratkaisuun. Yhtälön muodostaminen vaatii taitoa muuttaa sanallisessa muodossa esitettyjä systeemejä lausekkeiksi. Lausekkeita puolestaan muokataan potenssilukujen, juurien ja polynomien laskusäännöillä. Lausekkeista muodostuu yhtälö, jossa esiintyy jotakin tuntematonta suuretta symboloiva kirjain.</p>
+<p>Matemaattisesti yhtälön voi määritellä seuraavasti: Yhtälössä on yhtäsuuruusmerkin eri puolilla kaksi lauseketta, joiden arvo on yhtä suuri.  Yhtälöissä on vähintään yksi kirjain, jota vastaavaa lukuarvoa ei aluksi tunneta, esimerkiksi <span class="math notranslate nohighlight">\(x\)</span>. Yhtälön ratkaiseminen tarkoittaa sitä, että etsitään tälle kirjaimelle sellainen lukuarvo, että yhtälön vasen ja oikea puoli ovat yhtä suuret. Mahdollisia muita kirjaimia pidetään tunnettuina, vaikkei niille olisi kerrottu mitään lukuarvoa.</p>
+<p>Tässä luvussa käsitellään yhtälönratkaisun yleisiä periaatteita. Esimerkkejä erityyppisistä yhtälöistä on seuraavassa luvussa.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Yhtälöitä ovat esimerkiksi <span class="math notranslate nohighlight">\(13x+70=200\)</span> ja <span class="math notranslate nohighlight">\(V=\pi r^2 h\)</span>.</p>
+<p>Ensimmäinen yhtälö sopii vaikkapa seuraavanlaiseen ongelmaan: jos tuntipalkka on 13 euroa ja lisäksi äkillisesti ilmoitetusta työvuorosta saa 70 euron hälytysrahan, niin kuinka monen tunnin työvuorolla tienaisi 200 euroa?</p>
+<p>Toinen yhtälö taas voisi kuvata tynnyrin tilavuutta <span class="math notranslate nohighlight">\(V\)</span>, kun tynnyrin pohjan säde on <span class="math notranslate nohighlight">\(r\)</span> ja tynnyrin korkeus on <span class="math notranslate nohighlight">\(h\)</span>. Mikä tahansa kirjaimista voidaan määritellä tuntemattomaksi. Jos pohjan säde on 30 cm ja tynnyriin pitäisi mahtua 600 litraa vettä, kuinka korkea tynnyrin pitäisi olla? Entä kuinka paljon vettä täytyy valuttaa hanasta, jos kyseessä onkin lasten uima-allas, jonka korkeus on 40 cm ja pohjan säde 2 metriä?</p>
+<p>Tässä vaiheessa näitä yhtälöitä ei vielä tarvitse osata ratkaista. Voit kuitenkin katsoa ratkaisut alta.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Ensimmäisen yhtälön ratkaisu:</p>
+<p><span class="math notranslate nohighlight">\(13x+70=200\)</span></p>
+<p><span class="math notranslate nohighlight">\(13x = 200-70\)</span></p>
+<p><span class="math notranslate nohighlight">\(13x = 130\)</span></p>
+<p><span class="math notranslate nohighlight">\(x=\frac{130}{13}\)</span></p>
+<p><span class="math notranslate nohighlight">\(x = 10\)</span></p>
+<p>Toisen yhtälön ratkaisu, kun tuntemattomana on <span class="math notranslate nohighlight">\(h\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(V = \pi r^2 h \)</span></p>
+<p>Sijoitetaan lukuarvot, tilavuus on laitettava kuutiometrinä:</p>
+<p><span class="math notranslate nohighlight">\(0.6 = \pi \cdot 0.3^2 h\)</span></p>
+<p><span class="math notranslate nohighlight">\(h = \frac{0.6}{\pi\cdot 0.3^2}\)</span></p>
+<p>Ylläoleva ratkaisu on yhtälön tarkka ratkaisu. Vastaukselle saa likiarvon desimaalilukuna laskimella. Tulokseksi tulee <span class="math notranslate nohighlight">\(h \approx 2.12\)</span> m. <a class="reference external" href="https://wolframalpha.com">WolframAlpha</a> -laskimeen lasku kirjoitettaisiin muodossa: 0.6/(pi*0.3^2)</p>
+<p>Jos tuntemattomana onkin <span class="math notranslate nohighlight">\(V\)</span>, saman yhtälön ratkaisu on suoraviivainen kertolasku: vettä tarvitaan <span class="math notranslate nohighlight">\(V= \pi\cdot 2^2 \cdot 0.4 =5.03\)</span> kuutiometriä eli yli 5000 litraa.</p>
+</div>
+</div>
+<section id="yhtalon-ratkaisun-periaate">
+<h2>Yhtälön ratkaisun periaate<a class="headerlink" href="#yhtalon-ratkaisun-periaate" title="Permalink to this headline">#</a></h2>
+<p>Yhtälön ratkaisu perustuu siihen, että tuntematon kirjain pyritään saamaan sopivilla toimenpiteillä yksin jommallekummalle puolelle yhtäsuuruusmerkkiä. Nämä toimenpiteet pitää aina tehdä yhtä aikaa yhtälön kummallekin puolille. Moni yhtälö ratkeaa pelkästään seuraavilla menetelmillä:</p>
+<ul class="simple">
+<li><p>luvun lisääminen,</p></li>
+<li><p>luvun vähentäminen,</p></li>
+<li><p>luvulla kertominen,</p></li>
+<li><p>luvulla jakaminen.</p></li>
+</ul>
+<p>Mistä tietää, mikä toimenpide pitää valita? Melkein kaikki yhtälöt voi ratkaista monella eri tavalla, soveltaen edellisiä menetelmiä eri järjestyksissä. Ratkaisun välivaiheiden määrä ja ulkonäkö voi vaihdella. Tärkeintä on, että jos yhtälön toisen lausekkeen arvoa muutetaan jollakin yllämainituista toimenpiteistä, on myös toisen lausekkeen arvoa samalla muutettava samalla tavalla.</p>
+<p>Yhtälön lausekkeita saa kuitenkin sieventää tai olla sieventämättä erikseen. Lisäksi yhtälön vasemman ja oikean puolen saa missä tahansa vaiheessa yhtälön ratkaisua vaihtaa keskenään.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaistaan yhtälö <span class="math notranslate nohighlight">\(2x+3=5x-9\)</span> vaiheittain.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Siivotaan ylimääräinen termi vasemmalta:</p>
+<ul class="simple">
+<li><p>Huomataan, että vasemmalla puolella on ylimääräisenä luku <span class="math notranslate nohighlight">\(3\)</span>.</p></li>
+<li><p>Poistetaan se sieltä vähennyslaskulla.</p></li>
+<li><p>Sama lasku pitää tehdä myös yhtälön oikealle puolelle, jotta yhtälön molemmat puolet säilyvät yhtä suurina.</p></li>
+<li><p>Yhtälö muuttuu muotoon <span class="math notranslate nohighlight">\(2x+3-3=5x-9-3\)</span>.</p></li>
+<li><p>Sievennetään kumpikin lauseke: <span class="math notranslate nohighlight">\(2x=5x-12\)</span>.</p></li>
+</ul>
+<p>Siivotaan ylimääräinen termi oikealta:</p>
+<ul class="simple">
+<li><p>Tavoitteena on, että tuntematonta <span class="math notranslate nohighlight">\(x\)</span> olisi vain yhtälön vasemmalla puolella.</p></li>
+<li><p>Poistetaan siis oikealta termi <span class="math notranslate nohighlight">\(5x\)</span> vähennyslaskulla.</p></li>
+<li><p>Tehdään sama toimenpide vasemmalle: yhtälöksi muuttuu muotoon <span class="math notranslate nohighlight">\(2x-5x=5x-12-5x\)</span>.</p></li>
+<li><p>Sievennetään lausekkeet: <span class="math notranslate nohighlight">\(-3x=-12\)</span>.</p></li>
+</ul>
+<p>Siivotaan ylimääräinen kerroin vasemmalta:</p>
+<ul class="simple">
+<li><p>Nyt tuntematon <span class="math notranslate nohighlight">\(x\)</span> on vain vasemmalla, mutta sen edestä pitäisi saada pois kerroin <span class="math notranslate nohighlight">\(-3\)</span>.</p></li>
+<li><p>Kerroin poistuu jakolaskulla.</p></li>
+<li><p>Jaetaan yhtälön molemmat puolet luvulla <span class="math notranslate nohighlight">\(-3\)</span> seuraavasti: <span class="math notranslate nohighlight">\(\frac{-3}{-3}x=\frac{-12}{-3}\)</span></p></li>
+<li><p>Sievennetään yhtälö muotoon <span class="math notranslate nohighlight">\(x=4\)</span>. Yhtälö on nyt ratkaistu!</p></li>
+</ul>
+</div>
+</div>
+<p>Monimutkaisemmille yhtälöille voidaan tarvita näiden lisäksi myös potenssiinkorotusta tai juuren ottamista, logaritmia, trigonometrisia funktioita tai niiden käänteisfunktiota jne. Näitä menetelmiä otetaan tässä materiaalissa käyttöön esimerkiksi kolmioihin liittyvissä luvuissa.</p>
+<p>Yhtälön ratkaisu kirjoitetaan siten, että yhtälö säilyy koko ajan muodossa “vasen puoli = oikea puoli”. Jokaisen välivaiheen jälkeen tulee rivinvaihto tai ns. ekvivalenssinuoli <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span>.</p>
+<p>Lopulta, usean välivaiheen jälkeen, yhtälö muuttuu muotoon “x=ratkaisu”. Yhtälön ratkaisua ei kannata aloittaa kirjoittamalla heti ensimmäisen rivin alkuun “x= … “, sillä silloinhan ei vielä tiedä, mitä toiselle puolelle tulee!</p>
+<p>Yhtälön ratkaisun voi tarkistaa sijoittamalla saamansa ratkaisun alkuperäiseen yhtälöön. Tällöin vasemman ja oikean puolen pitäisi olla samat.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Seuraavassa on esitetty erään yhtälön ratkaisu välivaiheineen. Mitä eri välivaiheissa on tehty?</p>
+<p><span class="math notranslate nohighlight">\(\frac{1}{3} x + 2 = 8x -4\)</span></p>
+<p><span class="math notranslate nohighlight">\(x + 6 = 24x -12\)</span></p>
+<p><span class="math notranslate nohighlight">\(-23x + 6 = -12\)</span></p>
+<p><span class="math notranslate nohighlight">\(-23x = -18\)</span></p>
+<p><span class="math notranslate nohighlight">\(x = \frac{18}{23}\)</span></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Ensin on kerrottu yhtälön molemmat puolet luvulla 3:</p>
+<p><span class="math notranslate nohighlight">\(3\cdot\frac{1}{3}x + 3\cdot 2 = 3\cdot 8x -3\cdot 4x\)</span> ja sitten on sievennetty lausekkeet.</p>
+<p>Seuraavaksi on vähennetty yhtälön kummaltakin puolelta <span class="math notranslate nohighlight">\(24 x\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(x + 6 -24 x= 24 x -12 - 24 x\)</span>, joka sieventyy muotoon <span class="math notranslate nohighlight">\(-23x + 6 = -12\)</span>.</p>
+<p>Seuraavaksi on vähennetty kummaltakin puolelta <span class="math notranslate nohighlight">\(6\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(-23x+6-6 = -12 - 6\)</span>, josta sievenee <span class="math notranslate nohighlight">\(-23x=-18\)</span>.</p>
+<p>Lopuksi on jaettu molemmat puolet luvulla <span class="math notranslate nohighlight">\(-23\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(\frac{-23x}{-23} = \frac{-18}{-23}\)</span>.</p>
+<p>Tämä vielä sievenee muotoon <span class="math notranslate nohighlight">\(x=\frac{18}{23}\)</span>.</p>
+</div>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Ratkaise yhtälö <span class="math notranslate nohighlight">\(2x+7=x-4x\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Yhtälön voi ratkaista monella eri tavalla, tässä yksi esimerkki. Aloitetaan sieventämällä yhtälön oikea puoli:</p>
+<p><span class="math notranslate nohighlight">\(2x+7=-3x\)</span></p>
+<p>Lisätään molemmille puolille <span class="math notranslate nohighlight">\(3x\)</span>, jotta se saadaan häviämään oikealta puolelta:</p>
+<p><span class="math notranslate nohighlight">\(2x+7+3x = -3x + 3x\)</span></p>
+<p>Sievennetään yhtälön molemmat puolet:</p>
+<p><span class="math notranslate nohighlight">\(5x+7 = 0\)</span></p>
+<p>Vähennetään molemmilta puolilta <span class="math notranslate nohighlight">\(7\)</span>, jotta se saadaan häviämään vasemmalta puolelta:</p>
+<p><span class="math notranslate nohighlight">\(5x+7-7=0-7\)</span></p>
+<p>Sievennetään:</p>
+<p><span class="math notranslate nohighlight">\(5x=-7\)</span></p>
+<p>Jaetaan molemmat puolet luvulla <span class="math notranslate nohighlight">\(5\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(\frac{5x}{5}=\frac{-7}{5}\)</span></p>
+<p>Lopputulokseksi saadaan <span class="math notranslate nohighlight">\(x=-\frac{7}{5}\)</span>.</p>
+<p>Tarkistetaan sijoittamalla saatu vastaus alkuperäiseen yhtälöön:</p>
+<p><span class="math notranslate nohighlight">\(2\cdot \left(-\frac{7}{5}\right) + 7 = -3\cdot \left(-\frac{7}{5}\right)\)</span></p>
+<p><span class="math notranslate nohighlight">\(-\frac{14}{5}+7=\frac{21}{5}\)</span></p>
+<p><span class="math notranslate nohighlight">\(-\frac{14}{5}+\frac{35}{5}=\frac{21}{5}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\frac{-14+35}{5} = \frac{21}{5}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\frac{21}{5} = \frac{21}{5}\)</span></p>
+<p>Yhtälön vasemmasta ja oikeasta puolesta tuli samat, joten yhtälö on ratkaistu oikein.</p>
+</div>
+</div>
+</section>
+<section id="yhtalon-ratkaisu-tietokoneella">
+<h2>Yhtälön ratkaisu tietokoneella<a class="headerlink" href="#yhtalon-ratkaisu-tietokoneella" title="Permalink to this headline">#</a></h2>
+<p>Kun matematiikkaa käytetään työvälineenä ongelmien ratkaisussa, on tärkeämpää, että osaa muuntaa ongelman yhtälöksi kuin että osaa ratkaista kyseisen yhtälön kynällä ja paperilla. Kun yhtälöt liittyvät teollisuusprosesseihin, ekologiaan, talouteen tms. laajoihin ilmiöihin, niistä voi tulla hyvinkin monimutkaisia. Voi olla niinkin, että edes tietokone ei pysty antamaan yhtälön ratkaisuksi muuta kuin likiarvon. Usein tarvitaan myös useampaa kuin yhtä yhtälöä kerrallaan. Tällaisten ns. yhtälöryhmien käsittelyä opitaan enemmän lineaarialgebran opintojaksolla ja sovelletaan ainakin fysiikan kursseilla.</p>
+<p>Tällä opintojaksolla kaikki yhtälöt pystyy ratkaisemaan kynällä ja paperilla. Yksinkertaisten yhtälöiden käsittely kuuluu insinöörin yleissivistykseen. Samalla yhtälöitä voi kuitenkin totutella ratkaisemaan myös tietokoneella. <a class="reference external" href="https://wolframalpha.com">WolframAlphan</a> solve-toiminto antaa monenlaisille yhtälöille sekä tarkan arvon että likiarvon. Toimintoa käytetään siten, että komentoruutuun kirjoitetaan solve ja sen perään ratkaistava yhtälö. Jos yhtälössä on enemmän kuin yksi kirjain, niin yhtälön perään laitetaan pilkku ja sitten kirjain, joka yhtälöstä halutaan ratkaista.</p>
+<p>Enterin painalluksen jälkeen yhtälö näkyy “Input interpretation” -tekstin alle. Kannattaa aina tarkistaa, että yhtälö näyttää samalta kuin kynällä ja paperilla. Jos ei näytä, tarvitaan sulkuja. Ratkaisun saa desimaalilukumuotoon painikkeesta “Approximate form”.</p>
+<p><img alt="Yhtälön ratkaisu WolframAlphalla" src="_images/wa_solve.png" /></p>
+<p>Sulkuja tarvitaan erityisesti silloin, kun yhtälössä jaetaan tai kerrotaan jotakin lausekkeen osaa useammalla kuin yhdellä luvulla kerrallaan. Tällöin sulkuja ei näy kynällä ja paperilla olevassa yhtälössä, mutta tietokoneelle niitä tarvitaan ilmaisemaan, mitä kaikkea pitää ottaa mukaan esimerkiksi murtoluvun nimittäjään. Esimerkiksi yhtälö</p>
+<p><span class="math notranslate nohighlight">\(\frac{2}{x+2}=3+\frac{x+1}{4}\)</span></p>
+<p>pitää syöttää muodossa 2/(2+x)=3+(x+1)/4. Sulkuja voi laittaa huoletta liikaakin, ylimääräisistä ei ole haittaa.</p>
+<p><img alt="Sulkuja yhtälössä" src="_images/wa_solve3.png" /></p>
+<p>Yhtälössä voi olla pelkkiä kirjaimiakin, kuten seuraavassa esimerkissä:</p>
+<p><img alt="Suureyhtälön ratkaisu WolframAlphalla" src="_images/wa_solve2.png" /></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "luma-lapinamk/minna-agt",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="polynomit.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Polynomit</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="yhtalot1.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Esimerkkejä yhtälöistä</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

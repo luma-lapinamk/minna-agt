@@ -1,0 +1,646 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Monikulmiot &#8212; Algebra, geometria, trigonometria</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Lieriö ja kartio" href="lierio_kartio.html" />
+    <link rel="prev" title="Ympyrä" href="ympyrat.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Algebra, geometria, trigonometria</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Algebra, geometria ja trigonometria
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Perusteita
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lukujoukot.html">
+   Luvut ja laskeminen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="murtoluvut.html">
+   Murtoluvuilla laskeminen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="potenssit.html">
+   Potenssilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="juuret.html">
+   Juurilausekkeet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="polynomit.html">
+   Polynomit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Yhtälöt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot.html">
+   Yhtälöiden ratkaisu
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot1.html">
+   Esimerkkejä yhtälöistä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yhtalot2.html">
+   Toisen asteen yhtälöt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="prosentti.html">
+   Prosenttilaskentaa
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Trigonometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigonometriaa.html">
+   Trigonometriaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suorakulmaiset.html">
+   Suorakulmaiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sk_koordinaatisto.html">
+   Suorakulmainen koordinaatisto
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="yleiset.html">
+   Yleiset kolmiot
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinilause_kosinilause.html">
+   Sini- ja kosinilause
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="trigo_funktiot.html">
+   Yleiset trigonometriset funktiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasogeometriaa
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyrat.html">
+   Ympyrä
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Monikulmiot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Avaruusgeometriaa
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lierio_kartio.html">
+   Lieriö ja kartio
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pallo.html">
+   Pallo
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Verrannollisuus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="verrannollisuus_sivu.html">
+   Suoraan ja kääntäen verrannollisuus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mittakaavat.html">
+   Mittakaavat
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Matemaattisia malleja
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="malleja.html">
+   Funktio mallina
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lineaarinen.html">
+   Lineaarinen malli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="toisenasteen.html">
+   Toisen asteen polynomimalli
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sinifunktio.html">
+   Sinifunktio
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/luma-lapinamk/minna-agt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/monikulmiot.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suunnikas-ja-puolisuunnikas">
+   Suunnikas ja puolisuunnikas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pinta-aloja">
+   Pinta-aloja
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Monikulmiot</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suunnikas-ja-puolisuunnikas">
+   Suunnikas ja puolisuunnikas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pinta-aloja">
+   Pinta-aloja
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="monikulmiot">
+<h1>Monikulmiot<a class="headerlink" href="#monikulmiot" title="Permalink to this headline">#</a></h1>
+<p>Kolmiot ovat yksi erityistapaus monikulmioista. Yleisesti monikulmiota, jossa on <span class="math notranslate nohighlight">\(n\)</span> kulmaa, sanotaan <span class="math notranslate nohighlight">\(n\)</span>-kulmioksi. Monikulmio on säännöllinen, jos sen kaikki sivut ovat keskenään yhtä pitkiä ja kaikki kulmat yhtä suuria, esim. neliö. Yleisesti <span class="math notranslate nohighlight">\(n\)</span>-kulmion kulmien summa on <span class="math notranslate nohighlight">\((n-2) \cdot 180^{\circ}\)</span>.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Määritä kuvassa olevien kulmien <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> ja <span class="math notranslate nohighlight">\(z\)</span> suuruudet.</p>
+<p><img alt="Monikulmion kulmat" src="_images/monikulmio1.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Nelikulmion kulmien summa on <span class="math notranslate nohighlight">\((4-2) \cdot 180^{\circ}=360^{\circ}\)</span>. Tämän perusteella saadaan ratkaistua <span class="math notranslate nohighlight">\(y=(360-102-90-38)^{\circ}=130^{\circ}\)</span>.</p>
+<p>Lisäksi saadaan selville kulman <span class="math notranslate nohighlight">\(y\)</span> ristikulma <span class="math notranslate nohighlight">\(z=130^{\circ}\)</span> ja 102 asteen kulman vieruskulma <span class="math notranslate nohighlight">\(x=180^{\circ}-102^{\circ}=78^{\circ}\)</span>.</p>
+</div>
+</div>
+<section id="suunnikas-ja-puolisuunnikas">
+<h2>Suunnikas ja puolisuunnikas<a class="headerlink" href="#suunnikas-ja-puolisuunnikas" title="Permalink to this headline">#</a></h2>
+<p>Nelikulmio, jonka vastakkaiset sivut ovat yhdensuuntaisia, on suunnikas. Jos suunnikkaan kaikki sivut ovat yhtä pitkät, se on neljäkäs. Nelikulmio, jonka kaksi vastakkaista sivua ovat yhdensuuntaisia, on puolisuunnikas. Tasakylkisessä puolisuunnikkaassa yhdensuuntaisten sivujen väliset sivut ovat yhtä pitkät. Sovellustehtävissä suunnikkaan tai puolisuunnikkaan sisälle voi piirtää avuksi kolmioita, joiden laskukaavoilla tehtävä ratkeaa.</p>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Kuinka syvä on kuvan tasakylkinen oja?</p>
+<p><img alt="Tasakylkinen puolisuunnikas, esimerkki" src="_images/monikulmio2.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Koska puolisuunnikas on tasakylkinen, niin yläreunaan pituus on yhtä suuri kuin jos alareunaan lisätään molempiin reunoihin tuntematon yläreunan osa <span class="math notranslate nohighlight">\(x\)</span>. Saadaan siis yhtälö <span class="math notranslate nohighlight">\(50~\text{cm}+2x=115~\text{cm}\)</span>, josta ratkeaa <span class="math notranslate nohighlight">\(x=\frac{115~\text{cm}-50~\text{cm}}{2}=32.5~\text{cm}\)</span>.</p>
+<p>Korkeus <span class="math notranslate nohighlight">\(h\)</span> saadaan nyt Pythagoraan lauseen avulla. Yksiköt on nyt jätetty pois yksinkertaisuuden takia.</p>
+<p><span class="math notranslate nohighlight">\(h^2+32.5^2=60^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(h^2=60^2-32.5^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(h=\sqrt{2543.75}\)</span></p>
+<p><span class="math notranslate nohighlight">\(h=50.4\)</span></p>
+</div>
+</div>
+</section>
+<section id="pinta-aloja">
+<h2>Pinta-aloja<a class="headerlink" href="#pinta-aloja" title="Permalink to this headline">#</a></h2>
+<p>Suunnikkaalle, jonka korkeus on <span class="math notranslate nohighlight">\(h\)</span> ja kannan pituus <span class="math notranslate nohighlight">\(a\)</span>, pätee sama pinta-alan <span class="math notranslate nohighlight">\(A\)</span> kaava kuin suorakulmiolle eli <span class="math notranslate nohighlight">\(A=ah\)</span>. Kaavan voi helposti perustella leikkaamalla vaikkapa tavallisesta A4-paperiarkista palan siten, että paloista saa koottua suunnikkaan.</p>
+<p><img alt="Suunnikkaan alan perustelu" src="_images/suunnikkaan_ala.png" /></p>
+<p>Suunnikkaan ala voidaan laskea myös kahden sivun ja niiden välisen kulman avulla: <span class="math notranslate nohighlight">\(A=xy \sin{\alpha}\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Perustelu</p>
+<p><img alt="Suunnikkaan alan perustelu 2" src="_images/suunnikkaan_ala2.png" /></p>
+<p>Piirretään suunnikkaalle korkeus <span class="math notranslate nohighlight">\(h\)</span>. Korkeusjanan vasemmalle puolelle muodostuu suorakulmainen kolmio. Kulman <span class="math notranslate nohighlight">\(\alpha\)</span> avulla voidaan ilmaista suunnikkaan korkeus muodossa <span class="math notranslate nohighlight">\(h=b \sin{\alpha}\)</span>. Tällöin pinta-alaksi tulee <span class="math notranslate nohighlight">\(A=ah = ab \sin{\alpha}\)</span>.</p>
+</div>
+<p>Jos tiedetään suunnikkaan lävistäjät <span class="math notranslate nohighlight">\(x\)</span> ja <span class="math notranslate nohighlight">\(y\)</span> ja niiden välinen kulma <span class="math notranslate nohighlight">\(\alpha\)</span>, pinta-ala on <span class="math notranslate nohighlight">\(A=\frac{1}{2} xy \sin{\alpha}\)</span>. Laskukaava toimii yleisemminkin mille tahansa neliökulmiolle!</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Perustelu</p>
+<p><img alt="Suunnikkaan alan perustelu 3" src="_images/ala_lavistajat.png" /></p>
+<p>Ilmaistaan suunnikkaan lävistäjät kuvan merkinnöillä <span class="math notranslate nohighlight">\(x=x_1+x_2\)</span> ja <span class="math notranslate nohighlight">\(y=y_1+y_2\)</span>. Suunnikkaan ala muodostuu neljästä kuvaan merkitystä kolmiosta, siis <span class="math notranslate nohighlight">\(A=A_1+A_2+A_3+A_4\)</span>. Kolmion aloille voidaan kirjoittaa ilmaisut sillä perusteella, että kolmion ala on kahden sivun pituuden tulo, kerrottuna sivujen välisen kulman sinillä, ja jaettuna kahdella:</p>
+<p><span class="math notranslate nohighlight">\(A_1=\frac{1}{2} x_1 y_2 \sin{\alpha}\)</span>, <span class="math notranslate nohighlight">\(A_2=\frac{1}{2} x_2 y_1 \sin{(180^{\circ}-\alpha)}\)</span>,</p>
+<p><span class="math notranslate nohighlight">\(A_3=\frac{1}{2} x_2 y_2 \sin{\alpha}\)</span>, <span class="math notranslate nohighlight">\(A_2=\frac{1}{2} x_1 y_2 \sin{(180^{\circ}-\alpha)}\)</span>.</p>
+<p>Sinifunktiolla on ominaisuus <span class="math notranslate nohighlight">\(\sin{\alpha}=\sin{(180^{\circ}-\alpha)}\)</span>, joten yhtälöt muuttuvat muotoon</p>
+<p><span class="math notranslate nohighlight">\(A_1=\frac{1}{2} x_1 y_1 \sin{\alpha}\)</span>, <span class="math notranslate nohighlight">\(A_2=\frac{1}{2} x_2 y_1 \sin{\alpha}\)</span>,</p>
+<p><span class="math notranslate nohighlight">\(A_3=\frac{1}{2} x_2 y_2 \sin{\alpha}\)</span>, <span class="math notranslate nohighlight">\(A_2=\frac{1}{2} x_1 y_2 \sin{\alpha}\)</span>.</p>
+<p>Pinta-ala on yhteensä</p>
+<p><span class="math notranslate nohighlight">\(A=A_1+A_2+A_3+A_4=\)</span></p>
+<p><span class="math notranslate nohighlight">\( \frac{1}{2} x_1 y_2 \sin{\alpha} + \frac{1}{2} x_2 y_1 \sin{\alpha} + \frac{1}{2} x_2 y_2 \sin{\alpha} + \frac{1}{2} x_2 y_2 \sin{\alpha}\)</span></p>
+<p>josta voidaan ottaa yhteiseksi tekijäksi <span class="math notranslate nohighlight">\(\frac{1}{2} \sin{\alpha}\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(A=\frac{1}{2} \sin{\alpha} (x_1 y_1 + x_2 y_1 + x_2 y_2 + x_1 y_2)\)</span>.</p>
+<p>Edelleen sulkujen sisällä olevaa lauseketta voi sieventää:</p>
+<p><span class="math notranslate nohighlight">\(A=\frac{1}{2} \sin{\alpha} \left(x_1 (y_1 + y_2) + x_2 (y_1 + y_2) \right)\)</span>.</p>
+<p>Koska <span class="math notranslate nohighlight">\(y=y_1+y_2\)</span>, niin yhtälö sievenee muotoon</p>
+<p><span class="math notranslate nohighlight">\(A=\frac{1}{2} \sin{\alpha} \left(x_1 y + x_2 y \right)\)</span>.</p>
+<p>Kun otetaankin nyt yhteiseksi tekijäksi <span class="math notranslate nohighlight">\(y\)</span>, yhtälöstä tulee</p>
+<p><span class="math notranslate nohighlight">\(A=\frac{1}{2} \sin{\alpha} \cdot y(x_1+ x_2)\)</span> ja koska <span class="math notranslate nohighlight">\(x=x_1+x_2\)</span>, niin <span class="math notranslate nohighlight">\(A=\frac{1}{2} \sin{\alpha} xy\)</span>.</p>
+</div>
+<p>Puolisuunnikkaalle, jonka yhdensuuntaisten sivujen pituudet ovat <span class="math notranslate nohighlight">\(a\)</span> ja <span class="math notranslate nohighlight">\(b\)</span> ja korkeus on <span class="math notranslate nohighlight">\(h\)</span>, pätee kaava <span class="math notranslate nohighlight">\(A=\frac{a+b}{2}\cdot h\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Perustelu</p>
+<p><img alt="Puolisuunnikkaan ala" src="_images/puolisuunnikkaan_ala.png" /></p>
+<p>Kaavan voi perustella esimerkiksi kuvan avulla seuraavasti. Puolisuunnikkaan sivujen pituudet ovat <span class="math notranslate nohighlight">\(a\)</span> ja <span class="math notranslate nohighlight">\(b\)</span>. Piirretään lyhemmän vaakasuuntaisen sivun alusta ja lopusta korkeusjanat, jotka osuvat pidemmän vaakasuuntaisen sivun pisteisiin <span class="math notranslate nohighlight">\(B\)</span> ja <span class="math notranslate nohighlight">\(C\)</span>. Merkitään lisäksi pidemmän vaakasuuntaisen sivun alkupistettä <span class="math notranslate nohighlight">\(A\)</span> ja loppupistettä <span class="math notranslate nohighlight">\(D\)</span>. Nyt pitempi sivu voidaan esittää pisteiden välisien janojen summana: <span class="math notranslate nohighlight">\(a=AB+BC+CD\)</span>. Lisäksi todetaan kuvan perusteella, että <span class="math notranslate nohighlight">\(b=BC\)</span>.</p>
+<p>Pinta-ala muodostuu kahdesta suorakulmaisesta kolmiosta <span class="math notranslate nohighlight">\(A_1\)</span> ja <span class="math notranslate nohighlight">\(A_3\)</span> sekä suorakulmiosta <span class="math notranslate nohighlight">\(A_2\)</span>, siis <span class="math notranslate nohighlight">\(A=A_1+A_2+A_3\)</span>. Voidaan kirjoittaa suoraviivaisesti yhtälö</p>
+<p><span class="math notranslate nohighlight">\(A=\frac{1}{2}AB\cdot h +BC\cdot h + \frac{1}{2} CD\cdot h\)</span>.</p>
+<p>Otetaan yhteiseksi tekijäksi <span class="math notranslate nohighlight">\(\frac{1}{2} h\)</span>, jolloin yhtälö muuttuu muotoon</p>
+<p><span class="math notranslate nohighlight">\(A=\frac{1}{2} h \cdot (AB+2BC+CD)\)</span>.</p>
+<p>Kirjoitetaan tämä hieman eri muodossa:</p>
+<p><span class="math notranslate nohighlight">\(A=\frac{1}{2} h \cdot (AB+BC+CD+BC)\)</span>.</p>
+<p>Nyt voidaan sijoittaa kaavaan <span class="math notranslate nohighlight">\(AB+BC+CD=a\)</span> ja <span class="math notranslate nohighlight">\(BC=b\)</span>, joten <span class="math notranslate nohighlight">\(A=\frac{1}{2} h \cdot (a+b)\)</span>.</p>
+</div>
+<div class="admonition-esimerkki admonition">
+<p class="admonition-title">Esimerkki</p>
+<p>Laske oheisen puolisuunnikkaan pinta-ala ja ympärysmitta, kun tiedetään mitat <span class="math notranslate nohighlight">\(x=80~\text{m}\)</span>, <span class="math notranslate nohighlight">\(b=100~\text{m}\)</span> ja <span class="math notranslate nohighlight">\(h=50~\text{m}\)</span>. Selvitä lisäksi kulman <span class="math notranslate nohighlight">\(\alpha\)</span> suuruus.</p>
+<p><img alt="Puolisuunnikas, esimerkki" src="_images/puolisuunnikas_esim.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Pinta-alan laskukaavaan tarvittaisiin alareunan pituus <span class="math notranslate nohighlight">\(a=y+b+y\)</span>. Matkan <span class="math notranslate nohighlight">\(y\)</span> saa selville helpoiten Pythagoraan lauseella:</p>
+<p><span class="math notranslate nohighlight">\(y^2+h^2=x^2 \Leftrightarrow y=\sqrt{x^2-h^2} \Leftrightarrow  \)</span></p>
+<p><span class="math notranslate nohighlight">\(y=\sqrt{(80~\text{m})^2-(50~\text{m})^2}=62.45~\text{m}\)</span>.</p>
+<p>Alareunan pituus on siis <span class="math notranslate nohighlight">\(100~\text{m} + 2 \cdot 62.45~\text{m} = 224.9~\text{m}\)</span>, ja siten pinta-ala on <span class="math notranslate nohighlight">\(\frac{1}{2}\cdot 224.9~\text{m} \cdot 50~\text{m} = 8123~\text{m}^2\)</span>, ja ympärysmitta on tietenkin <span class="math notranslate nohighlight">\(100~\text{m}+224.~\text{m}+2\cdot 80~\text{m}=482~\text{m}\)</span>.</p>
+<p>Kysytty kulma <span class="math notranslate nohighlight">\(\alpha\)</span> voidaan ratkaista suorakulmaisen kolmion trigonometrisilla funktioilla, esimerkiksi seuraavasti:</p>
+<p><span class="math notranslate nohighlight">\(\tan{\alpha}=\frac{h}{y} \Leftrightarrow \alpha=\arctan{\frac{h}{y}}\)</span></p>
+<p>josta luvut sijoittamalla saadaan <span class="math notranslate nohighlight">\(\alpha=\arctan{\frac{50~\text{m}}{62.45~\text{m}}}\approx 38.68^{\circ}\)</span>.</p>
+</div>
+</div>
+<p>Yleisesti monikulmion pinta-ala voidaan laskea jakamalla se osiin, joiden pinta-ala voidaan laskea, eli käytännössä helpoiten suorakulmioihin ja suorakulmaisiin kolmioihin.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "luma-lapinamk/minna-agt",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="ympyrat.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Ympyrä</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="lierio_kartio.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Lieriö ja kartio</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
