@@ -69,7 +69,7 @@ Muunnos toisinpäin onnistuu seuraavasti: ensin etsitään luvun kokonaislukuosa
 :::{admonition} Esimerkkejä
 :class: tip, dropdown
 
-a) $3~\frac{4}{5}=3+\frac{4}{5}=\frac{}{3\cdot 5}{5}+\frac{4}{5}=\frac{15}{5}+\frac{4}{5}=\frac{15+4}{5}=\frac{19}{5}$
+a) $3~\frac{4}{5}=3+\frac{4}{5}=\frac{3\cdot 5}{5}+\frac{4}{5}=\frac{15}{5}+\frac{4}{5}=\frac{15+4}{5}=\frac{19}{5}$
 
 b) $1~\frac{3}{4}+\frac{5}{4}=1+\frac{3}{4}+\frac{5}{4}=\frac{4}{4}+\frac{3}{4}+\frac{5}{4}=\frac{4+3+5}{4}=\frac{12}{4}=3$
 
