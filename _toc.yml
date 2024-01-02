@@ -16,6 +16,7 @@ parts:
     - file: yhtalot
     - file: yhtalot1
     - file: yhtalot2
+    - file: prosentti
   - caption: Trigonometriaa
     chapters:
     - file: trigonometriaa
