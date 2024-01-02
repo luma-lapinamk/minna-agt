@@ -1,4 +1,4 @@
-# Algebra, geometria ja trigonometria
+# Johdantoa
 
 Tämä sivusto sisältää tekniikan aloille tarkoitetun matematiikan opintojakson "Algebra, geometria, trigonometria" oppimateriaalia. Materiaalin on tehnyt Lapin AMK:n LUMA-tiimi. Oppimateriaali täydentyy ja päivittyy vielä. Virheitäkin on, ja niitä korjaillaan sitä mukaa kun huomataan.
 

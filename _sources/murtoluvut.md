@@ -75,7 +75,7 @@ b) $1~\frac{3}{4}+\frac{5}{4}=1+\frac{3}{4}+\frac{5}{4}=\frac{4}{4}+\frac{3}{4}+
 
 tai: $1 \frac{3}{4}+\frac{5}{4}=1+\frac{3}{4}+\frac{5}{4}=1+\frac{3+5}{4}=1+\frac{8}{4}=1+2=3$
 
-c) $2~\frac{5}{8}+\frac{3}{4}=2+\frac{5}{8}+\frac{3}{4}=2+\frac{5}{8}+^{2)}\frac{3}{4}= $
+c) $2~\frac{5}{8}+\frac{3}{4}=2+\frac{5}{8}+\frac{3}{4}=2+\frac{5}{8}+\frac{^{2)}3}{4}= $
 
 $ 2+\frac{5}{8}+\frac{6}{8}=\frac{2\cdot 8}{8}+\frac{5}{8}+\frac{6}{8}=\frac{16}{8}+\frac{5}{8}+\frac{6}{8}=\frac{16+5+6}{8}=\frac{27}{8}$
 
@@ -96,7 +96,7 @@ Kun murtoluku jaetaan toisella murtolukuvulla, niin jaettava kerrotaan jakajan k
 :::{admonition} Esimerkkejä kerto- ja jakolaskuista
 :class: tip, dropdown
 
-a) $\frac{3}{8}\cdot \frac{2}{4}=\frac{3\cdot 2}{8\cdot 4}=^{2)}\frac{6}{32}=\frac{3}{16}$
+a) $\frac{3}{8}\cdot \frac{2}{4}=\frac{3\cdot 2}{8\cdot 4}=\frac{^{2)}6}{32}=\frac{3}{16}$
 
 b) $\frac{3}{5}\cdot \frac{7}{4}=\frac{3\cdot 7}{5\cdot 4}=\frac{21}{20}$
 
