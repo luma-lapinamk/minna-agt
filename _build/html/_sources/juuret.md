@@ -41,11 +41,11 @@ Juurilausekkeille pätevät laskusäännöt, jotka seuraavassa on esitetty neli�
 
 **Esim.** Tulo $\sqrt{27}\sqrt{3}$ voidaan laskea kahdella tavalla: 
 
-$\sqrt{27}\sqrt{3} \approx 5.196\cdot 1.732 = 8.999$ tai $\sqrt{27}\sqrt{3} =\sqrt{27\cdot 3}=\sqrt{81}=9$.
+$\sqrt{27}\sqrt{3} \approx 5.196\cdot 1.732 approx 8.999$ tai $\sqrt{27}\sqrt{3} =\sqrt{27\cdot 3}=\sqrt{81}=9$.
 
 **Esim.** Tulo $\sqrt[3]{25}\sqrt[3]{5}$ voidaan laskea kahdella tavalla: 
 
-$\sqrt[3]{25}\sqrt[3]{5} \approx 2.924 \cdot 1.710 = 5.000$ tai $\sqrt[3]{25}\sqrt[3]{5} =\sqrt[3]{25\cdot 5}=\sqrt[3]{125}=5$.
+$\sqrt[3]{25}\sqrt[3]{5} \approx 2.924 \cdot 1.710 approx 5.000$ tai $\sqrt[3]{25}\sqrt[3]{5} =\sqrt[3]{25\cdot 5}=\sqrt[3]{125}=5$.
 
 Lisäksi jos $x>0$ ja $m \neq 0$, niin $\sqrt{x^m}=x^{\frac{m}{2}}$, eli toisin sanoen luvun potenssin saa ulos neliöjuuresta jakamalla eksponentin kahdella. Esimerkiksi $\sqrt{x^6}=x^3$, jos $x > 0$. 
 
