@@ -17,7 +17,7 @@ execute:
 # ----------------
 repository:
   url: https://github.com/luma-lapinamk/minna-agt
-  branch: main
+  branch: gh-pages
 
 # HTML-settings
 # --------------
