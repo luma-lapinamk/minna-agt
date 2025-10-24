@@ -88,7 +88,7 @@ $\frac{r_M^2}{r_K^2}$
 
 ja edelleen 
 
-$\left\frac{r_M}{r_K}\right)^2$
+$\left(\frac{r_M}{r_K}\right)^2$
 
 ja lukuarvot sijoittamalla saadaan suhteeksi 
 
@@ -102,7 +102,7 @@ $\frac{V_M}{V_K}=\frac{\frac{4}{3}\pi r_M^3}{\frac{4}{3} \pi r_K^3}$
 
 sievenee muotoon 
 
-$\left\frac{r_M}{r_K}\right)^3$ eli $\left(\frac{1737}{6380}\right)^2\approx 50$.
+$\left(\frac{r_M}{r_K}\right)^3$ eli $\left(\frac{1737}{6380}\right)^2\approx 50$.
 
 :::
 
