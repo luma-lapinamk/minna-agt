@@ -54,7 +54,7 @@ Lisäksi jos $x>0$ ja $m \neq 0$, niin $\sqrt{x^m}=x^{\frac{m}{2}}$, eli toisin 
 Sievennä lauseke $\sqrt{x^3}\sqrt{x^5}$, missä $x > 0$.
 
 :::{admonition} Ratkaisu
-: class: tip, dropdown
+:class: tip, dropdown
 
 Yhdistetään juurten tulo yhdeksi juureksi:
 
@@ -83,7 +83,7 @@ Sääntöä voidaan käyttää myös seuraavasti: $\sqrt[3]{\frac{27}{64}}=\frac
 Sievennä lauseke $\frac{\sqrt{x^3}}{\sqrt{x}}$, jossa $x > 0$.
 
 :::{admonition} Ratkaisu
-: class: tip, dropdown
+:class: tip, dropdown
 
 Yhdistetään osamäärä yhdeksi juurilausekkeeksi:
 
