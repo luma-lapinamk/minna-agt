@@ -82,7 +82,7 @@ Pinta-alojen suhde on
 
 $\frac{A_M}{A_K}=\frac{4\pi r_M^2}{4 \pi r_K^2}$,
 
-joka voidaan sieventää muotoon 
+joka voidaan sieventää muotoon
 
 $\frac{r_M^2}{r_K^2}$
 
